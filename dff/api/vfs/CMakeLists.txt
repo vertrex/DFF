@@ -27,7 +27,8 @@ set(vfs_src
    fdmanager.cpp 
    cache.cpp 
    iostat.cpp 
-   rootnode.cpp)
+   rootnode.cpp
+)
 
 if (LIBBFIO_FOUND)
  set(vfs_src ${vfs_src} libbfio_wrapper.cpp)
@@ -42,5 +43,5 @@ dff_cpp_api(vfs
   LINK_LIBRARIES datatype search exceptions types events ${LIBBFIO_LIBRARY}
   DEFINITIONS ${definitions}
   INCLUDE_DIRS ${LIBBFIO_INCLUDE_DIR}
-  EXTRA_FILES vfs.py __init__.py iodevice.py extract.py
+  EXTRA_FILES vfs.py __init__.py iodevice.py extract.py exportcsv.py
   )

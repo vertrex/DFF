@@ -9,6 +9,8 @@ Once the main goal will be achieved, DFF 2 could replace DFF and new features co
 TODO :  
 ------
 
+- add lacking CMakeList (needed to compile in build/ ex:export.csv) : Done
+- add destruct as git submodule (needed to compile in build/)
 - compile without -std=c++98
 - use swig 3.12 rather than swig 2.11
 - remove all deprecated call to dependencies 
