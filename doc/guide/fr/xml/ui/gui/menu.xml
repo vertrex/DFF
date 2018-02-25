@@ -1,0 +1,119 @@
+<section id="menu_bar">
+	<title> La barre de menu</title>
+
+	<para> La barre de menu a 7 menu différents, que nous allons voir plus amplement plus tard. Chaque menu peut faire plusieurs actions.</para>
+
+	<table><title> Barre de menu détaillé</title>
+	<tgroup cols="2" align="left" border="none">
+	<tbody>
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/file_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Wizard</emphasis> : Lance l'assistant de démarrage</listitem>				
+				<listitem><emphasis>Open evidence</emphasis> : Permet de sélectionner une image à monter</listitem>				
+				<listitem><emphasis>Open device</emphasis> : Permet de sélectionner un périphérique à monter</listitem>				
+				<listitem><emphasis>Exit</emphasis> : Quitter le programme</listitem></itemizedlist>
+				</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Edit.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Preferences</emphasis> : Options de configuration</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Modules.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Load</emphasis> : Permet de charger à chaud un module</listitem>
+				<listitem><emphasis>Browse</emphasis> : Permet de naviguer parmis tous les modules et leurs paramètres</listitem>	
+				<listitem><emphasis>Connectors</emphasis> : Modules permettant de monter l'objet à analyser</listitem>			
+				<listitem><emphasis>Databases</emphasis> : Modules permettant d'analyser des objets ayant une structure de base de données</listitem>			
+				<listitem><emphasis>Export</emphasis> : Modules permettant de copier ou d'extraire des données</listitem>			
+				<listitem><emphasis>File systems</emphasis> : Modules de reconstruction et  d'analyse des systèmes de fichiers</listitem>			
+				<listitem><emphasis>Hash</emphasis> : Module permettant de calculer et comparer les signatures numériques des fichiers </listitem>				
+				<listitem><emphasis>Mailbox</emphasis> : Module permettant d'analyser les containers de mail au format exchange</listitem>				
+				<listitem><emphasis>Malware</emphasis> : Module permettant de passer un détecteur de malware (Clam)</listitem>
+				<listitem><emphasis>Metadata</emphasis> : Modules permettant d'extraire les méta-données de certains types de fichiers</listitem>				
+				<listitem><emphasis>Node</emphasis> : Modules permettant de manipuler certains nodes</listitem>				
+				<listitem><emphasis>Search</emphasis> : Module de carving</listitem>
+				<listitem><emphasis>Statistics</emphasis> : Modules affichant des statistique par type de fichiers ou pour faire une analyse chronologique (timeline)</listitem>				
+				<listitem><emphasis>Viewers</emphasis> : Modules permettant de visualiser certains types de fichiers</listitem>				
+				<listitem><emphasis>Volatile memory</emphasis> : Module d'analyse du contenu de RAM capturée</listitem>				
+				<listitem><emphasis>Volumes</emphasis> : Modules permettant de rechercher et monter des volumes logiques</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/menu_view_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Maximize</emphasis> : Bascule l'onglet sélectionné en mode onglet plein écran</listitem>				
+				<listitem><emphasis>Fullscreen mode</emphasis> : Bascule l'interface de DFF en plein écran</listitem>				
+				<listitem><emphasis>Browser</emphasis> : Ouvre un nouvel onglet de navigation</listitem>				
+				<listitem><emphasis>Console</emphasis> : Affiche l'onglet permettant la saisie de lignes de commande</listitem>
+				<listitem><emphasis>Live scripting</emphasis> : Affiche l'onglet  de l’interpréteur python</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Report.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Report</emphasis> : Ouvre l'onglet permettant d'éditer un rapport, de le prévisualiser et de l'exporter au format html</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Ide.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>IDE</emphasis> : Ouvre l'onglet de l'environnement intégrée de développement de module python pour DFF</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/help_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>About DFF</emphasis> : Informations sur la version de DFF et liens divers</listitem>
+				<listitem><emphasis>Documentation</emphasis> : Aide de DFF</listitem></itemizedlist>
+			</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+</section>

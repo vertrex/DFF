@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>@DOC_GUIDE_QHP_NAMESPACE@</namespace>
+  <virtualFolder>doc</virtualFolder>
+  <customFilter name="@DOC_GUIDE_QHP_PROJECT_NAME@ @DOC_GUIDE_QHP_PROJECT_VERSION@">
+     <filterAttribute>@DOC_GUIDE_QHP_PROJECT_NAME@</filterAttribute>
+     <filterAttribute>@DOC_GUIDE_QHP_PROJECT_VERSION@</filterAttribute>
+  </customFilter>
+  <filterSection>
+    <filterAttribute>@DOC_GUIDE_QHP_PROJECT_NAME@</filterAttribute>
+    <filterAttribute>@DOC_GUIDE_QHP_PROJECT_NAME@ @DOC_GUIDE_QHP_SECTION_MAIN_NAME@</filterAttribute>
+    <filterAttribute>@DOC_GUIDE_QHP_PROJECT_VERSION@</filterAttribute>
+    <toc>
+      @DOC_GUIDE_QHP_TOC@
+    </toc>
+    <files>
+      @DOC_GUIDE_QHP_FILES@
+   </files>
+  </filterSection>
+</QtHelpProject>

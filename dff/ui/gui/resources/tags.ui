@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tags</class>
+ <widget class="QDialog" name="Tags">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tags management</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_21">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="gui.qrc">:/tag</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_26">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Add and remove tags from selected nodes
+Add new tag or delete existing ones (Double-click to edit)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Tags management</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_29">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+        <item>
+         <widget class="QLabel" name="selectedLabel">
+          <property name="text">
+           <string>Selected nodes tags</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="availableLabel">
+          <property name="text">
+           <string>Available tags</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <item>
+         <widget class="QListWidget" name="selectedTags"/>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <item>
+           <widget class="QPushButton" name="addTagNodesButton">
+            <property name="text">
+             <string notr="true">&lt;&lt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="removeTagNodesButton">
+            <property name="text">
+             <string notr="true">&gt;&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="newTagButton">
+            <property name="text">
+             <string notr="true">New</string>
+            </property>
+            <property name="icon">
+             <iconset resource="gui.qrc">
+              <normaloff>:/add.png</normaloff>:/add.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteTagButton">
+            <property name="text">
+             <string notr="true">Delete</string>
+            </property>
+            <property name="icon">
+             <iconset resource="gui.qrc">
+              <normaloff>:/cancel.png</normaloff>:/cancel.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="allTags"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox_6">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox_6</sender>
+   <signal>accepted()</signal>
+   <receiver>Tags</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_6</sender>
+   <signal>rejected()</signal>
+   <receiver>Tags</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

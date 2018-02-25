@@ -1,0 +1,31 @@
+/**
+	\mainpage
+
+	\section legal_sec Legal notice
+
+	DFFis free software; you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as
+	published by the Free Software Foundation; either version 2 of
+	the License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public
+	License along with DFF. If not, see <http://www.gnu.org/>.
+
+	\section intro_sec Introduction
+
+This is the documentation of DFF API, you can use it to develop your own module. The code here are generated from C++ files but all the exported
+functions and classes are accessible trough Python bindings.
+
+
+For more informations see:
+ - http://www.digital-forensic.org
+ - http://tracker.digital-forensic.org
+ - http://wiki.digital-forensic.org
+
+ 
+ */

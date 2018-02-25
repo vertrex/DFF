@@ -1,0 +1,34 @@
+<section>
+	<title>Prévisualisation</title>
+
+	<para> Dans DFF, vous pouvez prévisualiser les fichiers d'images ou de video, d'ailleur un onglet "Preview" est prévu à cet effet.</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_sample.png"/>
+		</imageobject>
+		<caption> Prévisualisation simple</caption>
+	</mediaobject>
+
+	<para> Mais vous pouvez également avoir une visualisation de la structure hexadecimal du fichier séléctionné. Par exemple pour l'image précédente, c'est présenté comme ceci : </para>
+
+		<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_hexa.png"/>
+		</imageobject>
+		<caption> Prévisualisation en hexadecimal</caption>
+	</mediaobject>
+
+	<para> Vous pouvez également combiner la prévisualisation avec la fonction "Maximiser" en allant dans (<menuchoice><guimenu>View</guimenu><guimenuitem>Maximiser</guimenuitem></menuchoice>). Si vous voulez voir votre image en plus grand et donc mieux regarder les détails.</para>
+
+		<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_sample_max.png"/>
+		</imageobject>
+		<caption> Prévisualisation avec Maximiser</caption>
+	</mediaobject>
+
+	<para></para>
+
+
+</section>

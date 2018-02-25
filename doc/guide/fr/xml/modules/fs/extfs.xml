@@ -1,0 +1,38 @@
+<section>
+	<title>EXTFS</title>
+
+	<para> Ce module analyse les système de fichier (EXT 2//3/4) et essaye de reconstruire les données effacer. </para>
+
+	<table id="detailled_extfs"><title>extfs détaillé</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_extfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>SB_addr</emphasis> : [activable] Super block addresse spécifié manuellement</listitem>				
+				<listitem><emphasis>SB_check</emphasis> : [activable] check la validité de superblock</listitem>				
+				<listitem><emphasis>blk</emphasis> : [activable] Alloue un status au Block</listitem>				
+				<listitem><emphasis>blockpointers</emphasis> : [activable] Ajoute un vlock pointer aux attributs étendu extfs</listitem>
+				<listitem><emphasis>dont_parse_fs</emphasis> : [activable] Analyse tout le système de fichier</listitem>
+				<listitem><emphasis>file</emphasis> : fichier contenant un système de fichier EXT 2, 3 ou 4</listitem>
+				<listitem><emphasis>fsck</emphasis> : [activable] check si le nombre de block alloué corresponde à la taille des inode allouées</listitem>
+				<listitem><emphasis>fsstat</emphasis> : [activable] Statistique de système de fichier</listitem>
+				<listitem><emphasis>i_orphans</emphasis> : [activable] Analyse les inodes orphelin</listitem>
+				<listitem><emphasis>ils</emphasis> : [activable] Liste les inodes</listitem>
+				<listitem><emphasis>istat</emphasis> : [activable] Statistique des Inode</listitem>
+				<listitem><emphasis>jstat</emphasis> : [activable] Journal des statistiques</listitem>
+				<listitem><emphasis>root_inode</emphasis> : [activable] Numéro d'inode source</listitem>
+				<listitem><emphasis>slack</emphasis> : [activable] Crée des nodes "slack"</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>	
+
+</section>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DFF - An Open Source Digital Forensics Framework
+Copyright (C) 2009-2013 ArxSys
+
+This program is free software, distributed under the terms of
+the GNU General Public License Version 2. See the LICENSE file
+at the top of the source tree.
+
+See http://www.digital-forensic.org for more information about this
+project. Please do not directly contact any of the maintainers of
+DFF for assistance; the project provides a web site, mailing lists
+and IRC channels for your use.
+
+Author(s):
+Christophe Malinge cma@digital-forensic.org
+-->
+<ui version="4.0">
+ <class>Ide</class>
+ <widget class="QWidget" name="Ide">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IDE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/ide.png</normaloff>:/ide.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="vbox">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QToolBar" name="toolbar">
+     <property name="windowTitle">
+      <string>IDE toolbar</string>
+     </property>
+     <addaction name="newemptyact"/>
+     <addaction name="newact"/>
+     <addaction name="openact"/>
+     <addaction name="saveact"/>
+     <addaction name="saveasact"/>
+     <addaction name="runact"/>
+     <addaction name="undoact"/>
+     <addaction name="redoact"/>
+     <addaction name="commentact"/>
+     <addaction name="uncommentact"/>
+    </widget>
+   </item>
+  </layout>
+  <action name="newemptyact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/empty.png</normaloff>:/empty.png</iconset>
+   </property>
+   <property name="text">
+    <string>New empty file</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="newact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-new.png</normaloff>:/script-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Generate skeleton</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="openact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-open.png</normaloff>:/script-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open file</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="saveact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-save.png</normaloff>:/script-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="saveasact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-save-as.png</normaloff>:/script-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="runact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-run.png</normaloff>:/script-run.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="undoact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/undo.png</normaloff>:/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="redoact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/redo.png</normaloff>:/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="commentact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/comment.png</normaloff>:/comment.png</iconset>
+   </property>
+   <property name="text">
+    <string>Comment</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="uncommentact">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/uncomment.png</normaloff>:/uncomment.png</iconset>
+   </property>
+   <property name="text">
+    <string>Uncomment</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

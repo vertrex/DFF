@@ -1,0 +1,44 @@
+Source: dff-pro
+Section: admin
+Priority: optional
+Maintainer: Frederic Baguelin <frederic.baguelin@arxsys.fr>
+Build-Depends: debhelper (>= 8.0.0),
+    cmake,
+    swig (>=2.0.7),
+    python-all-dev (>= 2.6.6),
+    python-qt4,
+    pyqt4-dev-tools,
+    qt4-dev-tools,
+    libicu-dev,
+    libtre-dev,
+    qt4-linguist-tools,
+    libfuse-dev,
+    libudev-dev,
+    libavformat-dev,
+    libavdevice-dev,
+    libavutil-dev,
+    libswscale-dev,
+    libudev-dev,
+    flex,
+    bison,
+    libarchive-dev,
+    libbfio-dev,
+    libewf-dev,
+    libpff-dev,
+    libvshadow-dev,
+    libbde-dev
+X-Python-Version: >= 2.7
+Standards-Version: 3.9.4
+Homepage: http://www.digital-forensic.org/
+#Vcs-Git: git://git.debian.org/collab-maint/dff.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/dff.git;a=summary
+
+Package: dff-pro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-qt4, python-dbus, libqt4-sql-sqlite, dbus, python-poppler-qt4, python-apsw, python-imaging, python-volatility, python-pefile, python-pyregfi, clamav-daemon, python-pyclamd, python-uno
+Description: Powerful, efficient and modular digital forensic framework
+ DFF is a simple but powerful open source tool with a flexible module system
+ which will help you in your digital forensics works, including files recovery
+ due to error or crash, evidence research and analysis, etc.
+ The source code is written in C++ and Python, allowing performances and great
+ extensibility.

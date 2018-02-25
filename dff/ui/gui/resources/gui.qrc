@@ -1,0 +1,228 @@
+<RCC>
+<comment>
+DFF - An Open Source Digital Forensics Framework
+Copyright (C) 2009-2013 ArxSys
+
+This program is free software, distributed under the terms of
+the GNU General Public License Version 2. See the LICENSE file
+at the top of the source tree.
+
+See http://www.digital-forensic.org for more information about this
+project. Please do not directly contact any of the maintainers of
+DFF for assistance; the project provides a web site, mailing lists
+and IRC channels for your use.
+
+Author(s):
+Jeremy Mounier jmo@digital-forensic.org
+</comment>
+<qresource>
+    <file alias="logo">icons/logo.png</file>
+    <file alias="filefind.png">icons/filefind.png</file>
+    <file alias="file_broken.png">icons/mime/file_broken.png</file>
+    <file alias="file_temporary.png">icons/filesystem/file_temporary_128.png</file>
+    <file alias="view_icon.png">icons/actions/view_icon.png</file>
+    <file alias="view_choose.png">icons/actions/view_choose.png</file>
+    <file alias="view_detailed.png">icons/actions/view_detailed.png</file>
+    <file alias="view_tree.png">icons/actions/view_tree.png</file>
+    <file alias="folder_128.png">icons/filesystem/folder_128.png</file>
+    <file alias="folder_documents_128.png">icons/filesystem/folder_documents_128.png</file>
+    <file alias="folder_empty_128.png">icons/filesystem/folder_empty_128.png</file>
+    <file alias="splash.png">icons/splash.png</file>
+    <file alias="add.png">icons/actions/add.png</file>
+    <file alias="add_image.png">icons/actions/add_image.png</file>
+    <file alias="add_device.png">icons/actions/add_device.png</file>
+    <file alias="anim.gif">icons/anim.gif</file>
+    <file alias="exec.png">icons/filesystem/exec.png</file>
+    <file alias="randr.png">icons/actions/randr.png</file>
+    <file alias="maximize.png">icons/actions/maximize.png</file>
+    <file alias="configure.png">icons/actions/configure.png</file>
+    <file alias="harddrive.png">icons/devices/harddrive.png</file>
+    <file alias="folder.png">icons/filesystem/folder.png</file>
+    <file alias="exit.png">icons/actions/exit.png</file>
+    <file alias="cancel.png">icons/actions/cancel.png</file>
+    <file alias="extract.png">icons/actions/fileimport.png</file>
+    <file alias="filenew.png">icons/actions/filenew.png</file>
+    <file alias="filesave.png">icons/actions/filesave.png</file>
+    <file alias="filesaveas.png">icons/actions/filesaveas.png</file>
+    <file alias="fileopen.png">icons/actions/fileopen.png</file>	
+    <file alias="fileprint.png">icons/actions/fileprint.png</file>
+    <file alias="redo.png">icons/actions/redo.png</file>
+    <file alias="undo.png">icons/actions/undo.png</file>
+    <file alias="remove.png">icons/actions/remove.png</file>    
+    <file alias="empty.png">icons/mime/empty.png</file>
+    <file alias="file.png">icons/filesystem/file.png</file>
+    <file alias="info.png">icons/actions/info.png</file>
+    <file alias="list.png">icons/app/lists.png</file>
+    <file alias="lists_attr.png">icons/app/lists_attr.png</file>
+    <file alias="lists_attr_disable.png">icons/app/lists_attr_disable.png</file>
+    <file alias="document.png">icons/mime/doc.png</file>
+    <file alias="pdf.png">icons/mime/pdf.png</file>
+    <file alias="sound.png">icons/mime/sound.png</file>
+    <file alias="video.png">icons/mime/video.png</file>
+    <file alias="presentation.png">icons/mime/presentation.png</file>
+    <file alias="spreadsheet.png">icons/mime/spreadsheet.png</file>
+    <file alias="image.png">icons/mime/image.png</file>
+    <file alias="image_disable.png">icons/mime/image_disable.png</file>
+    <file alias="shell.png">icons/devices/chardevice.png</file>
+    <file alias="interpreter.png">icons/devices/interpreter.png</file>
+    <file alias="help.png">icons/actions/help.png</file>
+    <file alias="top.png">icons/actions/up.png</file>
+    <file alias="down.png">icons/actions/down.png</file>
+    <file alias="previous.png">icons/actions/previous.png</file>
+    <file alias="next.png">icons/actions/next.png</file>
+    <file alias="home.png">icons/filesystem/folder_home.png</file>
+    <file alias="viewer.png">icons/app/imageviewer.png</file>
+    <file alias="refresh.png">icons/actions/reload.png</file>
+    <file alias="reload.png">icons/actions/reload.png</file>
+    <file alias="viewmag+">icons/actions/viewmag+.png</file>
+    <file alias="viewmag-">icons/actions/viewmag-.png</file>
+    <file alias="viewmag1">icons/actions/viewmag1.png</file>
+    <file alias="viewmag">icons/actions/viewmag.png</file>
+    <file alias="viewmagfit">icons/actions/viewmagfit.png</file>
+    <file alias="rotate-right.png">icons/actions/rotate-right.png</file>
+    <file alias="rotate-left.png">icons/actions/rotate-left.png</file>
+    <file alias="rotate-180.png">icons/actions/rotate-180.png</file>
+    <file alias="script-new.png">icons/actions/newscript.png</file>
+    <file alias="script-save.png">icons/actions/script-save.png</file>
+    <file alias="script-save-as.png">icons/actions/script-save-as.png</file>
+    <file alias="script-open.png">icons/actions/script-open.png</file>
+    <file alias="script-run.png">icons/actions/exec.png</file>
+    <file alias="dev_usb.png">icons/devices/dev_usb.png</file>
+    <file alias="dev_laptop.png">icons/devices/dev_laptop.png</file>    
+    <file alias="dev_desktop.png">icons/devices/dev_desktop.png</file>    
+    <file alias="dev_pda.png">icons/devices/dev_pda.png</file>    
+    <file alias="dev_floppy.png">icons/devices/dev_floppy.png</file>    
+    <file alias="dev_smart.png">icons/devices/dev_smart.png</file>    
+    <file alias="dev_video.png">icons/devices/dev_video.png</file>    
+    <file alias="dev_photo.png">icons/devices/dev_photo.png</file>    
+    <file alias="dev_hd.png">icons/devices/dev_hd.png</file>
+    <file alias="dev_cd.png">icons/devices/dev_cd.png</file>
+    <file alias="dev_flash.png">icons/devices/dev_flash.png</file>
+    <file alias="dev_ram.png">icons/devices/dev_ram.png</file>
+    <file alias="add_dev.png">icons/actions/add_dev.png</file>    
+    <file alias="del_dev.png">icons/actions/del_dev.png</file>    
+    <file alias="edit_dev.png">icons/actions/configure.png</file>    
+    <file alias="add_dump.png">icons/actions/add.png</file>    
+    <file alias="del_dump.png">icons/actions/remove.png</file>
+    <file alias="edit_dump.png">icons/actions/configure.png</file>    
+    <file alias="hexedit.png">icons/app/hexedit.png</file>
+    <file alias="hex_page.png">icons/filesystem/blockdevice.png</file>
+    <file alias="hex_search.png">icons/actions/search.png</file>
+    <file alias="hex_opt.png">icons/actions/configure.png</file>
+    <file alias="bookmark.png">icons/actions/bookmark.png</file>
+    <file alias="bookmark_add.png">icons/actions/bookmark_add.png</file>
+    <file alias="bookmark_category_add.png">icons/actions/bookmark_category_add.png</file>
+    <file alias="bookmark_rm.png">icons/actions/bookmark_rm.png</file>
+    <file alias="bookmark_toolbar.png">icons/actions/bookmark.png</file>
+    <file alias="dict.png">icons/actions/man.png</file>
+
+    <file alias="editcut">icons/actions/editcut.png</file>
+    <file alias="encrypted">icons/actions/encrypted.png</file>
+    <file alias="database">icons/app/database.png</file>
+    <file alias="index">icons/app/krdc.png</file>
+    <file alias="stats">icons/app/stats.png</file>
+    <file alias="chart">icons/app/kchart.png</file>
+    <file alias="text">icons/app/kedit.png</file>
+    <file alias="multimedia">icons/app/multimedia.png</file>
+    <file alias="lphoto">icons/app/lphoto.png</file>
+    <file alias="disksfilesystems">icons/app/disksfilesystems.png</file>
+    <file alias="disksfilesystemsdeleted">icons/app/disksfilesystemsdeleted.png</file>
+    <file alias="unlock">icons/actions/unlock.png</file>
+    <file alias="zip">icons/mime/zip.png</file>
+
+    <file alias="winexec">icons/mime/exec_wine.png</file>
+    <file alias="binary">icons/mime/binary.png</file>
+
+    <file alias="green_configure.png">icons/app/agt_utilities.png</file>
+    <file alias="autostart.png">icons/app/autostart.png</file>
+    <file alias="bug.png">icons/app/bug.png</file>
+    <file alias="module2.png">icons/app/ksirtet.png</file>
+    <file alias="locale.png">icons/app/locale.png</file>
+    <file alias="magicball.png">icons/app/magic8ball.png</file>
+    <file alias="virtualize.png">icons/app/parallels.png</file>
+    <file alias="password.png">icons/app/password.png</file>
+
+    <file alias="comment.png">icons/actions/comment.png</file>
+    <file alias="uncomment.png">icons/actions/uncomment.png</file>
+    <file alias="run.png">icons/actions/agt_runit.png</file>
+    <file alias="ide.png">icons/app/ksnake.png</file>
+    <file alias="index_search.png">icons/app/index_search.png</file>
+    <file alias="index_search_64x64.png">icons/app/index_search_64x64.png</file>
+
+    <file alias="folder_inbox">icons/mailbox/folder_inbox.png</file>
+    <file alias="folder_sent_mail">icons/mailbox/folder_sent_mail.png</file>
+    <file alias="folder_outbox">icons/mailbox/folder_outbox.png</file>
+    <file alias="mail_find">icons/mailbox/mail_find.png</file>
+    <file alias="date">icons/mailbox/date.png</file>
+    <file alias="mail_reply">icons/mailbox/mail_reply.png</file>
+    <file alias="mail_delete">icons/mailbox/mail_delete.png</file> 
+    <file alias="mail_generic">icons/mailbox/mail_generic.png</file>
+    <file alias="mail_replayall">icons/mailbox/mail_replayall.png</file> 
+    <file alias="queue">icons/mailbox/queue.png</file>
+    <file alias="mail_new">icons/mailbox/mail_new.png</file> 
+    <file alias="mail_forward">icons/mailbox/mail_forward.png</file>
+    <file alias="mail_replay">icons/mailbox/mail_replay.png</file> 
+    <file alias="mai_get">icons/mailbox/mail_get.png</file>
+    <file alias="mail_post_to">icons/mailbox/mail_post_to.png</file> 
+    <file alias="mail_replyall">icons/mailbox/mail_replyall.png</file>
+    <file alias="mail_send">icons/mailbox/mail_send.png</file>
+    <file alias="attach">icons/mailbox/attach.png</file>
+    <file alias="appointment">icons/mailbox/appointment.png</file>
+    <file alias="contact">icons/mailbox/contact.png</file>
+    <file alias="mailbox">icons/mailbox/mailbox.png</file>
+    <file alias="meeting">icons/mailbox/meeting.png</file>
+    <file alias="notes">icons/mailbox/notes.png</file>
+    <file alias="tasks">icons/mailbox/tasks.png</file>
+
+    <file alias="firefox">icons/app/firefox.png</file>
+    <file alias="internet_explorer">icons/app/browser_alt.png</file>
+
+    <file alias="db_opt.png">icons/actions/db_opt.png</file>
+    <file alias="search_small.png">icons/actions/search_small.png</file>
+    <file alias="search_advance.png">icons/actions/search_advance.png</file>
+    <file alias="chat.png">icons/app/chat.png</file>
+
+    <file alias='toggle_log'>icons/app/toggle_log.png</file>
+
+    <file alias="wizard">icons/actions/wizard.png</file>
+    <file alias="virus">icons/app/virus.png</file>
+    <file alias="network">icons/actions/network.png</file>
+    <file alias="systemsettings">icons/app/systemsettings.png</file>
+    <file alias="system">icons/app/system.png</file>
+    <file alias="software">icons/app/software.png</file>
+
+    <file alias="scan">icons/actions/scan.png</file>
+
+    <file alias="warning">icons/actions/messagebox_warning.png</file>
+    <file alias="error">icons/actions/messagebox_critical.png</file>
+    <file alias="audit_success">icons/app/password.png</file>
+    <file alias="audit_failure">icons/app/password_fail.png</file>
+    <file alias="info">icons/actions/info.png</file>
+
+    <file alias="file_knowngood">icons/filesystem/file_knowngood.png</file>
+    <file alias="file_knownbad">icons/filesystem/file_knownbad.png</file>
+
+    <file alias="tag">icons/actions/tag.png</file>
+    <file alias="menuedit">icons/actions/menuedit.png</file>
+    <file alias="dff_report">icons/report/dff_report.jpg</file>
+    <file alias="report">icons/actions/report.png</file>
+    <file alias="rectree_on">icons/actions/rectree_on.png</file>
+    <file alias="rectree_off">icons/actions/rectree_off.png</file>
+    <file alias="highlight">icons/app/highlight.png</file>
+    <file alias="filter">icons/actions/filter.png</file>
+
+    <file alias="add_dico">icons/mime/add_dico.png</file>
+
+    <file alias="movie">icons/app/movie.png</file>
+    <file alias="vm">icons/app/vm.png</file>
+    <file alias="lnk">icons/filesystem/link.png</file>
+    <file alias="filehash">icons/filesystem/filehash.png</file>
+
+    <file alias="root">icons/actions/root.png</file>
+    <file alias="vlink">icons/filesystem/vlink.png</file>
+
+    <file alias="trash">icons/actions/trash.png</file>
+    <file alias="clock">icons/app/clock.png</file>
+    <file alias="maps">icons/actions/maps.png</file>
+</qresource>
+</RCC>

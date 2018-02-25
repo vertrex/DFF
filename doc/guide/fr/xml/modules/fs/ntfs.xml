@@ -1,0 +1,28 @@
+<section>
+	<title>NTFS</title>
+
+	<para> Ce module crée une arborescence depuis un système de fichier NTFS, pour les fichier présents et effacés/orphelins. Il fournit un dump MFT ou index les entrée, afin qu'il soit lisible par l'humain. </para>
+
+	<table id="detailled_ntfs"><title> ntfs détaillé</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_ntfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>advanced-attributes</emphasis> : [activable] Affiche les attributs avancés comme attributs de node</listitem>				
+				<listitem><emphasis>drive-name</emphasis> : [activable] Utilise ce nom de lecteur pour relier les poins d'analyse et les liens symboliques.</listitem>				
+				<listitem><emphasis>file</emphasis> : Chemin vers un fichier contenant NTFS</listitem>				
+				<listitem><emphasis>no-bootsector-check</emphasis> : [activable] Si choisi, ce module continuera même si le secteur de boot est corrompu</listitem><listitem><emphasis>recovery</emphasis> : [activable] Si choisi, ce module retrouvera les fichiers en découpant MFT dans des clusters non-alloué</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>	
+
+</section>

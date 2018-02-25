@@ -1,0 +1,42 @@
+0		ulelong&0x804000E9	0x000000E9
+# mtools-3.9.8/msdos.h
+# usual values are marked with comments to get only informations of strange FAT systems
+# valid sectorsize must be a power of 2 from 32 to 32768
+>11		uleshort&0x001f	0
+>>11		uleshort	<32769
+>>>11		uleshort	>31
+>>>>21		ubyte&0xf0	0xF0
+>>>>>13		ubyte		>0
+>>>>>16		ubyte		>0
+>>>>>>38	ubyte&0x56	=0
+>>>>>82		string/c	!fat32		
+>>>>>>54	string		FAT12		filesystem/fat12
+>>>>>>54	string		FAT16		filesystem/fat16
+>>>>>82		string/c	fat32		filesystem/fat32
+# XXX check if can be bypassed
+#>>>>>82		ubyte		x		filesystem/fat
+
+
+# NTFS specific added by Joerg Jenderek at Mar 2011 according to http://thestarman.pcministry.com/asm/mbr/NTFSBR.htm
+# and http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/bios-parameter-block.html
+# 0 FATs
+>>>>>16	ubyte		=0
+# 0 root entries
+>>>>>>17	uleshort	=0
+# 0 DOS sectors
+>>>>>>>19	uleshort	=0
+>>>>>>>>22	uleshort	=0
+>>>>>>>>>24	uleshort	>0
+>>>>>>>>>36	ulelong		!0x800080
+>>>>>>>>>40	ulequad		>0
+>>>>>>>>>48	ulequad		>0
+>>>>>>>>>56	ulequad		>0
+# Values 0 to 127 represent MFT record sizes of 0 to 127 clusters.
+# Values 128 to 255 represent MFT record sizes of 2^(256-N) bytes. 
+>>>>>>>>>64	lelong		<256
+# Values 0 to 127 represent index block sizes of 0 to 127 clusters.
+# Values 128 to 255 represent index block sizes of 2^(256-N) byte
+>>>>>>>>>68	ulelong		<256		filesystem/ntfs
+>>>>>>>>>>7680	lequad		0x4e48c1763808876b
+>>>>>>>>>>>7688	lequad		0x52c76c6e0404aeb7 \b volume/vshadow
+

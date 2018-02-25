@@ -1,0 +1,83 @@
+# This program is free software, distributed under the terms of
+# the GNU General Public License Version 2. See the LICENSE file
+# at the top of the source tree.
+#  
+# See http://www.digital-forensic.org for more information about this
+# project. Please do not directly contact any of the maintainers of
+# DFF for assistance; the project provides a web site, mailing lists
+# and IRC channels for your use.
+# 
+# Author(s):
+#  Solal Jacob <sja@digital-forensic.org>
+#
+
+from dff.api.types.libtypes import Argument, typeId, vtime, vtimeMS128 
+from dff.api.module.module import Module, Script
+from dff.api.module.manager import ModuleProcessusManager
+from dff.api.vfs.vfs import vfs
+from dff.api.filters.libfilters import Filter
+
+from dff.pro.api.report.manager import ReportManager
+from dff.pro.api.report.fragments import TableFragment, TextFragment, NodeListFragment
+
+class Android(Script):
+  def __init__(self):
+     Script.__init__(self, "Android")
+
+  
+  def search(self, query):
+     filters = Filter("")
+     filters.compile(query)
+     filters.process(self.root, True)
+     return filters.matchedNodes()
+
+  def start(self, args):
+    try:
+      self.root = args["root"].value()
+    except IndexError:
+      self.root = self.vfs.getnode("/")
+    self.report()
+
+  def report(self):
+    self.reportManager = ReportManager()
+    page = self.reportManager.createPage("Android", "Timeline")
+
+    timeLine = page.addDetailTable("Timeline", ["Time", "Info"])
+
+    row = [ 
+           ("Bibiche","Salut"),
+           ("anssi","Salut ca va ?"),
+          ]
+
+    smsDetailTable = TableFragment("SMS", ["Recipient", "Message"], row)
+    timeLine.addRow(("2015-06-04", "SMS"), smsDetailTable)
+
+    timeLine.addRow(("2015-06-04", "Message1"), TextFragment("titre", "Ca va ?"))
+    timeLine.addRow(("ad", "bb"))
+  
+
+    pic = self.search('(mime in ["image"])')
+
+    page.addNodeList("Pictures", pic, NodeListFragment.DefaultHeader, NodeListFragment.GalleryView)
+        
+    #nodes = NodeListFragment("Pictures", pic, NodeListFragment.DefaultHeader, NodeListFragment.ListView)
+    #timeLine.addRow(("2015-06-04", "Pictures"), nodes)
+
+    vid = self.search('(mime in ["video"])')  
+    page.addNodeList("Video", vid, NodeListFragment.DefaultHeader, NodeListFragment.GalleryView)
+    #nodes = NodeListFragment("Video", vid, NodeListFragment.DefaultHeader, NodeListFragment.ListView)
+    #timeLine.addRow(("2015-06-04", "Pictures"), nodes)
+ 
+ 
+    self.reportManager.addPage(page)
+
+class android(Module):
+   """Android analysis module"""
+   def __init__(self):
+      Module.__init__(self, "Android", Android)
+      self.conf.addArgument({"name" : "root",
+                           "description" : "Root from where the analysis will start.",
+                           "input" : Argument.Required | Argument.Single | typeId.Node })
+      self.tags = "Android Analyse"
+      self.icon = ":android"
+      self.depends = ["File systems", "partition"]

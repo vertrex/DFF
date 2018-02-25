@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filterFields</class>
+ <widget class="QWidget" name="filterFields">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>45</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="fieldCombo">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>124</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Contains</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dictionnary</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is deleted</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is file</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Attribute</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Path</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Extension</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tags</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Module</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Expression</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

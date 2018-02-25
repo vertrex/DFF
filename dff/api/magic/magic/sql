@@ -1,0 +1,61 @@
+
+#------------------------------------------------------------------------------
+# $File: sql,v 1.14 2014/04/28 12:04:50 christos Exp $
+# sql:  file(1) magic for SQL files
+#
+# From: "Marty Leisner" <mleisner@eng.mc.xerox.com>
+# Recognize some MySQL files.
+# Elan Ruusamae <glen@delfi.ee>, added MariaDB signatures
+# from https://bazaar.launchpad.net/~maria-captains/maria/5.5/view/head:/support-files/magic
+#
+0	beshort			0xfe01		database/mysql-table-definition
+0	belong&0xffffff00	0xfefe0700	database/mysql-myisam-index
+0	belong&0xffffff00	0xfefe0800	database/mysql-myisam-compressed-data
+0	belong&0xffffff00	0xfefe0900	database/mysql-maria-index
+0	belong&0xffffff00	0xfefe0A00	database/mysql-maria-compressed-data
+0	belong&0xffffff00	0xfefe0500	database/mysql-isam-index
+0	belong&0xffffff00	0xfefe0600	database/mysql-isam-compressed-data
+0	string			\376bin		database/mysql-replication-log
+0	belong&0xffffff00	0xfefe0b00
+>4	string			MARIALOG	database/mysql-maria-transaction-log
+0	belong&0xffffff00	0xfefe0c00
+>4	string			MACF		database/mysql-maria-control
+
+#------------------------------------------------------------------------------
+# iRiver H Series database file 
+# From Ken Guest <ken@linux.ie>
+# As observed from iRivNavi.iDB and unencoded firmware
+#
+#0   string		iRivDB	iRiver Database file
+
+#------------------------------------------------------------------------------
+# SQLite database files
+# Ken Guest <ken@linux.ie>, Ty Sarna, Zack Weinberg
+#
+# Version 1 used GDBM internally; its files cannot be distinguished
+# from other GDBM files.
+#
+# Version 2 used this format:
+0	string	**\ This\ file\ contains\ an\ SQLite  database/sqlite2
+
+# Version 3 of SQLite allows applications to embed their own "user version"
+# number in the database at offset 60.  Later, SQLite added an "application id"
+# at offset 68 that is preferred over "user version" for indicating the
+# associated application.
+#
+0   string  SQLite\ format\ 3	database/sqlite3
+
+# SQLite Write-Ahead Log from SQLite version >= 3.7.0
+# http://www.sqlite.org/fileformat.html#walformat
+0	belong&0xfffffffe	0x377f0682	database/sqlite3-wal
+
+# SQLite Rollback Journal
+# http://www.sqlite.org/fileformat.html#rollbackjournal
+0	string	\xd9\xd5\x05\xf9\x20\xa1\x63\xd7	database/sqlite3-rollback
+
+# Panasonic channel list database svl.bin or svl.db added by Joerg Jenderek
+# http://www.ullrich.es/job/service-menue/panasonic/panasonic-sendersortierung-sat-am-pc/
+# pceditor_V2003.jar
+#0	string		PSDB\0			Panasonic channel list database
+#>126	string		SQLite\ format\ 3	
+

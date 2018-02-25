@@ -1,0 +1,16 @@
+<section>
+	<title>Module Browser</title>
+
+	<para> In the previous section "menu bar", we have seen browse function, which allows to configure how modules work.  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/module_browser.png"/>
+		</imageobject>
+		<caption> The Module Browser</caption>
+	</mediaobject>
+
+	<para> As you can see, many categories are present and in each it can have some modules. we can choose if we want to activate or not this module for example.</para>
+
+
+</section>

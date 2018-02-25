@@ -1,0 +1,77 @@
+<section xml:id="modules">
+	<title>Modules sur DFF</title>
+	<para>L'architecture de DFF est conçue autour de 3 éléments principaux :</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					L'API
+					<footnote xml:id="api">
+						<para>
+							Une API est une <emphasis>Interface de Programmation</emphasis> (<emphasis>Application Programming Interface</emphasis>
+							en Anglais) fournie par un programme informatique qui permet l'interaction avec d'autres programmes, notamment
+							des bibliothèques logicielles.
+						</para>
+					</footnote>
+					: cette-dernière permet d'interfacer des fonctionnalités supplémentaires a DFF sans avoir a modifier le framework en profondeur, tout en fournissant un accès rapide aux fonctionnalités
+					déjà implémentées.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Les interfaces utilisateurs : celles-ci jouent le rôle d'interfaces homme-machines, et permettent de fournir des données en entrée a DFF, et d'afficher des résultats en sortie.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Les modules : ils sont dédiés a une tache précise, telle que l'analyse d'un système de fichiers, et sont directement connectés a l'API.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para> Une architecture telle que celle de DFF permet l'intégration et l'ajout de fonctionnalités de façon rapide, en réutilisant le code commun se trouvant dans l'API.</para>
+		<para>Tous les modules de DFF reposent sur des principes communs, et peuvent disposer d'une ou plusieurs des fonctionnalitées suivantes : </para>
+		<itemizedlist mark="opencircle">
+			<listitem>Être écrits en C, C++ ou python</listitem>
+			<listitem>Être configurable </listitem>
+			<listitem>Créer des fichiers virtuels et leur attributs (meta-données)</listitem>
+			<listitem>Disposer d'une interfaces graphique</listitem>
+			<listitem>Être liés a un type de fichier</listitem>
+			<listitem>Disposer d'un marqueur pour être classé dans une catégorie</listitem>
+			<listitem>Fournir un état d'avancements</listitem>
+			<listitem>Fournir une liste de résultats</listitem>
+			<listitem>Fournir une description du module</listitem>
+			<listitem>Disposer d'une icône</listitem>
+		</itemizedlist>
+		<para>Le but de chaque modules est de fournir une fonctionnalité spécifique. La liste des modules et leur description peuvent être obtenues dans les différentes interfaces utilisateurs. Les modules possédant un marqueur seront classés dans une catégorie spécifique, comme nous le verrons plus loin. </para>
+
+	<sect2>
+		<title>Les différent type de modules</title>
+		<para>
+			DFF est fourni par défaut avec de nombreux modules, que nous pouvons classer en trois grandes catégories.
+		</para>
+
+	  <sect3>	
+	  		<title>Les modules créant des noeuds</title>
+	  		<para>
+	  			Les modules classés comme <emphasis>connecteurs</emphasis> ou <emphasis>système de fichier</emphasis>, ont comme particularité d'utiliser des noeuds en entrée, et de créer d'autres noeuds en sortie, qui apparaissent dans le navigateur de fichiers. Le but de ces modules est principalement de traiter la donnée pour la faire apparaître dans une arborescence propre et facile a lire.
+	  		</para>
+	  		<para>
+	  			Les noeuds créés se comportent comme des fichiers contenants des données et des attributs fournis par le modules qui les a générés. Les données ainsi créées peuvent être a leur tour traitées par un autre module. Ceci permet d'affiner la représentation et l'interprétation des données.
+	  		</para>
+	  </sect3>
+
+	  <sect3>
+	 	 	<title>Les modules de visualisation et de statistiques</title>
+	  		<para>
+	  			Ces modules ont pour but de représenter graphiquement les données et sont donc utilisables uniquement avec l'interface graphique. Un module de visualisation peut permettre d'afficher une image ou une page web, mais peut aussi afficher un graphique contenant des statistiques, ou proposer une vue hexadécimale, avec lesquels l'utilisateur pourra interagir. 
+	  		</para>
+	  </sect3>
+
+	  <sect3>
+	  	<title>Les modules de méta-donnée</title>
+	  	<para>
+	  		Ces modules effectuent une analyses sur un jeu de données quelconque, généralement un noeud déjà existant, et lui ajoutent des attributs. 
+	  </para>
+	  </sect3>
+	</sect2>
+	<!--configure / lister / lancer-->
+</section>

@@ -1,0 +1,34 @@
+<section>
+	<title>Preview</title>
+
+	<para> In DFF, you can preview files like pictures or videos, a tab named "Preview" is here for that.  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_sample.png"/>
+		</imageobject>
+		<caption> Simple Preview</caption>
+	</mediaobject>
+
+	<para> But you can also have a preview of the hexadecimal structure of your file. On the previous picture, you can see that : </para>
+
+		<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_hexa.png"/>
+		</imageobject>
+		<caption> Hexadecimal Preview</caption>
+	</mediaobject>
+
+	<para> And you can combine the preview with "maximize" option (<menuchoice><guimenu>View</guimenu><guimenuitem>Maximize</guimenuitem></menuchoice>). if you want to see a bigger a picture, or some details on it.</para>
+
+		<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/preview_sample_max.png"/>
+		</imageobject>
+		<caption> Preview with maximize</caption>
+	</mediaobject>
+
+	<para></para>
+
+
+</section>

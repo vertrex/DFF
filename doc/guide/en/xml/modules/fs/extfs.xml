@@ -1,0 +1,38 @@
+<section>
+	<title>EXTFS</title>
+
+	<para> This module parses extended file system (EXT 2//3/4) and tries to recover deleted data. </para>
+
+	<table id="detailled_extfs"><title> Detailled extfs</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_extfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>SB_addr</emphasis> : [activatable] Super block address specified manualy</listitem>				
+				<listitem><emphasis>SB_check</emphasis> : [activatable] check superblock validity</listitem>				
+				<listitem><emphasis>blk</emphasis> : [activatable] Block allocation status</listitem>				
+				<listitem><emphasis>blockpointers</emphasis> : [activatable] Add block pointer as extfs extended attributes</listitem>
+				<listitem><emphasis>dont_parse_fs</emphasis> : [activatable] Parse the entire file system</listitem>
+				<listitem><emphasis>file</emphasis> : file containing an EXT 2, 3 or 4 file system</listitem>
+				<listitem><emphasis>fsck</emphasis> : [activatable] check if the number of allocated block matches inode's size</listitem>
+				<listitem><emphasis>fsstat</emphasis> : [activatable] File system statistic</listitem>
+				<listitem><emphasis>i_orphans</emphasis> : [activatable] Parse orphan inodes</listitem>
+				<listitem><emphasis>ils</emphasis> : [activatable] List inodes</listitem>
+				<listitem><emphasis>istat</emphasis> : [activatable] Inode statistics</listitem>
+				<listitem><emphasis>jstat</emphasis> : [activatable] journal statistics</listitem>
+				<listitem><emphasis>root_inode</emphasis> : [activatable] Root inode number</listitem>
+				<listitem><emphasis>slack</emphasis> : [activatable] Create slack nodes</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>	
+
+</section>

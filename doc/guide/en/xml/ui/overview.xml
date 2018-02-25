@@ -1,0 +1,175 @@
+<section>
+
+	<title>First start</title>
+	<para>
+		We're going to explain how to run DFF in graphique mode and command line, as Root and simple user, on Linux and Windows.
+	</para>
+
+	<sect2>
+		<title>Start graphic interface</title>
+		<para>
+			They are many possibility to start graphic interface, it depend on what OS you use DFF. We will describe them for Windows and Linux.
+		</para>
+		
+		<sect3>
+			<title>With Windows</title>
+			<note>
+				<title>Windows version</title>
+				<para>
+					The following process is the same on Windows XP, Vista and Seven.
+				</para>
+			</note>
+			
+			<para>
+				During installation, if the option <emphasis>Create icons on desktop</emphasis> was checked, icons should be on user's desktop who did installation. You just have to double click on the icon <emphasis>Dff Gui</emphasis> to start the framework. A presentation screen (called splash-screen) s(called <emphasis>splash-screen</emphasis>) hould appear, then let the main interface after few seconds. DFF's version is present on the splash-screen.
+			</para>
+			
+			<para>
+				If DFF's icons are not on desktop, you juste have to go to :
+				 <menuchoice>
+      			<guimenu>Start</guimenu>
+      			<guimenuitem>Applications</guimenuitem>
+      			<guimenuitem>DFF</guimenuitem>
+	  				<guimenuitem>DFF (gui)</guimenuitem>
+    			 </menuchoice>.				
+			
+			<note>
+				<title>GUI</title>
+				<para>
+					<emphasis>GUI</emphasis> mean <emphasis>Graphical User Interface</emphasis>.
+				</para>
+			</note>			
+			</para>
+
+			<para>
+				It's possible you had to run DFF as Administrator, for exemple during live analysis. In that case, right click on the DFF icon and select <emphasis>Run as Administrator</emphasis> (cf <xref linkend="launch_admin" />). Notice that you will be asked for your password.
+			
+			</para>
+			
+				<figure id="launch_admin"><title>Run as Administrator</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/dff_admin.png" />
+					</imageobject>
+				</mediaobject>
+				</figure> 	
+  	 		
+		</sect3>
+		
+		<sect3>
+			<title>With Linux</title>
+			<para>
+				The start process depend on your Linux and his windows manager.
+              Usually, it's possible to launch DFF from	<emphasis>Application</emphasis> menu of your windows manager, classified in the <emphasis>Accessoires</emphasis> subsection. For example, users who installed Gnome environment will have to go in menu :
+				 <menuchoice>
+      			<guimenu>Application</guimenu>
+      			<guimenuitem>Accessory </guimenuitem>
+	  				<guimenuitem>DFF (gui)</guimenuitem>
+    			 </menuchoice>.	
+			</para>
+			
+			<para>
+				If you have neither menu and icons, it's still possible to launch DFF from the shell, which is in every Linux.Do it with the command <command>dff.py -g</command>. Option <option>-g</option> mean you want run graphical interface.
+			</para>
+			
+			<para>
+				To run DFF as Administrator, use the command <command>dff.py -g</command> with Root's privilege (for example, using sudo).
+			</para>
+		</sect3>
+	</sect2>
+		
+	<sect2>
+		<title>Run interface with command</title>
+		<para>
+			Again, the process depend on your Linux.
+			<note>
+				<title>Shell</title>
+				<para>
+					<emphasis>Shells</emphasis> are command interpreter : it's a human-machine interface where command are send as text to the machine (at the opposite of graphical interface where you can click or send graphical forms).
+				</para>
+			</note>	
+		</para>
+
+		<sect3>
+			<title>With windows</title>
+
+			<para>
+				During installation process, if the option <command>Create icons on desktop</command> was checked, some icons should be on user's desktop. You just have to double click on the icon <command>DFF (shell)</command> to start the framework.
+			</para>
+			
+			<para>
+				If DFF's icons are not on desktop, you juste have to go to :
+				<menuchoice>
+      			<guimenu>Start</guimenu>
+      			<guimenuitem>Applications</guimenuitem>
+      			<guimenuitem>DFF</guimenuitem>
+	  				<guimenuitem>DFF (Shell)</guimenuitem>
+    			 </menuchoice>.		 
+			</para>
+			
+			<para>
+				It's possible you had to run DFF as Administrator, for exemple during live analysis. In that case, right click on the icon <guibutton>DFF (Shell)</guibutton> and select, <command>Run as Administrator</command>. Notice that you will be asked for your password.
+			</para>
+			
+			<para>
+				Then, enter the following command <command>python.exe C:Programs\DFF\Dff.py</command> from the installation directory of python (By default, <command>C:\Python2.7</command>). Notice that, here you can't use option <option>-g</option>, whereas we used it previously.
+			</para>
+			
+		</sect3>
+		
+		<sect3>
+			<title>With Linux</title>
+						
+			<para>
+				Most simple to run DFF interface in line command on GNU/Linux is from a Shell : just open a shell and execute the following command <command>dff.py</command>.
+			</para>
+			
+			<para>
+				To run DFF as Administrator, use the following command <command>dff.py</command> with <emphasis>Root</emphasis>'s privilege (for example, with sudo).
+				
+			</para>
+			<tip>
+				<title>GUI vs. line command</title>
+				<para>
+					It's possible to run the line command interface inside the graphical interface.
+				
+				</para>
+			</tip>
+		</sect3>
+		
+	</sect2>
+	
+	<sect2>
+		<title>Options in DFF</title>
+		<para>
+			Other options are available. The first is <option>-help</option>, who show an help message. For the user, just run from a shell on GNU/Linux or cmd on Windows, the following command <command>dff.py -help</command>. The following message should appear :
+		</para>
+		<screen>
+$> dff.py -help
+DFF
+Digital Forensic Framework
+
+Usage: ./dff.py [options]
+Options:
+  -v      --version                  display current version
+  -g      --graphical                launch graphical interface
+  -t      --test=NAME                start a specific test
+  -l      --language=LANG            use LANG as interface language
+  -h      --help                     display this help message
+  -d      --debug                    redirect IO to system console
+          --verbosity=LEVEL          set verbosity level when debugging [0-3]
+  -c      --config=FILEPATH          use config file from FILEPATH
+
+$>
+		</screen>
+		
+	<para>
+		The first two columns show the shortcut et their name. The last part is a small description. For example, if you want to know the version of DFF, the command <command>dff.py -v</command> is the same of <command>dff.py --version</command>.
+	</para>
+	
+	<para>
+		We already explain what is <option>-g</option>, it allows to start the graphical interface. The option <option>-l</option> allows to choose the start language of the framework. For example, the command <command>dff.py -l fr</command> will run DFF in French. And option <option>-d</option> will redirect IO to system console in the launched DFF (By default, those messages are directly show in the graphical interface of DFF). This option is useful to debug the framework.
+		The option <option>-c</option> allows to specify the filepath to a config file.
+	</para>
+	</sect2>
+</section>

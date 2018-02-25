@@ -1,0 +1,27 @@
+<section>
+	<title>FATFS</title>
+
+	<para> Ce module crée l'arborescence contenu dans un système de fichier fat, pour les fichiers normaux et effacés.</para>
+
+	<table id="detailled_fatfs"><title>fatfs détaillé</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_fatfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>fat_to_use</emphasis> : [activable] Cette option permet de choisir FAT pour utiliser durant l'analyse des clusters</listitem>
+				<listitem><emphasis>file</emphasis> : fichier contenant a système de fichier FAT</listitem>				
+				<listitem><emphasis>meta_carve</emphasis> : [activable] Découpe les entrées d'une répertoire dans des clusters non alloués (plus précis mais plus lent)</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>
+
+</section>

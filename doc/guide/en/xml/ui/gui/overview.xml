@@ -1,0 +1,104 @@
+<section>
+	<title>Graphical Interface</title>
+		
+	<para>The framework graphical interface intends to make easier the forensic analysis, and be usable by everyone. the objective is to with just few click, bring erased or hidden elements from data.</para>
+
+	<para> The <xref linkend="graphic_interface"/> present the main graphical interface</para>		
+		
+	<figure id="graphic_interface"><title>Graphical interface</title>
+	<mediaobject>
+		<imageobject condition="toolbar">
+			<imagedata fileref="images/gui/dff_main_window.png"/>
+		</imageobject>
+	</mediaobject>
+	</figure>
+
+	<para> In the following part we will see the <xref linkend="detailled_interface"/> and explain the elements.</para>
+
+	<table id="detailled_interface" frame="all"><title> Detailled interface</title>
+	<tgroup cols="2" align="center" colsep="1" rowsep="1">
+	<tbody>
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/menu_bar.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="menu_bar">Menu bar </link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/button_bar.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="ide">Action bar</link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/nav_button.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Navigation bar</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tool_bar.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="tool_bar">Tools bar</link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/arborescence.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Tree window</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tab.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Detailled view window</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Attributes.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Attributes window</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Tabs.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Differents important tabs (Starting <link linkend="output">here</link>)</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+</section>

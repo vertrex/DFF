@@ -1,0 +1,16 @@
+
+#------------------------------------------------------------------------------
+# $File: pdf,v 1.7 2013/08/22 07:47:26 christos Exp $
+# pdf:  file(1) magic for Portable Document Format
+#
+
+0	string		%PDF-		document/pdf
+#!:mime	application/pdf
+
+0	string		\012%PDF-	document/pdf
+#!:mime	application/pdf
+
+# From: Nick Schmalenberger <nick@schmalenberger.us>
+# Forms Data Format
+#0       string          %FDF-           document/fdf
+#!:mime application/vnd.fdf

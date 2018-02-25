@@ -1,0 +1,16 @@
+<section>
+	<title>Task Manager</title>
+
+	<para> Task manager is the main tab on DFF, it's here you can check the progress during while your module is processing on your device. </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/task_manager.png"/>
+		</imageobject>
+		<caption> The DFF Shell</caption>
+	</mediaobject>
+
+	<para> As you can see, it allows you to know what is processing and how long it takes to finish</para>
+
+
+</section>

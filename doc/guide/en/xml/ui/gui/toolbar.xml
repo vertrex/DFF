@@ -1,0 +1,124 @@
+<section id="tool_bar">
+	<title> Toolbar</title>
+
+	<para>In this section we will explain what can do each button in this bar</para>
+
+		<table id="detailled_toolbar"><title> Detailled toolbar</title>
+	<tgroup cols="2" align="left">
+	<tbody>
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/zoom.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Zoom configuration</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/display.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Display in icon or thumbnail (with variable size) mode</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/column.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Editing columns in the detailled view window</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/add_node.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Add a node into the report</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/bookmark_add.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Add <link linkend="bookmark">bookmark</link></entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tab.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Detailled view window</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Tags.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><emphasis>Tags button</emphasis> :
+				<itemizedlist mark="none">
+					<listitem><emphasis>Manage Tags</emphasis> : Tags management</listitem>
+					<listitem><emphasis>Predefined tags</emphasis> :
+						<itemizedlist mark="none">
+							<listitem>Known good</listitem>
+							<listitem>Known bad</listitem>
+							<listitem>malware</listitem>
+							<listitem>viewed</listitem>
+						</itemizedlist>
+					</listitem>
+				</itemizedlist></entry>
+		</row>		
+		<row>
+			<entry align="center">	<para><menuchoice><guimenu>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/search.JPG"/>
+					</imageobject>
+				</mediaobject></guimenu>
+				<guimenuitem><mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/search_window.png"/>
+					</imageobject>
+				</mediaobject></guimenuitem></menuchoice></para>
+			</entry>
+			<entry>Show the <link linkend="search">searching</link> window</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para><menuchoice><guimenu>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/filter.JPG"/>
+					</imageobject>
+				</mediaobject></guimenu>
+				<guimenuitem><mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/filter_bar.png"/>
+					</imageobject>
+				</mediaobject></guimenuitem></menuchoice></para>
+			</entry>
+			<entry>Show the <link linkend="filter">filter</link> bar above the detailled view window</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+
+</section>

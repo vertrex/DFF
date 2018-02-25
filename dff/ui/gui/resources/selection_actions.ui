@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>selectionActions</class>
+ <widget class="QWidget" name="selectionActions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Browser</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/view_detailed.png</normaloff>:/view_detailed.png</iconset>
+  </property>
+  <action name="actionSelect_all">
+   <property name="text">
+    <string>Select all</string>
+   </property>
+  </action>
+  <action name="actionUnselect_all">
+   <property name="text">
+    <string>Unselect all</string>
+   </property>
+  </action>
+  <action name="actionClear_selection">
+   <property name="text">
+    <string>Clear selection</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

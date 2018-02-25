@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DFF - An Open Source Digital Forensics Framework
+Copyright (C) 2009-2013 ArxSys
+
+This program is free software, distributed under the terms of
+the GNU General Public License Version 2. See the LICENSE file
+at the top of the source tree.
+
+See http://www.digital-forensic.org for more information about this
+project. Please do not directly contact any of the maintainers of
+DFF for assistance; the project provides a web site, mailing lists
+and IRC channels for your use.
+
+Author(s):
+Christophe Malinge cma@digital-forensic.org
+-->
+<ui version="4.0">
+ <class>VariantTreeWidget</class>
+ <widget class="QTreeWidget" name="VariantTreeWidget"><widget class="QWidget" name="useless" native="true" />
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>256</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="alternatingRowColors">
+   <bool>true</bool>
+  </property>
+  <column>
+   <property name="text">
+    <string>Attribute</string>
+   </property>
+  </column>
+  <column>
+   <property name="text">
+    <string>Value</string>
+   </property>
+  </column>
+  <widget class="QWidget" name="useless" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

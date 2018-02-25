@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>259</width>
+    <height>47</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>OR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AND</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NOT</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2">
+       <item>
+        <property name="text">
+         <string>name</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>contains</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>date</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mime</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_3">
+       <item>
+        <property name="text">
+         <string>Wildcard</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Regular expression</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fuzzy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fixed string</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

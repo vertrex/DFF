@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrowserToolBar</class>
+ <widget class="QWidget" name="BrowserToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>666</width>
+    <height>33</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Browser</string>
+  </property>
+  <widget class="QComboBox" name="changeView">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>3</y>
+     <width>103</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Details</string>
+    </property>
+    <property name="icon">
+     <iconset resource="gui.qrc">
+      <normaloff>:/view_detailed.png</normaloff>:/view_detailed.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Icons</string>
+    </property>
+    <property name="icon">
+     <iconset resource="gui.qrc">
+      <normaloff>:/view_icon.png</normaloff>:/view_icon.png</iconset>
+    </property>
+   </item>
+  </widget>
+  <widget class="QToolButton" name="tags">
+   <property name="geometry">
+    <rect>
+     <x>198</x>
+     <y>1</y>
+     <width>71</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tags</string>
+   </property>
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/highlight</normaloff>:/highlight</iconset>
+   </property>
+   <property name="popupMode">
+    <enum>QToolButton::InstantPopup</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="search">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>1</y>
+     <width>88</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/search_small.png</normaloff>:/search_small.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QSlider" name="factorSlider">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>50</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>80</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>4</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+   <property name="tickInterval">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="filter">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>0</y>
+     <width>111</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Filter</string>
+   </property>
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/filter</normaloff>:/filter</iconset>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionAttributes">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/menuedit</normaloff>:/menuedit</iconset>
+   </property>
+   <property name="text">
+    <string>attributes</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit attributes to display as column in the detailed view</string>
+   </property>
+  </action>
+  <action name="actionBookmark">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/bookmark_add.png</normaloff>:/bookmark_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>bookmark</string>
+   </property>
+   <property name="toolTip">
+    <string>Add nodes to bookmark</string>
+   </property>
+  </action>
+  <action name="actionFactorPlus">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/viewmag+</normaloff>:/viewmag+</iconset>
+   </property>
+   <property name="text">
+    <string>factorPlus</string>
+   </property>
+   <property name="toolTip">
+    <string>Icons zoom in</string>
+   </property>
+  </action>
+  <action name="actionFactorMinus">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/viewmag-</normaloff>:/viewmag-</iconset>
+   </property>
+   <property name="text">
+    <string>factorMinus</string>
+   </property>
+   <property name="toolTip">
+    <string>Icons zoom out</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

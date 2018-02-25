@@ -1,0 +1,167 @@
+<section id="search">
+	<title>Search</title>
+
+	<para> In the previous section "Toolbar" we saw the search function, if you don't remember. Don't worry, the window is here too  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/search_window.png"/>
+		</imageobject>
+		<caption> The research window</caption>
+	</mediaobject>
+	<sect2>
+		<title>Syntax of search engine</title>
+		<sect3>
+			<title>Operators</title>
+			<para>The syntax supports classical comparison operators &gt;, &gt;=, &lt;, &lt;=, ==, != and logical operators and, or, not. Of course, it is possible to combine all of them to perform powerful queries. Concerning <ulink url="http://en.wikipedia.org/wiki/Order_of_operations"><citetitle>operator precedence</citetitle></ulink>, meaning priority between operators, The highest priority operator is not, then comparison operators have the same level of precedence followed by and then or. In order to change operators priority you can enclose expressions between parenthesis. For example the following query is evaluated to true:</para>
+			<note>
+				<para> 84 &gt; 42 and not (13 == 37) or true == false</para>
+			</note>
+			<para>When evaluating, <ulink url="http://en.wikipedia.org/wiki/Short-circuit_evaluation"><citetitle>short-circuit evaluation</citetitle></ulink> is used, meaning that some parts of the expression are evaluated only if needed. For example:</para>
+				<itemizedlist>
+					<listitem>
+						<para>expr1 and expr2: with expr1 evaluated to false, expr2 won't be evaluated because false and (false or true) will always be false.</para>
+					</listitem>
+					<listitem>
+						<para>expr1 or expr2: with expr1 evaluated to true, expr2 won't be evaluated because whatever the result of expr2, expression will be true.</para>
+					</listitem>
+				</itemizedlist>
+			<para>Now, let's have a look to what kind of data you can use with operators.</para>
+		</sect3>
+		<sect3>
+			<title>Managed types</title>
+			<para>The search enggine manages several primitive types:</para>
+			<itemizedlist mark="number">
+				<listitem><emphasis>Boolean</emphasis>
+					<para>Some attributes or expressions can be compared with boolean value <emphasis>true</emphasis> or <emphasis>false</emphasis></para>
+				</listitem>				
+				<listitem><emphasis>Numbers</emphasis>
+					<para>You can write numbers in different ways, either in decimal such as 4096 or in hexadecimal by prefixing with '0x' such as 0x1000. Size multipliers are also supported for example 10MB resulting in 10*1024*1024. Available multiplier are KB, MB and GB. Numbers are stored in unsigned 64 bits variable, though maximum limit to represent a number is 2**64-1.</para>
+				</listitem>				
+				<listitem><emphasis>Strings</emphasis>
+					<para>Strings are represented in several ways depending on the syntax you wish to use. By default all strings representation are case insensitive.</para>
+					<itemizedlist mark="opencircle">
+						<listitem><emphasis>Fixed String</emphasis>
+							<para>is recognized when typed between double quotes: <emphasis>"I am a fixed string"</emphasis>. Fixed strings means that comparison will match exactly what you typed.</para>
+						</listitem>							
+						<listitem><emphasis>Wildcard</emphasis>
+							<para>is recognized when surrounded by dollars: <emphasis>$*.extension$</emphasis>. As of writing wildcard expression only support asterisk (zero or several character(s)) and question mark (one character) but will be enhanced to support the full set of wildcard expression.</para>
+						</listitem>							
+						<listitem><emphasis>RegExp</emphasis>
+							<para>is recognized when enclosed between slashes. <emphasis>/[a-zA-Z0-9\-\._]+@[a-zA-Z0-9\-\.]+\.[a-z]{2,6}/</emphasis> is one example to match an email address. Currently the regexp engine does not directly support unicode but linking with lightgrep library is scheduled for version 1.4.</para>
+						</listitem>							
+						<listitem><emphasis>Approximative matching</emphasis>
+							<para>which relies on <ulink url="https://github.com/laurikari/tre/"><citetitle>tre library</citetitle></ulink> is available by decorating your keywords with tild character, for example: <emphasis>~password~</emphasis> letting you matches mispelled word. As enhancement for version 1.4, and since approximate string matching relies on Levenshtein distance, a graphical interface will be provided to change cost for insertion, deletion, substitution.</para>
+						</listitem>					
+						<listitem>
+							<emphasis>Patterns lists</emphasis> is also supported in search engine. It permits to add counting ability but also to reduce query size and enhance readibility. Possible syntax are the following:
+							<itemizedlist mark="square">
+								<listitem>smth in ["fixed string", /regexp/, ~fuzzy~, $wildcard$] which is equivalent to smth == "fixed string" or smth matches /regexp/ or smth matches ~fuzzy~ or smth matches $wildcard$</listitem>
+								<listitem>smth matches [all|none|number] of ["fixed string", /regexp/, ~fuzzy~, $wildcard$] that adds counting feature for patterns</listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</listitem>				
+				<listitem><emphasis>Timestamps</emphasis>
+					<para>Timestamps representation is mostly based on <ulink url="http://en.wikipedia.org/wiki/ISO_8601"><citetitle>ISO 8601</citetitle></ulink> or its free specification: <ulink url="https://tools.ietf.org/html/rfc3339"><citetitle>RFC 3339</citetitle></ulink></para>
+					<itemizedlist mark="opencircle">
+						<listitem>Dates are represented by YYYY-MM-DD, for example 2013-03-11 for March 11th 2013</listitem>
+						<listitem>Times are represented by hh:mm:ss, for example 23:42:00</listitem>
+						<listitem>Mixing both YYYY-MM-DDThh:mm:ss, 2013-03-11T23:42:00</listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem><emphasis>Attributes</emphasis>
+					<itemizedlist mark="opencircle">
+						<listitem><emphasis>Long attributes</emphasis>
+						<para>Attributes are on the tab attributes, you juste have to copy-paste the attribute's name and frame it with "<emphasis>@</emphasis>". For example to know files with a creation date less than January 1st 2013 with attribute <emphasis>$FILE_NAME</emphasis> with NTFS, will be the following :</para>
+						<para><emphasis>@ntfs.$FILE_NAME.Creation time@ &lt; 2013-01-01T00:00:00</emphasis></para>
+						</listitem>
+						<listitem><emphasis>Predifined attributes</emphasis>
+						<para>They are listed on the <xref linkend="search_option"/></para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+	</sect3>
+	</sect2>
+	<para> Let's see what can we do. You can choose how the search engine will act with 4 options :</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					<emphasis>Fixed string</emphasis> (Default) : The search engine will search char corresponding exactly to what you wrote in the search field.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Wildcard</emphasis> : Wildcards allow to use meta-characters. They simplify some rules.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Fuzzy</emphasis> : Approximative research. Allows to write a word and it will find all file with max 2 different letter ( For example if you search "<emphasis>test</emphasis>", files with name like "<emphasis>tust</emphasis>" or "<emphasis>teet</emphasis>" will be find).
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>RegExp</emphasis> (Regular expression) : Allows to define a "search models", and all the files with a similar name will be shown. (For example you can do a research with filename starting with "a" and ends with "b").
+				</para>
+			</listitem>
+		</itemizedlist>
+
+	<para> The option "Search from root" as the name suggest, it will apply the research from root. </para>
+
+	<sect2>
+		<title>Advanced Research</title>
+		<para>Previously we've seen how to make a quick research, but you can make a research with more options/conditions. To do that, just click on <inlinemediaobject><imageobject><imagedata fileref="images/icons/actions/add.png" width="24"/></imageobject></inlinemediaobject>. This will open a <link linkend="advanced_research">new window</link> in which you can add somes rules.</para>
+
+		<mediaobject id="advanced_research">
+			<imageobject>
+				<imagedata fileref="images/gui/advanced_research.png"/>
+			</imageobject>
+		</mediaobject>
+
+		<para>On the dropdown menu of this window you can specify your option :</para>
+		<table id="search_option"><title> Search option</title>
+		<tgroup cols="2" align="left">
+		<tbody>
+			<row>
+				<entry align="center"><para>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/gui/option_search.png"/>
+						</imageobject>
+					</mediaobject></para>
+				</entry>
+				<entry>
+					<itemizedlist mark="none">
+						<listitem><emphasis>Name</emphasis> : Add a name option</listitem>
+						<listitem><emphasis>Contains</emphasis> : It will search if files contain this character</listitem>
+						<listitem><emphasis>Size</emphasis> : Add a size rule ( you can specifiy KB, MB or GB and if it's &lt;, &gt;, ≤, ≥, == or !=)</listitem>
+						<listitem><emphasis>Date</emphasis> : Add a specific date ( with option &lt;, &gt;, ≤, ≥, == or !=)</listitem>
+						<listitem><emphasis>Mime type</emphasis> : Add a specific mime type (text, audio, message, video...)</listitem>
+						<listitem><emphasis>Dictionnary</emphasis> : Add a list of key-word</listitem>
+						<listitem><emphasis>is deleted</emphasis> : Specify if the file is delete or not</listitem>
+						<listitem><emphasis>is file</emphasis> : Specify if it's a file or not</listitem>
+						<listitem><emphasis>Attribute</emphasis> : Search specify attributes</listitem>
+						<listitem><emphasis>Path</emphasis> : Add a path </listitem>
+						<listitem><emphasis>Extension</emphasis> : add a specific extension</listitem>
+						<listitem><emphasis>Expression</emphasis> : Add a new expression to your research</listitem>
+					</itemizedlist>
+				</entry>
+			</row>	
+		</tbody>
+		</tgroup>
+		</table>
+	<sect3>
+		<title> Wildcards</title>
+		<para> Previously we talk about wildcard, but what it mean exactly. Wildcards are meta-characters who represent other characters. Let's take an example : Imagine you want search all the files with .PDF extension as "file_name.PDF". It can be useful to replace that "file_name" by something more usual.</para>
+		<para>Meta-character can be use here, the previous research can be replace by "<emphasis>*</emphasis>.PDF", where <emphasis>*</emphasis> can be "<emphasis>0, 1, or many characters</emphasis>". In other words that research can match files like : 
+			<itemizedlist>
+				<listitem>.PDF (0 character)</listitem>
+				<listitem>a.PDF (1 character)</listitem>
+				<listitem>abc.PDF (many characters)</listitem>
+			</itemizedlist></para>
+		<para> The send meta-character is "<emphasis>?</emphasis>". This one represente <emphasis>0 or 1 character</emphasis>, ie the research "rese?rch" will search things like : reserch (0 caractère), reseArch (1 caractère), but will not find 'reseaarch' (2 caractères).</para>
+	</sect3>
+	</sect2>
+</section>

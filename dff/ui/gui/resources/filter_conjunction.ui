@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filterConjunction</class>
+ <widget class="QWidget" name="filterConjunction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>45</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="conjunctionCombo">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>And</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>And not</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Or</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Or not</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

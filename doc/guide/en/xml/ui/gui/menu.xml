@@ -1,0 +1,119 @@
+<section id="menu_bar">
+	<title> The menu bar</title>
+
+	<para> The menu bar has seven different menu, which we will see next and each menu can do several actions, let's take a look.</para>
+
+	<table><title> Detailled menu bar</title>
+	<tgroup cols="2" align="left" border="none">
+	<tbody>
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/file.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Wizard</emphasis> : Run the start assistant</listitem>				
+				<listitem><emphasis>Open evidence</emphasis> : Select virtual device to mount</listitem>				
+				<listitem><emphasis>Open device</emphasis> : Select local device to mount</listitem>				
+				<listitem><emphasis>Exit</emphasis> : Exit DFF</listitem></itemizedlist>
+				</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Edit.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Preferences</emphasis> : Configuration of DFF</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Modules.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Load</emphasis> : Load a module</listitem>
+				<listitem><emphasis>Browse</emphasis> : Browse all modules</listitem>	
+				<listitem><emphasis>Connectors</emphasis> : Mount the item you want analyse</listitem>			
+				<listitem><emphasis>Databases</emphasis> : Allows to analyse items with database structure</listitem>			
+				<listitem><emphasis>Export</emphasis> : Allows to copy or extract data</listitem>			
+				<listitem><emphasis>File systems</emphasis> : Rebuilding and analysing file system</listitem>			
+				<listitem><emphasis>Hash</emphasis> : Calculate and compare file's numeric signature</listitem>				
+				<listitem><emphasis>Mailbox</emphasis> : Analyse mail content with exchange format</listitem>				
+				<listitem><emphasis>Malware</emphasis> : Scan to find malware</listitem>
+				<listitem><emphasis>Metadata</emphasis> : Extract meta-data from some filetype</listitem>				
+				<listitem><emphasis>Node</emphasis> : Allows to manipulate some nodes</listitem>				
+				<listitem><emphasis>Search</emphasis> : Carving's module</listitem>
+				<listitem><emphasis>Statistics</emphasis> : Show statistics by filetype or do a timeline</listitem>				
+				<listitem><emphasis>Viewers</emphasis> : Allows to view some filetype</listitem>				
+				<listitem><emphasis>Volatile memory</emphasis> : Analyse the RAM content</listitem>				
+				<listitem><emphasis>Volumes</emphasis> : Alllows to search and mount logical volumes</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/menu_view.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Maximize</emphasis> : Change the selected tab to fullscreen</listitem>				
+				<listitem><emphasis>Fullscreen mode</emphasis> : Switch DFF interface to fullscreen</listitem>				
+				<listitem><emphasis>Browser</emphasis> : Open a new navigation tab</listitem>				
+				<listitem><emphasis>Console</emphasis> : Show the tab allowing to write command lines</listitem>
+				<listitem><emphasis>Live scripting</emphasis> : Show python interpretor</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Report.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>Report</emphasis> : Open the tab alowind to edit report, previsualize and export to html format</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Ide.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>IDE</emphasis> : Open the Integrated development environment of python module</listitem></itemizedlist>
+			</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/help.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><itemizedlist mark="none">
+				<listitem><emphasis>About DFF</emphasis> : Version information and some link</listitem>
+				<listitem><emphasis>Documentation</emphasis> : Help of DFF</listitem></itemizedlist>
+			</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+</section>

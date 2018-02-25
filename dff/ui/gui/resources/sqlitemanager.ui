@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SQLiteManager</class>
+ <widget class="QWidget" name="SQLiteManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QSplitter" name="splitter">
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTreeWidget" name="databaseTree">
+           <attribute name="headerVisible">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Database(s)</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="refreshButton">
+           <property name="text">
+            <string>Refresh</string>
+           </property>
+           <property name="icon">
+            <iconset resource="gui.qrc">
+             <normaloff>:/reload.png</normaloff>:/reload.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Browse table</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="t">
+          <item>
+           <layout class="QVBoxLayout" name="tableResultLayout"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Custom query</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="20,0,80">
+          <item>
+           <widget class="QTextEdit" name="queryEdit"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,70">
+            <item>
+             <widget class="QPushButton" name="queryRun">
+              <property name="text">
+               <string>Run</string>
+              </property>
+              <property name="icon">
+               <iconset resource="gui.qrc">
+                <normaloff>:/tasks</normaloff>:/tasks</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="selectDatabase"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="customStack">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="customResultLayout"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTextEdit" name="queryMessage"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Schema</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QTableWidget" name="schemaTable">
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Not Null</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Default</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PK</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionExport_selection_CSV">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/extract.png</normaloff>:/extract.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export selection (CSV)</string>
+   </property>
+   <property name="toolTip">
+    <string>Export selection to CSV</string>
+   </property>
+  </action>
+  <action name="actionExtract_Binary_BLOB">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/extract.png</normaloff>:/extract.png</iconset>
+   </property>
+   <property name="text">
+    <string>Extract Binary (BLOB)</string>
+   </property>
+  </action>
+  <action name="actionDecode_date_column">
+   <property name="text">
+    <string>Decode date (column)</string>
+   </property>
+  </action>
+  <action name="actionReset_column">
+   <property name="text">
+    <string>Reset column</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

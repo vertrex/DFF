@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>www.digital-forensic.org</namespace>
+  <virtualFolder>developer</virtualFolder>
+  <filterSection>
+    <filterAttribute>doxygen</filterAttribute>
+    <toc>
+      <section title="DFF 1.3.5" ref="index.html">
+        <section title="Classes" ref="annotated.html">
+          <section title="Class List" ref="annotated.html">
+            <section title="DFF">
+              <section title="AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html">
+                <section title="AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html#a5ce66cdbdcdbd540cbf50fd5f1d66212" />
+                <section title="~AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html#a5bb6cb1fb0426d5f733bb1e7ac70343c" />
+                <section title="attributes" ref="class_d_f_f_1_1_attributes_handler.html#a7d1ccbe91778492d03083ba3bbca35b3" />
+                <section title="name" ref="class_d_f_f_1_1_attributes_handler.html#a9353c7be22d5617fd20c042773e9eaf1" />
+              </section>
+              <section title="AttributesHandlers" ref="class_d_f_f_1_1_attributes_handlers.html">
+                <section title="AttributesHandlers" ref="class_d_f_f_1_1_attributes_handlers.html#a00d4232a30d2cc8e447bf4859c4c3ea4" />
+                <section title="~AttributesHandlers" ref="class_d_f_f_1_1_attributes_handlers.html#aa526838be2303530adfd40fc174d8e93" />
+                <section title="add" ref="class_d_f_f_1_1_attributes_handlers.html#a36819b3b1c2779fb322469d4f4ac553e" />
+                <section title="count" ref="class_d_f_f_1_1_attributes_handlers.html#a076c36bebf35f12d0d4038b2c356ca7a" />
+                <section title="handlers" ref="class_d_f_f_1_1_attributes_handlers.html#a2e1ed1337133f5a111414bc1ad69bb0b" />
+                <section title="remove" ref="class_d_f_f_1_1_attributes_handlers.html#a7d076b17792b6a2e03d682efade7d64b" />
+                <section title="remove" ref="class_d_f_f_1_1_attributes_handlers.html#a1b6448a4ab9fe3254e3499411b4b26b9" />
+                <section title="state" ref="class_d_f_f_1_1_attributes_handlers.html#a727e91d915986bc35b8329b676dc8ea0" />
+                <section title="updateState" ref="class_d_f_f_1_1_attributes_handlers.html#a235599529bace989c7d8d8aecb403a2a" />
+              </section>
+              <section title="chunk" ref="struct_d_f_f_1_1chunk.html">
+                <section title="offset" ref="struct_d_f_f_1_1chunk.html#a269292bd43d58cf55ccc521bc4d637a2" />
+                <section title="origin" ref="struct_d_f_f_1_1chunk.html#a1a40d23a411b2d0602442699caeccee3" />
+                <section title="originoffset" ref="struct_d_f_f_1_1chunk.html#a15cd98f4f8f862eb255686b8a7e7f4ef" />
+                <section title="size" ref="struct_d_f_f_1_1chunk.html#aefaa1fd54bc29d5fb522d6b4e3ad4d4c" />
+              </section>
+              <section title="FileMapping" ref="class_d_f_f_1_1_file_mapping.html">
+                <section title="FileMapping" ref="class_d_f_f_1_1_file_mapping.html#af8523359c0a9d00096f86e58347aef20" />
+                <section title="~FileMapping" ref="class_d_f_f_1_1_file_mapping.html#a3f427dc068e0afcd81d874dc9a5a6475" />
+                <section title="addref" ref="class_d_f_f_1_1_file_mapping.html#aa606db6d5eba26dc468a2f06dc53485c" />
+                <section title="chunkCount" ref="class_d_f_f_1_1_file_mapping.html#add8d0b0945edf1c9058fe2af00fd3519" />
+                <section title="chunkFromOffset" ref="class_d_f_f_1_1_file_mapping.html#a4caa1e94d9a3c28869cf565590ee1b04" />
+                <section title="chunkIdxFromOffset" ref="class_d_f_f_1_1_file_mapping.html#a40cffc00dd6723755fd767b68756f3a6" />
+                <section title="chunks" ref="class_d_f_f_1_1_file_mapping.html#a49660f0b72399e4ccb96b054b2b78527" />
+                <section title="chunksFromOffsetRange" ref="class_d_f_f_1_1_file_mapping.html#a26b9f352350496718d4914dc1e506e88" />
+                <section title="delref" ref="class_d_f_f_1_1_file_mapping.html#a4c93194090b6758604b30575899b9894" />
+                <section title="firstChunk" ref="class_d_f_f_1_1_file_mapping.html#a4fc51e655457c42fcb6273c0cb81ae77" />
+                <section title="lastChunk" ref="class_d_f_f_1_1_file_mapping.html#ae4c123676c886fe60866afd53825e217" />
+                <section title="maxOffset" ref="class_d_f_f_1_1_file_mapping.html#a8ac4de151b545f7de1b696e705211b37" />
+                <section title="node" ref="class_d_f_f_1_1_file_mapping.html#afeaa34b5255f3bd757973121f0250022" />
+                <section title="push" ref="class_d_f_f_1_1_file_mapping.html#a88c68ff13d3e585100b4008ef8339918" />
+                <section title="refcount" ref="class_d_f_f_1_1_file_mapping.html#ab5d7d64ca22109e2207dc51125be88ff" />
+              </section>
+              <section title="fso" ref="class_d_f_f_1_1fso.html">
+                <section title="fso" ref="class_d_f_f_1_1fso.html#a299c29492a5d4408ab8e6cb05901e124" />
+                <section title="~fso" ref="class_d_f_f_1_1fso.html#ad2ee069fad0a66e6c4fb0bb28090e3e1" />
+                <section title="addChild" ref="class_d_f_f_1_1fso.html#adfd70c0d99f14f9f4da83fec1f9d7cb4" />
+                <section title="childCount" ref="class_d_f_f_1_1fso.html#a328d366c071d7463a7ed831346886269" />
+                <section title="children" ref="class_d_f_f_1_1fso.html#ad0da6d339196b72cfc29ea80fa7e76d2" />
+                <section title="getNodeById" ref="class_d_f_f_1_1fso.html#a6b18339a03c71a177e5fdf8732c0b359" />
+                <section title="hasChildren" ref="class_d_f_f_1_1fso.html#ac77a700593557edfef064c76b9aef201" />
+                <section title="nodeCount" ref="class_d_f_f_1_1fso.html#a21543a155a88b7f14e98e8de2abe2291" />
+                <section title="nodes" ref="class_d_f_f_1_1fso.html#a73ae68e165b06def397cd13a2becc6a1" />
+                <section title="parent" ref="class_d_f_f_1_1fso.html#a15feabbc64d5f84d6afe13845047f108" />
+                <section title="registerNode" ref="class_d_f_f_1_1fso.html#a799c815f5091af1d83eda5e08348454e" />
+                <section title="registerTree" ref="class_d_f_f_1_1fso.html#a2fa0fc9587de5b615e25a0c43de3e7ed" />
+                <section title="setParent" ref="class_d_f_f_1_1fso.html#afddbd2300d502167fbada01a3536d893" />
+                <section title="setVerbose" ref="class_d_f_f_1_1fso.html#ab1f4f84b143a8706f57bb08c975be830" />
+                <section title="start" ref="class_d_f_f_1_1fso.html#ad655a82a2e2da8f23f060ee006b2e3ee" />
+                <section title="status" ref="class_d_f_f_1_1fso.html#a64a08420c27768c722d6e177c45deaec" />
+                <section title="uid" ref="class_d_f_f_1_1fso.html#aa03ef064fab29823f21e3ade6a04f57f" />
+                <section title="unmap" ref="class_d_f_f_1_1fso.html#abf739c68a25edb7a2f96359585824c3c" />
+                <section title="vclose" ref="class_d_f_f_1_1fso.html#a99925a3176fec429a7a994d1a0199ca9" />
+                <section title="verbose" ref="class_d_f_f_1_1fso.html#a21e3a76879eaa5fb2bfca73b18af9daa" />
+                <section title="vopen" ref="class_d_f_f_1_1fso.html#a9d3c8c2146a4b09acac4f1aa64c618e3" />
+                <section title="vread" ref="class_d_f_f_1_1fso.html#acf6767e76f374de15bef48f85192adbe" />
+                <section title="vseek" ref="class_d_f_f_1_1fso.html#a9c8117fcba528b9253e7b52b5b1e3326" />
+                <section title="vtell" ref="class_d_f_f_1_1fso.html#abea789bc2c807162848f184bb2829b05" />
+                <section title="vwrite" ref="class_d_f_f_1_1fso.html#a47e9918f61db4ea9241dc0c7b7fb2893" />
+                <section title="name" ref="class_d_f_f_1_1fso.html#af7f65b6e869447152760f356fca0b5fd" />
+                <section title="res" ref="class_d_f_f_1_1fso.html#aba8089312d0b11da4895503dfe768e78" />
+                <section title="stateinfo" ref="class_d_f_f_1_1fso.html#a2581c6701471b955e31110dc356834c1" />
+              </section>
+              <section title="mfso" ref="class_d_f_f_1_1mfso.html">
+                <section title="mfso" ref="class_d_f_f_1_1mfso.html#a1da6643069770a5c9084931a64f78b2e" />
+                <section title="~mfso" ref="class_d_f_f_1_1mfso.html#a9eb1f3eb1f4877ba7ad4ae6fe363547a" />
+                <section title="setVerbose" ref="class_d_f_f_1_1mfso.html#a96670f2182dc9385e94ef616b83dd54b" />
+                <section title="start" ref="class_d_f_f_1_1mfso.html#a404c6b34bc42d46e4bbf63a131c3e843" />
+                <section title="status" ref="class_d_f_f_1_1mfso.html#adf5bfa531adaa457bbaa9d71400daa62" />
+                <section title="unmap" ref="class_d_f_f_1_1mfso.html#a2796df7efa2fd1ddc8ba734179228aff" />
+                <section title="vclose" ref="class_d_f_f_1_1mfso.html#a3a08d21ce266f7c2afb72900bf955cf6" />
+                <section title="verbose" ref="class_d_f_f_1_1mfso.html#a9065bc05fe58fb5a9782ccdce377be82" />
+                <section title="vopen" ref="class_d_f_f_1_1mfso.html#aa9a48cbcb4cb75e89d351f70ba725a00" />
+                <section title="vread" ref="class_d_f_f_1_1mfso.html#a648a562f12af4e7d837a4b8b015747f2" />
+                <section title="vseek" ref="class_d_f_f_1_1mfso.html#adaa34544f1c12e2425cabb8e220d0d49" />
+                <section title="vtell" ref="class_d_f_f_1_1mfso.html#ab873483ed95b7dc649bf1284ccbeee25" />
+                <section title="vwrite" ref="class_d_f_f_1_1mfso.html#a8fcc7ed27a7659cf8ae6dbada8189c22" />
+                <section title="__fdmanager" ref="class_d_f_f_1_1mfso.html#af5de26497ccab09934b897dba645a582" />
+              </section>
+              <section title="Node" ref="class_d_f_f_1_1_node.html">
+                <section title="Node" ref="class_d_f_f_1_1_node.html#a811f35df8aa8e521a363b18ec6ba7bab" />
+                <section title="Node" ref="class_d_f_f_1_1_node.html#aa4a6b4155d9df9b140425ec8ae441505" />
+                <section title="~Node" ref="class_d_f_f_1_1_node.html#a529eff7a213ee5f7c9a14840bc16671d" />
+                <section title="__compatibleModulesByExtension" ref="class_d_f_f_1_1_node.html#ab5a0a0c1ef59e0a379129b59715b26c5" />
+                <section title="_attributes" ref="class_d_f_f_1_1_node.html#a67d08569774975766006f87521c80375" />
+                <section title="_attributesState" ref="class_d_f_f_1_1_node.html#a968b79203fc01086faff205b7caa9e5d" />
+                <section title="absolute" ref="class_d_f_f_1_1_node.html#a9914acbdadd61abc2842b12639af6ed8" />
+                <section title="addChild" ref="class_d_f_f_1_1_node.html#aa8e197f0a99046cbf4c87a7ec0f72268" />
+                <section title="at" ref="class_d_f_f_1_1_node.html#ac800fd7631a5b6748cb8e1c8df3765b0" />
+                <section title="attributeByAbsoluteNameFromVariant" ref="class_d_f_f_1_1_node.html#ae8f4d9710824ffdeeb85d7c341d970fc" />
+                <section title="attributes" ref="class_d_f_f_1_1_node.html#a954b63fbae72247ea8c540c8dba6aa28" />
+                <section title="attributesByName" ref="class_d_f_f_1_1_node.html#adfd0c2d6e40de14b32516aace55d41f6" />
+                <section title="attributesByNameFromVariant" ref="class_d_f_f_1_1_node.html#a200aef59ff9facc8f793d2c01338bf97" />
+                <section title="attributesByType" ref="class_d_f_f_1_1_node.html#a044b2de73d9b0b659c7ee9824803d161" />
+                <section title="attributesByTypeFromVariant" ref="class_d_f_f_1_1_node.html#a96a8e40018f53bc12e7771876be866e5" />
+                <section title="attributesHandlers" ref="class_d_f_f_1_1_node.html#a966ed0bddf39183bc06165e8fa24735f" />
+                <section title="attributesNames" ref="class_d_f_f_1_1_node.html#a402e676c51035381695d08c3ae7c00bf" />
+                <section title="attributesNamesAndTypes" ref="class_d_f_f_1_1_node.html#a4323607154fded526d88e38ff75b95be" />
+                <section title="attributesNamesAndTypesFromVariant" ref="class_d_f_f_1_1_node.html#a99113bfeef1b38348cd5e7e858bbf007" />
+                <section title="attributesNamesFromVariant" ref="class_d_f_f_1_1_node.html#a38cdb6d01317f1df209aef662b2c24bb" />
+                <section title="attributesNamesFromVariant" ref="class_d_f_f_1_1_node.html#ae0dc1cc8b3684060d214d8124cd75a37" />
+                <section title="childCount" ref="class_d_f_f_1_1_node.html#a106bfefd97a583a3cb89a17881eb6908" />
+                <section title="children" ref="class_d_f_f_1_1_node.html#a5e59672e186eb41cb8530c77c2443965" />
+                <section title="compatibleModules" ref="class_d_f_f_1_1_node.html#a744a53ee2262c1b1441a9ad02ff4a4c5" />
+                <section title="constantValuesMatch" ref="class_d_f_f_1_1_node.html#ae71d2cf4b61676209df57eb8ab61e9d6" />
+                <section title="dataType" ref="class_d_f_f_1_1_node.html#a8e4c8de280e0982e9bd0bb1908c212d1" />
+                <section title="dynamicAttributes" ref="class_d_f_f_1_1_node.html#a60350193c39be8ab023dec2707bb73cc" />
+                <section title="dynamicAttributes" ref="class_d_f_f_1_1_node.html#ac119ba1c9b90a1b24956a3525a36421e" />
+                <section title="dynamicAttributesNames" ref="class_d_f_f_1_1_node.html#a8028645a04bb19e428e011d81e0c084a" />
+                <section title="extension" ref="class_d_f_f_1_1_node.html#afc62c50cbef0583107189ac340985783" />
+                <section title="fileMapping" ref="class_d_f_f_1_1_node.html#aed08d00e617f6b8ab0413920d492744a" />
+                <section title="fileMappingState" ref="class_d_f_f_1_1_node.html#a0b57dfe3d824de40c9966b6217aa1fa2" />
+                <section title="fsoAttributes" ref="class_d_f_f_1_1_node.html#abe282765f7f7fb1eb8fabef0f45c09ef" />
+                <section title="fsobj" ref="class_d_f_f_1_1_node.html#a70f83bd38705b82e00fc1408b07b3842" />
+                <section title="hasChildren" ref="class_d_f_f_1_1_node.html#a27e25a8160e049cfb8811599a78d8e7d" />
+                <section title="icon" ref="class_d_f_f_1_1_node.html#ab26b3f0ff679abbbaa9dc5202e99c794" />
+                <section title="isDeleted" ref="class_d_f_f_1_1_node.html#a9e5f00dec84cc582a16aa735f29c3a38" />
+                <section title="isDir" ref="class_d_f_f_1_1_node.html#ae61c833f090f1ffbb9e7ebeb53dd56af" />
+                <section title="isFile" ref="class_d_f_f_1_1_node.html#a9e8f7e67c0fa863eb71224279e3a7ef5" />
+                <section title="isLink" ref="class_d_f_f_1_1_node.html#ae3088c01112a2c5e29bb21c29a990acb" />
+                <section title="isTagged" ref="class_d_f_f_1_1_node.html#a020a05685312a8121c98f3342e6e8a30" />
+                <section title="isTagged" ref="class_d_f_f_1_1_node.html#a42d0ffdcbbb6834f9f15afc08a61de3c" />
+                <section title="isVDir" ref="class_d_f_f_1_1_node.html#ad854c9366562bbe3d47847c568bd268b" />
+                <section title="name" ref="class_d_f_f_1_1_node.html#af8d61f90d20bfe9506a574d66f9e4887" />
+                <section title="open" ref="class_d_f_f_1_1_node.html#a763bc997974c69a005fd169039e78aea" />
+                <section title="parent" ref="class_d_f_f_1_1_node.html#ab7413550bbc487a8720637f4c48f172a" />
+                <section title="path" ref="class_d_f_f_1_1_node.html#a6b63cb2b338774077da2e68a512acb01" />
+                <section title="registerAttributes" ref="class_d_f_f_1_1_node.html#a435f2262f59816c619a4c67eaaf647f1" />
+                <section title="removeChild" ref="class_d_f_f_1_1_node.html#add87e05a1ba804051d1f67811f011c76" />
+                <section title="removeTag" ref="class_d_f_f_1_1_node.html#aaed369a9482cbb22b969f298aee7003a" />
+                <section title="removeTag" ref="class_d_f_f_1_1_node.html#aa42bd1cf1adb32cab8cf7a17815cac26" />
+                <section title="setDeleted" ref="class_d_f_f_1_1_node.html#a9828d52025781e17dca65049e52504e6" />
+                <section title="setDir" ref="class_d_f_f_1_1_node.html#a8de7ce8184fffb212aae9411de1bbde8" />
+                <section title="setFile" ref="class_d_f_f_1_1_node.html#ae55af07dcc4d4d5158c08f78b14c701b" />
+                <section title="setFsobj" ref="class_d_f_f_1_1_node.html#a1b647bfa509e18f7cd2e260c5ff7272d" />
+                <section title="setLink" ref="class_d_f_f_1_1_node.html#aa84a4d0b95a7e5f96b6c1f1fc9935962" />
+                <section title="setParent" ref="class_d_f_f_1_1_node.html#af8aab0e9a04399139d68b7510d501926" />
+                <section title="setSize" ref="class_d_f_f_1_1_node.html#ac749226308d2f594dbb01addddfa2264" />
+                <section title="setTag" ref="class_d_f_f_1_1_node.html#abc8937b6b5c69cbdbd1773196de7fc24" />
+                <section title="setTag" ref="class_d_f_f_1_1_node.html#aeda9e139dee78580a4958db7e06020a3" />
+                <section title="size" ref="class_d_f_f_1_1_node.html#abf139a6b6de8051b63ff894c327262d9" />
+                <section title="tags" ref="class_d_f_f_1_1_node.html#ab5cf9dc5ab127c8563efef5c081e66ab" />
+                <section title="tagsId" ref="class_d_f_f_1_1_node.html#aac7f0631fe3c663bd5d065b58be0a1b2" />
+                <section title="totalChildrenCount" ref="class_d_f_f_1_1_node.html#aea01c7d2421cc4468319cc0e4abbfaa1" />
+                <section title="uid" ref="class_d_f_f_1_1_node.html#a6c482fa44f266fce2abab56894e6f768" />
+                <section title="__at" ref="class_d_f_f_1_1_node.html#a803ea877526c3b810e313918e58e228b" />
+                <section title="__attributesHandlers" ref="class_d_f_f_1_1_node.html#a977f94351a5dd3e639e87042ba53c14a" />
+                <section title="__childcount" ref="class_d_f_f_1_1_node.html#ad38dff644630d77a4d6f400e57a95812" />
+                <section title="__children" ref="class_d_f_f_1_1_node.html#aaf529412426ab091697716ffd39d259e" />
+                <section title="__common_attributes" ref="class_d_f_f_1_1_node.html#a8f74a52d621b7d557a261a2810d3606d" />
+                <section title="__fsobj" ref="class_d_f_f_1_1_node.html#a5e9b2f882b8944ccb9d994b949e1bdb1" />
+                <section title="__name" ref="class_d_f_f_1_1_node.html#a3733cb3d9df5d90fe07b20e1ff89c01d" />
+                <section title="__parent" ref="class_d_f_f_1_1_node.html#a71d4abbf885ab897db43e2aa8ed0bd43" />
+                <section title="__size" ref="class_d_f_f_1_1_node.html#a92e0869af3356fb347465e13926efb6c" />
+                <section title="__tags" ref="class_d_f_f_1_1_node.html#aef780c9d667d9c46e906d2eda734e272" />
+                <section title="__uid" ref="class_d_f_f_1_1_node.html#ad59778442d41ec139f5495b6b6f63386" />
+              </section>
+              <section title="NodeManager" ref="class_d_f_f_1_1_node_manager.html">
+                <section title="NodeManager" ref="class_d_f_f_1_1_node_manager.html#a5ae71615db0e941f179695bfa5371c77" />
+                <section title="node" ref="class_d_f_f_1_1_node_manager.html#a4f9b47979612b59a83259a92f49cd659" />
+                <section title="orphansCount" ref="class_d_f_f_1_1_node_manager.html#a8a2e1921225fbc6ede32178297dbbc9f" />
+                <section title="remove" ref="class_d_f_f_1_1_node_manager.html#aa248f2e077edbcb9b5e1d6987742dfd4" />
+                <section title="remove" ref="class_d_f_f_1_1_node_manager.html#a2707df7c70a2cd67c88019c210a7307b" />
+                <section title="uid" ref="class_d_f_f_1_1_node_manager.html#a5da4ea1db8edcf1d10b7f862c44c5b56" />
+              </section>
+              <section title="VFS" ref="class_d_f_f_1_1_v_f_s.html">
+                <section title="cd" ref="class_d_f_f_1_1_v_f_s.html#aef60397ec4fc3fa0f12fac4c5780fcf1" />
+                <section title="Event" ref="class_d_f_f_1_1_v_f_s.html#aa2e10bfad215a2589935f3dcf45c2bae" />
+                <section title="fsobjs" ref="class_d_f_f_1_1_v_f_s.html#add2d8286c9d60dc6741e2d7286c42b30" />
+                <section title="GetCWD" ref="class_d_f_f_1_1_v_f_s.html#adc91c2e998078774d3bc12b387df6a49" />
+                <section title="GetNode" ref="class_d_f_f_1_1_v_f_s.html#a092eebe432ba999059000bedf2b3c408" />
+                <section title="GetNode" ref="class_d_f_f_1_1_v_f_s.html#a6367b7905051cbfadacaa9635b63dd41" />
+                <section title="getNodeById" ref="class_d_f_f_1_1_v_f_s.html#aa1ac1988a57b7cd0dd5f6d26d3a097c1" />
+                <section title="registerFsobj" ref="class_d_f_f_1_1_v_f_s.html#afd518551c87d91173f7071be4140d96b" />
+                <section title="registerNode" ref="class_d_f_f_1_1_v_f_s.html#a753203559beee0bf9077b34abfa37464" />
+                <section title="totalNodes" ref="class_d_f_f_1_1_v_f_s.html#a6ea0035d0935b4515524348785090648" />
+                <section title="unregister" ref="class_d_f_f_1_1_v_f_s.html#a1ed7fbe4a249df3d5c3466b2727dfed0" />
+                <section title="cwd" ref="class_d_f_f_1_1_v_f_s.html#a69383150018b5cf0a0a2ce03f535c2af" />
+                <section title="root" ref="class_d_f_f_1_1_v_f_s.html#a781055c06d42f2e12cd8146519c23548" />
+              </section>
+            </section>
+          </section>
+          <section title="Class Index" ref="classes.html" />
+          <section title="Class Hierarchy" ref="hierarchy.html">
+            <section title="DFF::AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html" />
+            <section title="DFF::AttributesHandlers" ref="class_d_f_f_1_1_attributes_handlers.html" />
+            <section title="DFF::chunk" ref="struct_d_f_f_1_1chunk.html" />
+            <section title="EventHandler">
+              <section title="DFF::VFS" ref="class_d_f_f_1_1_v_f_s.html" />
+            </section>
+            <section title="DFF::FileMapping" ref="class_d_f_f_1_1_file_mapping.html" />
+            <section title="DFF::fso" ref="class_d_f_f_1_1fso.html">
+              <section title="DFF::mfso" ref="class_d_f_f_1_1mfso.html" />
+            </section>
+            <section title="DFF::Node" ref="class_d_f_f_1_1_node.html" />
+            <section title="DFF::NodeManager" ref="class_d_f_f_1_1_node_manager.html" />
+          </section>
+          <section title="Class Members" ref="functions.html">
+            <section title="All" ref="functions.html" />
+            <section title="Functions" ref="functions_func.html" />
+          </section>
+        </section>
+        <section title="Files">
+          <section title="File List" ref="files.html">
+            <section title="filemapping.hpp" ref="filemapping_8hpp_source.html" />
+            <section title="fso.hpp" ref="fso_8hpp_source.html" />
+            <section title="mfso.hpp" ref="mfso_8hpp_source.html" />
+            <section title="node.hpp" ref="node_8hpp_source.html" />
+            <section title="vfs.hpp" ref="vfs_8hpp_source.html" />
+          </section>
+        </section>
+      </section>
+    </toc>
+    <keywords>
+      <keyword name="DFF::AttributesHandler" id="DFF::AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html" />
+      <keyword name="AttributesHandler" id="DFF::AttributesHandler::AttributesHandler" ref="class_d_f_f_1_1_attributes_handler.html#a5ce66cdbdcdbd540cbf50fd5f1d66212" />
+      <keyword name="attributes" id="DFF::AttributesHandler::attributes" ref="class_d_f_f_1_1_attributes_handler.html#a7d1ccbe91778492d03083ba3bbca35b3" />
+      <keyword name="name" id="DFF::AttributesHandler::name" ref="class_d_f_f_1_1_attributes_handler.html#a9353c7be22d5617fd20c042773e9eaf1" />
+      <keyword name="DFF::AttributesHandlers" id="DFF::AttributesHandlers" ref="class_d_f_f_1_1_attributes_handlers.html" />
+      <keyword name="count" id="DFF::AttributesHandlers::count" ref="class_d_f_f_1_1_attributes_handlers.html#a076c36bebf35f12d0d4038b2c356ca7a" />
+      <keyword name="handlers" id="DFF::AttributesHandlers::handlers" ref="class_d_f_f_1_1_attributes_handlers.html#a2e1ed1337133f5a111414bc1ad69bb0b" />
+      <keyword name="updateState" id="DFF::AttributesHandlers::updateState" ref="class_d_f_f_1_1_attributes_handlers.html#a235599529bace989c7d8d8aecb403a2a" />
+      <keyword name="state" id="DFF::AttributesHandlers::state" ref="class_d_f_f_1_1_attributes_handlers.html#a727e91d915986bc35b8329b676dc8ea0" />
+      <keyword name="add" id="DFF::AttributesHandlers::add" ref="class_d_f_f_1_1_attributes_handlers.html#a36819b3b1c2779fb322469d4f4ac553e" />
+      <keyword name="remove" id="DFF::AttributesHandlers::remove" ref="class_d_f_f_1_1_attributes_handlers.html#a7d076b17792b6a2e03d682efade7d64b" />
+      <keyword name="remove" id="DFF::AttributesHandlers::remove" ref="class_d_f_f_1_1_attributes_handlers.html#a1b6448a4ab9fe3254e3499411b4b26b9" />
+      <keyword name="DFF::chunk" id="DFF::chunk" ref="struct_d_f_f_1_1chunk.html" />
+      <keyword name="offset" id="DFF::chunk::offset" ref="struct_d_f_f_1_1chunk.html#a269292bd43d58cf55ccc521bc4d637a2" />
+      <keyword name="size" id="DFF::chunk::size" ref="struct_d_f_f_1_1chunk.html#aefaa1fd54bc29d5fb522d6b4e3ad4d4c" />
+      <keyword name="origin" id="DFF::chunk::origin" ref="struct_d_f_f_1_1chunk.html#a1a40d23a411b2d0602442699caeccee3" />
+      <keyword name="originoffset" id="DFF::chunk::originoffset" ref="struct_d_f_f_1_1chunk.html#a15cd98f4f8f862eb255686b8a7e7f4ef" />
+      <keyword name="DFF::FileMapping" id="DFF::FileMapping" ref="class_d_f_f_1_1_file_mapping.html" />
+      <keyword name="FileMapping" id="DFF::FileMapping::FileMapping" ref="class_d_f_f_1_1_file_mapping.html#af8523359c0a9d00096f86e58347aef20" />
+      <keyword name="addref" id="DFF::FileMapping::addref" ref="class_d_f_f_1_1_file_mapping.html#aa606db6d5eba26dc468a2f06dc53485c" />
+      <keyword name="delref" id="DFF::FileMapping::delref" ref="class_d_f_f_1_1_file_mapping.html#a4c93194090b6758604b30575899b9894" />
+      <keyword name="refcount" id="DFF::FileMapping::refcount" ref="class_d_f_f_1_1_file_mapping.html#ab5d7d64ca22109e2207dc51125be88ff" />
+      <keyword name="node" id="DFF::FileMapping::node" ref="class_d_f_f_1_1_file_mapping.html#afeaa34b5255f3bd757973121f0250022" />
+      <keyword name="maxOffset" id="DFF::FileMapping::maxOffset" ref="class_d_f_f_1_1_file_mapping.html#a8ac4de151b545f7de1b696e705211b37" />
+      <keyword name="chunkFromOffset" id="DFF::FileMapping::chunkFromOffset" ref="class_d_f_f_1_1_file_mapping.html#a4caa1e94d9a3c28869cf565590ee1b04" />
+      <keyword name="push" id="DFF::FileMapping::push" ref="class_d_f_f_1_1_file_mapping.html#a88c68ff13d3e585100b4008ef8339918" />
+      <keyword name="chunkCount" id="DFF::FileMapping::chunkCount" ref="class_d_f_f_1_1_file_mapping.html#add8d0b0945edf1c9058fe2af00fd3519" />
+      <keyword name="firstChunk" id="DFF::FileMapping::firstChunk" ref="class_d_f_f_1_1_file_mapping.html#a4fc51e655457c42fcb6273c0cb81ae77" />
+      <keyword name="lastChunk" id="DFF::FileMapping::lastChunk" ref="class_d_f_f_1_1_file_mapping.html#ae4c123676c886fe60866afd53825e217" />
+      <keyword name="chunkIdxFromOffset" id="DFF::FileMapping::chunkIdxFromOffset" ref="class_d_f_f_1_1_file_mapping.html#a40cffc00dd6723755fd767b68756f3a6" />
+      <keyword name="chunksFromOffsetRange" id="DFF::FileMapping::chunksFromOffsetRange" ref="class_d_f_f_1_1_file_mapping.html#a26b9f352350496718d4914dc1e506e88" />
+      <keyword name="chunks" id="DFF::FileMapping::chunks" ref="class_d_f_f_1_1_file_mapping.html#a49660f0b72399e4ccb96b054b2b78527" />
+      <keyword name="DFF::fso" id="DFF::fso" ref="class_d_f_f_1_1fso.html" />
+      <keyword name="fso" id="DFF::fso::fso" ref="class_d_f_f_1_1fso.html#a299c29492a5d4408ab8e6cb05901e124" />
+      <keyword name="start" id="DFF::fso::start" ref="class_d_f_f_1_1fso.html#ad655a82a2e2da8f23f060ee006b2e3ee" />
+      <keyword name="vopen" id="DFF::fso::vopen" ref="class_d_f_f_1_1fso.html#a9d3c8c2146a4b09acac4f1aa64c618e3" />
+      <keyword name="vread" id="DFF::fso::vread" ref="class_d_f_f_1_1fso.html#acf6767e76f374de15bef48f85192adbe" />
+      <keyword name="vwrite" id="DFF::fso::vwrite" ref="class_d_f_f_1_1fso.html#a47e9918f61db4ea9241dc0c7b7fb2893" />
+      <keyword name="vclose" id="DFF::fso::vclose" ref="class_d_f_f_1_1fso.html#a99925a3176fec429a7a994d1a0199ca9" />
+      <keyword name="vseek" id="DFF::fso::vseek" ref="class_d_f_f_1_1fso.html#a9c8117fcba528b9253e7b52b5b1e3326" />
+      <keyword name="status" id="DFF::fso::status" ref="class_d_f_f_1_1fso.html#a64a08420c27768c722d6e177c45deaec" />
+      <keyword name="vtell" id="DFF::fso::vtell" ref="class_d_f_f_1_1fso.html#abea789bc2c807162848f184bb2829b05" />
+      <keyword name="setVerbose" id="DFF::fso::setVerbose" ref="class_d_f_f_1_1fso.html#ab1f4f84b143a8706f57bb08c975be830" />
+      <keyword name="verbose" id="DFF::fso::verbose" ref="class_d_f_f_1_1fso.html#a21e3a76879eaa5fb2bfca73b18af9daa" />
+      <keyword name="registerTree" id="DFF::fso::registerTree" ref="class_d_f_f_1_1fso.html#a2fa0fc9587de5b615e25a0c43de3e7ed" />
+      <keyword name="registerNode" id="DFF::fso::registerNode" ref="class_d_f_f_1_1fso.html#a799c815f5091af1d83eda5e08348454e" />
+      <keyword name="nodes" id="DFF::fso::nodes" ref="class_d_f_f_1_1fso.html#a73ae68e165b06def397cd13a2becc6a1" />
+      <keyword name="nodeCount" id="DFF::fso::nodeCount" ref="class_d_f_f_1_1fso.html#a21543a155a88b7f14e98e8de2abe2291" />
+      <keyword name="uid" id="DFF::fso::uid" ref="class_d_f_f_1_1fso.html#aa03ef064fab29823f21e3ade6a04f57f" />
+      <keyword name="getNodeById" id="DFF::fso::getNodeById" ref="class_d_f_f_1_1fso.html#a6b18339a03c71a177e5fdf8732c0b359" />
+      <keyword name="hasChildren" id="DFF::fso::hasChildren" ref="class_d_f_f_1_1fso.html#ac77a700593557edfef064c76b9aef201" />
+      <keyword name="children" id="DFF::fso::children" ref="class_d_f_f_1_1fso.html#ad0da6d339196b72cfc29ea80fa7e76d2" />
+      <keyword name="childCount" id="DFF::fso::childCount" ref="class_d_f_f_1_1fso.html#a328d366c071d7463a7ed831346886269" />
+      <keyword name="setParent" id="DFF::fso::setParent" ref="class_d_f_f_1_1fso.html#afddbd2300d502167fbada01a3536d893" />
+      <keyword name="parent" id="DFF::fso::parent" ref="class_d_f_f_1_1fso.html#a15feabbc64d5f84d6afe13845047f108" />
+      <keyword name="addChild" id="DFF::fso::addChild" ref="class_d_f_f_1_1fso.html#adfd70c0d99f14f9f4da83fec1f9d7cb4" />
+      <keyword name="unmap" id="DFF::fso::unmap" ref="class_d_f_f_1_1fso.html#abf739c68a25edb7a2f96359585824c3c" />
+      <keyword name="res" id="DFF::fso::res" ref="class_d_f_f_1_1fso.html#aba8089312d0b11da4895503dfe768e78" />
+      <keyword name="stateinfo" id="DFF::fso::stateinfo" ref="class_d_f_f_1_1fso.html#a2581c6701471b955e31110dc356834c1" />
+      <keyword name="name" id="DFF::fso::name" ref="class_d_f_f_1_1fso.html#af7f65b6e869447152760f356fca0b5fd" />
+      <keyword name="DFF::mfso" id="DFF::mfso" ref="class_d_f_f_1_1mfso.html" />
+      <keyword name="mfso" id="DFF::mfso::mfso" ref="class_d_f_f_1_1mfso.html#a1da6643069770a5c9084931a64f78b2e" />
+      <keyword name="start" id="DFF::mfso::start" ref="class_d_f_f_1_1mfso.html#a404c6b34bc42d46e4bbf63a131c3e843" />
+      <keyword name="vopen" id="DFF::mfso::vopen" ref="class_d_f_f_1_1mfso.html#aa9a48cbcb4cb75e89d351f70ba725a00" />
+      <keyword name="vread" id="DFF::mfso::vread" ref="class_d_f_f_1_1mfso.html#a648a562f12af4e7d837a4b8b015747f2" />
+      <keyword name="vwrite" id="DFF::mfso::vwrite" ref="class_d_f_f_1_1mfso.html#a8fcc7ed27a7659cf8ae6dbada8189c22" />
+      <keyword name="vclose" id="DFF::mfso::vclose" ref="class_d_f_f_1_1mfso.html#a3a08d21ce266f7c2afb72900bf955cf6" />
+      <keyword name="vseek" id="DFF::mfso::vseek" ref="class_d_f_f_1_1mfso.html#adaa34544f1c12e2425cabb8e220d0d49" />
+      <keyword name="status" id="DFF::mfso::status" ref="class_d_f_f_1_1mfso.html#adf5bfa531adaa457bbaa9d71400daa62" />
+      <keyword name="vtell" id="DFF::mfso::vtell" ref="class_d_f_f_1_1mfso.html#ab873483ed95b7dc649bf1284ccbeee25" />
+      <keyword name="setVerbose" id="DFF::mfso::setVerbose" ref="class_d_f_f_1_1mfso.html#a96670f2182dc9385e94ef616b83dd54b" />
+      <keyword name="verbose" id="DFF::mfso::verbose" ref="class_d_f_f_1_1mfso.html#a9065bc05fe58fb5a9782ccdce377be82" />
+      <keyword name="unmap" id="DFF::mfso::unmap" ref="class_d_f_f_1_1mfso.html#a2796df7efa2fd1ddc8ba734179228aff" />
+      <keyword name="fso" id="DFF::fso::fso" ref="class_d_f_f_1_1fso.html#a299c29492a5d4408ab8e6cb05901e124" />
+      <keyword name="registerTree" id="DFF::fso::registerTree" ref="class_d_f_f_1_1fso.html#a2fa0fc9587de5b615e25a0c43de3e7ed" />
+      <keyword name="registerNode" id="DFF::fso::registerNode" ref="class_d_f_f_1_1fso.html#a799c815f5091af1d83eda5e08348454e" />
+      <keyword name="nodes" id="DFF::fso::nodes" ref="class_d_f_f_1_1fso.html#a73ae68e165b06def397cd13a2becc6a1" />
+      <keyword name="nodeCount" id="DFF::fso::nodeCount" ref="class_d_f_f_1_1fso.html#a21543a155a88b7f14e98e8de2abe2291" />
+      <keyword name="uid" id="DFF::fso::uid" ref="class_d_f_f_1_1fso.html#aa03ef064fab29823f21e3ade6a04f57f" />
+      <keyword name="getNodeById" id="DFF::fso::getNodeById" ref="class_d_f_f_1_1fso.html#a6b18339a03c71a177e5fdf8732c0b359" />
+      <keyword name="hasChildren" id="DFF::fso::hasChildren" ref="class_d_f_f_1_1fso.html#ac77a700593557edfef064c76b9aef201" />
+      <keyword name="children" id="DFF::fso::children" ref="class_d_f_f_1_1fso.html#ad0da6d339196b72cfc29ea80fa7e76d2" />
+      <keyword name="childCount" id="DFF::fso::childCount" ref="class_d_f_f_1_1fso.html#a328d366c071d7463a7ed831346886269" />
+      <keyword name="setParent" id="DFF::fso::setParent" ref="class_d_f_f_1_1fso.html#afddbd2300d502167fbada01a3536d893" />
+      <keyword name="parent" id="DFF::fso::parent" ref="class_d_f_f_1_1fso.html#a15feabbc64d5f84d6afe13845047f108" />
+      <keyword name="addChild" id="DFF::fso::addChild" ref="class_d_f_f_1_1fso.html#adfd70c0d99f14f9f4da83fec1f9d7cb4" />
+      <keyword name="__fdmanager" id="DFF::mfso::__fdmanager" ref="class_d_f_f_1_1mfso.html#af5de26497ccab09934b897dba645a582" />
+      <keyword name="res" id="DFF::fso::res" ref="class_d_f_f_1_1fso.html#aba8089312d0b11da4895503dfe768e78" />
+      <keyword name="stateinfo" id="DFF::fso::stateinfo" ref="class_d_f_f_1_1fso.html#a2581c6701471b955e31110dc356834c1" />
+      <keyword name="name" id="DFF::fso::name" ref="class_d_f_f_1_1fso.html#af7f65b6e869447152760f356fca0b5fd" />
+      <keyword name="DFF::Node" id="DFF::Node" ref="class_d_f_f_1_1_node.html" />
+      <keyword name="Node" id="DFF::Node::Node" ref="class_d_f_f_1_1_node.html#a811f35df8aa8e521a363b18ec6ba7bab" />
+      <keyword name="Node" id="DFF::Node::Node" ref="class_d_f_f_1_1_node.html#aa4a6b4155d9df9b140425ec8ae441505" />
+      <keyword name="setFile" id="DFF::Node::setFile" ref="class_d_f_f_1_1_node.html#ae55af07dcc4d4d5158c08f78b14c701b" />
+      <keyword name="setDir" id="DFF::Node::setDir" ref="class_d_f_f_1_1_node.html#a8de7ce8184fffb212aae9411de1bbde8" />
+      <keyword name="setLink" id="DFF::Node::setLink" ref="class_d_f_f_1_1_node.html#aa84a4d0b95a7e5f96b6c1f1fc9935962" />
+      <keyword name="setDeleted" id="DFF::Node::setDeleted" ref="class_d_f_f_1_1_node.html#a9828d52025781e17dca65049e52504e6" />
+      <keyword name="setSize" id="DFF::Node::setSize" ref="class_d_f_f_1_1_node.html#ac749226308d2f594dbb01addddfa2264" />
+      <keyword name="setFsobj" id="DFF::Node::setFsobj" ref="class_d_f_f_1_1_node.html#a1b647bfa509e18f7cd2e260c5ff7272d" />
+      <keyword name="setParent" id="DFF::Node::setParent" ref="class_d_f_f_1_1_node.html#af8aab0e9a04399139d68b7510d501926" />
+      <keyword name="fileMapping" id="DFF::Node::fileMapping" ref="class_d_f_f_1_1_node.html#aed08d00e617f6b8ab0413920d492744a" />
+      <keyword name="fileMappingState" id="DFF::Node::fileMappingState" ref="class_d_f_f_1_1_node.html#a0b57dfe3d824de40c9966b6217aa1fa2" />
+      <keyword name="size" id="DFF::Node::size" ref="class_d_f_f_1_1_node.html#abf139a6b6de8051b63ff894c327262d9" />
+      <keyword name="path" id="DFF::Node::path" ref="class_d_f_f_1_1_node.html#a6b63cb2b338774077da2e68a512acb01" />
+      <keyword name="name" id="DFF::Node::name" ref="class_d_f_f_1_1_node.html#af8d61f90d20bfe9506a574d66f9e4887" />
+      <keyword name="absolute" id="DFF::Node::absolute" ref="class_d_f_f_1_1_node.html#a9914acbdadd61abc2842b12639af6ed8" />
+      <keyword name="extension" id="DFF::Node::extension" ref="class_d_f_f_1_1_node.html#afc62c50cbef0583107189ac340985783" />
+      <keyword name="isFile" id="DFF::Node::isFile" ref="class_d_f_f_1_1_node.html#a9e8f7e67c0fa863eb71224279e3a7ef5" />
+      <keyword name="isDir" id="DFF::Node::isDir" ref="class_d_f_f_1_1_node.html#ae61c833f090f1ffbb9e7ebeb53dd56af" />
+      <keyword name="isLink" id="DFF::Node::isLink" ref="class_d_f_f_1_1_node.html#ae3088c01112a2c5e29bb21c29a990acb" />
+      <keyword name="isVDir" id="DFF::Node::isVDir" ref="class_d_f_f_1_1_node.html#ad854c9366562bbe3d47847c568bd268b" />
+      <keyword name="isDeleted" id="DFF::Node::isDeleted" ref="class_d_f_f_1_1_node.html#a9e5f00dec84cc582a16aa735f29c3a38" />
+      <keyword name="fsobj" id="DFF::Node::fsobj" ref="class_d_f_f_1_1_node.html#a70f83bd38705b82e00fc1408b07b3842" />
+      <keyword name="parent" id="DFF::Node::parent" ref="class_d_f_f_1_1_node.html#ab7413550bbc487a8720637f4c48f172a" />
+      <keyword name="children" id="DFF::Node::children" ref="class_d_f_f_1_1_node.html#a5e59672e186eb41cb8530c77c2443965" />
+      <keyword name="addChild" id="DFF::Node::addChild" ref="class_d_f_f_1_1_node.html#aa8e197f0a99046cbf4c87a7ec0f72268" />
+      <keyword name="removeChild" id="DFF::Node::removeChild" ref="class_d_f_f_1_1_node.html#add87e05a1ba804051d1f67811f011c76" />
+      <keyword name="hasChildren" id="DFF::Node::hasChildren" ref="class_d_f_f_1_1_node.html#a27e25a8160e049cfb8811599a78d8e7d" />
+      <keyword name="childCount" id="DFF::Node::childCount" ref="class_d_f_f_1_1_node.html#a106bfefd97a583a3cb89a17881eb6908" />
+      <keyword name="totalChildrenCount" id="DFF::Node::totalChildrenCount" ref="class_d_f_f_1_1_node.html#aea01c7d2421cc4468319cc0e4abbfaa1" />
+      <keyword name="open" id="DFF::Node::open" ref="class_d_f_f_1_1_node.html#a763bc997974c69a005fd169039e78aea" />
+      <keyword name="at" id="DFF::Node::at" ref="class_d_f_f_1_1_node.html#ac800fd7631a5b6748cb8e1c8df3765b0" />
+      <keyword name="uid" id="DFF::Node::uid" ref="class_d_f_f_1_1_node.html#a6c482fa44f266fce2abab56894e6f768" />
+      <keyword name="attributesHandlers" id="DFF::Node::attributesHandlers" ref="class_d_f_f_1_1_node.html#a966ed0bddf39183bc06165e8fa24735f" />
+      <keyword name="registerAttributes" id="DFF::Node::registerAttributes" ref="class_d_f_f_1_1_node.html#a435f2262f59816c619a4c67eaaf647f1" />
+      <keyword name="dataType" id="DFF::Node::dataType" ref="class_d_f_f_1_1_node.html#a8e4c8de280e0982e9bd0bb1908c212d1" />
+      <keyword name="attributes" id="DFF::Node::attributes" ref="class_d_f_f_1_1_node.html#a954b63fbae72247ea8c540c8dba6aa28" />
+      <keyword name="attributesByType" id="DFF::Node::attributesByType" ref="class_d_f_f_1_1_node.html#a044b2de73d9b0b659c7ee9824803d161" />
+      <keyword name="attributesByName" id="DFF::Node::attributesByName" ref="class_d_f_f_1_1_node.html#adfd0c2d6e40de14b32516aace55d41f6" />
+      <keyword name="attributesNames" id="DFF::Node::attributesNames" ref="class_d_f_f_1_1_node.html#a402e676c51035381695d08c3ae7c00bf" />
+      <keyword name="attributesNamesAndTypes" id="DFF::Node::attributesNamesAndTypes" ref="class_d_f_f_1_1_node.html#a4323607154fded526d88e38ff75b95be" />
+      <keyword name="icon" id="DFF::Node::icon" ref="class_d_f_f_1_1_node.html#ab26b3f0ff679abbbaa9dc5202e99c794" />
+      <keyword name="compatibleModules" id="DFF::Node::compatibleModules" ref="class_d_f_f_1_1_node.html#a744a53ee2262c1b1441a9ad02ff4a4c5" />
+      <keyword name="dynamicAttributes" id="DFF::Node::dynamicAttributes" ref="class_d_f_f_1_1_node.html#a60350193c39be8ab023dec2707bb73cc" />
+      <keyword name="dynamicAttributes" id="DFF::Node::dynamicAttributes" ref="class_d_f_f_1_1_node.html#ac119ba1c9b90a1b24956a3525a36421e" />
+      <keyword name="dynamicAttributesNames" id="DFF::Node::dynamicAttributesNames" ref="class_d_f_f_1_1_node.html#a8028645a04bb19e428e011d81e0c084a" />
+      <keyword name="fsoAttributes" id="DFF::Node::fsoAttributes" ref="class_d_f_f_1_1_node.html#abe282765f7f7fb1eb8fabef0f45c09ef" />
+      <keyword name="setTag" id="DFF::Node::setTag" ref="class_d_f_f_1_1_node.html#abc8937b6b5c69cbdbd1773196de7fc24" />
+      <keyword name="setTag" id="DFF::Node::setTag" ref="class_d_f_f_1_1_node.html#aeda9e139dee78580a4958db7e06020a3" />
+      <keyword name="removeTag" id="DFF::Node::removeTag" ref="class_d_f_f_1_1_node.html#aaed369a9482cbb22b969f298aee7003a" />
+      <keyword name="removeTag" id="DFF::Node::removeTag" ref="class_d_f_f_1_1_node.html#aa42bd1cf1adb32cab8cf7a17815cac26" />
+      <keyword name="isTagged" id="DFF::Node::isTagged" ref="class_d_f_f_1_1_node.html#a020a05685312a8121c98f3342e6e8a30" />
+      <keyword name="isTagged" id="DFF::Node::isTagged" ref="class_d_f_f_1_1_node.html#a42d0ffdcbbb6834f9f15afc08a61de3c" />
+      <keyword name="tags" id="DFF::Node::tags" ref="class_d_f_f_1_1_node.html#ab5cf9dc5ab127c8563efef5c081e66ab" />
+      <keyword name="tagsId" id="DFF::Node::tagsId" ref="class_d_f_f_1_1_node.html#aac7f0631fe3c663bd5d065b58be0a1b2" />
+      <keyword name="__at" id="DFF::Node::__at" ref="class_d_f_f_1_1_node.html#a803ea877526c3b810e313918e58e228b" />
+      <keyword name="_attributes" id="DFF::Node::_attributes" ref="class_d_f_f_1_1_node.html#a67d08569774975766006f87521c80375" />
+      <keyword name="_attributesState" id="DFF::Node::_attributesState" ref="class_d_f_f_1_1_node.html#a968b79203fc01086faff205b7caa9e5d" />
+      <keyword name="attributesByTypeFromVariant" id="DFF::Node::attributesByTypeFromVariant" ref="class_d_f_f_1_1_node.html#a96a8e40018f53bc12e7771876be866e5" />
+      <keyword name="attributesByNameFromVariant" id="DFF::Node::attributesByNameFromVariant" ref="class_d_f_f_1_1_node.html#a200aef59ff9facc8f793d2c01338bf97" />
+      <keyword name="attributeByAbsoluteNameFromVariant" id="DFF::Node::attributeByAbsoluteNameFromVariant" ref="class_d_f_f_1_1_node.html#ae8f4d9710824ffdeeb85d7c341d970fc" />
+      <keyword name="attributesNamesFromVariant" id="DFF::Node::attributesNamesFromVariant" ref="class_d_f_f_1_1_node.html#a38cdb6d01317f1df209aef662b2c24bb" />
+      <keyword name="attributesNamesFromVariant" id="DFF::Node::attributesNamesFromVariant" ref="class_d_f_f_1_1_node.html#ae0dc1cc8b3684060d214d8124cd75a37" />
+      <keyword name="attributesNamesAndTypesFromVariant" id="DFF::Node::attributesNamesAndTypesFromVariant" ref="class_d_f_f_1_1_node.html#a99113bfeef1b38348cd5e7e858bbf007" />
+      <keyword name="constantValuesMatch" id="DFF::Node::constantValuesMatch" ref="class_d_f_f_1_1_node.html#ae71d2cf4b61676209df57eb8ab61e9d6" />
+      <keyword name="__compatibleModulesByExtension" id="DFF::Node::__compatibleModulesByExtension" ref="class_d_f_f_1_1_node.html#ab5a0a0c1ef59e0a379129b59715b26c5" />
+      <keyword name="__parent" id="DFF::Node::__parent" ref="class_d_f_f_1_1_node.html#a71d4abbf885ab897db43e2aa8ed0bd43" />
+      <keyword name="__attributesHandlers" id="DFF::Node::__attributesHandlers" ref="class_d_f_f_1_1_node.html#a977f94351a5dd3e639e87042ba53c14a" />
+      <keyword name="__children" id="DFF::Node::__children" ref="class_d_f_f_1_1_node.html#aaf529412426ab091697716ffd39d259e" />
+      <keyword name="__childcount" id="DFF::Node::__childcount" ref="class_d_f_f_1_1_node.html#ad38dff644630d77a4d6f400e57a95812" />
+      <keyword name="__name" id="DFF::Node::__name" ref="class_d_f_f_1_1_node.html#a3733cb3d9df5d90fe07b20e1ff89c01d" />
+      <keyword name="__size" id="DFF::Node::__size" ref="class_d_f_f_1_1_node.html#a92e0869af3356fb347465e13926efb6c" />
+      <keyword name="__fsobj" id="DFF::Node::__fsobj" ref="class_d_f_f_1_1_node.html#a5e9b2f882b8944ccb9d994b949e1bdb1" />
+      <keyword name="__common_attributes" id="DFF::Node::__common_attributes" ref="class_d_f_f_1_1_node.html#a8f74a52d621b7d557a261a2810d3606d" />
+      <keyword name="__uid" id="DFF::Node::__uid" ref="class_d_f_f_1_1_node.html#ad59778442d41ec139f5495b6b6f63386" />
+      <keyword name="__tags" id="DFF::Node::__tags" ref="class_d_f_f_1_1_node.html#aef780c9d667d9c46e906d2eda734e272" />
+      <keyword name="DFF::NodeManager" id="DFF::NodeManager" ref="class_d_f_f_1_1_node_manager.html" />
+      <keyword name="NodeManager" id="DFF::NodeManager::NodeManager" ref="class_d_f_f_1_1_node_manager.html#a5ae71615db0e941f179695bfa5371c77" />
+      <keyword name="uid" id="DFF::NodeManager::uid" ref="class_d_f_f_1_1_node_manager.html#a5da4ea1db8edcf1d10b7f862c44c5b56" />
+      <keyword name="remove" id="DFF::NodeManager::remove" ref="class_d_f_f_1_1_node_manager.html#aa248f2e077edbcb9b5e1d6987742dfd4" />
+      <keyword name="remove" id="DFF::NodeManager::remove" ref="class_d_f_f_1_1_node_manager.html#a2707df7c70a2cd67c88019c210a7307b" />
+      <keyword name="node" id="DFF::NodeManager::node" ref="class_d_f_f_1_1_node_manager.html#a4f9b47979612b59a83259a92f49cd659" />
+      <keyword name="orphansCount" id="DFF::NodeManager::orphansCount" ref="class_d_f_f_1_1_node_manager.html#a8a2e1921225fbc6ede32178297dbbc9f" />
+      <keyword name="DFF::VFS" id="DFF::VFS" ref="class_d_f_f_1_1_v_f_s.html" />
+      <keyword name="registerNode" id="DFF::VFS::registerNode" ref="class_d_f_f_1_1_v_f_s.html#a753203559beee0bf9077b34abfa37464" />
+      <keyword name="registerFsobj" id="DFF::VFS::registerFsobj" ref="class_d_f_f_1_1_v_f_s.html#afd518551c87d91173f7071be4140d96b" />
+      <keyword name="unregister" id="DFF::VFS::unregister" ref="class_d_f_f_1_1_v_f_s.html#a1ed7fbe4a249df3d5c3466b2727dfed0" />
+      <keyword name="Event" id="DFF::VFS::Event" ref="class_d_f_f_1_1_v_f_s.html#aa2e10bfad215a2589935f3dcf45c2bae" />
+      <keyword name="cd" id="DFF::VFS::cd" ref="class_d_f_f_1_1_v_f_s.html#aef60397ec4fc3fa0f12fac4c5780fcf1" />
+      <keyword name="GetCWD" id="DFF::VFS::GetCWD" ref="class_d_f_f_1_1_v_f_s.html#adc91c2e998078774d3bc12b387df6a49" />
+      <keyword name="GetNode" id="DFF::VFS::GetNode" ref="class_d_f_f_1_1_v_f_s.html#a092eebe432ba999059000bedf2b3c408" />
+      <keyword name="GetNode" id="DFF::VFS::GetNode" ref="class_d_f_f_1_1_v_f_s.html#a6367b7905051cbfadacaa9635b63dd41" />
+      <keyword name="fsobjs" id="DFF::VFS::fsobjs" ref="class_d_f_f_1_1_v_f_s.html#add2d8286c9d60dc6741e2d7286c42b30" />
+      <keyword name="totalNodes" id="DFF::VFS::totalNodes" ref="class_d_f_f_1_1_v_f_s.html#a6ea0035d0935b4515524348785090648" />
+      <keyword name="getNodeById" id="DFF::VFS::getNodeById" ref="class_d_f_f_1_1_v_f_s.html#aa1ac1988a57b7cd0dd5f6d26d3a097c1" />
+      <keyword name="Get" id="DFF::VFS::Get" ref="class_d_f_f_1_1_v_f_s.html#a6358fe2f2cd7af136a186e170225f040" />
+      <keyword name="cwd" id="DFF::VFS::cwd" ref="class_d_f_f_1_1_v_f_s.html#a69383150018b5cf0a0a2ce03f535c2af" />
+      <keyword name="root" id="DFF::VFS::root" ref="class_d_f_f_1_1_v_f_s.html#a781055c06d42f2e12cd8146519c23548" />
+    </keywords>
+    <files>
+      <file>tabs.css</file>
+      <file>tab_a.png</file>
+      <file>tab_b.png</file>
+      <file>tab_h.png</file>
+      <file>tab_s.png</file>
+      <file>nav_h.png</file>
+      <file>nav_f.png</file>
+      <file>bc_s.png</file>
+      <file>doxygen.png</file>
+      <file>closed.png</file>
+      <file>open.png</file>
+      <file>bdwn.png</file>
+      <file>sync_on.png</file>
+      <file>sync_off.png</file>
+      <file>dff.png</file>
+      <file>doc.png</file>
+      <file>folderopen.png</file>
+      <file>folderclosed.png</file>
+      <file>arrowdown.png</file>
+      <file>arrowright.png</file>
+      <file>splitbar.png</file>
+      <file>doxygen.css</file>
+      <file>search/search_l.png</file>
+      <file>search/search_m.png</file>
+      <file>search/search_r.png</file>
+      <file>search/close.png</file>
+      <file>search/mag_sel.png</file>
+      <file>search/search.css</file>
+      <file>search/search.js</file>
+      <file>filemapping_8hpp_source.html</file>
+      <file>fso_8hpp_source.html</file>
+      <file>mfso_8hpp_source.html</file>
+      <file>node_8hpp_source.html</file>
+      <file>vfs_8hpp_source.html</file>
+      <file>class_d_f_f_1_1_attributes_handler.html</file>
+      <file>class_d_f_f_1_1_attributes_handler-members.html</file>
+      <file>class_d_f_f_1_1_attributes_handlers.html</file>
+      <file>class_d_f_f_1_1_attributes_handlers-members.html</file>
+      <file>struct_d_f_f_1_1chunk.html</file>
+      <file>struct_d_f_f_1_1chunk__coll__graph.png</file>
+      <file>struct_d_f_f_1_1chunk-members.html</file>
+      <file>class_d_f_f_1_1_file_mapping.html</file>
+      <file>class_d_f_f_1_1_file_mapping-members.html</file>
+      <file>class_d_f_f_1_1fso.html</file>
+      <file>class_d_f_f_1_1fso__inherit__graph.png</file>
+      <file>class_d_f_f_1_1fso-members.html</file>
+      <file>class_d_f_f_1_1mfso.html</file>
+      <file>class_d_f_f_1_1mfso__inherit__graph.png</file>
+      <file>class_d_f_f_1_1mfso__coll__graph.png</file>
+      <file>class_d_f_f_1_1mfso-members.html</file>
+      <file>class_d_f_f_1_1_node.html</file>
+      <file>class_d_f_f_1_1_node__coll__graph.png</file>
+      <file>class_d_f_f_1_1_node-members.html</file>
+      <file>class_d_f_f_1_1_node_manager.html</file>
+      <file>class_d_f_f_1_1_node_manager-members.html</file>
+      <file>class_d_f_f_1_1_v_f_s.html</file>
+      <file>class_d_f_f_1_1_v_f_s__inherit__graph.png</file>
+      <file>class_d_f_f_1_1_v_f_s__coll__graph.png</file>
+      <file>class_d_f_f_1_1_v_f_s-members.html</file>
+      <file>graph_legend.png</file>
+      <file>graph_legend.html</file>
+      <file>dir_159704f86b6d3e23192440ea573c91dd.html</file>
+      <file>dir_159704f86b6d3e23192440ea573c91dd_dep.png</file>
+      <file>dir_97e8457588a909537d49f2ed68a730c8.html</file>
+      <file>dir_97e8457588a909537d49f2ed68a730c8_dep.png</file>
+      <file>dir_112ecb5c71011a7182f44123f0cd9ad9.html</file>
+      <file>dir_112ecb5c71011a7182f44123f0cd9ad9_dep.png</file>
+      <file>dir_687866446ce9cf336d238b6469ce6903.html</file>
+      <file>dir_687866446ce9cf336d238b6469ce6903_dep.png</file>
+      <file>index.html</file>
+      <file>annotated.html</file>
+      <file>classes.html</file>
+      <file>hierarchy.html</file>
+      <file>inherits.html</file>
+      <file>inherit_graph_0.png</file>
+      <file>inherit_graph_1.png</file>
+      <file>inherit_graph_2.png</file>
+      <file>inherit_graph_3.png</file>
+      <file>inherit_graph_4.png</file>
+      <file>inherit_graph_5.png</file>
+      <file>inherit_graph_6.png</file>
+      <file>inherit_graph_7.png</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>files.html</file>
+    </files>
+  </filterSection>
+</QtHelpProject>

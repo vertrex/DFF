@@ -1,0 +1,16 @@
+<section>
+	<title>Navigateur de module</title>
+
+	<para> Dans la section "Barre des menus" vu précédemment, nous avons vue la fonction de navigation, qui permet de configurer comment les modules vont agir.</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/module_browser.png"/>
+		</imageobject>
+		<caption> Le navigateur de module</caption>
+	</mediaobject>
+
+	<para> Comme vous pouvez le voir, beaucoup de catégories sont présentes, et chaque catégorie peut comporter plusieurs modules. Ce qui permet de choisir quels modules nous voulons activer ou non.</para>
+
+
+</section>

@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-03-18 11:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.xml:41(title)
+msgid "Digital Forensics Framework guide"
+msgstr ""
+
+#: main.xml:42(subtitle)
+msgid "How to use DFF"
+msgstr ""
+
+#: main.xml:46(title)
+msgid "Installation"
+msgstr ""
+
+#: main.xml:52(title)
+msgid "User interfaces"
+msgstr ""
+
+#: main.xml:58(title)
+msgid "Console"
+msgstr ""
+
+#: main.xml:64(title)
+msgid "Graphical interface"
+msgstr ""
+
+#: main.xml:82(title)
+msgid "Modules"
+msgstr ""
+
+#: main.xml:87(title)
+msgid "Builtins"
+msgstr ""
+
+#: main.xml:93(title)
+msgid "File system modules"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: main.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

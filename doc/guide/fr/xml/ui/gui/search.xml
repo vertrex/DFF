@@ -1,0 +1,167 @@
+<section id="search">
+	<title>Recherche</title>
+
+	<para> Dans la section "Barre d'outils" précédente, nous avons vue la fonction de recherche, si vous ne vous en souvenez plus. Voilà à quoi elle ressemble.</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/search_window.png"/>
+		</imageobject>
+		<caption> La fenêtre de recherche</caption>
+	</mediaobject>
+	<sect2>
+		<title>Syntaxe du moteur de recherche</title>
+		<sect3>
+			<title>Opérateurs</title>
+			<para>La syntaxe comporte les opérateurs de comparaison classiques &gt;, &gt;=, &lt;, &lt;=, ==, != et les opérateurs logiques and, or, not. Biensur, il est possible de tous les combiner et créer une puissante requête. Concernant <ulink url="http://en.wikipedia.org/wiki/Order_of_operations"><citetitle>la priorité des opérateurs</citetitle></ulink>, c'est à dire la priorité entre les opérateurs. La plus haute priorité est not, ensuite les opérateurs de comparaisons,qui ont la même priorité entre eux, puis and et or. Pour changer l'ordre de priorité on peut entourer les expressions par des parenthèses. Par exemple la requête suivante est évalué à true :</para>
+			<note>
+				<para> 84 &gt; 42 and not (13 == 37) or true == false</para>
+			</note>
+			<para>Lors de l'évaluation, "<ulink url="http://en.wikipedia.org/wiki/Short-circuit_evaluation"><citetitle>short-circuit evaluation</citetitle></ulink>" est utilisé, ce qui fait que certaines partie sont utilisé seulement si elles sont utiles. Par exemple :</para>
+				<itemizedlist>
+					<listitem>
+						<para>expr1 and expr2: Avec expr1 déterminé à false, expr2 ne sera pas évalué car "false and (false or true)" sera toujours false.</para>
+					</listitem>
+					<listitem>
+						<para>expr1 or expr2: Avec expr1 déterminé à true, expr2 ne sera pas évalué car peu importe le résultat de expr2, l'expression sera true.</para>
+					</listitem>
+				</itemizedlist>
+			<para>Maintenant, allons voir avec quelles genres de donnée on peut utliser les opérateurs.</para>
+		</sect3>
+		<sect3>
+			<title>Managed types</title>
+			<para>Le moteur de recherche prend en compte beaucoup de types primitifs:</para>
+			<itemizedlist mark="number">
+				<listitem><emphasis>Booléen</emphasis>
+					<para>Certains attributs ou expressions peuvent être comparés avec des valeur boléennes (<emphasis>true</emphasis> ou <emphasis>false</emphasis>).</para>
+				</listitem>				
+				<listitem><emphasis>Nombres</emphasis>
+					<para>Vous pouvez écrire des nombres de différentes façons, aussi bien en décimal (ex: 4096) ou en hexadecimal avec le préfixe '0x' (ex: 0x1000). les multiplicateurs sont aussi supportés, par exemple 10MB est le résultat de 10*1024*1024. Les multiplicateurs disponibles sont KB, MB et GB. Les nombres sont stockés dans une variable de 64bits, gardez en tête que la limite maximum pour représenter un nombre est 2**64-1.</para>
+				</listitem>				
+				<listitem><emphasis>Chaînes de caractères</emphasis>
+					<para>Les chaînes de caractères sont représentés de beaucoup de façon, qui dépende de la syntaxe utilisé. Par défaut toute les châines de caractères ne sont pas sensibles à la casse.</para>
+					<itemizedlist mark="opencircle">
+						<listitem><emphasis>Chaîne fixe</emphasis>
+							<para>est reconnu quand ce qui est écrit est entre double guillements : <emphasis>"Je suis une chaîne fixe"</emphasis>. Les chaînes fixes implique que la comparaison sera effectué sur ce que vous avez écrit à l'identique.</para>
+						</listitem>							
+						<listitem><emphasis>Wildcard</emphasis>
+							<para>est reconnu quand c'est entouré avec des dollars: <emphasis>$*.extension$</emphasis>. L'expression des wildcards ne supporte que les asterisques ( zéro ou plusieurs caractères) et les point d'interrogations (un seul caractère) mais sera améliorer pour convenir à l'expression de la wildcard.</para>
+						</listitem>							
+						<listitem><emphasis>RegExp</emphasis>
+							<para>est reconnu quand il est encadré par des slash. <emphasis>/[a-zA-Z0-9\-\._]+@[a-zA-Z0-9\-\.]+\.[a-z]{2,6}/</emphasis> est un exemple pour trouver une addresse mail. Pour le moment les expression régulière ne supporte pas directement l'unicode mais est lié avec la librairie lightgrep compatible pour la version 1.4.</para>
+						</listitem>							
+						<listitem><emphasis>Recherche approximative</emphasis>
+							<para>Qui s'appuie sur la <ulink url="https://github.com/laurikari/tre/"><citetitle>librairie tre</citetitle></ulink>, elle est utilisable en entourant votre mot-clé avec des tild, par exemple : <emphasis>~password~</emphasis> Va vous trouvez des mots mal ortographiés. Amélioré pour la version 1.4, les chaines approximatives repose sur la "Levenshtein distance", une interface graphique sera fournie pour changer les différentes insertion, suppression, subsitution.</para>
+						</listitem>											
+						<listitem>
+							<emphasis>Des listes de patterns</emphasis> sont aussi supporté par le moteur de recherche. Cela permet d'ajouter une capacité à compter mais également de réduire la longueur de la requête et amélioré ça lecture. Les syntaxes possibles sont les suivantes :
+							<itemizedlist mark="square">
+								<listitem>smth in ["fixed string", /regexp/, ~fuzzy~, $wildcard$] qui est équivalent à smth == "fixed string" or smth matches /regexp/ or smth matches ~fuzzy~ or smth matches $wildcard$</listitem>
+								<listitem>smth matches [all|none|number] of ["fixed string", /regexp/, ~fuzzy~, $wildcard$] cela ajoute un compte pour les patterns</listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</listitem>				
+				<listitem><emphasis>Timestamps</emphasis>
+					<para>la représentation Timestamps est principalement basé sur <ulink url="http://en.wikipedia.org/wiki/ISO_8601"><citetitle>ISO 8601</citetitle></ulink> ou ces spécifications libre: <ulink url="https://tools.ietf.org/html/rfc3339"><citetitle>RFC 3339</citetitle></ulink></para>
+					<itemizedlist mark="opencircle">
+						<listitem>Les dates sont représentés par YYYY-MM-DD, par exemple 2013-03-11 pour 11 Mars 2013</listitem>
+						<listitem>Le temps est représenté par hh:mm:ss, par exemple 23:42:00</listitem>
+						<listitem>En mixant les deux YYYY-MM-DDThh:mm:ss, 2013-03-11T23:42:00</listitem>
+					</itemizedlist>
+				</listitem>
+				<listitem><emphasis>Attributs</emphasis>
+					<itemizedlist mark="opencircle">
+						<listitem><emphasis>Les attributs longs</emphasis>
+						<para>Il suffit de copier-coller le nom de l’attribut et de l’encadrer avec des « <emphasis>@</emphasis> ». Ainsi, la syntaxe pour connaître les fichiers ayant une date de création antérieure au 1er janvier 2013 pour l’attribut $FILE_NAME du système de fichier NTFS serait la suivante :</para>
+						<para><emphasis>@ntfs.$FILE_NAME.Creation time@ &lt; 2013-01-01T00:00:00</emphasis></para>
+						</listitem>
+						<listitem><emphasis>Les attributs prédéfinis</emphasis>
+						<para>Ils sont listés dans le <xref linkend="search_option"/></para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</itemizedlist>
+	</sect3>
+	</sect2>
+	<para> Voyons ce que nous pouvons faire. Vous pouvez choisir comment va réagir le moteur de recherche grâce à 4 options :</para>
+			<itemizedlist>
+			<listitem>
+				<para>
+					<emphasis>Fixed string</emphasis> (Par défaut) : Le moteur de recherche va chercher les chaînes de caractères correspondant exactement a ce qui a été saisi dans le champ utilisateur (si <emphasis>test</emphasis> est saisi les fichiers s'appelant exactement <emphasis>test</emphasis> seront affichées, sensiblement a la casse ou non en fonction de la case a cocher correspondante). 
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Wildcard</emphasis> : Les wildcards permettent d'utiliser des méta-caractères. Ces-derniers permettent de simplifier l'écriture de certaines clauses. Nous y reviendrons par la suite. 
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Fuzzy</emphasis> : Recherches approximatives. Permet de rechercher en faisant des approximations sur la chaîne qui a été saisie par l'utilisateur. Par exemple, en recherche approximative, si l'utilisateur saisit <emphasis>test</emphasis>, les fichiers dont le nom est <emphasis>tust</emphasis> ou <emphasis>teet</emphasis>, etc, (une lettre de différence par rapport a test) seront affichés.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>RegExp</emphasis> (Expression régulière) : Permet de définir un modèle de recherche, et tous les fichiers dont le nom "ressemble" a ce modèle seront affichés. Les expressions régulières permettent par exemple de rechercher les fichiers dont le nom commence par la lettre 'a' et finit par la lettre 'b'. 
+				</para>
+			</listitem>
+		</itemizedlist>
+
+	<para> L'option "Search from root" comme le suggère le nom, va effectuer une recherche depuis le root de vous périphérique ou fichier virtuel. </para>
+
+	<sect2>
+		<title>Recherche avancée</title>
+		<para>Nous avons explique dans la partie précédente comment effectuer une recherche basique, basée sur les noms de fichier. Cependant, DFF permet de faire des recherches beaucoup plus précises. Premièrement, il est possible d'effectuer des recherches sur d'autres attributs que le nom des noeuds, notamment la taille, les dates, le contenu, et tous les attributs des noeuds. Pour cela, il faut cliquer sur l'icône <inlinemediaobject><imageobject><imagedata fileref="images/icons/actions/add.png" width="24"/></imageobject></inlinemediaobject>. Ce la va ouvrir une <link linkend="advanced_research">nouvelle fenêtre</link> dans laquelle vous pourrez ajouter des clauses</para>
+
+		<mediaobject id="advanced_research">
+			<imageobject>
+				<imagedata fileref="images/gui/advanced_research_fr.png"/>
+			</imageobject>
+		</mediaobject>
+
+		<para>Dans le menu déroulant de gauche, vous pouvez choisir votre option :</para>
+		<table id="search_option"><title>Option de recherche</title>
+		<tgroup cols="2" align="left">
+		<tbody>
+			<row>
+				<entry align="center"><para>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/gui/option_search_fr.png"/>
+						</imageobject>
+					</mediaobject></para>
+				</entry>
+				<entry>
+					<itemizedlist mark="none">
+						<listitem><emphasis>Nom</emphasis> : Ajoute une option de nom</listitem>
+						<listitem><emphasis>Contient</emphasis> : Va chercher si la chaîne saisie dans le contenu du fichier</listitem>
+						<listitem><emphasis>Taille</emphasis> : Ajoute une clause de taille ( vous pouvez spécifier KB, MB ou GB et si c'est strictement inférieur, strictement supérieur, ≤, ≥, == ou !=)</listitem>
+						<listitem><emphasis>Date</emphasis> : Ajoute une date spécifique ( Avec l'option strictement inférieur, strictement supérieur, ≤, ≥, == or !=)</listitem>
+						<listitem><emphasis>Mime type</emphasis> : Permet de spécifier un ou plusieur mime type (text, audio, message, video...)</listitem>
+						<listitem><emphasis>Dictionnaire</emphasis> : Ajoute une liste de mots-clé</listitem>
+						<listitem><emphasis>Est effacé</emphasis> : Spécifie si le fichier est effacé ou non</listitem>
+						<listitem><emphasis>est un fichier</emphasis> : Spécifie si c'est un fichier ou non</listitem>
+						<listitem><emphasis>Attribut</emphasis> : Recherche un attribut spécifique</listitem>
+						<listitem><emphasis>Chemin</emphasis> : Ajoute un chemin</listitem>
+						<listitem><emphasis>Extension</emphasis> : Ajoute une extension spécific</listitem>
+						<listitem><emphasis>Expression</emphasis> : Ajoute une nouvelle expression à la recherche</listitem>
+					</itemizedlist>
+				</entry>
+			</row>	
+		</tbody>
+		</tgroup>
+		</table>
+	<sect3>
+		<title> Wildcards</title>
+		<para> Nous avons vu dans les parties précédentes qu'il était possible de spécifier des wildcards en clause de recherche. Les wildcards sont des méta-caractères, c'est a dire des caractères représentants plusieurs autres caractères. Prenons un exemple simple pour expliciter cette notion : admettons que vous soyez a la recherche de tous les fichiers dont l'extension est <emphasis>.PDF</emphasis>, c'est à dire ayant un nom du type <emphasis>"nom_du_fichier".PDF</emphasis>. Il serait utile de pouvoir exprimer ce type de requête de façon simple et de remplacer 'nom_du_fichier' par quelque chose de génériques. </para>
+		<para> C'est ici que les méta-caractères entrent en jeux : la requête précédente peut être exprimée : "<emphasis>*.PDF</emphasis>", le caractère étoile signifiant "<emphasis>0, 1, ou plusieurs caractères</emphasis>".  En d'autres termes, cette requête récupérera les fichiers dont le noms se termine par .pdf, précédé d'aucun ou plusieurs caractères, par exemple :
+			<itemizedlist>
+				<listitem>.PDF (0 caractère)</listitem>
+				<listitem>a.PDF (1 caractère)</listitem>
+				<listitem>abc.PDF (plusieurs caractères)</listitem>
+			</itemizedlist></para>
+		<para> Le second méta-caractère est "<emphasis>?</emphasis>". Celui ci représente <emphasis>0 ou 1 caractère</emphasis>, c'est a dire que la recherche 'rech?rche' cherchera les résultats de la forme : rechrche (0 caractère), rechErche (1 caractère), mais ne trouvera pas 'recheerche' (2 caractères). </para>
+	</sect3>
+	</sect2>
+</section>

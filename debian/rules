@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# debian/rules file for dff
+# Written by Pierre Chifflier <pollux@debian.org>
+# for DFF (Digital Forensic Framework)
+# .
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DEFAULTPY=$(shell pyversions -v -d)
+PYVERSIONS=$(shell pyversions -v -r)
+ALLPY=$(PYVERSIONS)
+
+# disable the tests
+#override_dh_auto_test:
+
+override_dh_installdocs:
+	dh_installdocs -XLICENSE
+	rm -rf debian/dff/usr/share/doc/dff-1.2.0
+
+override_dh_auto_configure-%:
+	mkdir build-$*
+	set -e -x; cd build-$* ; cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DPYTHON_EXECUTABLE=/usr/bin/python$* -DPROJECT_VERSION_MAJOR=1 -DPROJECT_VERSION_MINOR=3 -DPROJECT_VERSION_PATCH=6
+
+
+override_dh_auto_configure: $(ALLPY:%=override_dh_auto_configure-%)
+
+override_dh_auto_build-$(DEFAULTPY):
+	dh_auto_build -B build-$(DEFAULTPY)
+	#make --no-print-directory -C build-$(DEFAULTPY) manual-html
+	#rm -rf build-$(DEFAULTPY)/docs/manual/html/.doctrees
+
+override_dh_auto_build-%:
+	dh_auto_build -B build-$* --parallel
+
+override_dh_auto_build: $(ALLPY:%=override_dh_auto_build-%)
+
+override_dh_shlibdeps:
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+
+override_dh_auto_install-%:
+	dh_auto_install -B build-$*
+
+override_dh_auto_install: $(ALLPY:%=override_dh_auto_install-%)
+
+override_dh_auto_clean:
+	rm -rf build-*
+
+%:
+	dh $@ --with=python2 --parallel
+

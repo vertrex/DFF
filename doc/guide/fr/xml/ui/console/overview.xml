@@ -1,0 +1,15 @@
+<section>
+	<title>Presentation de la Console</title>
+
+	<para> Cette interface, communément appelée shell, est destinée a être utilisée sur des machines distantes et / ou ne possédant pas d'environnements graphiques, tels que des serveurs dans un salle machine. </para>
+	<para>Toutes les fonctionnalités d'analyse de la version graphique sont présentes dans la version en ligne de commande. En revanche, les modules graphiques, tels que les visualiseurs graphiques ne peuvent pas être utilisés. Cette interface est utile si l'utilisateur n'a pas un accès physique a la machine qu'il souhaite analyser.</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/dff_shell.png"/>
+		</imageobject>
+		<caption> Interface en ligne de commande </caption>
+	</mediaobject>
+
+
+</section>

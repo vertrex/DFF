@@ -1,0 +1,104 @@
+<section>
+	<title>Interface Graphique</title>
+		
+	<para>L'interface graphique du framework vise a faciliter de façon significative des analyses forensiques, jusqu'alors réservée aux seuls spécialistes. L'objectif est de pouvoir, en quelques clics de souris, mettre en évidence des éléments supprimés, suspects ou cachés sur un support de donnée quelconque. </para>
+
+	<para> La <xref linkend="graphic_interface"/> présente la fenêtre principale de l'interface graphique. </para>		
+		
+	<figure id="graphic_interface"><title>Interface graphique</title>
+	<mediaobject>
+		<imageobject condition="toolbar">
+			<imagedata fileref="images/gui/dff_main_window_fr.png"/>
+		</imageobject>
+	</mediaobject>
+	</figure>
+
+	<para> Dans la partie suivante nous allons voir l' <xref linkend="detailled_interface"/> et expliquer chaques éléments.</para>
+
+	<table id="detailled_interface" frame="all"><title> Interface détaillé</title>
+	<tgroup cols="2" align="center" colsep="1" rowsep="1">
+	<tbody>
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/menu_bar_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="menu_bar">Barre de menu </link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/button_bar_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="ide">Barre d'action</link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/nav_button.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Barre de navigation</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tool_bar_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><link linkend="tool_bar">Barre d'outils</link></entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/arborescence.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Fenêtre d'arborescence</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tab.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Fenêtre de vue détaillé</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Attributes_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Fenêtre d'attributs</entry>
+		</row>		
+		<row>
+			<entry>	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Tabs_fr.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Fenêtre des onglets (Démarrant <link linkend="output">ici</link>)</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+</section>

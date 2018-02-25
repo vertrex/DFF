@@ -1,0 +1,38 @@
+<section id="filter">
+	<title>Filter</title>
+
+	<para> In the previous section "Toolbar" we saw the filter function. This is the filter bar</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/filter_bar.png"/>
+		</imageobject>
+		<caption> The filter bar </caption>
+	</mediaobject>
+
+	<para> Let's explain what can we do with this filter. Notice that dropdown menu, with 4 options, it can change the rules of the search engine :</para>
+				<itemizedlist>
+			<listitem>
+				<para>
+					<emphasis>Fixed string</emphasis> (Default) : The search engine will search char corresponding exactly to what you wrote in the search field.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Wildcard</emphasis> : Wildcards allow to use meta-characters. They simplify some rules.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Fuzzy</emphasis> : Approximative research. Allows to write a word and it will find all file with max 2 different letter ( For example if you search "<emphasis>test</emphasis>", files with name like "<emphasis>tust</emphasis>" or "<emphasis>teet</emphasis>" will be find).
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>RegExp</emphasis> (Regular expression) : Allows to define a "search models", and all the files with a similar name will be shown. (For example you can do a research with filename starting with "a" and ends with "b").
+				</para>
+			</listitem>
+		</itemizedlist>
+
+
+</section>

@@ -1,0 +1,44 @@
+<section>
+	<title>Présentation de Digital Forensics Framework (DFF)</title>
+<para>
+DFF est un logiciel multi-plateforme et modulaire d'investigation numérique distribué gratuitement sous licence Open Source.
+</para>
+<para>
+Il permet de révélez rapidement les indices numériques en cas d'enquête technique informatique ou de réponse sur incidents tout en préservant l'intégrité des informations
+</para>
+<para>
+DFF permet d'effectuer simplement l'autopsie de disques, de récupérer les donnés supprimées, d'analyser la mémoire volatile et d'identifier les logiciels malveillants d'un système grâce à son interface utilisateur.
+</para>
+<para>
+Pour les développeurs, DFF fournis également un ensemble de bibliothèques de programmation spécialisées pour modifier et ajouter rapidement ses propres fonctionnalités.
+</para>	
+<para>
+	<figure id="dff_logo">
+			<title>Logo de DFF</title>
+			<imageobject condition="dff_logo">
+				<imagedata fileref="images/logos/logo.png" width="128" />
+			</imageobject>
+		</figure>
+		DFF peut être téléchargé depuis l'adresse suivante :<ulink url="http://digital-forensic.org/" />
+	</para>
+	<para>
+		Le code source de DFF repose sur le logiciel de gestion de versions <emphasis>Git</emphasis>
+		<footnote xml:id="github">
+			<para>
+				Git : <ulink url="http://git-scm.com/" />
+			</para>
+		</footnote>
+		. Il est accessible depuis l'adresse suivante :
+		<ulink url="http://git.digital-forensic.org/" />
+	</para>
+
+	<para>
+		DFF a été conçu et développé pour être portable sur la plupart des architectures les plus utilisées. 
+		Il peut être indifféremment utilisé sur les systèmes d&#8217;exploitation Linux,
+		Unix, Microsoft Windows et MacOS. L&#8217;architecture multi-tâche du framework autorise l'automatisation et la parallélisation des analyses, tandis que les bibliothèques de développement intégrées permettent l'ajout rapide de nouvelles fonctionnalités.
+
+		De plus, la communauté autour de DFF étant active, les innovations sont continuelles et tous les utilisateurs
+		peuvent en bénéficier.
+	</para> 
+</section>
+

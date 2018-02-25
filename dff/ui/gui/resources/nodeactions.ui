@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nodeActions</class>
+ <widget class="QWidget" name="nodeActions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>297</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Browser</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/view_detailed.png</normaloff>:/view_detailed.png</iconset>
+  </property>
+  <action name="actionOpen_in_new_tab">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open in new tab</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/exec.png</normaloff>:/exec.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionOpen_with">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/exec.png</normaloff>:/exec.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open with</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionHex_viewer">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/hexedit.png</normaloff>:/hexedit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hex viewer</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionExtract">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/extract.png</normaloff>:/extract.png</iconset>
+   </property>
+   <property name="text">
+    <string>Extract</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionRelevant_module">
+   <property name="text">
+    <string>Relevant module</string>
+   </property>
+  </action>
+  <action name="actionBookmark">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/bookmark_add.png</normaloff>:/bookmark_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bookmark</string>
+   </property>
+   <property name="toolTip">
+    <string>Add nodes to bookmark</string>
+   </property>
+  </action>
+  <action name="actionOpen_parent_folder">
+   <property name="text">
+    <string>Open parent folder</string>
+   </property>
+   <property name="toolTip">
+    <string>Open parent folder</string>
+   </property>
+  </action>
+  <action name="actionTags">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/tag</normaloff>:/tag</iconset>
+   </property>
+   <property name="text">
+    <string>Tags</string>
+   </property>
+   <property name="toolTip">
+    <string>Tag nodes</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

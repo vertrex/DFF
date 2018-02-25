@@ -1,0 +1,16 @@
+<section id="ide">
+	<title>IDE</title>
+
+	<para> In previous section, you might have seen IDE, if you don't know this function, here's what it looks like.  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/IDE_tab.png"/>
+		</imageobject>
+		<caption> The IDE window</caption>
+	</mediaobject>
+
+	<para> You can notice a new tab IDE appeared, and you can see the workspace.</para>
+
+
+</section>

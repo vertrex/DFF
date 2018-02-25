@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"/usr/share/sgml/docbook/xml-dtd-4.2/docbookx.dtd" [
+
+<!ENTITY intro SYSTEM "intro.xml">
+<!ENTITY install_linux SYSTEM "install/linux.xml">
+<!ENTITY install_windows SYSTEM "install/windows.xml">
+
+<!ENTITY ui_overview SYSTEM "ui/overview.xml">
+
+<!ENTITY ui_gui_overview SYSTEM "ui/gui/overview.xml">
+<!ENTITY ui_gui_menu SYSTEM "ui/gui/menu.xml">
+<!ENTITY ui_gui_toolbar SYSTEM "ui/gui/toolbar.xml">
+<!ENTITY ui_gui_bookmarking SYSTEM "ui/gui/bookmarking.xml">
+<!ENTITY ui_gui_extract SYSTEM "ui/gui/extract.xml">
+<!ENTITY ui_gui_filter SYSTEM "ui/gui/filter.xml">
+<!ENTITY ui_gui_ide SYSTEM "ui/gui/ide.xml">
+<!ENTITY ui_gui_nodebrowser SYSTEM "ui/gui/nodebrowser.xml">
+<!ENTITY ui_gui_output SYSTEM "ui/gui/output.xml">
+<!ENTITY ui_gui_preview SYSTEM "ui/gui/preview.xml">
+<!ENTITY ui_gui_taskmanager SYSTEM "ui/gui/taskmanager.xml">
+<!ENTITY ui_gui_search SYSTEM "ui/gui/search.xml">
+<!ENTITY ui_gui_interpreter SYSTEM "ui/gui/interpreter.xml">
+<!ENTITY ui_gui_console SYSTEM "ui/gui/console.xml">
+
+<!ENTITY ui_console_overview SYSTEM "ui/console/overview.xml">
+<!ENTITY ui_console_batch SYSTEM "ui/console/batch.xml">
+
+<!ENTITY modules_overview SYSTEM "modules/overview.xml">
+
+<!ENTITY modules_builtins_fg SYSTEM "modules/builtins/fg.xml">
+<!ENTITY modules_builtins_jobs  SYSTEM "modules/builtins/jobs.xml">
+
+<!ENTITY modules_fs_ntfs SYSTEM "modules/fs/ntfs.xml">
+<!ENTITY modules_fs_extfs SYSTEM "modules/fs/extfs.xml">
+<!ENTITY modules_fs_fatfs SYSTEM "modules/fs/fatfs.xml">
+
+]>
+
+<book lang="en">
+ 	<title>Digital Forensics Framework guide</title>
+  	<subtitle>How to use DFF</subtitle>
+            <!-- &intro; -->
+            <!--&community; //tracker etc-->
+        <chapter>
+                <title>Installation</title>
+                &install_linux;
+                &install_windows;
+        </chapter>
+
+        <chapter>
+                <title>User interfaces</title>
+                <!--&ui_overview; launch-->
+                &ui_overview;
+        </chapter>      
+ 
+        <chapter>
+                <title>Console</title> 
+                &ui_console_overview;
+                &ui_console_batch;
+        </chapter>
+        
+        <chapter>
+                <title>Graphical interface</title>
+                &ui_gui_overview;
+                &ui_gui_menu;
+                &ui_gui_toolbar;
+                &ui_gui_bookmarking;
+                &ui_gui_extract;
+                &ui_gui_filter;
+                &ui_gui_ide;
+                &ui_gui_nodebrowser;
+                &ui_gui_output;
+                &ui_gui_preview;
+                &ui_gui_search;
+                &ui_gui_taskmanager;
+                &ui_gui_interpreter;
+                &ui_gui_console;
+        </chapter>
+
+        <chapter>
+                <title>Modules</title>
+                &modules_overview;
+        </chapter>
+
+        <chapter>
+                <title>Builtins</title>
+                &modules_builtins_fg;
+                &modules_builtins_jobs;
+        </chapter>
+
+        <chapter>
+                <title>File system modules</title>
+                &modules_fs_ntfs;
+                &modules_fs_extfs;
+                &modules_fs_fatfs;
+        </chapter>
+</book>

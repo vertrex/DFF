@@ -1,0 +1,28 @@
+<section>
+	<title>NTFS</title>
+
+	<para> This module create a tree from a NTFS file system, for regular and delete/orphan files. It also provides human-readable dump of MFT or indexex entries. </para>
+
+	<table id="detailled_ntfs"><title> Detailled ntfs</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_ntfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>advanced-attributes</emphasis> : [activatable] Display advanced attributes as nodes attributes</listitem>				
+				<listitem><emphasis>drive-name</emphasis> : [activatable] Use this drive name to link reparse point and symlink</listitem>				
+				<listitem><emphasis>file</emphasis> : Path to a file containing NTFS</listitem>				
+				<listitem><emphasis>no-bootsector-check</emphasis> : [activatable] If set the module will continue even if the bootsector is corrupted</listitem><listitem><emphasis>recovery</emphasis> : [activatable] if set the module will to recover file by carving MFT in unallocated clusters</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>	
+
+</section>

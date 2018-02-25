@@ -1,0 +1,22 @@
+<section id="extract">
+	<title>Extraire</title>
+
+	<para> Si vous voulez extraire certains fichiers, il vous suffit faire <emphasis><menuchoice><guimenu>Clique droit</guimenu><guimenuitem>Extraire</guimenuitem></menuchoice></emphasis> <inlinemediaobject><imageobject><imagedata fileref="images/gui/click2_extract_fr.png" scale="30"/></imageobject></inlinemediaobject>et la fenêtre suivante devrait s'ouvrir :</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/extract_fr.png"/>
+		</imageobject>
+		<caption> La fenêtre extraire</caption>
+	</mediaobject>
+
+	<para> Comme vous pouvez le voir, il y a 3 options qui peuvent être sélectionné :
+		<itemizedlist mark="opencircle">
+			<listitem><emphasis>Recursive mode</emphasis> : Extrait l'élément selectionné et tout ses parents.</listitem>
+			<listitem><emphasis>Preserve tree</emphasis> : Prend en compte l'arborescence exact.</listitem>
+			<listitem><emphasis>Overwrite existing</emphasis> : Copie sur un fichier existant.</listitem>
+		</itemizedlist>
+	</para>
+
+
+</section>

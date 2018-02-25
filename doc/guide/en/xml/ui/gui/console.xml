@@ -1,0 +1,16 @@
+<section>
+	<title>Console</title>
+
+	<para> In DFF, even if you are in graphical mode, you can open a shell and work with it.  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/shell_tab.png"/>
+		</imageobject>
+		<caption> The DFF Shell</caption>
+	</mediaobject>
+
+	<para> You can notice a new tab opened in DFF next to the "Scanner" tab</para>
+
+
+</section>

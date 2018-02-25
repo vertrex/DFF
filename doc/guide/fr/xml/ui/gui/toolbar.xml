@@ -1,0 +1,124 @@
+<section id="tool_bar">
+	<title> Barre d'outils</title>
+
+	<para>Dans cette section nous allons expliquer ce que peut faire chaque bouton</para>
+
+		<table id="detailled_toolbar"><title> Barre d'outils détaillé</title>
+	<tgroup cols="2" align="left">
+	<tbody>
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/zoom.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Configuration du zoom</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/display.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Affichage en icône ou en vignette (avec taille variable)</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/column.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Permet d'éditer les colonnes dans la fenêtre de vue détaillé</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/add_node.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Ajoute une node dans le rapport</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/bookmark_add.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Ajoute un <link linkend="bookmark">Favoris</link></entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/tab.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry>Fenêtre de vue détaillé</entry>
+		</row>		
+		<row>
+			<entry align="center">	<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/Tags.JPG"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry><emphasis>Bouton de Tags</emphasis> :
+				<itemizedlist mark="none">
+					<listitem><emphasis>Gestion des Tags</emphasis> : Gestionnaire des Tags</listitem>
+					<listitem><emphasis>Tags prédéfinie</emphasis> :
+						<itemizedlist mark="none">
+							<listitem>Known good -> Discriminant</listitem>
+							<listitem>Known bad -> Incriminant</listitem>
+							<listitem>Malware</listitem>
+							<listitem>Vu</listitem>
+						</itemizedlist>
+					</listitem>
+				</itemizedlist></entry>
+		</row>		
+		<row>
+			<entry align="center">	<para><menuchoice><guimenu>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/search.JPG"/>
+					</imageobject>
+				</mediaobject></guimenu>
+				<guimenuitem><mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/search_window.png"/>
+					</imageobject>
+				</mediaobject></guimenuitem></menuchoice></para>
+			</entry>
+			<entry>Affiche la fenêtre de <link linkend="search">recherche</link></entry>
+		</row>		
+		<row>
+			<entry align="center">	<para><menuchoice><guimenu>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/filter.JPG"/>
+					</imageobject>
+				</mediaobject></guimenu>
+				<guimenuitem><mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/filter_bar.png"/>
+					</imageobject>
+				</mediaobject></guimenuitem></menuchoice></para>
+			</entry>
+			<entry>Affiche la <link linkend="filter">barre de filtre</link> au dessus de la fenêtre de vue détaillé</entry>
+		</row>
+	</tbody>
+	</tgroup>
+	</table>
+
+</section>

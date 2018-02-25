@@ -1,0 +1,31 @@
+# ext2/ext3 filesystems - Andreas Dilger <adilger@dilger.ca>
+# ext4 filesystem - Eric Sandeen <sandeen@sandeen.net>
+# volume label and UUID Russell Coker
+# http://etbe.coker.com.au/2008/07/08/label-vs-uuid-vs-device/
+0x438   leshort         0xEF53
+# No journal?  ext2
+>0x45c  lelong          ^0x0000004      filesystem/ext2
+!:mime	filesystem/extfs
+
+# Has a journal?  ext3 or ext4
+>0x45c  lelong          &0x0000004	filesystem/ext3
+!:mime	filesystem/extfs
+
+#  and small INCOMPAT?
+>>0x460 lelong          <0x0000040	filesystem/ext4
+!:mime	filesystem/extfs
+
+#   and small RO_COMPAT?
+>>>0x464 lelong         <0x0000008      filesystem/ext3
+!:mime	filesystem/extfs
+
+#   else large RO_COMPAT?
+>>>0x464 lelong         >0x0000007      filesystem/ext4
+!:mime	filesystem/extfs
+
+#  else large INCOMPAT?
+>>0x460	lelong          >0x000003f      filesystem/ext4
+!:mime	filesystem/extfs
+
+>0x478	string		>0		filesystem/extfs
+!:mime	filesystem/extfs

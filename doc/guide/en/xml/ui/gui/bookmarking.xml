@@ -1,0 +1,28 @@
+<section id="bookmark">
+	<title>Bookmarking</title>
+
+	<para> In the previous section we saw bookmark, let's see what it does when we click on it </para>
+
+
+	<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/gui/bookmark_name.png"/>
+			</imageobject>
+			<caption>
+				<para>Here you write the category name of your bookmark.</para>
+			</caption>
+	</mediaobject>
+
+	<para> Then it will add your new category in the main window. </para>
+
+	<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/gui/change_bookmark.png"/>
+			</imageobject>
+			<caption>
+				<para>That's our new category</para>
+			</caption>
+	</mediaobject>
+
+
+</section>

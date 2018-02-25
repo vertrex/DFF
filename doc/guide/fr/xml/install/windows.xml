@@ -1,0 +1,184 @@
+<section>
+	<title>Installation sur Windows</title>
+
+	<sect2>
+		<title>Un aperçu</title>
+
+		<para>Il y a deux packages pour Windows :</para>
+		<itemizedlist mark="opencircle">
+		<listitem>
+      		<para>Le premier contient toutes les dépendances nécéssaires (Python 2.7 et PyQt). Vous pouvez le télécharger <ulink url="http://www.digital-forensic.org/en/downloads/windows/"><citetitle>ici</citetitle></ulink>.
+      		</para>
+    	</listitem>      
+      	<listitem>
+   	    	<para>
+	      	Le second, qui est aussi disponible au téléchargement <ulink url="http://www.digital-forensic.org/en/downloads/windows/"><citetitle>ici</citetitle></ulink>, ne contient pas Python et PyQt, vous devrez donc installer les trois dépendances suivantes avant de lancer l'installation de DFF :</para>
+	      	<itemizedlist mark="bullet">
+      	 		<listitem>
+      	 			<para><ulink url="http://www.python.org/download/releases/2.7.3/"><citetitle>Python 2.7</citetitle></ulink>
+      	 			</para>
+      	 		</listitem>
+      	 		<listitem>
+      	 			<para><ulink url="http://www.riverbankcomputing.co.uk/software/pyqt/download"><citetitle>PyQt</citetitle></ulink>
+      	 			</para>
+      	 		</listitem>
+      	 		<listitem>
+      	 			<para><ulink url="http://www.microsoft.com/en-us/download/details.aspx?id=5555"><citetitle> Microsoft Visual C++ 2010 Redistributable Package (x86)</citetitle></ulink> Seulement pour les utilisateurs de Windows XP.
+      	 			</para>
+      	 		</listitem>
+   			</itemizedlist>
+	    </listitem>
+   		</itemizedlist>
+   		<note>
+   			<para>Le formulaire sur la page de download de DFF est optionnel. Si vous ne voulez envoyer aucune information, laisser le vide et cliquez directement sur le bouton Download.</para>
+   		</note>
+   	</sect2>
+   	<sect2>
+   		<title>Installer DFF</title>
+   		<para> Une fois que vous avez télécharger un installeur, vous pouvez l'executer en double-cliquant dessus. La fenêtre suivante devrait s'afficher :</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Setup_Wizard_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquer sur le bouton <emphasis>Suivant</emphasis> (ou <emphasis>Annuler</emphasis> si vous voulez annuler l'installation).</para>
+			</caption>
+		</mediaobject>
+		<para>Sur la fenêtre suivante, il vous sera demander d'accepter les termes de licences.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Accept_license_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Si vous n'êtes pas d'accord, cliquez sur <emphasis>Annuler</emphasis> pour quitter l'installation, sinon cliquez sur <emphasis>J'accepte</emphasis>.</para>
+			</caption>
+		</mediaobject>
+		<para> Ensuite choisissez dans quel répertoire vous voulez installer DFF (par défaut dans <emphasis>C:\Program files\DFF</emphasis>).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_dir_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquez sur le bouton <emphasis>Parcourir</emphasis>... si vous voulez changer le répertoire d'installation (optionnel). Une fois que vous avez fini, cliquez sur le bouton <emphasis>Suivant</emphasis></para>
+			</caption>
+		</mediaobject>
+		<para>Il vous sera demander un nom pour le raccourcis que vous voulez créer dans votre menu <emphasis>Démarrer</emphasis> -> <emphasis>programmes</emphasis> (par défaut, <emphasis>Digital Forensics Framework</emphasis>).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Start_shortcut_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Vous pouvez le renommer ou choisir un répertoire existant de la liste. Vous pouvez aussi cocher la case <emphasis>Ne pas créer de raccourcis</emphasis> pour éviter la création de raccourcis sur le bureau. </para>
+			</caption>
+		</mediaobject>
+		<para>Cliquer sur bouton <emphasis>Installer</emphasis>.</para>
+		<para>Si vous avez choisi l'installeur avec les dépendances Python, lisez la partie suivante <emphasis>Installer Python et PyQT</emphasis>. Autrement vous pouvez directement aller à la partie<xref linkend="finish">finir l'installation</xref>.</para>
+   	</sect2>
+   	<sect2>
+   		<title>Installer Python et PyQt</title>
+   		<para>Il vous sera demander si vous voulez installer Python</para>
+   		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_python_fr.png"/>
+			</imageobject>
+		</mediaobject>
+		<para>Python 2.7 <emphasis>ET</emphasis> PyQt 4.8 (ou superieur) sont requis pour executer DFF, donc cliquez sur <emphasis>Oui</emphasis> si vous n'avez pas déjà installer ces dépendances. Autrement vous pouvez cliquer sur <emphasis>Non</emphasis> et directement aller à la partie <xref linkend="finish">finir l'installation</xref>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_pyqt_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquez <emphasis>Oui</emphasis> sur le pop-up, et ensuite <emphasis>Suivant</emphasis> de l'installeur.</para>
+			</caption>
+		</mediaobject>
+		<para>L'installeur de PyQt sera lancé.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Pyqt_wizard_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquez sur <emphasis>Suivant</emphasis>.</para>
+			</caption>
+		</mediaobject>
+		<para>Encore une fois il vous sera demander d'accepter les termes de licence de PyQt.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Pyqt_license_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquez sur <emphasis>j'accepte</emphasis> si vous accepter ces termes. Autrement, cliquez sur <emphasis>Annuler</emphasis> pour quitter l'installation.</para>
+			</caption>
+		</mediaobject>
+		<para>Selectionner les composantes de PyQt que vous souhaiter installer.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Pyqt_components_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Vous pouvez ensuite cliquer sur <emphasis>Suivant</emphasis>.</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<para>Même si tout les composants sont selectionner sur le screenshot, le seul qui est requis est <emphasis>Extensions modules</emphasis> (Coché par defaut) et <emphasis>Qt runtime</emphasis>. Parmis les autres, selectionner ceux qui vous intérèssent.</para>
+		</note>
+		<para>Vous devrez choisir dans quel répertoire vous voulez installer Python (<emphasis>C:\Python27</emphasis> par défaut).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Python_dir_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Si vous vouelz changer ce répertoire cliquer sur <emphasis>Parcourir</emphasis>... et selectionner le nouvel emplacement. Une fois fini vous pouvez cliquer sur <emphasis>Installer</emphasis>.</para>
+			</caption>
+		</mediaobject>
+		<para>Une fois cette installation fini, vous pouvez cliquer sur <emphasis>Terminer</emphasis>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Pyqt_install_done_fr.png"/>
+			</imageobject>
+		</mediaobject>
+		<para> Puis faites de même avec les installation suivantes :</para>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_pil_fr.png"/>
+			</imageobject>
+		</inlinemediaobject>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_apsw_fr.png"/>
+			</imageobject>
+		</inlinemediaobject>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Install_volatility_fr.png"/>
+			</imageobject>
+		</inlinemediaobject>
+		<para>Vous pouvez ensuite choisir d'installer les dépendances Microsoft DLL (qui sont requisent pour executer DFF).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Ms_dependencies_fr.png"/>
+			</imageobject>
+			<caption>
+				<para>Cliquer sur <emphasis>Oui</emphasis> Si vous voulez les installer. Patientez durant l'installation.</para>
+			</caption>
+		</mediaobject>
+	</sect2>
+	<sect2 id="finish">
+		<title>Finir l'installation</title>
+		<para> Une fois l'installation fini, vous pouvez cliquer sur le bouton <emphasis>Terminer</emphasis>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/install/Dff_install_done_fr.png"/>
+			</imageobject>
+		</mediaobject>
+		<para>Vous pouvez maintenant utiliser DFF. Si vous n'avez pas coché la case "ne pas créer d'icônes sur le Bureau" durant l'installation de DFF, deux icônes devraient avoir été crée sur votre Bureau.</para>
+		<itemizedlist mark="bullet">
+      	 		<listitem>
+      	 			<para>Celle qui est nommé <emphasis>DFF (shell)</emphasis> lancera l'interface en ligne de commande de DFF.</para>
+      	 		</listitem>
+      	 		<listitem>
+      	 			<para>La seconde, nommé <emphasis>DFF (gui)</emphasis> est utilisé pour lancer l'interface  graphique de DFF.</para>
+      	 		</listitem>
+   		</itemizedlist>
+   	</sect2>
+
+</section>

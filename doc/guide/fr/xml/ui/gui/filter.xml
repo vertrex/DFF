@@ -1,0 +1,38 @@
+<section id="filter">
+	<title>Filtre</title>
+
+	<para> Dans la section précédente destiné à la "Barre d'outils", nous avons aperçus la fonctionnalité de filtre. Voilà la barre de filtre si l'on clique sur Filtre.</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/filter_bar.png"/>
+		</imageobject>
+		<caption> La barre de filtre</caption>
+	</mediaobject>
+
+	<para> Expliquons ce que nous offre comme option ce filtre. Noter le menu déroulant qui a 4 option, cela permet de changer le comportement du moteur de recherche :</para>
+				<itemizedlist>
+			<listitem>
+				<para>
+					<emphasis>Fixed string</emphasis> (Par défaut) : le moteur de recherche va chercher les chaînes de caractères correspondant exactement a ce qui a été saisi dans le champ utilisateur (si test est saisi les fichiers s'appelant exactement test seront affichées, sensiblement a la casse ou non en fonction de la case a cocher correspondante).
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Wildcard</emphasis> : les wildcards permettent d'utiliser des méta-caractères. Ces-derniers permettent de simplifier l'écriture de certaines clauses. Nous y reviendrons par la suite. 
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>Fuzzy</emphasis> : recherches approximatives. Permet de rechercher en faisant des approximations sur la chaîne qui a été saisie par l'utilisateur. Par exemple, en recherche approximative, si l'utilisateur saisit <emphasis>test</emphasis>, les fichiers dont le nom est <emphasis>tust</emphasis> ou <emphasis>teet</emphasis>, etc, (une lettre de différence par rapport a test) seront affichés. 
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<emphasis>RegExp</emphasis> (Expressions régulières) : Apermet de définir un modèle de recherche, et tous les fichiers dont le nom "ressemble" a ce modèle seront affichés. Les expressions régulières permettent par exemple de rechercher les fichiers dont le nom commence par la lettre 'a' et finit par la lettre 'b'. 
+				</para>
+			</listitem>
+		</itemizedlist>
+
+
+</section>

@@ -1,0 +1,27 @@
+<section>
+	<title>FATFS</title>
+
+	<para> This module create the tree contained in a fat file system for normal and deleted files. </para>
+
+	<table id="detailled_fatfs"><title> Detailled fatfs</title>
+	<tgroup cols="2" align="center">
+	<tbody>
+		<row>
+			<entry><para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/fs_fatfs.png"/>
+					</imageobject>
+				</mediaobject></para>
+			</entry>
+			<entry align="left"><itemizedlist mark="none">
+				<listitem><emphasis>fat_to_use</emphasis> : [activatable] This option permits to chose the FAT to use when walking clusters)</listitem>
+				<listitem><emphasis>file</emphasis> : file containing a FAT file system</listitem>				
+				<listitem><emphasis>meta_carve</emphasis> : [activatable] carve directory entries in unallocated clusters (more accurate but slower)</listitem></itemizedlist>
+			</entry>
+		</row>	
+	</tbody>
+	</tgroup>
+	</table>
+
+</section>

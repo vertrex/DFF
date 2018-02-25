@@ -1,0 +1,173 @@
+<section>
+
+	<title>Premier démarrage</title>
+	<para>
+		Nous allons maintenant expliquer comment démarrer DFF en mode graphique et en ligne de commande, aussi bien avec des privilèges utilisateurs qu'Administrateur, sur Windows et Linux. 
+	</para>
+
+	<sect2>
+		<title>Démarrer l'interface graphique</title>
+		<para>
+			Il y a plusieurs possibilités pour démarrer l'interface graphique, dépendant du système d'exploitation sur lequel vous utilisez DFF. Nous allons les décrire pour Windows et Linux. 
+		</para>
+		
+		<sect3>
+			<title>Sur Windows</title>
+			<note>
+				<title>Windows version</title>
+				<para>
+					La procédure décrite ci-dessous est la même sur Windows XP, Vista et Seven.
+				</para>
+			</note>
+			
+			<para>
+				Si, durant la procédure d'installation du framework, l'option <emphasis>Créer des icônes sur le bureau</emphasis> a été cochée, des icônes devraient être présentes sur le bureau de l'utilisateur qui a effectué l'installation. Il suffit donc de double-cliquer sur l'icône <emphasis>Dff Gui</emphasis> pour démarrer le framework. Un écran de présentation (communément appelé <emphasis>splash-screen</emphasis>) devrait s'afficher, pour laisser la place a l'interface principale après quelques secondes. Le splash-screen affiche notamment le numéro de version de DFF. 
+			</para>
+			
+			<para>
+				Si les icônes DFF ne sont pas présentes sur le bureau, il suffit d'accéder au menu suivant :
+				 <menuchoice>
+      			<guimenu>Démarrer</guimenu>
+      			<guimenuitem>Applications</guimenuitem>
+      			<guimenuitem>DFF</guimenuitem>
+	  				<guimenuitem>DFF (gui)</guimenuitem>
+    			 </menuchoice>.				
+			
+			<note>
+				<title>GUI</title>
+				<para>
+					<emphasis>GUI</emphasis> Signifie <emphasis>Graphical User Interface</emphasis>, qui est traduit en français par <emphasis>Interface Graphique</emphasis>.
+				</para>
+			</note>			
+			</para>
+
+			<para>
+				Il est possible que vous soyez amener a démarrer DFF en mode Administrateur, durant une analyse live par exemple. Auquel cas, au lieu de double cliquer sur les icônes, il suffit d'effectuer un clic droit et de sélectionner l'option <emphasis>Exécuter en tant qu'administrateur</emphasis> (cf <xref linkend="launch_admin" />). A noter que votre mot de passe Administrateur vous sera demandé.
+			
+			</para>
+			
+				<figure id="launch_admin"><title>Exécuter en tant qu'administrateur</title>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gui/dff_admin.png" />
+					</imageobject>
+				</mediaobject>
+				</figure> 	
+  	 		
+		</sect3>
+		
+		<sect3>
+			<title>Sur Linux</title>
+			<para>
+				 La procédure de démarrage dépend en partie de la distribution de Linux que vous utilisez, et de son gestionnaire de fenêtre. Généralement, il est possible de lancer DFF a partir du menu	<emphasis>Application</emphasis> de votre gestionnaire de fenêtre, classé dans la sous-section <emphasis>Accessoires</emphasis>. Par exemple, les utilisateurs ayant installés un environnement Gnome devront aller dans le menu :
+				 <menuchoice>
+      			<guimenu>Application</guimenu>
+      			<guimenuitem>Accessoires </guimenuitem>
+	  				<guimenuitem>DFF (gui)</guimenuitem>
+    			 </menuchoice>.	
+			</para>
+			
+			<para>
+				Si il n'y a ni menu ni icônes DFF, il est toujours possible de lancer DFF a partir d'un interpréteur de commandes, présents par défaut sur tous les Linux. Pour ce faire, il suffit de lancer la commande <command>dff.py -g</command>. L'option <option>-g</option> indique que vous souhaitez démarrer l'interface graphique. 
+			</para>
+			
+			<para>
+				Pour démarrer DFF en mode administrateur, il suffit de lancer la commande <command>dff.py -g</command> avec les privilèges de l'utilisateur Root (en utilisant sudo, par exemple). 
+			</para>
+		</sect3>
+	</sect2>
+		
+	<sect2>
+		<title>Démarrer l'interface en ligne de commande</title>
+		<para>
+			La encore, la procédure varie en fonction du système d'exploitation utilisé.
+			<note>
+				<title>Shell</title>
+				<para>
+					Les <emphasis>Shells</emphasis> représentent des interpréteurs en ligne de commande : il s'agit d'interfaces homme-machines dans lesquelles les instructions utilisateurs sont fournies a la machine sous forme de textes (par opposition aux interfaces graphiques, ou les instructions utilisateurs sont fournies, par exemple, grâce a un clic de souris ou des saisies dans un formulaire graphique).
+				</para>
+			</note>	
+		</para>
+
+		<sect3>
+			<title>Sur windows</title>
+
+			<para>
+				Si, durant la procédure d'installation du framework, l'option <command>Créer des icônes sur le bureau</command> a été cochée, des icônes devraient être présentes sur le bureau de l'utilisateur qui a effectue l'installation. Il suffit donc de double-cliquer sur l'icône <command>DFF (shell)</command> pour démarrer le framework.
+			</para>
+			
+			<para>
+				 Si les icônes DFF ne sont pas présentes sur le bureau, il suffit dans le menu :
+				<menuchoice>
+      			<guimenu>Start</guimenu>
+      			<guimenuitem>Applications</guimenuitem>
+      			<guimenuitem>DFF</guimenuitem>
+	  				<guimenuitem>DFF (Shell)</guimenuitem>
+    			 </menuchoice>.		 
+			</para>
+			
+			<para>
+				 Il est possible que vous soyez amener a démarrer DFF en mode Administrateur, durant une analyse live par exemple. Auquel cas, au lieu de double cliquer sur l'icône <emphasis>DFF (Shell)</emphasis>, il suffit d'effectuer un clic droit et de sélectionner l'option <command>Exécuter en tant qu'administrateur</command>. A noter que votre mot de passe Administrateur vous sera demandé.
+			</para>
+			
+			<para>
+				Ensuite, il faut exécuter la commande <command>python.exe C:Programs\DFF\Dff.py</command> depuis le répertoire d'installation de Python (par défaut, <command>C:\Python2.7</command>). Notez l'absence de l'option <option>-g</option>, que nous avions utilisée précédemment qui servait a démarrer l'interface graphique de DFF. 
+			</para>
+			
+		</sect3>
+		
+		<sect3>
+			<title>Sur Linux</title>
+						
+			<para>
+				Le plus simple pour lancer l'interface de DFF en ligne de commande sur GNU/Linux est de le faire a partir d'un terminal : il suffit donc d'ouvrir un terminal et d'exécuter la commande suivante <command>dff.py</command>.
+			</para>
+			
+			<para>
+				Pour démarrer DFF en mode administrateur, il faut exécuter la commande <command>dff.py</command> avec les privilèges de l'utilisateur <emphasis>Root</emphasis>(avec sudo par exemple).
+				
+			</para>
+			<tip>
+				<title>GUI vs. line command</title>
+				<para>
+					Il est possible de lancer l'interface en ligne de commande au sein de l'interface graphique, comme nous le verrons par la suite. 
+				
+				</para>
+			</tip>
+		</sect3>
+		
+	</sect2>
+	
+	<sect2>
+		<title>Les options de DFF</title>
+		<para>
+			D'autres options sont disponibles. La première est <option>-help</option>, qui affiche un message d'aide a l'écran. Pour l'utiliser, il suffit de lancer, depuis un terminal sous GNU/Linux ou l'interpréteur de commandes Windows, la commande <command>dff.py -help</command>. Le message suivant va s'afficher :
+		</para>
+		<screen>
+$> dff.py -help
+DFF
+Digital Forensic Framework
+
+Usage: ./dff.py [options]
+Options:
+  -v      --version                  display current version
+  -g      --graphical                launch graphical interface
+  -t      --test=NAME                start a specific test
+  -l      --language=LANG            use LANG as interface language
+  -h      --help                     display this help message
+  -d      --debug                    redirect IO to system console
+          --verbosity=LEVEL          set verbosity level when debugging [0-3]
+  -c      --config=FILEPATH          use config file from FILEPATH
+
+$>
+		</screen>
+		
+	<para>
+		Les deux premières colonnes indiquent les noms raccourcis et complets de l'option. La dernière donne une courte description de celle-ci. Par exemple, si l'on souhaite afficher le numéro de version de dff, la commande <command>dff.py -v</command> est équivalente a la commande <command>dff.py --version</command>.
+	</para>
+	
+	<para>
+		Nous avons déjà présentée l'option <option>-g</option>, qui permet de démarrer l'interface graphique. L'option <option>-l</option> permet de choisir la langue dans laquelle le framework, indépendamment de sa configuration. Par exemple, la commande <command>dff.py -l fr</command> lancera DFF en Français. L'option <option>-d</option> re-dirigera les messages d'erreurs sur le terminal depuis lequel DFF a été démarré (par défaut, ces messages sont affichés directement par l'interface graphique de DFF). Cette option est utile pour déboguer le framework. L'option <option>-c</option> permet de spécifier manuellement le chemin (relatif ou absolu) vers un fichier de configuration.
+	</para>
+	</sect2>
+</section>

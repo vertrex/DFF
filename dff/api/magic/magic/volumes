@@ -1,0 +1,9 @@
+3		string		-FVE-FS-
+>14		leshort		=0
+>16		byte		=0
+>17		leshort		=0
+>22		leshort		=0
+>24		leshort		=0x3f
+>32		lelong		=0		volume/bitlocker
+
+

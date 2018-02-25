@@ -1,0 +1,16 @@
+<section>
+	<title>Presentation of Shell</title>
+
+	<para> In the previous section we present interface with command, that's how it is when we launch it</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/dff_shell.png"/>
+		</imageobject>
+		<caption> Shell of DFF </caption>
+	</mediaobject>
+
+	<para> What can we do in the command line interface :</para>
+
+
+</section>

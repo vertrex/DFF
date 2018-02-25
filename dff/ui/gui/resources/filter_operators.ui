@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filterOperators</class>
+ <widget class="QWidget" name="filterOperators">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>45</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="operatorCombo">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Is lesser than</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is lesser than or equal to</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is equal to</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is not equal to</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is greater than or equal to</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Is greater than</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

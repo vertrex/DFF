@@ -1,0 +1,155 @@
+<section>
+	<title>Installation sur Linux</title>
+
+	<sect2>
+		<title>Distribution à base Debian</title>
+		<subtitle>(Debian, Ubuntu, KUbuntu, XUbuntu, etc..)</subtitle>
+
+		<warning>
+			<para>Si vous utilisez une version Debian stable, vous ne pourrez pas installer le package car les versions stable utilisent toujours python 2.6.</para>
+		</warning>
+		<para>Il y a deux packages differents pour la distribution Debian, qui dépend si vous êtes en : 32 ou 64 bits.</para>
+		<sect3>
+		<title>32 bits package</title>
+
+		<para>Premièrement vous aurez besoin d'installer les dépendances pour le package en executant les commandes suivantes :</para>
+		<screen>
+			$> sudo apt-get install libafflib0 libavcodec53 libavcodec-extra-53 libavdevice53 libavformat53 libavutil51 libc6 libfuse2 libgcc1 libicu48 libstdc++6 libswscale2 libtre5 libudev0 
+			python-qt4 python-magic python-dbus libqt4-sql-sqlite hal dbus python-qt4-phonon python-apsw python-imaging reglookup
+		</screen>
+		<para>Les dépendances suivantes ne sont pas requisent pour intaller le package mais peuvent être utiles pour executer les supports Expert Witness (ewf) et PAB (Personal Address Book), PST (Personal Storage Table), OST (Offline Storage Table) formats de fichier.</para>
+		<screen>
+			$> wget http://libbfio.googlecode.com/files/libbfio-alpha-20120425.tar.gz 
+			$> tar zxf libbfio-alpha-20120425.tar.gz 
+			$> cd libbfio-20120425 
+			$> ./configure 
+			$> make -j
+			$> [$(grep -c '^processor' /proc/cpuinfo) + 1] 
+			$> sudo make install 
+			$> wget http://libewf.googlecode.com/files/libewf-20130303.tar.gz 
+			$> tar zxf libewf-20121209.tar.gz 
+			$> cd libewf-20121209 
+			$> ./configure 
+			[...] 
+			libbfio support: yes // you must have "yes" 
+			$> make -j$[$(grep -c '^processor' /proc/cpuinfo) + 1] 
+			$> sudo make install 
+			$> wget http://libpff.googlecode.com/files/libpff-alpha-20120802.tar.gz 
+			$> tar zxf libpff-alpha-20120802.tar.gz 
+			$> cd libpff-20120802 
+			$> ./configure 
+			[...] 
+			libbfio support: yes // you must have "yes" 
+			$> make -j$[$(grep -c '^processor' /proc/cpuinfo) + 1] 
+			$> sudo make install
+		</screen>
+		<para>Ensuite vous pouvez télécharger le package et l'installer : </para>
+		<screen>
+			$ wget http://www.arxsys.fr/media/downloads/1.3.0/dff_1.3.0_i386.deb 
+			$ sudo dpkg -i dff_1.3.0_i386.deb&lt;/nowiki&gt;
+		</screen>
+		<para>Si tout est ok, vous pouvez ensuite entrer dans votre terminal dff (mode console) ou dff-gui (interface graphique). Il y a aussi un accès dans la barre de menu sous accessoires démarrer l'interface graphique.</para>
+		</sect3>
+		<sect3>
+		<title>64 bits package</title>
+		<para>Sur une plateforme 64 bits libbfio, libewf et libpff deviennet des dépendances pour le package. Heureusement Pierre Chifflier a gentillement proposé ces packages pour les plateformes 64bits. Vous aurez besoin de les installer en premier : </para>
+		<screen>
+			$ wget --no-check-certificate https://www.wzdftpd.net/downloads/dff/libbfio1_20120425-1_amd64.deb
+			$ sudo dpkg -i libbfio1_20120425-1_amd64.deb 
+			$ wget --no-check-certificate https://www.wzdftpd.net/downloads/dff/libewf2_20130128-1_amd64.deb 
+			$ sudo dpkg -i libewf2_20130128-1_amd64.deb 
+			$ wget --no-check-certificate https://www.wzdftpd.net/downloads/dff/libpff1_20120802-1_amd64.deb 
+			$ sudo dpkg -i libpff1_20120802-1_amd64.deb
+		</screen>
+		<para>Ensuite la procédure est la même qu'en 32 bits. </para>
+		<screen>
+			$ sudo apt-get install libafflib0 libavcodec53 libavcodec-extra-53 libavdevice53 libavformat53 libavutil51 libc6 libfuse2 libgcc1 libicu48 
+			libstdc++6 libswscale2 libtre5 libudev0 python-qt4 python-magic python-dbus libqt4-sql-sqlite hal dbus python-qt4-phonon python-apsw 
+			python-imaging reglookup
+		</screen>
+		<para>Puis vous pouvez télécharger le package et l'installer </para>
+		<screen>
+			$ wget http://www.arxsys.fr/media/downloads/1.3.0/dff_1.3.0_amd64.deb 
+			$ sudo dpkg -i dff_1.3.0_amd64.deb
+		</screen>
+		<para>Si tout est ok, vous pouvez ensuite entrer dans votre terminal dff (mode console) ou dff-gui (interface graphique). Il y a aussi un accès dans la barre de menu sous accessoires démarrer l'interface graphique. </para>
+		</sect3>
+	</sect2>
+	<sect2>
+		<title>Fedore, Centos et RHEL</title>
+		<para><ulink url="http://www.cert.org/"><citetitle>CERT</citetitle></ulink> fournit maintenant les packages DFF avec toutes les dépendances optionnel et celles séparées.</para>
+		<para>Cherchez sur la page d'annonces pour les dernières mise à jours du support de DFF.</para>
+		<para>Les utilisateurs de Fedore, Centos et RHEL ont juste à ajouter cert.org en suivant les instructions en bas de <ulink url="http://www.cert.org/digital-intelligence/tools/linux-forensics-tools-repository.cfm"><citetitle>cette page</citetitle></ulink>. </para>
+	</sect2>
+	<sect2>
+		<title>Gentoo</title>
+		<para>Il y a deux façon d'installer DFF sur Gentoo: avec ou sans ebuild.</para>
+		<sect3>
+			<title>Avec ebuild</title>
+			<para>Vous pouvez utiliser layman pour ajouter le pentoo overlay qui contient ebuild, merci à ikelos et l'équipe pentoo pour qui le fournit ! Allez voir <ulink url="https://code.google.com/p/pentoo/source/browse/portage/trunk/app-forensics/dff"><citetitle>leur tracker</citetitle></ulink> pour la dernière version de DFF supporté et changer les commentaires.</para>
+			<para>Si vous n'avez pas layman d'installé : </para>
+			<screen>
+				#> emerge layman
+				#> echo "source /var/lib/layman/make.conf" >> /etc/make.conf
+			</screen>
+			<para>Ensuite ajouter la surcouche pentoo :</para>
+			<screen>
+				#> layman -a pentoo
+			</screen>
+			<para>Enfin, vous pouvez merger DFF et ses dependances. DFF ebuild est "masqué" pour quelques architectures, par exemple sur x86 n'oubliez pas de l'enlever :</para>
+			<screen>
+				ACCEPT_KEYWORDS="~x86" emerge dff
+			</screen>
+			<para>ou sur une architecture aml*d64 compatible</para>
+			<screen>
+				ACCEPT_KEYWORDS="~amd64" emerge dff
+			</screen>
+		</sect3>
+		<sect3>
+			<title>Sans ebuild</title>
+			<para>Pour pouvoir compiler et executer DFF vous aurez besoin d'installer des dépendances :</para>
+			<itemizedlist mark="opencircle">
+      	 		<listitem>
+      	 			<para><ulink url="http://www.cmake.org/"><citetitle>CMake</citetitle></ulink> >= 2.8</para>
+      	 		</listitem>
+      	 		<listitem>
+      	 			<para><ulink url="http://www.swig.org/"><citetitle>Swig</citetitle></ulink> >= 1.38</para>
+      	 		</listitem>      	 		
+      	 		<listitem>
+      	 			<para><ulink url="http://www.riverbankcomputing.co.uk/software/pyqt/intro"><citetitle>PyQt</citetitle></ulink> >= 4.6</para>
+      	 		</listitem>      	 		
+      	 		<listitem>
+      	 			<para>Optionnel :</para>
+      	 			<itemizedlist mark="square">
+      	 				<listitem>
+      	 					<para><ulink url="http://fuse.sourceforge.net/"><citetitle>fuse</citetitle></ulink></para>
+      	 				</listitem>
+      	 				<listitem>
+      	 					<para><ulink url="https://code.google.com/p/libbfio/"><citetitle>libbfio</citetitle></ulink></para>
+      	 				</listitem>
+      	 				<listitem>
+      	 					<para><ulink url="https://code.google.com/p/libpff/"><citetitle>libpff</citetitle></ulink></para>
+      	 				</listitem>
+      	 				<listitem>
+      	 					<para><ulink url="http://sourceforge.net/projects/libewf/"><citetitle>libewf</citetitle></ulink></para>
+      	 				</listitem>
+      	 				<listitem>
+      	 					<para><ulink url="http://sourceforge.net/projects/afflib/"><citetitle>afflib</citetitle></ulink></para>
+      	 				</listitem>
+      	 			</itemizedlist>
+      	 		</listitem>
+   			</itemizedlist>
+   			<para>Utiliser les commandes suivantes pour récuperer toutes les dépendances :</para>
+   			<screen>
+   				#> emerge -av cmake
+				#> echo ">=dev-lang/swig-1.3.38" >> /etc/portage/package.keywords
+				#> emerge -av swig
+				#> echo ">=dev-python/PyQt4-4.6" >> /etc/portage/package.keywords
+				#> emerge -av PyQt4
+				#> emerge -av app-forensics/libewf
+				#> emerge -av sys-fs/fuse
+			</screen>
+			<para>Puis, pour compiler DFF, installer le depuis le code source. </para>
+		</sect3>
+	</sect2>
+</section>

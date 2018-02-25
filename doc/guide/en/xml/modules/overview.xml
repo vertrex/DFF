@@ -1,0 +1,74 @@
+<section xml:id="modules">
+	<title>Modules on DFF</title>
+	<para>The architecture of DFF is built around three main elements :</para>
+		<itemizedlist>
+			<listitem>
+				<para>
+					API
+					<footnote xml:id="api">
+						<para>
+							An API (<emphasis>Application Programming Interface</emphasis>) is provided in a program and that allows to do link between others softwares, including software libraries.
+						</para>
+					</footnote>
+					: allows to make other functionalities without modify the framework, and bring an easy access.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					User Interfaces : They are human-machine interface and allow providing data and print Out results.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					Modules : They all a specific job, for example analysing data files and they are linked to the API.
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para>With DFF you can easily add functionality, by using the same code as API.</para>
+		<para>All DFF's modules have the same base, and they can have one or many of the following functionality :</para>
+		<itemizedlist mark="opencircle">
+			<listitem>Wrote in C, C++ ou python</listitem>
+			<listitem>Configurable </listitem>
+			<listitem>Create virtual files and their attributs (meta-data)</listitem>
+			<listitem>Have a graphical interface</listitem>
+			<listitem>Have a file type</listitem>
+			<listitem>Have a token to be classified in category</listitem>
+			<listitem>Provide progress report</listitem>
+			<listitem>Provide list of result</listitem>
+			<listitem>Provide description</listitem>
+			<listitem>Have an icon</listitem>
+		</itemizedlist>
+		<para>Every modules provide unique functionality. The list of all modules and their description can be found in user interfaces. the modules who have a token will be classified in a specific category, we will explain that in the following parts.</para>
+
+	<sect2>
+		<title>Different type of modules</title>
+		<para>
+			DFF by default have many modules, which can be classified in three main category. 
+		</para>
+
+	  <sect3>	
+	  		<title>Modules with nodes creation</title>
+	  		<para>
+	  			The modules classified as <emphasis>connectors</emphasis> or <emphasis>file system</emphasis>, have particularity to use nodes as argument, and create other nodes at output, who are in the files browser. Those modules are here to process the data and show it as a simple tree.
+	  		</para>
+	  		<para>
+	  			The created nodes are like files carrying data and attributes provided by the modules. The created data can also be treat by another module. Which allows a better precision in presentation and interpretation.
+	  		</para>
+	  </sect3>
+
+	  <sect3>
+	 	 	<title>Modules with statistic visualisation</title>
+	  		<para>
+	  			Those modules have graphical representation of data, they are used only with the graphical interface. A visualisation module allow to show pictures or website, but can also make a graphical statistic, or view as hexadecimal,so the user could interact.
+	  		</para>
+	  </sect3>
+
+	  <sect3>
+	  	<title>Modules with meta-data</title>
+	  	<para>
+	  		Those modules make analysis on data, usually on created nodes and add some attributes.
+	  </para>
+	  </sect3>
+	</sect2>
+	<!--configure / lister / lancer-->
+</section>

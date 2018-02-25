@@ -1,0 +1,34 @@
+# Macintosh filesystem data
+# From "Tom N Harris" <telliamed@mac.com>
+# Fixed HFS+ and Partition map magic: Ethan Benson <erbenson@alaska.net>
+# The MacOS epoch begins on 1 Jan 1904 instead of 1 Jan 1970, so these
+# entries depend on the data arithmetic added after v.35
+# There's also some Pascal strings in here, ditto...
+
+# The boot block signature, according to IM:Files, is 
+# "for HFS volumes, this field always contains the value 0x4C4B."
+# But if this is true for MFS or HFS+ volumes, I don't know.
+# Alternatively, the boot block is supposed to be zeroed if it's
+# unused, so a simply >0 should suffice.
+
+0x400	beshort			0xD2D7
+>0x406	beldate-0x7C25B080	>0		filesystem/mfs
+#!:mime		filesystem/mfs
+
+
+# *.hfs updated by Joerg Jenderek
+# http://en.wikipedia.org/wiki/Hierarchical_File_System
+# "BD" gives many false positives
+0x400	beshort			0x4244
+# ftp://ftp.mars.org/pub/hfs/hfsutils-3.2.6.tar.gz/hfsutils-3.2.6/libhfs/apple.h
+# first block of volume bit map (always 3)
+>0x40e	ubeshort		0x0003
+# maximal length of volume name is 27
+>>0x424		ubyte			<28	filesystem/hfs
+#!:mime		filesystem/hfs
+
+0x400	beshort			0x482B
+# only the creation date is local time, all other timestamps in HFS+ are UTC.
+>&22	bedate-0x7C25B080	>0
+>&26	bedate-0x7C25B080	>0		filesystem/hfsp
+#!:mime		filesystem/hfsp

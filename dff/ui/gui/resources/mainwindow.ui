@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Digital Forensics Framework</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_evidence"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_device"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuModule">
+    <property name="title">
+     <string>Module</string>
+    </property>
+    <addaction name="actionLoadModule"/>
+    <addaction name="actionBrowse_modules"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionMaximize"/>
+    <addaction name="separator"/>
+    <addaction name="actionFullscreen_mode"/>
+    <addaction name="separator"/>
+    <addaction name="actionNodeBrowser"/>
+    <addaction name="separator"/>
+    <addaction name="actionShell"/>
+    <addaction name="actionPython_interpreter"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuModule"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>Toolbar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About DFF ...</string>
+   </property>
+  </action>
+  <action name="actionLoadModule">
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="toolTip">
+    <string>Load module</string>
+   </property>
+  </action>
+  <action name="actionOpen_evidence">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/fileopen.png</normaloff>:/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open evidence</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionOpen_device">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/dev_hd.png</normaloff>:/dev_hd.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open device</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/exit.png</normaloff>:/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/configure.png</normaloff>:/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionMaximize">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/maximize.png</normaloff>:/maximize.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maximize</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionFullscreen_mode">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/randr.png</normaloff>:/randr.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fullscreen mode</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionNodeBrowser">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/view_detailed.png</normaloff>:/view_detailed.png</iconset>
+   </property>
+   <property name="text">
+    <string>Browser</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionShell">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/shell.png</normaloff>:/shell.png</iconset>
+   </property>
+   <property name="text">
+    <string>Console</string>
+   </property>
+   <property name="toolTip">
+    <string>Console</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPython_interpreter">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/interpreter.png</normaloff>:/interpreter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Live scripting</string>
+   </property>
+   <property name="toolTip">
+    <string>Live scripting</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/help.png</normaloff>:/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionIdeOpen">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/script-new.png</normaloff>:/script-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>IDE</string>
+   </property>
+   <property name="toolTip">
+    <string>Open the IDE</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionBrowse_modules">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/module2.png</normaloff>:/module2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

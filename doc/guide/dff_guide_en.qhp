@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>org.digital-forensic.dff_guide_en</namespace>
+  <virtualFolder>doc</virtualFolder>
+  <customFilter name="DFF 1.3.5">
+     <filterAttribute>DFF</filterAttribute>
+     <filterAttribute>1.3.5</filterAttribute>
+  </customFilter>
+  <filterSection>
+    <filterAttribute>DFF</filterAttribute>
+    <filterAttribute>DFF English guide</filterAttribute>
+    <filterAttribute>1.3.5</filterAttribute>
+    <toc>
+      <section title="English guide" ref="en/html/index.html"></section>
+    </toc>
+    <files>
+      <file>en/resources/*</file><file>en/html/*.html</file>
+   </files>
+  </filterSection>
+</QtHelpProject>

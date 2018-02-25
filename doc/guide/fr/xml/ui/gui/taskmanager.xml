@@ -1,0 +1,16 @@
+<section>
+	<title>Gestionnaire de tâches</title>
+
+	<para> Le gestionnaire de tâche est l'onglet principal de DFF, c'est là que vous pouvez surveiller l'avancement pendant que le module à un processus en cours sur votre appareil. </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/task_manager_fr.png"/>
+		</imageobject>
+		<caption> Le gestionnaire de tâches</caption>
+	</mediaobject>
+
+	<para> Comme vous pouvez le voir ça permet de savoir ce qui est en cours d'utilisation et combien de temps cela va prendre pour finir.</para>
+
+
+</section>

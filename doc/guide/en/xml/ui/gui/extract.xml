@@ -1,0 +1,22 @@
+<section id="extract">
+	<title>Extract</title>
+
+	<para> If you want to extract some files you just havec to <emphasis><menuchoice><guimenu>Right click</guimenu><guimenuitem>Extract</guimenuitem></menuchoice></emphasis> <inlinemediaobject><imageobject><imagedata fileref="images/gui/click2_extract.png" scale="30"/></imageobject></inlinemediaobject>and the following window should appear :</para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/extract.png"/>
+		</imageobject>
+		<caption> The extract window </caption>
+	</mediaobject>
+
+	<para> As you can see, you have 3 options who can be select :
+		<itemizedlist mark="opencircle">
+			<listitem><emphasis>Recursive mode</emphasis> : extract the selected content and all his parents</listitem>
+			<listitem><emphasis>Preserve tree</emphasis> : set the exact tree</listitem>
+			<listitem><emphasis>Overwrite existing</emphasis> : copy on an existing file</listitem>
+		</itemizedlist>
+	</para>
+
+
+</section>

@@ -1,0 +1,42 @@
+<section>
+	<title>Presentation of Digital Forensics Framework (DFF)</title>
+<para>
+DFF is a multi-platform and modular software of digital forensics, distributed free and under Open Source license.
+</para>
+<para>
+It allows to reveal digital evidence in case of a technical investigation or respond to incidents while preserving the digital integrity
+</para>
+<para>
+DFF allows to scan disks, get the erased data, analyse flash memory and identify malware on a system with his user interface.
+</para>
+<para>
+For developers, DFF provides many libraries of specialised programmation for modify and add his own functionalities.
+</para>	
+<para>
+	<figure id="dff_logo">
+			<title>Logo of DFF</title>
+			<imageobject condition="dff_logo">
+				<imagedata fileref="images/logos/logo.png" width="128" />
+			</imageobject>
+		</figure>
+		DFF can be download via the following link :<ulink url="http://digital-forensic.org/" />
+	</para>
+	<para>
+		The source code of DFF is based on the <emphasis>Git</emphasis> version management software 
+		<footnote xml:id="github">
+			<para>
+				Git : <ulink url="http://git-scm.com/" />
+			</para>
+		</footnote>
+		. It's available via the following link :
+		<ulink url="http://git.digital-forensic.org/" />.
+	</para>
+
+	<para>
+		DFF was built and developed to be portable on most of System. 
+          It can be used indifferently on some OS : Linux, Unix, Microsoft Windows and MacOS. The multi-tasking architecture of the framework allow automatisation and the parallelisation of analysis, while the integrated development libraries allows the quick add of new functionalities.
+          
+          Moreover, the community around DFF is active, innovations are continuous and all users can benefit of that improvement.
+	</para> 
+</section>
+

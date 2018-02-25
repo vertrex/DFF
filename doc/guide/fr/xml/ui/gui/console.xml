@@ -1,0 +1,16 @@
+<section>
+	<title>Console</title>
+
+	<para> Dans DFF, même si vous êtes sur l'interface graphique vous pouvez ouvrir le terminal du framework et travailler dessus.  </para>
+
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/gui/shell_tab.png"/>
+		</imageobject>
+		<caption> Le terminal de DFF</caption>
+	</mediaobject>
+
+	<para> Vous remarquerez qu'un nouvel onglet est apparu, juste à côté de l'onglet Scanner.</para>
+
+
+</section>

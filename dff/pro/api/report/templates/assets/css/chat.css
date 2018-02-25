@@ -1,0 +1,26 @@
+.table-chat th,
+
+
+.table td {
+/*    border-top: 0px;*/
+    border-top: 1px solid #dddddd;
+}
+
+.table-chat tr.main{
+    font-weight: bold;
+}
+
+.table-chat td.date{
+    color: #989898;
+    font-style: italic;
+}
+
+.table-chat td.username{
+    text-align: right;
+    color: #006699;
+
+}
+.table-chat td.message{
+    text-align: left;
+    width:100%
+}
