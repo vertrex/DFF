@@ -10,14 +10,22 @@ TODO :
 ------
 
 - add lacking CMakeList (needed to compile in build/ ex:export.csv) : Done
+
+- Push a dff version in a new git without submodules (they will maybe come back later) : Done
+
+- Merge pro in dff (remove the /pro directory and merge the inherited classes) better to do before porting to Qt5 or we will port code that will be merged ... :
+  * Merge modules but need to merge modules/pro/i8n into DFF i18n or remove translation 
+  
+
+
+- Remove dead code (ide etc...)
+- Remove unused Qt template generation
+- Replace PyQt4 by PyQt5
+- Renable the report as QtWebView is available on debian in PyQt5
 - add destruct as git submodule (needed to compile in build/)
 - compile without -std=c++98
 - use swig 3.12 rather than swig 2.11
 - remove all deprecated call to dependencies 
-- Push a dff version in a new git without submodules (they will maybe come back later)
-- Merge pro in dff (remove the /pro directory and merge the inherited classes)
-- Replace PyQt4 by PyQt5
-- Renable the report as QtWebView is available on debian in PyQt5
 - Optionally port it to Python 3 (or for DFF 3 ;)
 - Fix all bug reported by differents tools
 - Test 

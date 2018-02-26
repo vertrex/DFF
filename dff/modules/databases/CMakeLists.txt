@@ -10,11 +10,15 @@
 # and IRC channels for your use.
 # 
 # Author(s):
-#  jeremy MOUNIER <jmo@digital-forensic.org>
+#  Solal Jacob <sja@digital-forensic.org>
+
+add_subdirectory(winreg)
+add_subdirectory(sqlite)
+add_subdirectory(evt)
+add_subdirectory(evtx)
+add_subdirectory(msiecf)
+add_subdirectory(firefoxcache)
 
 install_file(
   __init__.py
 )
-
-add_subdirectory(winreg)
-add_subdirectory(sqlite)

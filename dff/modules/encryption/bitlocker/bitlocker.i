@@ -29,7 +29,7 @@
 #include "bitlocker.hpp"
 %}
 
-%import "../../../../api/vfs/libvfs.i"
+%import "../../../api/vfs/libvfs.i"
 
 %include "bitlocker.hpp"
 

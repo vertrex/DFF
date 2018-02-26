@@ -38,7 +38,7 @@ from dff.modules.browsers.chrome import Chrome
 from dff.modules.browsers.internetexplorer import InternetExplorer, REG_INTERNET_EXPLORER
 from dff.modules.browsers.opera import Opera
 
-from dff.pro.modules.analyse.analyse import Translator 
+from dff.modules.analyse.analyse import Translator 
 
 class InternetBrowsers(object):
     FIREFOX = "Firefox"

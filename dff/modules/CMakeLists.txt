@@ -13,7 +13,10 @@
 #  Frederic Baguelin <fba@digital-forensic.org>
 #  Solal Jacob <sja@digital-forensic.org>
 
-install_file(__init__.py)
+install_file(
+  __init__.py
+  exprotcsv.py
+)
 
 include_directories("${CMAKE_SOURCE_DIR}/dff/api/exceptions/breakpad")
 
@@ -32,3 +35,9 @@ add_subdirectory (metadata)
 add_subdirectory (databases)
 add_subdirectory (mailbox)
 add_subdirectory (export)
+add_subdirectory (analyse)
+add_subdirectory (encryption)
+add_subdirectory (im)
+add_subdirectory (malware)
+add_subdirectory (i18n)
+

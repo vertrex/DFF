@@ -30,3 +30,10 @@ if (AFF_FOUND)
 else (AFF_FOUND)
     message(STATUS "AFF library not found. Connector module will not be built.")
 endif(AFF_FOUND)
+
+if (DSTRUCT_AGENT)
+  add_subdirectory(agent)
+  install_file(
+    __init__.py
+    )
+endif (DSTRUCT_AGENT)

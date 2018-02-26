@@ -29,7 +29,7 @@ from dff.ui.console.console import Console
 from dff.pro.ui.gui.gui import GUIPro as GUI
 from dff.ui.ui import parseArguments
 
-MODULES_PATHS = ["dff/modules", "dff/pro/modules"]
+MODULES_PATHS = ["dff/modules"]
 
 def fg():
     """Launch shell loop"""

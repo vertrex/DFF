@@ -18,7 +18,7 @@ from abc import ABCMeta, abstractmethod
 from dff.pro.api.report.manager import ReportManager
 from dff.pro.api.report.fragments import TableFragment, ChatFragment
 
-from dff.pro.modules.analyse.analyse import Translator
+from dff.modules.analyse.analyse import Translator
 
 from chatsync import ChatSync
 

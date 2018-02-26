@@ -51,7 +51,7 @@ void            BitLockerVolumeNode::__setVolumeInfo(void)
     throw vfsError("Can't get volume size");
   this->setSize(size);
 
-  uint32_t encryptionMethod = 0;
+  uint16_t encryptionMethod = 0;
   if (libbde_volume_get_encryption_method(this->__volume, &encryptionMethod, &bdeError) == 1)
   {
     if ((encryptionMethod & 0xffff) == LIBBDE_ENCRYPTION_METHOD_AES_128_CBC_DIFFUSER)

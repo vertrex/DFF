@@ -27,7 +27,7 @@
 #include "mfso.hpp"
 %}
 
-%import "../../../../api/vfs/libvfs.i"
+%import "../../../api/vfs/libvfs.i"
 
 %ignore AgentCache;
 %ignore Agent::open;

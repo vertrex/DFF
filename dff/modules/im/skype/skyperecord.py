@@ -16,7 +16,7 @@
 
 from dff.api.types.libtypes import DateTime 
 
-from dff.pro.modules.analyse.analyse import Translator
+from dff.modules.analyse.analyse import Translator
 
 class SkypeRecordTranslator(Translator):
   def translationMap(self):

@@ -15,6 +15,5 @@
 
 add_subdirectory(api)
 add_subdirectory(ui)
-add_subdirectory(modules)
 
 install_file(__init__.py)
