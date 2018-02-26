@@ -16,9 +16,8 @@ from dff.api.module.module import Module, Script
 from dff.api.module.manager import ModuleProcessusManager
 from dff.api.vfs.vfs import vfs
 from dff.api.filters.libfilters import Filter
-
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.fragments import TableFragment, TextFragment, NodeListFragment
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import TableFragment, TextFragment, NodeListFragment
 
 class Android(Script):
   def __init__(self):

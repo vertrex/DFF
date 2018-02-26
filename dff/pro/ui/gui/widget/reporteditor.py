@@ -19,10 +19,9 @@ from PyQt4.QtGui import QSplitter, QWidget, QVBoxLayout, QPushButton, QStackedWi
 
 from dff.api.events.libevents import EventHandler
 from dff.api.gui.thumbnail import Thumbnailer
-
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.ui.gui.widget.reportexport import ReportExportDialog
-from dff.pro.ui.gui.widget.renderer import UrlRenderer
+from dff.api.report.manager import ReportManager
+from dff.ui.gui.widget.reportexport import ReportExportDialog
+from dff.ui.gui.widget.renderer import UrlRenderer
 
 class ReportTreeItemMenu(QMenu):
   def __init__(self, parent):

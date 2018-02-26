@@ -18,9 +18,8 @@ from PyQt4.QtCore import QString, SIGNAL,Qt, QString
 from PyQt4.QtGui import QWidget, QLabel, QTreeWidget, QTreeWidgetItem, QVBoxLayout, QProgressBar, QMessageBox, QDialog, QTableWidget, QTableWidgetItem, QPushButton, QIcon
 
 from dff.api.taskmanager.taskmanager import TaskManager, ppsched
-
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.fragments import TableFragment, TabFragment, TextFragment
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import TableFragment, TabFragment, TextFragment
 
 class ReportScan(object):
   def __init__(self, parent):

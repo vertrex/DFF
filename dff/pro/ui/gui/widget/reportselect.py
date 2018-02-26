@@ -13,7 +13,7 @@
 from PyQt4.QtCore import SIGNAL
 from PyQt4.QtGui import QVBoxLayout, QPushButton, QIcon,QDialog, QLabel, QLineEdit, QHBoxLayout, QInputDialog, QGroupBox, QComboBox
 
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 
 class ReportSelectCategory(QGroupBox):
   def __init__(self, parent = None):

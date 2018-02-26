@@ -6,9 +6,9 @@ from PyQt4.QtGui import QDialog, QLabel, QProgressBar, QPushButton, QVBoxLayout,
 from dff.api.events.libevents import EventHandler
 from dff.api.vfs.extract import Extract
 
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.page import ReportPage
-from dff.pro.api.report.fragments import ReportPageFragment
+from dff.api.report.manager import ReportManager
+from dff.api.report.page import ReportPage
+from dff.api.report.fragments import ReportPageFragment
 
 class ReportExportProgress(QObject):
   def __init__(self, name, eventCount, eventStart, eventFinish, child = None):

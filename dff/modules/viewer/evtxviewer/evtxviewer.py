@@ -26,7 +26,7 @@ from dff.api.module.script import Script
 from dff.api.module.module import Module
 from dff.api.module.manager import ModuleProcessusManager
 
-#from dff.pro.api.report.document import ReportManager XXX REPORT
+#from dff.api.report.document import ReportManager XXX REPORT
 
 from dff.modules.evtx.evtx import EVTX
 #from dff.modules.evtx.manager import EvtxDocument

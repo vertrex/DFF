@@ -29,8 +29,7 @@ from dff.api.module.script import Script
 from dff.api.module.manager import ModuleProcessusManager
 from dff.api.types.libtypes import Argument, typeId
 from dff.api.taskmanager.taskmanager import TaskManager
-
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 
 from dff.modules.browsers.browser import RegUtils
 from dff.modules.browsers.firefox import Firefox

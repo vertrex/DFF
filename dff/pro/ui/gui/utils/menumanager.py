@@ -18,7 +18,7 @@ from PyQt4.QtGui import QIcon, QPixmap, QAction, QApplication, QWidget, QInputDi
 from dff.ui.gui.resources.ui_nodeactions import Ui_nodeActions
 from dff.ui.gui.utils.menumanager import MenuManager
 
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 
 from dff.pro.ui.gui.widget.reportselect import ReportSelectDialog
 from dff.pro.ui.gui.wizard.autowizard import AutoWizard

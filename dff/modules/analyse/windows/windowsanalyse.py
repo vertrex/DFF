@@ -24,9 +24,8 @@ from dff.api.filters.libfilters import Filter
 from dff.api.module.module import Module
 from dff.api.module.script import Script
 from dff.api.module.manager import ModuleProcessusManager
-
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.fragments import TableFragment, TabFragment, TextFragment 
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import TableFragment, TabFragment, TextFragment 
 
 from dff.modules.winreg.registrymanager import RegistryManager
 from dff.modules.evt.manager import EvtFilteredWidget

@@ -14,10 +14,11 @@ TODO :
 - Push a dff version in a new git without submodules (they will maybe come back later) : Done
 
 - Merge pro in dff (remove the /pro directory and merge the inherited classes) better to do before porting to Qt5 or we will port code that will be merged ... :
-  * Merge modules but need to merge modules/pro/i8n into DFF i18n or remove translation 
+  * Merge pro/modules in dff/modules : Done
+    XXX (but need to merge modules/pro/i8n into DFF i18n or remove translation)
+    XXX need to rework on modules/__init__.py it was usefull whith multiple module path but now it's make seem more weird (base module base must not be filled)
+  * Merge dff/pro/api in dff/api
   
-
-
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
 - Replace PyQt4 by PyQt5

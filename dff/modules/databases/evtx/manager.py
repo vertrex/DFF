@@ -21,7 +21,7 @@ from PyQt4.QtGui import QTableWidgetItem, QIcon, QPixmap, QListWidget, QSplitter
 from dff.api.vfs.libvfs import VFS
 from dff.api.module.manager import ModuleProcessusHandler, ModuleProcessusManager
 
-#from dff.pro.api.report.document import ReportFramedDocument, ReportDocument, ReportFragmentTable, ReportFragmentHtml, ReportManager
+#from dff.api.report.document import ReportFramedDocument, ReportDocument, ReportFragmentTable, ReportFragmentHtml, ReportManager
 
 from dff.modules.evtxviewer.evtxviewerpanel import EventLogViewer
 from dff.modules.evt.manager import EvtControlPannel

@@ -17,11 +17,10 @@ from datetime import datetime
 
 from dff.api.types.libtypes import Variant, typeId
 from dff.api.taskmanager.processus import ProcessusManager 
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import TableFragment, TabFragment, TextFragment
 
 from dff.ui.gui.widget.taskmanager import Processus
-
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.fragments import TableFragment, TabFragment, TextFragment
 
 class ReportTraceability():
   def __init__(self):

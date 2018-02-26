@@ -21,7 +21,7 @@ from dff.api.types.libtypes import Argument, typeId
 from dff.api.module.module import Module
 from dff.api.module.manager import ModuleProcessusManager
 
-from dff.modules.analyse import Analyse
+from dff.modules.analyse.analyse import Analyse
 
 class WIN_EVENTS(Analyse):
     def __init__(self):

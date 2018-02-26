@@ -13,7 +13,6 @@
 #  Frederic Baguelin <fba@digital-forensic.org>
 #  Solal Jacob <sja@digital-forensic.org>
 
-add_subdirectory(api)
 add_subdirectory(ui)
 
 install_file(__init__.py)

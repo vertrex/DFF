@@ -14,8 +14,7 @@
 #
 from dff.ui.gui.widget.stdio import STDOut
 from dff.ui.gui.widget.stdio import STDErr
-
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 
 class STDOutPro(STDOut):
   def __init__(self, parent, debug):

@@ -20,7 +20,7 @@ from PyQt4.QtGui import QWidget, QTableWidget, QTableWidgetItem, QAbstractItemVi
 from dff.api.vfs.libvfs import VFS 
 from dff.api.module.manager import ModuleProcessusHandler, ModuleProcessusManager
 
-#from dff.pro.api.report.document import ReportFramedDocument, ReportDocument, ReportFragmentTable, ReportFragmentHtml, ReportManager XXX REPORT
+#from dff.api.report.document import ReportFramedDocument, ReportDocument, ReportFragmentTable, ReportFragmentHtml, ReportManager XXX REPORT
 
 from dff.modules.evt.evt_header import EVENTLOG_AUDIT_SUCCESS, EVENTLOG_AUDIT_FAILURE, EVENTLOG_ERROR_TYPE, EVENTLOG_INFORMATION_TYPE, EVENTLOG_WARNING_TYPE
 

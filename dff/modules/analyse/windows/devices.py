@@ -19,8 +19,7 @@ from dff.api.types.libtypes import Argument, typeId, MS64DateTime
 from dff.api.filters.libfilters import Filter
 from dff.api.module.module import Module, Script
 from dff.api.module.manager import ModuleProcessusManager
-
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 
 from dff.modules.analyse.analyse import Translator
 

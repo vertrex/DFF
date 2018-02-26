@@ -3,32 +3,32 @@
 <context>
     <name>AccountTranslator</name>
     <message>
-        <location filename="../analyse/windows/account.py" line="30"/>
+        <location filename="../analyse/windows/account.py" line="29"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="31"/>
+        <location filename="../analyse/windows/account.py" line="30"/>
         <source>Key</source>
         <translation>Clef</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="32"/>
+        <location filename="../analyse/windows/account.py" line="31"/>
         <source>Value</source>
         <translation>Valeur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="33"/>
+        <location filename="../analyse/windows/account.py" line="32"/>
         <source>Operating system</source>
         <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="34"/>
+        <location filename="../analyse/windows/account.py" line="33"/>
         <source>Users</source>
         <translation>Utilisateurs</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="35"/>
+        <location filename="../analyse/windows/account.py" line="34"/>
         <source>Accounts</source>
         <translation>Comptes</translation>
     </message>
@@ -36,7 +36,7 @@
 <context>
     <name>DefaultGatewayMAC</name>
     <message>
-        <location filename="../analyse/windows/network.py" line="373"/>
+        <location filename="../analyse/windows/network.py" line="372"/>
         <source>DomainNameSuffix</source>
         <translation>Suffixe du nom de domain</translation>
     </message>
@@ -52,32 +52,32 @@
 <context>
     <name>DeviceTranslator</name>
     <message>
-        <location filename="../analyse/windows/devices.py" line="30"/>
+        <location filename="../analyse/windows/devices.py" line="29"/>
         <source>Operating system</source>
         <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="31"/>
+        <location filename="../analyse/windows/devices.py" line="30"/>
         <source>Volume</source>
         <translation>Volume</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="32"/>
+        <location filename="../analyse/windows/devices.py" line="31"/>
         <source>Devices</source>
         <translation>Périphériques</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="33"/>
+        <location filename="../analyse/windows/devices.py" line="32"/>
         <source>Size</source>
         <translation>Taille</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="34"/>
+        <location filename="../analyse/windows/devices.py" line="33"/>
         <source>Signature</source>
         <translation>Signature</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="35"/>
+        <location filename="../analyse/windows/devices.py" line="34"/>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -85,32 +85,32 @@
 <context>
     <name>DevicesRegTranslator</name>
     <message>
-        <location filename="../analyse/windows/devices.py" line="104"/>
+        <location filename="../analyse/windows/devices.py" line="103"/>
         <source>Description</source>
         <translation>Description</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="105"/>
+        <location filename="../analyse/windows/devices.py" line="104"/>
         <source>Class</source>
         <translation>Classe</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="106"/>
+        <location filename="../analyse/windows/devices.py" line="105"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="107"/>
+        <location filename="../analyse/windows/devices.py" line="106"/>
         <source>Serial number</source>
         <translation>Numéro de série</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="108"/>
+        <location filename="../analyse/windows/devices.py" line="107"/>
         <source>Users last connection</source>
         <translation>Utilisateurs / Dernière connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/devices.py" line="109"/>
+        <location filename="../analyse/windows/devices.py" line="108"/>
         <source>Mount points</source>
         <translation>Point de montage</translation>
     </message>
@@ -127,13 +127,13 @@
 <context>
     <name>Name</name>
     <message>
-        <location filename="../analyse/windows/network.py" line="369"/>
+        <location filename="../analyse/windows/network.py" line="368"/>
         <source>FirstConnection</source>
         <comment>LastConnection</comment>
         <translation>Première connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="189"/>
+        <location filename="../analyse/windows/software.py" line="188"/>
         <source>ExecutedCommand</source>
         <comment>Once</comment>
         <translation>Commande exécutée</translation>
@@ -142,72 +142,72 @@
 <context>
     <name>NetworkInterfaceTranslator</name>
     <message>
-        <location filename="../analyse/windows/network.py" line="48"/>
+        <location filename="../analyse/windows/network.py" line="47"/>
         <source>guid</source>
         <translation>guid</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="49"/>
+        <location filename="../analyse/windows/network.py" line="48"/>
         <source>Address IP (dhcp)</source>
         <translation>Adress IP (dhcp)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="50"/>
+        <location filename="../analyse/windows/network.py" line="49"/>
         <source>Server dhcp</source>
         <translation>Serveur dhcp</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="51"/>
+        <location filename="../analyse/windows/network.py" line="50"/>
         <source>Subnet mask (dhcp)</source>
         <translation>Masque de sous-réseau (dhcp)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="52"/>
+        <location filename="../analyse/windows/network.py" line="51"/>
         <source>Default gateway (dhcp)</source>
         <translation>Passerelle par défaut (dhcp)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="53"/>
+        <location filename="../analyse/windows/network.py" line="52"/>
         <source>Name server (dhcp)</source>
         <translation>Serveur de noms (dhcp)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="54"/>
+        <location filename="../analyse/windows/network.py" line="53"/>
         <source>Domain (dhcp)</source>
         <translation>Domaine (dhcp)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="55"/>
+        <location filename="../analyse/windows/network.py" line="54"/>
         <source>Domain</source>
         <translation>Domaine</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="56"/>
+        <location filename="../analyse/windows/network.py" line="55"/>
         <source>Address IP</source>
         <translation>Adresse IP</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="57"/>
+        <location filename="../analyse/windows/network.py" line="56"/>
         <source>Subnet mask</source>
         <translation>Masque de sous-réseau</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="58"/>
+        <location filename="../analyse/windows/network.py" line="57"/>
         <source>Name server</source>
         <translation>Serveur de noms</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="59"/>
+        <location filename="../analyse/windows/network.py" line="58"/>
         <source>Default gateway</source>
         <translation>Passerelle par défaut</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="60"/>
+        <location filename="../analyse/windows/network.py" line="59"/>
         <source>Address ip (auto config)</source>
         <translation>Adress IP (config auto)</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="61"/>
+        <location filename="../analyse/windows/network.py" line="60"/>
         <source>Subnet mask (auto config)</source>
         <translation>Masque de sous-réseau (config auto)</translation>
     </message>
@@ -215,72 +215,72 @@
 <context>
     <name>NetworkTranslator</name>
     <message>
-        <location filename="../analyse/windows/network.py" line="28"/>
+        <location filename="../analyse/windows/network.py" line="27"/>
         <source>Operating system</source>
         <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="29"/>
+        <location filename="../analyse/windows/network.py" line="28"/>
         <source>Interface</source>
         <translation>Interface</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="30"/>
+        <location filename="../analyse/windows/network.py" line="29"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="31"/>
+        <location filename="../analyse/windows/network.py" line="30"/>
         <source>IP Address</source>
         <translation>Adress IP</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="32"/>
+        <location filename="../analyse/windows/network.py" line="31"/>
         <source>Mask</source>
         <translation>Masque</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="33"/>
+        <location filename="../analyse/windows/network.py" line="32"/>
         <source>Gateway</source>
         <translation>Passerelle</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="34"/>
+        <location filename="../analyse/windows/network.py" line="33"/>
         <source>Domain name</source>
         <translation>Nom de domaine</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="35"/>
+        <location filename="../analyse/windows/network.py" line="34"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="36"/>
+        <location filename="../analyse/windows/network.py" line="35"/>
         <source>Value</source>
         <translation>Valeur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="37"/>
+        <location filename="../analyse/windows/network.py" line="36"/>
         <source>First connection</source>
         <translation>Première connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="38"/>
+        <location filename="../analyse/windows/network.py" line="37"/>
         <source>Last connection</source>
         <translation>Dernière connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="39"/>
+        <location filename="../analyse/windows/network.py" line="38"/>
         <source>Network</source>
         <translation>Réseau</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="40"/>
+        <location filename="../analyse/windows/network.py" line="39"/>
         <source>Default gateway MAC</source>
         <translation>MAC passerelle par défaut</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/network.py" line="41"/>
+        <location filename="../analyse/windows/network.py" line="40"/>
         <source>Domain name suffix</source>
         <translation>Suffix de nom de domaine</translation>
     </message>
@@ -288,7 +288,7 @@
 <context>
     <name>Size</name>
     <message>
-        <location filename="../analyse/windows/devices.py" line="278"/>
+        <location filename="../analyse/windows/devices.py" line="277"/>
         <source>Signature</source>
         <comment>Offset</comment>
         <translation>Signature</translation>
@@ -723,177 +723,177 @@
 <context>
     <name>SystemTranslator</name>
     <message>
-        <location filename="../analyse/windows/system.py" line="15"/>
+        <location filename="../analyse/windows/system.py" line="14"/>
         <source>Operating system</source>
         <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="16"/>
+        <location filename="../analyse/windows/system.py" line="15"/>
         <source>System</source>
         <translation>Système</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="17"/>
+        <location filename="../analyse/windows/system.py" line="16"/>
         <source>CSD Version</source>
         <translation>Version CSD</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="18"/>
+        <location filename="../analyse/windows/system.py" line="17"/>
         <source>CSD Build number</source>
         <translation>Numéro de version CSD</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="19"/>
+        <location filename="../analyse/windows/system.py" line="18"/>
         <source>Current build</source>
         <translation>Version actuelle</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="20"/>
+        <location filename="../analyse/windows/system.py" line="19"/>
         <source>Current build number</source>
         <translation>Numéro de version actuelle</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="21"/>
+        <location filename="../analyse/windows/system.py" line="20"/>
         <source>Current type</source>
         <translation>Type actuelle</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="22"/>
+        <location filename="../analyse/windows/system.py" line="21"/>
         <source>Current version</source>
         <translation>Version actuelle</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="23"/>
+        <location filename="../analyse/windows/system.py" line="22"/>
         <source>Edition ID</source>
         <translation>Identifiant d&apos;édition</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="24"/>
+        <location filename="../analyse/windows/system.py" line="23"/>
         <source>Install date</source>
         <translation>Date d&apos;installation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="25"/>
+        <location filename="../analyse/windows/system.py" line="24"/>
         <source>Path name</source>
         <translation>Nom de chemin</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="26"/>
+        <location filename="../analyse/windows/system.py" line="25"/>
         <source>Product ID</source>
         <translation>Identifiant produit</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="27"/>
+        <location filename="../analyse/windows/system.py" line="26"/>
         <source>Product name</source>
         <translation>Nom du produit</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="28"/>
+        <location filename="../analyse/windows/system.py" line="27"/>
         <source>Registered owner</source>
         <translation>Propriétaire enregistré</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="29"/>
+        <location filename="../analyse/windows/system.py" line="28"/>
         <source>Registered organization</source>
         <translation>Organisation enregistrée</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="30"/>
+        <location filename="../analyse/windows/system.py" line="29"/>
         <source>System root</source>
         <translation>Racine du système</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="31"/>
+        <location filename="../analyse/windows/system.py" line="30"/>
         <source>Details</source>
         <translation>Détails</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="32"/>
+        <location filename="../analyse/windows/system.py" line="31"/>
         <source>Description</source>
         <translation>Description</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="33"/>
+        <location filename="../analyse/windows/system.py" line="32"/>
         <source>Value</source>
         <translation>Valeur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="34"/>
+        <location filename="../analyse/windows/system.py" line="33"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="35"/>
+        <location filename="../analyse/windows/system.py" line="34"/>
         <source>Computer</source>
         <translation>Ordinateur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="36"/>
+        <location filename="../analyse/windows/system.py" line="35"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="37"/>
+        <location filename="../analyse/windows/system.py" line="36"/>
         <source>Active time bias</source>
         <translation>Biais de temps actif</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="38"/>
+        <location filename="../analyse/windows/system.py" line="37"/>
         <source>Bias</source>
         <translation>Biais</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="39"/>
+        <location filename="../analyse/windows/system.py" line="38"/>
         <source>Dailight bias</source>
         <translation>Biais de la lumière du jour</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="40"/>
+        <location filename="../analyse/windows/system.py" line="39"/>
         <source>Standard bias</source>
         <translation>Biais standard</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="41"/>
+        <location filename="../analyse/windows/system.py" line="40"/>
         <source>Dailight name</source>
         <translation>Nom de la zone de lumière du jour</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="42"/>
+        <location filename="../analyse/windows/system.py" line="41"/>
         <source>Standard name</source>
         <translation>Nom standard</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="43"/>
+        <location filename="../analyse/windows/system.py" line="42"/>
         <source>Time zone key name</source>
         <translation>Nom du fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="44"/>
+        <location filename="../analyse/windows/system.py" line="43"/>
         <source>Daylight start</source>
         <translation>Démarrage de lumière du jour </translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="45"/>
+        <location filename="../analyse/windows/system.py" line="44"/>
         <source>Standard start</source>
         <translation>Démarrage standard</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="46"/>
+        <location filename="../analyse/windows/system.py" line="45"/>
         <source>Time zone</source>
         <translation>Fuseau horaire</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="47"/>
+        <location filename="../analyse/windows/system.py" line="46"/>
         <source>Zone</source>
         <translation>Zone</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="48"/>
+        <location filename="../analyse/windows/system.py" line="47"/>
         <source>Shutdown</source>
         <translation>Fermeture</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/system.py" line="49"/>
+        <location filename="../analyse/windows/system.py" line="48"/>
         <source>Time</source>
         <translation>Temps</translation>
     </message>
@@ -901,162 +901,162 @@
 <context>
     <name>Translate</name>
     <message>
-        <location filename="../analyse/windows/account.py" line="135"/>
+        <location filename="../analyse/windows/account.py" line="134"/>
         <source>Last login</source>
         <translation>Dernier login</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="136"/>
+        <location filename="../analyse/windows/account.py" line="135"/>
         <source>Password reset</source>
         <translation>Remise à zéro du mot de passe</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="137"/>
+        <location filename="../analyse/windows/account.py" line="136"/>
         <source>Account expiration</source>
         <translation>Expiration du compte</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="138"/>
+        <location filename="../analyse/windows/account.py" line="137"/>
         <source>RID</source>
         <translation>Indentifiant de l&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="139"/>
+        <location filename="../analyse/windows/account.py" line="138"/>
         <source>Login connection failed</source>
         <translation>Nombre de connexion échoué</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="140"/>
+        <location filename="../analyse/windows/account.py" line="139"/>
         <source>Login count</source>
         <translation>Nombre de connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="141"/>
+        <location filename="../analyse/windows/account.py" line="140"/>
         <source>Properties</source>
         <translation>Propriétés</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="148"/>
+        <location filename="../analyse/windows/account.py" line="147"/>
         <source>Account disabled</source>
         <translation>Compte désactivé</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="149"/>
+        <location filename="../analyse/windows/account.py" line="148"/>
         <source>Home directory required</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="150"/>
+        <location filename="../analyse/windows/account.py" line="149"/>
         <source>Password not required</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="151"/>
+        <location filename="../analyse/windows/account.py" line="150"/>
         <source>Temporary duplicate account</source>
         <translation>Compte double temporaire</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="152"/>
+        <location filename="../analyse/windows/account.py" line="151"/>
         <source>Normal user account</source>
         <translation>Compte utilisateur normal</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="153"/>
+        <location filename="../analyse/windows/account.py" line="152"/>
         <source>MNS logon user account</source>
         <translation>Compte d&apos;utilisateur d&apos;ouverture de session MNS</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="154"/>
+        <location filename="../analyse/windows/account.py" line="153"/>
         <source>Interdomain trust account</source>
         <translation>Compte trust interdomaine</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="155"/>
+        <location filename="../analyse/windows/account.py" line="154"/>
         <source>Workstation trust account</source>
         <translation>Compte trust workstation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="156"/>
+        <location filename="../analyse/windows/account.py" line="155"/>
         <source>Server trust account</source>
         <translation>Compte trust serveur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="157"/>
+        <location filename="../analyse/windows/account.py" line="156"/>
         <source>User password does not expire</source>
         <translation>Le mot de passe utilisateur n&apos;expire pas</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="158"/>
+        <location filename="../analyse/windows/account.py" line="157"/>
         <source>Account auto locked</source>
         <translation>Compte auto verrouillée</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="216"/>
+        <location filename="../analyse/windows/account.py" line="215"/>
         <source>User name</source>
         <translation>Nom d&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="217"/>
+        <location filename="../analyse/windows/account.py" line="216"/>
         <source>Full name</source>
         <translation>Nom et prénom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="218"/>
+        <location filename="../analyse/windows/account.py" line="217"/>
         <source>Comment</source>
         <translation>Commentaire</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="219"/>
+        <location filename="../analyse/windows/account.py" line="218"/>
         <source>Home directory</source>
         <translation>Répertoire d&apos;accueil</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="220"/>
+        <location filename="../analyse/windows/account.py" line="219"/>
         <source>Drive letter</source>
         <translation>Lettre associé au disque</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="221"/>
+        <location filename="../analyse/windows/account.py" line="220"/>
         <source>Logon screen</source>
         <translation>Chemin du script de connexion</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="222"/>
+        <location filename="../analyse/windows/account.py" line="221"/>
         <source>Profile path</source>
         <translation>Chemin du profile</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="223"/>
+        <location filename="../analyse/windows/account.py" line="222"/>
         <source>LM hash</source>
         <translation>Hash LM</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="224"/>
+        <location filename="../analyse/windows/account.py" line="223"/>
         <source>NT hash</source>
         <translation>Hash NT</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="84"/>
+        <location filename="../analyse/windows/account.py" line="83"/>
         <source>Groups</source>
         <translation>Groupes</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="85"/>
+        <location filename="../analyse/windows/account.py" line="84"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="87"/>
+        <location filename="../analyse/windows/account.py" line="86"/>
         <source>Number of members</source>
         <translation>Nombre de members</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="88"/>
+        <location filename="../analyse/windows/account.py" line="87"/>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/account.py" line="132"/>
+        <location filename="../analyse/windows/account.py" line="131"/>
         <source>Unknown</source>
         <translation>Inconnu</translation>
     </message>
@@ -1097,52 +1097,52 @@
 <context>
     <name>TranslateBrowsers</name>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="176"/>
+        <location filename="../analyse/browsers/browsers.py" line="175"/>
         <source>Web browsers</source>
         <translation>Traces de navigation</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="177"/>
+        <location filename="../analyse/browsers/browsers.py" line="176"/>
         <source>History</source>
         <translation>Historique</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="178"/>
+        <location filename="../analyse/browsers/browsers.py" line="177"/>
         <source>Domain</source>
         <translation>Domaine</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="179"/>
+        <location filename="../analyse/browsers/browsers.py" line="178"/>
         <source>Title</source>
         <translation>Titre</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="180"/>
+        <location filename="../analyse/browsers/browsers.py" line="179"/>
         <source>Url</source>
         <translation>Url</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="181"/>
+        <location filename="../analyse/browsers/browsers.py" line="180"/>
         <source>Occurrence</source>
         <translation>Occurrence</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="182"/>
+        <location filename="../analyse/browsers/browsers.py" line="181"/>
         <source>User</source>
         <translation>Utilisateur</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="183"/>
+        <location filename="../analyse/browsers/browsers.py" line="182"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="184"/>
+        <location filename="../analyse/browsers/browsers.py" line="183"/>
         <source>Browser</source>
         <translation>Navigateur</translation>
     </message>
     <message>
-        <location filename="../analyse/browsers/browsers.py" line="185"/>
+        <location filename="../analyse/browsers/browsers.py" line="184"/>
         <source>Browsers history</source>
         <translation>Historique de navigation</translation>
     </message>
@@ -1397,67 +1397,67 @@
 <context>
     <name>TranslateSoftware</name>
     <message>
-        <location filename="../analyse/windows/software.py" line="14"/>
+        <location filename="../analyse/windows/software.py" line="13"/>
         <source>Operating system</source>
         <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="28"/>
+        <location filename="../analyse/windows/software.py" line="27"/>
         <source>Software</source>
         <translation>Logiciel</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="17"/>
+        <location filename="../analyse/windows/software.py" line="16"/>
         <source>Install date</source>
         <translation>Date d&apos;installation</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="18"/>
+        <location filename="../analyse/windows/software.py" line="17"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="19"/>
+        <location filename="../analyse/windows/software.py" line="18"/>
         <source>publisher</source>
         <translation>éditeur</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="20"/>
+        <location filename="../analyse/windows/software.py" line="19"/>
         <source>Language</source>
         <translation>Langage</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="21"/>
+        <location filename="../analyse/windows/software.py" line="20"/>
         <source>Software network connection</source>
         <translation>Logiciel connecté à un réseau</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="22"/>
+        <location filename="../analyse/windows/software.py" line="21"/>
         <source>False</source>
         <translation>Faux</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="23"/>
+        <location filename="../analyse/windows/software.py" line="22"/>
         <source>True</source>
         <translation>Vrai</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="24"/>
+        <location filename="../analyse/windows/software.py" line="23"/>
         <source>Software executed at start</source>
         <translation>Logiciel exécuté au démarrage</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="25"/>
+        <location filename="../analyse/windows/software.py" line="24"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="26"/>
+        <location filename="../analyse/windows/software.py" line="25"/>
         <source>Executed command</source>
         <translation>Commande exécutée</translation>
     </message>
     <message>
-        <location filename="../analyse/windows/software.py" line="27"/>
+        <location filename="../analyse/windows/software.py" line="26"/>
         <source>Once</source>
         <translation>Une fois</translation>
     </message>

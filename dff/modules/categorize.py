@@ -20,8 +20,8 @@ from dff.api.module.module import Module, Script
 from dff.api.types.libtypes import Argument, typeId
 from dff.api.filters.libfilters import Filter
 
-from dff.pro.api.report.manager import ReportManager
-from dff.pro.api.report.fragments import NodeListFragment
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import NodeListFragment
 
 class categorize(Module):
   """Categorize and bookmark file by types"""
