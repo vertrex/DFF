@@ -13,8 +13,6 @@
 #  Frederic Baguelin <fba@digital-forensic.org>
 #  Solal Jacob <sja@digital-forensic.org>
 
-
-from dff.api.destruct import *
 from dff.api.types import libtypes
 from dff.api.events import libevents
 from dff.api.search import libsearch
