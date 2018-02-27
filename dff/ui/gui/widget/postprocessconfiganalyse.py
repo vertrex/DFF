@@ -22,7 +22,7 @@ from dff.api.taskmanager.taskmanager import TaskManager
 from dff.api.gui.widget.generateModuleShape import moduleShapeGenerator
 from dff.api.gui.widget.layoutmanager import layoutManager 
 
-from dff.pro.ui.gui.widget.postprocessconfig import PostProcessModulesConfig, PostProcessModuleConfigWidget, PostProcessModulesTreeWidget, CheckBoxPostProcessItem, PostProcessOptionEmptyCheckBox, PostProcessOptionCheckBox
+from dff.ui.gui.widget.postprocessconfig import PostProcessModulesConfig, PostProcessModuleConfigWidget, PostProcessModulesTreeWidget, CheckBoxPostProcessItem, PostProcessOptionEmptyCheckBox, PostProcessOptionCheckBox
 
 class PostProcessAnalyseWidget(QWidget):
   def __init__(self, parent = None):

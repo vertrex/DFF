@@ -305,6 +305,11 @@
         <source>Disable this window</source>
         <translation>Dieses Fenster deaktivieren</translation>
     </message>
+    <message>
+        <location filename="../../../api/gui/widget/dockwidget.py" line="96"/>
+        <source>Add content to report</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Errors</name>
@@ -907,22 +912,22 @@
         <translation type="obsolete">DFF Dokumentation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="567"/>
+        <location filename="../mainwindow.py" line="618"/>
         <source>Error while loading help</source>
         <translation>Fehler beim Laden der Hilfe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="568"/>
+        <location filename="../mainwindow.py" line="619"/>
         <source>&lt;br&gt;You can check on-line help at &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</source>
         <translation>&lt;br&gt;Du kannst die Online-Hilfe auf &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt; aufsuchen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="569"/>
+        <location filename="../mainwindow.py" line="620"/>
         <source>Not an help file.</source>
         <translation>keine Hilfedatei.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="570"/>
+        <location filename="../mainwindow.py" line="621"/>
         <source>Documentation path not found.</source>
         <translation>Pfad zur Dokumentation nicht gefunden.</translation>
     </message>
@@ -966,79 +971,84 @@
         <source>Open the IDE</source>
         <translation>IDE öffnen</translation>
     </message>
+    <message>
+        <location filename="../mainwindow.py" line="109"/>
+        <source>Wizard</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MenuManager</name>
     <message>
-        <location filename="../utils/menumanager.py" line="373"/>
+        <location filename="../utils/menumanager.py" line="425"/>
         <source>Empty files</source>
         <translation>leere Dateien</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="374"/>
+        <location filename="../utils/menumanager.py" line="426"/>
         <source>the following nodes could not be opened with Hex viewer because they are either empty or folders
 </source>
         <translation>Die folgenden Knoten konnten nicht mit dem Hex-Betrachter geöffnet werden, da diese entweder leer oder Verzeichnisse sind
 </translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="315"/>
+        <location filename="../utils/menumanager.py" line="367"/>
         <source>Extraction Error</source>
         <translation>Fehler bei der Extraktion</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="316"/>
+        <location filename="../utils/menumanager.py" line="368"/>
         <source>An issue occured while extracting 
 </source>
         <translation>Während der Extraktion trat ein Problem auf</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="344"/>
+        <location filename="../utils/menumanager.py" line="396"/>
         <source>Module already applied</source>
         <translation>Dieses Modul wurde bereits ausgeführt</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="344"/>
+        <location filename="../utils/menumanager.py" line="396"/>
         <source>This module was already applied with the same configuration ! Do you want to apply it again ?</source>
         <translation>Dieses Modul wurde bereits mit dieser Einstellung ausgeführt! Möchtest Du es erneut ausführen?</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="350"/>
+        <location filename="../utils/menumanager.py" line="402"/>
         <source>Apply module</source>
         <translation>Modul anwenden</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="350"/>
+        <location filename="../utils/menumanager.py" line="402"/>
         <source>Do you want to apply module </source>
         <translation>Modul  </translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="350"/>
+        <location filename="../utils/menumanager.py" line="402"/>
         <source> on this node ?</source>
         <translation> auf diesen Knoten anwenden?</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="351"/>
+        <location filename="../utils/menumanager.py" line="403"/>
         <source>Always</source>
         <translation>Immer</translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="108"/>
+        <location filename="../utils/menumanager.py" line="149"/>
         <source>Delete bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="70"/>
+        <location filename="../utils/menumanager.py" line="109"/>
         <source>Export selection to pdf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="137"/>
+        <location filename="../utils/menumanager.py" line="189"/>
         <source>Export to pdf file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../utils/menumanager.py" line="137"/>
+        <location filename="../utils/menumanager.py" line="189"/>
         <source>Pdf files (*.pdf)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1326,17 +1336,17 @@
 <context>
     <name>Processus</name>
     <message>
-        <location filename="../widget/taskmanager.py" line="45"/>
+        <location filename="../widget/taskmanager.py" line="117"/>
         <source>Fail</source>
         <translation>Fehlgeschlaggen</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="46"/>
+        <location filename="../widget/taskmanager.py" line="118"/>
         <source>Finish</source>
         <translation>Beendet</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="47"/>
+        <location filename="../widget/taskmanager.py" line="119"/>
         <source>Running</source>
         <translation>In Arbeit</translation>
     </message>
@@ -1431,6 +1441,19 @@
     <message>
         <location filename="../../../api/gui/widget/propertytable.py" line="146"/>
         <source>path</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ReportNodesAction</name>
+    <message>
+        <location filename="../utils/menumanager.py" line="53"/>
+        <source>Report nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utils/menumanager.py" line="53"/>
+        <source>No nodes selected</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2457,9 +2480,24 @@ Add new tag or delete existing ones (Double-click to edit)</source>
         <translation>Kennzeichnungen</translation>
     </message>
     <message>
-        <location filename="../resources/nodeactions.ui" line="110"/>
+        <location filename="../utils/menumanager.py" line="99"/>
         <source>Tag nodes</source>
         <translation>Kennzeichnungsknoten</translation>
+    </message>
+    <message>
+        <location filename="../utils/menumanager.py" line="96"/>
+        <source>Scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utils/menumanager.py" line="97"/>
+        <source>Launch recursive scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utils/menumanager.py" line="98"/>
+        <source>Report</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2543,32 +2581,32 @@ Add new tag or delete existing ones (Double-click to edit)</source>
 <context>
     <name>procMB</name>
     <message>
-        <location filename="../widget/taskmanager.py" line="174"/>
+        <location filename="../widget/taskmanager.py" line="247"/>
         <source>Results</source>
         <translation>Ergebnisse</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="176"/>
+        <location filename="../widget/taskmanager.py" line="249"/>
         <source>No results</source>
         <translation>keine Ergebnisse</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="173"/>
+        <location filename="../widget/taskmanager.py" line="246"/>
         <source>Provided Arguments</source>
         <translation>übergebene Argumente</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="175"/>
+        <location filename="../widget/taskmanager.py" line="248"/>
         <source>Processus Information</source>
         <translation>Prozess Information</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="172"/>
+        <location filename="../widget/taskmanager.py" line="245"/>
         <source>Output</source>
         <translation>Ausgabe</translation>
     </message>
     <message>
-        <location filename="../widget/taskmanager.py" line="157"/>
+        <location filename="../widget/taskmanager.py" line="230"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>

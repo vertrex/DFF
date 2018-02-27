@@ -23,8 +23,8 @@ from dff.api.gui.widget.devicesdialog import DevicesDialog
 from dff.ui.gui.dialog.dialog import evidenceDialog, Dialog
 from dff.ui.gui.resources.ui_evidencedialog import Ui_evidenceDialog
 
-from dff.pro.ui.gui.widget.postprocessconfig import PostProcessConfigWidget
-from dff.pro.ui.gui.widget.postprocessconfiganalyse import PostProcessAnalyseWidget
+from dff.ui.gui.widget.postprocessconfig import PostProcessConfigWidget
+from dff.ui.gui.widget.postprocessconfiganalyse import PostProcessAnalyseWidget
 
 class AutoWizard(QWizard, Dialog):
   Page_Connector = 0

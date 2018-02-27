@@ -43,7 +43,8 @@ from dff.ui.gui.resources.ui_browser_toolbar import Ui_BrowserToolBar
 from dff.ui.gui.resources.ui_filter_widget import Ui_filterWidget
 from dff.ui.gui.resources.ui_filter_tagwidget import Ui_filterTagwidget
 from dff.ui.gui.csv.exportcsvdialog import ExportCSVDialog
- 
+from dff.ui.gui.utils.menumanager import ReportNodesAction 
+
 # browser modes
 SIMPLE = 0 # No navigation, no filters, no search, no tree
 #FILTER = 1 # No navigation, no search, no tree
@@ -146,6 +147,23 @@ class NodeListWidgets(Ui_BrowserToolBar, QWidget, EventHandler):
         except:
           pass
 
+  def reportNodes(self):
+    ReportNodesAction(self.model())
+
+  def setupUi(self, BrowserToolBar):
+     self.actionReport = QAction(self)
+     icon = QIcon()
+     icon.addPixmap(QPixmap(QString.fromUtf8(":/report")), QIcon.Normal, QIcon.Off)
+     self.actionReport.setIcon(icon)
+     self.actionReport.setObjectName(QString.fromUtf8("actionReport"))
+ 
+     Ui_BrowserToolBar.setupUi(self, BrowserToolBar)   
+
+  def retranslateUi(self, BrowserToolBar):
+     Ui_BrowserToolBar.retranslateUi(self, BrowserToolBar)
+     self.actionReport.setText(QApplication.translate("BrowserToolBar", "report", None, QApplication.UnicodeUTF8))
+     self.actionReport.setToolTip(QApplication.translate("BrowserToolBar", "Add nodes to report", None, QApplication.UnicodeUTF8))
+
   def createSelection(self):
     self.selection = SelectionManager()
 
@@ -197,6 +215,9 @@ class NodeListWidgets(Ui_BrowserToolBar, QWidget, EventHandler):
     self.connect(self.exportButton, SIGNAL("clicked(bool)"), self.export)
 
     self.mainlayout.addWidget(self.toolbar, 0)
+
+    self.toolbar.insertAction(self.actionBookmark, self.actionReport)
+    self.connect(self.actionReport, SIGNAL("triggered()"), self.reportNodes)
 
   def viewFilter(self):
     if self.filter.isChecked():

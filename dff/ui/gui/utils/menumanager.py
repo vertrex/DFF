@@ -17,7 +17,7 @@ import base64, os
 
 from PyQt4 import QtCore, QtGui #, QtWebKit
 
-from PyQt4.QtGui import QMenu, QIcon, QWidget, QCursor, QApplication, QAction, QMessageBox, QImage, QIcon
+from PyQt4.QtGui import QMenu, QIcon, QWidget, QCursor, QApplication, QAction, QMessageBox, QImage, QIcon, QPixmap, QInputDialog, QLineEdit, QDialog
 from PyQt4.QtCore import SIGNAL, SLOT, QObject, QEvent, QString, QBuffer, QByteArray
 
 from dff.api.loader import loader
@@ -25,6 +25,7 @@ from dff.api.vfs.libvfs import VFS, ABSOLUTE_ATTR_NAME
 from dff.api.types.libtypes import typeId, Variant
 from dff.api.taskmanager.taskmanager import TaskManager 
 from dff.api.taskmanager.processus import ProcessusManager
+from dff.api.report.manager import ReportManager
 
 from dff.api.gui.dialog.extractor import Extractor
 
@@ -33,7 +34,23 @@ from dff.ui.gui.utils.action import newAction, Action
 from dff.ui.gui.utils.menu import tagMenu, selectionMenu, BookmarkManager
 from dff.ui.gui.resources.ui_nodeactions import Ui_nodeActions
 
+from dff.ui.gui.widget.reportselect import ReportSelectDialog
+from dff.ui.gui.wizard.autowizard import AutoWizard
+
 modulePriority = {}
+
+class ReportNodesAction(QWidget):
+  def __init__(self, model):
+     QWidget.__init__(self)
+     nodes = model.selection.getNodes()
+     if len(nodes):
+       reportSelectDialog = ReportSelectDialog()
+       if reportSelectDialog.exec_() == QDialog.Accepted:
+         page = reportSelectDialog.selection()
+         if page: 
+           page.addNodeList("", nodes)
+     else:
+        QMessageBox(QMessageBox.Warning, self.tr("Report nodes"), self.tr("No nodes selected")).exec_()
 
 class MenuManager(QWidget, Ui_nodeActions):
   def __init__(self, selection, listmodel):
@@ -58,6 +75,28 @@ class MenuManager(QWidget, Ui_nodeActions):
     self.__printer.setPaperSize(QtGui.QPrinter.A4)
     self.__printer.setFullPage(True)
 
+  def setupUi(self, nodeActions):
+     self.actionScan = QAction(self)
+
+     icon = QIcon()
+     icon.addPixmap(QPixmap(QString.fromUtf8(":/scan")), QIcon.Normal, QIcon.On)
+     self.actionScan.setIcon(icon)
+     self.actionScan.setObjectName(QString.fromUtf8("actionScan"))
+
+     self.actionReport_node = QAction(self)
+     icon = QIcon()
+     icon.addPixmap(QPixmap(QString.fromUtf8(":/report")), QIcon.Normal, QIcon.On)
+     self.actionReport_node.setIcon(icon)
+     self.actionReport_node.setObjectName(QString.fromUtf8("actionReport_Node"))
+
+     Ui_nodeActions.setupUi(self, nodeActions)
+    
+  def retranslateUi(self, nodeActions):
+     Ui_nodeActions.retranslateUi(self, nodeActions)
+     self.actionScan.setText(QApplication.translate("nodeActions", "Scan", None, QApplication.UnicodeUTF8))
+     self.actionScan.setToolTip(QApplication.translate("nodeActions", "Launch recursive scan", None, QApplication.UnicodeUTF8))
+     self.actionReport_node.setText(QApplication.translate("nodeActions", "Report", None, QApplication.UnicodeUTF8))
+     self.actionReport_node.setToolTip(QApplication.translate("nodeActions", "Tag nodes", None, QApplication.UnicodeUTF8))
 
   def setIconView(self, enable):
     self.__iconView = enable
@@ -75,6 +114,8 @@ class MenuManager(QWidget, Ui_nodeActions):
     self.connect(self.actionHex_viewer, SIGNAL("triggered()"), self.launchHexedit)
     self.connect(self.actionExtract, SIGNAL("triggered()"), self.extractNodes)
     self.connect(self.actionBookmark, SIGNAL("triggered()"), self.bookmark)
+    self.connect(self.actionScan, SIGNAL('triggered()'), self.scan)
+    self.connect(self.actionReport_node, SIGNAL('triggered()'), self.reportNode)
 
   def createMenu(self):
     nodeclicked = self.model.currentNode()
@@ -112,7 +153,18 @@ class MenuManager(QWidget, Ui_nodeActions):
     if self.__iconView:
       self.mainmenu.addAction(self.copyToHtmlTable)
     self.mainmenu.popup(QCursor.pos())
+    self.mainmenu.insertSeparator(self.actionOpen_parent_folder)
+    self.mainmenu.insertAction(self.actionOpen_parent_folder, self.actionScan)
+    self.mainmenu.addSeparator()
+    self.mainmenu.insertAction(self.bookseparator, self.actionReport_node)
     self.mainmenu.show()
+
+  def reportNode(self):
+     ReportNodesAction(self.model)
+
+  def scan(self):
+    autoWiz = AutoWizard(self, root = self.model.currentNode())
+    autoWiz.exec_()
 
   def deleteBookmark(self):
     vfs = VFS.Get()

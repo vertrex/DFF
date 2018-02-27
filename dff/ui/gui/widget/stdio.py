@@ -23,6 +23,8 @@ from dff.ui.redirect import RedirectIO
 from dff.ui.gui.resources.ui_errors import Ui_Errors
 from dff.ui.gui.resources.ui_output import Ui_Output
 
+from dff.api.report.manager import ReportManager
+
 class CIO(QThread):
   def __init__(self, IOout, fd, sig):
       QThread.__init__(self)
@@ -63,6 +65,12 @@ class STDOut(QPlainTextEdit, Ui_Output):
    def puttext(self, text):
      self.insertPlainText(text)
 
+   def report(self):
+      reportManager = ReportManager()
+      page = reportManager.createPage("Information", "Standard output")
+      data = str(self.toPlainText().toUtf8()).replace('\n', '<br>')    
+      page.addText("Output", data)
+      reportManager.addPage(page)
 
 class STDErr(QPlainTextEdit, Ui_Errors):
    def __init__(self, parent, debug):
@@ -84,3 +92,10 @@ class STDErr(QPlainTextEdit, Ui_Errors):
 
    def puttext(self, text):
      self.insertPlainText(text)
+
+   def report(self):
+     reportManager = ReportManager()
+     page = reportManager.createPage("Information", "Error output")
+     data = str(self.toPlainText().toUtf8()).replace('\n', '<br>')
+     page.addText("Output", data)
+     reportManager.addPage(page)

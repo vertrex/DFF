@@ -24,4 +24,11 @@ install_file(
   shell.py
   stdio.py
   preview.py
+  postprocessconfiganalyse.py
+  postprocessconfig.py
+  postprocessstate.py
+  reporteditor.py
+  reportexport.py
+  reportselect.py
+  renderer.py
 )

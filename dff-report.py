@@ -32,7 +32,7 @@ from dff.api.taskmanager.taskmanager import TaskManager, ppsched
 from dff.api.filters.libfilters import Filter
 from dff.api.vfs.vfs import vfs
 from dff.api.module.manager import ModuleProcessusManager
-from dff.pro.api.report.manager import ReportManager
+from dff.api.report.manager import ReportManager
 from dff.api.types.libtypes import Variant, Argument, typeId, ConfigManager
 import time 
 

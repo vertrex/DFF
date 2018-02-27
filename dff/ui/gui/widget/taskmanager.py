@@ -20,12 +20,84 @@ from Queue import Empty
 from PyQt4.QtCore import QRect, QSize, Qt, SIGNAL, QEvent
 from PyQt4.QtGui import QAction, QApplication, QDockWidget, QIcon,  QHBoxLayout, QPushButton, QTabWidget, QTreeWidget, QTreeWidgetItem, QWidget, QDialog, QGridLayout, QLabel, QComboBox, QVBoxLayout, QHBoxLayout, QDialogButtonBox, QTextEdit
 
+
+from dff.api.types.libtypes import Variant, typeId
 from dff.api.taskmanager.processus import ProcessusManager 
 
 from dff.api.gui.widget.textedit import TextEdit
 from dff.api.gui.widget.varianttreewidget import VariantTreeWidget
 
 from dff.ui.gui.resources.ui_taskmanager import Ui_TaskManager
+
+from dff.api.report.manager import ReportManager
+from dff.api.report.fragments import TableFragment, TabFragment, TextFragment
+
+class ReportTraceability():
+  def __init__(self):
+     reportManager = ReportManager()
+     page = reportManager.createPage("Information", "Traceability") 
+     tableHeader = ["PID", "Name", "State", "Info", "Duration",] 
+     detailTable = page.addDetailTable("traceability", tableHeader)
+     processusManager = ProcessusManager()
+     for proc in processusManager:
+       detailTable.addRow(*self.generateRow(proc))
+     reportManager.addPage(page)
+
+  def generateRow(self, proc):
+     tabFragment = TabFragment("")  
+ 
+     if proc.args and len(proc.args) > 0:   
+       argumentTable = []
+       for argname in proc.args.keys():
+         var = proc.args[argname]
+         if var.type() == typeId.List:
+           i = 1 
+           vlist = var.value()
+           for vvar in vlist:
+             row = [argname + ' (' + str(i) + ')', str(vvar)]   
+             argumentTable.append(row)       
+             i += 1 
+         else: 
+           row = [argname, str(var)]
+           argumentTable.append(row)       
+       tabFragment.addTab("Arguments", TableFragment("", ["argument", "value"], argumentTable))
+ 
+     if len(proc.res):
+       resultTable = []
+       self.variantToTable("", Variant(proc.res), resultTable)
+       tabFragment.addTab("Result", TableFragment("", ["result", "value"], resultTable))
+
+     if proc.error_result != '':
+       tabFragment.addTab("Error", TextFragment("", proc.error_result.replace('\n', '<br>')))
+     row = ([str(proc.pid), str(proc.name), str(proc.state), str(proc.stateinfo), str(self.procDuration(proc)),], tabFragment)
+     return row
+
+  def variantToTable(self, keypath, var, resultTable):
+    if var.type() == typeId.Map:
+       vmap = var.value()
+       for key, vvar in vmap.iteritems():
+          if len(keypath):
+            keyabsolute = keypath + "." + str(key)
+          else:
+            keyabsolute = str(key)
+          if not len(keypath):
+            resultTable.append([keyabsolute, ""]) 
+          self.variantToTable(keyabsolute, vvar, resultTable)
+    else:
+      resultTable.append([keypath, str(var.value())])
+
+  def procDuration(self, proc): 
+    if proc.timestart:
+      stime = datetime.fromtimestamp(proc.timestart)
+      if proc.timeend:
+        etime = datetime.fromtimestamp(proc.timeend)
+      else:
+        etime = datetime.fromtimestamp(time.time())
+      delta = etime - stime
+    else:
+      delta = 0
+    return delta
+
 
 class ProcessusItem(QTreeWidgetItem):
   def __init__(self, parent = None):
@@ -49,6 +121,7 @@ class Processus(QTreeWidget, Ui_TaskManager):
         self.name = "Task manager"
         self.initTreeProcess()
         self.setSortingEnabled(True)
+        ReportTraceability()
 
     def initTreeProcess(self):
  	self.connect(self, SIGNAL("itemDoubleClicked(QTreeWidgetItem*,int)"), self.procClicked)

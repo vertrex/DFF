@@ -18,10 +18,13 @@ TODO :
     XXX (but need to merge modules/pro/i8n into DFF i18n or remove translation)
     XXX need to rework on modules/__init__.py it was usefull whith multiple module path but now it's make seem more weird (base module base must not be filled)
   * Merge dff/pro/api in dff/api
+    XXX dff/ui/gui/i18n/CMakeLists.txt
+    Merge done but need test (Ex: report button appear in error output but not in taskmanager)
 
 - add destruct as git submodule (needed to compile in build/) : Done
   In fact remove destruct dependencies as it's not needed in this version (just for the agent)
 
+- merge api/gui & ui/gui   
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
 - Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)

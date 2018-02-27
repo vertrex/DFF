@@ -11,14 +11,13 @@
 # 
 # Author(s):
 #  Solal Jacob <sja@arxsys.fr>
-#  Jeremy MOUNIER <jmo@arxsys.fr>
 # 
 
 import sys, os
 
 from Queue import Empty 
 
-from PyQt4.QtGui import QAction,  QApplication, QDockWidget, QFileDialog, QIcon, QMainWindow, QMessageBox, QMenu, QTabWidget, QTextEdit, QTabBar, QPushButton, QCheckBox, QHBoxLayout, QVBoxLayout, QWidget, QStackedWidget, QSizePolicy
+from PyQt4.QtGui import QAction,  QApplication, QDockWidget, QFileDialog, QIcon, QMainWindow, QMessageBox, QMenu, QTabWidget, QTextEdit, QTabBar, QPushButton, QCheckBox, QHBoxLayout, QVBoxLayout, QWidget, QStackedWidget, QSizePolicy, QPixmap
 from PyQt4.QtCore import QEvent, Qt,  SIGNAL, QModelIndex, QSettings, QFile, QString, QTimer
 from PyQt4 import QtCore, QtGui
 
@@ -48,6 +47,10 @@ from dff.ui.gui.dialog.dialog import Dialog
 from dff.ui.gui.resources.ui_mainwindow import Ui_MainWindow
 
 from dff.ui.gui.widget.help import Help
+
+from dff.ui.gui.widget.postprocessstate import PostProcessStateWidget
+from dff.ui.gui.wizard.autowizard import AutoWizard
+#from dff.ui.gui.widget.reporteditor import ReportEditor #XXX Report
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self,  app, debug = False):
@@ -79,6 +82,37 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.status.setSizePolicy(sizePolicy)
         self.statusBar().addWidget(self.status)
 
+    def setupUi(self, MainWindow):
+      self.actionWizard = QAction(self)
+      icon = QIcon()   
+      icon.addPixmap(QPixmap(QString.fromUtf8(":/wizard")), QIcon.Normal, QIcon.Off)
+      self.actionWizard.setIcon(icon)
+      self.actionWizard.setObjectName(QString.fromUtf8("actionWizard"))
+
+      #self.actionReport = QAction(self) XXX Report
+      #icon = QIcon()
+      #icon.addPixmap(QPixmap(QString.fromUtf8(":report")), QIcon.Normal, QIcon.Off)
+      #self.actionReport.setIcon(icon)
+      #self.actionReport.setObjectName(QString.fromUtf8("actionReport"))
+
+      Ui_MainWindow.setupUi(self, MainWindow)  
+      self.menuFile.insertAction(self.actionOpen_evidence, self.actionWizard)
+     
+      #self.menuReport = QMenu(self.menubar) XXX Report
+      #self.menuReport.setObjectName(QString.fromUtf8("menuReport"))
+      #self.menuReport.addAction(self.actionReport)
+      #self.menubar.insertAction(self.menuIDE.menuAction(), self.menuReport.menuAction())
+      self.retranslateUi(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+      Ui_MainWindow.retranslateUi(self, MainWindow)
+      self.actionWizard.setText(QApplication.translate("MainWindow", "Wizard", None, QApplication.UnicodeUTF8))
+      #self.actionReport.setText(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
+      #self.actionReport.setToolTip(QApplication.translate("MainWindow", "Open the report editor", None, QApplication.UnicodeUTF8))
+      #try:
+        #self.menuReport.setTitle(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
+      #except AttributeError:
+        #pass
 
     def init(self):
         self.initConnection()
@@ -120,7 +154,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.connect(self.actionHelp, SIGNAL("triggered()"), self.addHelpWidget)
         self.connect(self.actionAbout, SIGNAL("triggered()"), self.dialog.about)       
-
+        self.connect(self.actionWizard, SIGNAL('triggered()'), self.autoWizard)
+        #self.connect(self.actionReport, SIGNAL("triggered()"), self.addReportEdit) XXX Report
+        #self.connect(self, SIGNAL("addReportEdit()"), self.addReportEdit) XXX Report
 
     def initToolbarList(self):
         self.toolbarList = [
@@ -137,6 +173,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 #                            self.actionFullscreen_mode,
 #                            self.actionBrowse_modules,
                             ]
+        self.toolbarList.insert(0, self.actionWizard)   
+        #self.toolbarList.insert(len(self.toolbarList) - 1, self.actionReport) XXX Report
 
 #############  DOCKWIDGETS FUNCTIONS ###############
     def createDockWidget(self, widget, widgetName):
@@ -225,7 +263,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 #    def addIde(self):
 #       self.addSingleDock("IDE", Ide, master=True)
  
-
     def initDockWidgets(self):
         """Init Dock in application and init DockWidgets"""
         widgetPos = [ ( Qt.TopLeftCorner, Qt.LeftDockWidgetArea, QTabWidget.North),
@@ -251,7 +288,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
         self.refreshSecondWidgets()
         self.refreshTabifiedDockWidgets()
+        #self.addReportEdit() XXX Report
+        #self.dockWidget['Report'].setVisible(False) XXX Report
 
+    def autoWizard(self):
+        autoWiz = AutoWizard(self)
+        autoWiz.exec_()
 
     def nodeListWidgets(self, parent = None):
        return NodeListWidgets(parent)
@@ -264,6 +306,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def createSTDErrWidget(self):
        return STDErr(self, self.debug)
+
+    def addReportEdit(self):
+        self.addSingleDock("Report", ReportEditor, master=True)
+
+    def showReportEdit(self):
+        self.emit(SIGNAL("addReportEdit()"))
 
     def createFirstWidgets(self):
         self.nodeBrowser = self.nodeListWidgets(parent=self)
@@ -296,6 +344,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.preview = Preview(self)
         self.addDockWidgets(self.preview, 'preview', master=False)
         self.connect(self, SIGNAL("previewUpdate"), self.preview.update)
+
+        self.wpostprocess = PostProcessStateWidget(self)
+        self.addDockWidgets(self.wpostprocess, "Post Process State", False)
 
     def maximizeDockwidget(self):
         if self.last_state is None:

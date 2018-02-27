@@ -25,7 +25,6 @@ include_directories(api/include)
 add_subdirectory(api)
 add_subdirectory(modules)
 add_subdirectory(ui)
-add_subdirectory(pro)
 
 if (BUILD_UNSUPPORTED)
   add_subdirectory(unsupported)

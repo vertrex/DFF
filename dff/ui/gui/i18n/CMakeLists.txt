@@ -15,11 +15,12 @@
 
 # please keep the list of supported languages sorted alphabetically
 set(DFF_SUPPORTED_LANGUAGES "de" "en" "es" "fr" "it" "nl" "zh")
-
+set(DFF_PRO_SUPPORTED_LANGUAGES "en" "fr" )
 # Please also take care of dff.pro file !
 
 # Configure step
 execute_process(COMMAND ${PYTHON_QT4_LANGUAGE} -verbose "${CMAKE_CURRENT_SOURCE_DIR}/dff.pro")
+execute_process(COMMAND ${PYTHON_QT4_LANGUAGE} -verbose "${CMAKE_CURRENT_SOURCE_DIR}/dff_pro.pro")
 
 foreach(LANGUAGE ${DFF_SUPPORTED_LANGUAGES})
   set(QM_OUTPUT_FILES ${QM_OUTPUT_FILES} "Dff_${LANGUAGE}.qm")
@@ -31,3 +32,15 @@ foreach(LANGUAGE ${DFF_SUPPORTED_LANGUAGES})
 endforeach(LANGUAGE ${DFF_SUPPORTED_LANGUAGES})
 
 install_file(${QM_OUTPUT_FILES})
+
+#XXX
+#foreach(LANGUAGE ${DFF_PRO_SUPPORTED_LANGUAGES})
+  #set(PQM_OUTPUT_FILES ${PQM_OUTPUT_FILES} "Dff_pro_${LANGUAGE}.qm")
+## Build step
+  #add_custom_target(gui_translation_pro_${LANGUAGE} ALL
+    #COMMAND ${QT_LANGUAGE_COMPILER} ${CMAKE_CURRENT_SOURCE_DIR}/Dff_pro_${LANGUAGE}.ts -qm ${CMAKE_CURRENT_BINARY_DIR}/Dff_pro_${LANGUAGE}.qm
+    #SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/Dff_pro_${LANGUAGE}.ts
+    #)
+#endforeach(LANGUAGE ${DFF_PRO_SUPPORTED_LANGUAGES})
+
+#install_file(${PQM_OUTPUT_FILES})

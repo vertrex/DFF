@@ -43,6 +43,9 @@ class GUI(QApplication, UI):
 	QApplication.__init__(self, sys.argv)
         UI.__init__(self, arguments)
         self.translator = Translator()
+        self.translator.addTranslationPath("dff/ui/gui/i18n/Dff_pro_")
+        self.translator.addTranslationPath("dff/modules/i18n/Dff_pro_modules_")
+        self.translator.loadLanguage()
         self.setApplicationName("Digital Forensics Framework")
         # Below are macros replaced by CMake using configure_file please don't
         # commit this file with macros replaced, view those macros definition

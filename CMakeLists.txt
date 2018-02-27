@@ -19,8 +19,8 @@ cmake_minimum_required(VERSION 2.6)
 
 include("cmake_modules/dff/header.cmake")
 
-set(PROJECT_EDITION "pro")
-set(PYTHON_INVOKER "dff-pro.py")
+#set(PROJECT_EDITION "pro")
+#set(PYTHON_INVOKER "dff-pro.py")
 
 include("cmake_modules/dff/find_deps.cmake")
 include("cmake_modules/dff/macros.cmake")

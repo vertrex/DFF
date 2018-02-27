@@ -15,7 +15,7 @@
 #
 
 from PyQt4.QtCore import Qt, SIGNAL, QEvent, QPoint, QSize, QRect, QTimer
-from PyQt4.QtGui import QAbstractButton,  QComboBox, QStyle, QPainter, QPushButton, QDockWidget, QApplication, QStylePainter, QIcon, QHBoxLayout, QStyleOptionToolButton, QWidget, QStyleOptionDockWidgetV2, QLayout, QCheckBox
+from PyQt4.QtGui import QAbstractButton, QComboBox, QStyle, QPainter, QPushButton, QDockWidget, QApplication, QStylePainter, QIcon, QHBoxLayout, QStyleOptionToolButton, QWidget, QStyleOptionDockWidgetV2, QLayout, QCheckBox
  
 class DockWidgetTitleBarButton(QAbstractButton):
     def __init__(self, titlebar):
@@ -64,7 +64,7 @@ class DockWidgetTitleBarButton(QAbstractButton):
   
   
 class DockWidgetTitleBar(QWidget):
-    def __init__(self, dockWidget, hasCheckState = False):
+    def __init__(self, dockWidget, hasCheckState = False, hasReport = False):
         super(DockWidgetTitleBar, self).__init__(dockWidget)
         q = dockWidget
         self.floatButton = DockWidgetTitleBarButton(self)
@@ -87,7 +87,16 @@ class DockWidgetTitleBar(QWidget):
 	  self.checkStateButton = False 
         dockWidget.featuresChanged.connect(self.featuresChanged)
         self.featuresChanged(0)
-  
+        self.reportIcon = QIcon(":report")
+        if hasReport:
+          self.reportButton = DockWidgetTitleBarButton(self)
+          self.reportButton.setIcon(self.reportIcon)
+          self.reportButton.clicked.connect(self.toggleReport)
+          self.reportButton.setVisible(True)
+          self.reportButton.setToolTip(self.tr("Add content to report"))
+        else:
+         self.reportButton = None
+ 
     def hasFeature(self, dockwidget, feature):
       return dockwidget.features() & feature == feature
  
@@ -115,11 +124,15 @@ class DockWidgetTitleBar(QWidget):
         return QSize(buttonWidth + height + 4 * mw + 2 * fw, height)
  
     def hideSizeHint(self):
-       if self.checkStateButton:
-	 return self.checkStateButton.sizeHint()
-       else:
-         return QSize(0, 0)
- 
+      if self.reportButton and self.checkStateButton:
+        return self.reportButton.sizeHint() + self.checkStateButton.sizeHint()
+      elif self.reportButton:
+        return self.reportButton.sizeHint()
+      elif self.checkStateButton:
+        return self.checkStateButton.sizeHint()
+      else:
+        return QSize(0, 0)
+
     def paintEvent(self, _event):
         p = QStylePainter(self)
         q = self.parentWidget()
@@ -134,11 +147,15 @@ class DockWidgetTitleBar(QWidget):
         p.drawControl(QStyle.CE_DockWidgetTitle, titleOpt)
  
     def titleOptionRect(self, fw, mw):
- 	if self.checkStateButton:
-	  return  QRect(QPoint(fw + mw + self.checkStateButton.size().width(), fw), QSize(self.geometry().width() - ( fw * 2 ) - mw - self.checkStateButton.size().width(), self.geometry().height() - ( fw * 2 )))
-        else:
-          return QRect(QPoint(fw + mw, fw), QSize(self.geometry().width() - ( fw * 2 ) - mw, self.geometry().height() - ( fw * 2 )))
- 
+     if self.reportButton and self.checkStateButton:
+       return QRect(QPoint(fw + mw + self.reportButton.size().width() + self.checkStateButton.size().width(), fw), QSize(self.geometry().width() - ( fw * 2 ) - mw - self.reportButton.size().width() - self.checkStateButton.size().width(), self.geometry().height() - ( fw * 2 )))
+     elif self.reportButton:
+       return QRect(QPoint(fw + mw + self.reportButton.size().width(), fw), QSize(self.geometry().width() - ( fw * 2 ) - mw - self.reportButton.size().width(), self.geometry().height() - ( fw * 2 )))
+     elif self.checkStateButton:
+       return  QRect(QPoint(fw + mw + self.checkStateButton.size().width(), fw), QSize(self.geometry().width() - ( fw * 2 ) - mw - self.checkStateButton.size().width(), self.geometry().height() - ( fw * 2 )))
+     else:
+       return QRect(QPoint(fw + mw, fw), QSize(self.geometry().width() - ( fw * 2 ) - mw, self.geometry().height() - ( fw * 2 )))
+
     def resizeEvent(self, _event):
         q = self.parentWidget()
         fw = q.isFloating() and q.style().pixelMetric(QStyle.PM_DockWidgetFrameWidth, None, q) or 0
@@ -167,6 +184,14 @@ class DockWidgetTitleBar(QWidget):
             size = self.floatButton.size()
           checkStateRect = QRect(QPoint(fw, top), size)
           self.checkStateButton.setGeometry(checkStateRect)
+        if self.reportButton:
+          size = self.reportButton.size()
+          if not closeRect.isNull():
+           size = self.closeButton.size()
+          elif not floatRect.isNull():
+           size = self.floatButton.size()
+          reportRect = QRect(QPoint(fw, top), size)
+          self.reportButton.setGeometry(reportRect)
   
     def toggleFloating( self ):
         parent = self.parentWidget()
@@ -179,7 +204,12 @@ class DockWidgetTitleBar(QWidget):
            parent.updateCheckState(True)
          else:
 	   parent.updateCheckState(False)
- 
+
+    def toggleReport(self):
+      parent = self.parentWidget()
+      if parent:
+        parent.report()
+
     def featuresChanged(self, _features):
         parent = self.parentWidget()
         self.closeButton.setVisible(self.hasFeature(parent, QDockWidget.DockWidgetClosable))
@@ -204,14 +234,24 @@ class DockWidget(QDockWidget):
       return False
 
   def initTitleBar(self):
-     return DockWidgetTitleBar(self, self.hasCheckState())
+     return DockWidgetTitleBar(self, self.hasCheckState(), self.hasReport())
 
   def init(self, widget):
     self.name = widget.name
     self.setWidget(widget)
     self.connect(self, SIGNAL("topLevelChanged(bool)"), self.toplevel_changed)
     self.connect(self, SIGNAL("visibilityChanged(bool)"), self.setVisibility)
-     
+    
+  def hasReport(self):
+    try:
+      getattr(self.childWidget, 'report')
+      return True
+    except AttributeError:
+      return False
+
+  def report(self):
+     self.childWidget.report()
+
   def updateCheckState(self, state):
      self.childWidget.updateCheckState(state)
  
