@@ -18,15 +18,15 @@
 __dff_module_gen_nodes_version__ = "1.0.0"
 
 import os, json, sys
-import dff.pro.api.report
+import dff.api.report
 
 from collections import OrderedDict
 from distutils import dir_util, sysconfig
 
 from dff.api.types.libtypes import Variant, RCVariant
 from dff.api.events.libevents import EventHandler, event
-from dff.pro.api.report.page import ReportPage
-from dff.pro.api.report.fragments import NodeListFragment
+from dff.api.report.page import ReportPage
+from dff.api.report.fragments import NodeListFragment
 
 class ReportCategory(object):
   def __init__(self, name):
@@ -102,7 +102,7 @@ class ReportManager(object):
   if hasattr(sys, 'frozen'):
     TemplatePath = os.path.join(os.path.dirname(sys.executable), "resources", 'templates')
   else:
-    TemplatePath = dff.pro.api.report.__path__[0] + '/templates/'
+    TemplatePath = dff.api.report.__path__[0] + '/templates/'
   __instance = None
   EventExportCategoryStart = 0x301
   EventExportCategoryFinish = 0x302

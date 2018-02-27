@@ -21,7 +21,7 @@ TODO :
   
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
-- Replace PyQt4 by PyQt5
+- Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)
 - Renable the report as QtWebView is available on debian in PyQt5
 - add destruct as git submodule (needed to compile in build/)
 - compile without -std=c++98

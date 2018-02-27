@@ -22,7 +22,7 @@ import os
 from dff.api.types.libtypes import Variant, RCVariant
 from dff.api.events.libevents import EventHandler,event 
 
-from dff.pro.api.report.fragments import TableFragment, NodeListFragment, TextFragment, DetailTableFragment, ChatFragment
+from dff.api.report.fragments import TableFragment, NodeListFragment, TextFragment, DetailTableFragment, ChatFragment
 
 class PageConfiguration(EventHandler):
    def __init__(self, category, title, options=None):
