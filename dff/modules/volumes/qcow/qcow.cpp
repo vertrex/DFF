@@ -17,6 +17,8 @@
 #include <sstream>
 #include "qcow.hpp"
 
+#include "fdmanager.hpp"
+
 QCow::QCow() : mfso("qcow"), __parent(NULL), __root(NULL), __size(0), __qcowFile(NULL), __bfio_handle(NULL)
 {
   mutex_init(&this->__mutex);

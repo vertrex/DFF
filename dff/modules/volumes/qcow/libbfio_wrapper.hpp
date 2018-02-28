@@ -24,11 +24,11 @@
 struct dff_libbfio_file_io_handle
 {
    int		access_flags;
-   Node*  	parent;
-   VFile*	file;
+   DFF::Node*  	parent;
+   DFF::VFile*	file;
 } typedef dff_libbfio_file_io_handle_t;
 
-int 	dff_libbfio_file_initialize(libbfio_handle_t **handle, libbfio_error_t **error, Node* parent);
+int 	dff_libbfio_file_initialize(libbfio_handle_t **handle, libbfio_error_t **error, DFF::Node* parent);
 int 	dff_libbfio_file_io_handle_initialize(dff_libbfio_file_io_handle_t** io_handle, libbfio_error_t **error);
 
 int	dff_libbfio_file_io_handle_free(intptr_t **io_handle, libbfio_error_t **error);

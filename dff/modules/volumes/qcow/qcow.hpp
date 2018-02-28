@@ -26,6 +26,8 @@
 #include "libbfio_wrapper.hpp"
 #include <libqcow.h>
 
+using namespace DFF;
+
 typedef struct s_mount_handle
 {
 }	mount_handle_t;
