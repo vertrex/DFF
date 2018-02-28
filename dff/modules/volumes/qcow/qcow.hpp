@@ -45,18 +45,18 @@ public:
 class QCow : public mfso
 {
 public:
-                        QCow();
-                        ~QCow();
-  int32_t	        vread(int fd, void *buff, unsigned int size);
+  QCow();
+  ~QCow();
+  int32_t	          vread(int fd, void *buff, unsigned int size);
   uint64_t	        vseek(int fd, uint64_t offset, int whence);
-  void	                start(std::map<std::string, Variant_p >);
+  void	            start(std::map<std::string, Variant_p >);
 private:
-  void			__createNode(void);
+  void			        __createNode(void);
 
-  Node*			__parent;
-  Node*			__root;
-  uint64_t		__size;
-  libqcow_file_t*	__qcowFile;
+  Node*			        __parent;
+  Node*			        __root;
+  uint64_t		      __size;
+  libqcow_file_t*	  __qcowFile;
   libbfio_handle_t*	__bfio_handle;
   mutex_def(__mutex);
 };

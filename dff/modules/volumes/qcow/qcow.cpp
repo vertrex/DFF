@@ -29,7 +29,7 @@ QCow::~QCow()
   mutex_destroy(&this->__mutex);
 }
 
-void		QCow::start(std::map<std::string, Variant_p > args)
+void      QCow::start(std::map<std::string, Variant_p > args)
 {
   std::string	path;
   
@@ -50,7 +50,7 @@ void		QCow::start(std::map<std::string, Variant_p > args)
 }
 
 
-int32_t         QCow::vread(int fd, void *buff, unsigned int size)
+int32_t     QCow::vread(int fd, void *buff, unsigned int size)
 {
   fdinfo*		fi;
   libqcow_error_t*	error = NULL;
@@ -72,7 +72,7 @@ int32_t         QCow::vread(int fd, void *buff, unsigned int size)
 }
 
 
-uint64_t	QCow::vseek(int32_t fd, uint64_t offset, int32_t whence)
+uint64_t    QCow::vseek(int32_t fd, uint64_t offset, int32_t whence)
 {
   fdinfo*	fi = NULL;
 
@@ -105,11 +105,11 @@ uint64_t	QCow::vseek(int32_t fd, uint64_t offset, int32_t whence)
 }
 
 
-void		QCow::__createNode(void) 
+void        QCow::__createNode(void) 
 {
   libqcow_error_t*	error = NULL;
 
-  if (dff_libbfio_file_initialize(&this->__bfio_handle, &error, this->__parent) != 1)
+  if (dff_libbfio_file_initialize(&this->__bfio_handle, (libbfio_error_t**)&error, this->__parent) != 1)
     throw vfsError(std::string("Unable to initialize input file IO handle."));
   if (libqcow_file_initialize(&this->__qcowFile, &error) != 1)
     throw vfsError(std::string("Unable to initialize qcow file."));
