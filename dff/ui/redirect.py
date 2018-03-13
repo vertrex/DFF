@@ -38,9 +38,9 @@ class RedirectWrite(QThread):
           fname = frame.f_globals['__name__'] if frame.f_globals.has_key("__name__") else None
  	  for (nparent, lframe, ismod) in self.lparent:
 	    if fname in lframe:
-	      nparent.emit(SIGNAL(nparent.sig), text)
-	      del frame
-	      return
+	        nparent.emit(SIGNAL(nparent.sig), QString(text))
+		del frame
+	        return
 	  if fname in self.loader.modules:
               try:
 		inst = frame.f_locals['self']
@@ -55,16 +55,16 @@ class RedirectWrite(QThread):
 		    else:
 		        proc.stream.put(text)
 			return  
-              except KeyError:
-                pass 
+              except KeyError as e:
+                pass
         if frame:
-           del frame
+          del frame
         if self.ioOut != None and self.sout == 'out':
-	    self.ioOut.emit(SIGNAL(self.ioOut.sigout), text)
+            self.ioOut.emit(SIGNAL(self.ioOut.sigout), text)
         elif self.ioOut != None and self.sout == 'err':
-	    self.ioOut.emit(SIGNAL(self.ioOut.sigerr), text)
-	elif self.sout == 'err':
-	  sys.__stderr__.write(text)
+            self.ioOut.emit(SIGNAL(self.ioOut.sigerr), text)
+        elif self.sout == 'err':
+          sys.__stderr__.write(text)
         else :
           sys.__stdout__.write(text)
 

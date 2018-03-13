@@ -34,8 +34,8 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         self.name = self.windowTitle()
         self.hookTermSize()
         Console.__init__(self, sigstp=False)
-	self.completion = completion.Completion(self)
-	taskmanager = TaskManager()
+        self.completion = completion.Completion(self)
+        taskmanager = TaskManager()
         self.vfs = vfs.vfs()
         self.log = log or ''
         if parent is None:
@@ -54,10 +54,11 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         self.selcolor = QColor("green")
 
         self.preloop()
-	self.redirect = RedirectIO()
-	self.sig = "Sputtext"
-	self.connect(self, SIGNAL(self.sig), self.puttext)
-	self.redirect.addparent(self, ["dff.ui.gui.widget.shell", "dff.ui.console.console", "dff.ui.console.completion", "dff.ui.console.line_to_arguments", "dff.api.taskmanager.taskmanager", "dff.api.taskmanager.scheduler", "dff.api.taskmanager.processus"], True)
+        self.redirect = RedirectIO()
+        self.sig = "SSputtext(QString)"
+        self.connect(self, SIGNAL(self.sig), self.puttext)
+        self.connect(self, SIGNAL("Sputtext(QString)"), self.puttext)
+        self.redirect.addparent(self, ["dff.ui.gui.widget.shell", "dff.ui.console.console", "dff.ui.console.completion", "dff.ui.console.line_to_arguments", "dff.api.taskmanager.taskmanager", "dff.api.taskmanager.scheduler", "dff.api.taskmanager.processus"], True)
         self.writePrompt()
 
 
@@ -76,7 +77,10 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         self.write(self.ps1)
 
     def write(self, str):
-	self.redirect.write(str)
+      self.redirect.write(str)
+
+    def sputtext(self, text):
+      self.emit(SIGNAL("Sputext(QString)"), text)
 
     def puttext(self, text):
         cursor = self.textCursor()
@@ -107,7 +111,7 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         return 1
 
     def clear(self):
-	pass
+      pass
 
     def readline(self):
         self.reading = 1
@@ -137,11 +141,11 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         except Exception,e:
             print e
         line = '\n'.join(self.lines)
-	line = self.precmd(line)
-	stop = self.onecmd(line, True)
+        line = self.precmd(line)
+        stop = self.onecmd(line, True)
         stop = self.postcmd(stop, line)
-	self.cwd = self.vfs.getcwd()
-	self.ps1 = self.cwd.absolute() + " > "
+        self.cwd = self.vfs.getcwd()
+        self.ps1 = self.cwd.absolute() + " > "
         if self.more:
             self.write(self.ps2)
         else:
@@ -167,8 +171,8 @@ class ShellView(QTextEdit, Console, Ui_Shell):
         self.color_line()
 
     def get_term_size(self):
-	 n =  int(self.document().textWidth()/ 7.4)
-	 return n 
+      n =  int(self.document().textWidth()/ 7.4)
+      return n 
 
     def insert_comp(self, text, matches):
       res = ""
@@ -190,12 +194,12 @@ class ShellView(QTextEdit, Console, Ui_Shell):
           ins = matches[start:]
         else:
           ins = matches
-	ins = QString(ins)  
+        ins = QString(ins)  
         self.line.insert(self.point, ins)
         self.point += ins.length()
 
       if res != "" and res != None:
-	res = QString(res)  
+        res = QString(res)  
         self.line.insert(self.point, res)
         self.point += res.length()
 

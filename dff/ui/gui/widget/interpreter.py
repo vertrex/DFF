@@ -24,57 +24,62 @@ from dff.ui.gui.resources.ui_interpreter import Ui_Interpreter
 
 class InterpreterView(QTextEdit, InteractiveInterpreter, Ui_Interpreter):
     def __init__(self, parent=None, log=''):
-        QTextEdit.__init__(self, parent)
-	InteractiveInterpreter.__init__(self, None)
-        self.setupUi(self)
-        self.name = self.windowTitle()
-        self.log = log or ''
-        self.__canwrite = True
+      QTextEdit.__init__(self, parent)
+      InteractiveInterpreter.__init__(self, None)
+      self.setupUi(self)
+      self.name = self.windowTitle()
+      self.log = log or ''
+      self.__canwrite = True
 
-        if parent is None:
-            self.eofKey = Qt.Key_D
-        else:
-            self.eofKey = None
-       
-        self.line    = QString()
-        self.lines   = []
-        self.point   = 0
-        self.more    = 0
-        self.reading = 0
-        self.history = []
-        self.pointer = 0
-        self.cursor_pos   = 0
-        self.fgcolor = QColor("white")
-        self.selcolor = QColor("green")
-        self.strcolor = QColor("red")
+      if parent is None:
+          self.eofKey = Qt.Key_D
+      else:
+          self.eofKey = None
+     
+      self.line    = QString()
+      self.lines   = []
+      self.point   = 0
+      self.more    = 0
+      self.reading = 0
+      self.history = []
+      self.pointer = 0
+      self.cursor_pos   = 0
+      self.fgcolor = QColor("white")
+      self.selcolor = QColor("green")
+      self.strcolor = QColor("red")
 
-	self.redirect = RedirectIO()
-	self.sig = "Iputtext"
-	self.connect(self, SIGNAL(self.sig), self.puttext)
-	self.redirect.addparent(self, ["dff.ui.gui.widget.interpreter", "code", "__console__", "pydoc"])
+      self.redirect = RedirectIO()
+      self.sig = "IIputtext(QString)"
+      self.connect(self, SIGNAL(self.sig), self.sputtext)#, Qt.QueuedConnection)
+      self.connect(self, SIGNAL("Iputtext(QString)"), self.puttext)
+      self.redirect.addparent(self, ["dff.ui.gui.widget.interpreter", "code", "__console__", "pydoc"])
 
-        self.ps1 = ">>> "
-        self.ps2 = "... "
-        self.writePrompt()
-        api_imports = ["from dff.api.types.libtypes import Variant, VList, VMap, DateTime, typeId, Argument, Parameter, ConfigManager, Constant, Config, Path",
-                       "from dff.api.vfs.vfs import vfs",
-                       "from dff.api.vfs.libvfs import VFS, FileMapping, ABSOLUTE_ATTR_NAME, RELATIVE_ATTR_NAME",
-                       "from dff.api.filters.libfilters import Filter",
-                       "from dff.api.search.libsearch import Search",
-                       "from dff.api.events.libevents import EventHandler, event",
-                       "from dff.api.datatype.libdatatype import DataTypeManager, DataTypeHandler",
-                       "from dff.api.loader.loader import loader",
-                       "from dff.api.module.module import Module, Script",
-                       "from dff.api.taskmanager.taskmanager import TaskManager"]
-        for api_import in api_imports:
-            self.more = self.runsource(api_import)
+      self.ps1 = ">>> "
+      self.ps2 = "... "
+      self.writePrompt()
+      api_imports = ["from dff.api.types.libtypes import Variant, VList, VMap, DateTime, typeId, Argument, Parameter, ConfigManager, Constant, Config, Path",
+                     "from dff.api.vfs.vfs import vfs",
+                     "from dff.api.vfs.libvfs import VFS, FileMapping, ABSOLUTE_ATTR_NAME, RELATIVE_ATTR_NAME",
+                     "from dff.api.filters.libfilters import Filter",
+                     "from dff.api.search.libsearch import Search",
+                     "from dff.api.events.libevents import EventHandler, event",
+                     "from dff.api.datatype.libdatatype import DataTypeManager, DataTypeHandler",
+                     "from dff.api.loader.loader import loader",
+                     "from dff.api.module.module import Module, Script",
+                     "from dff.api.taskmanager.taskmanager import TaskManager"
+                     ]
+      for api_import in api_imports:
+          self.more = self.runsource(api_import)
 
     def writePrompt(self):
         self.write('\n')
         self.write(self.ps1)
         
     def write(self, str):
-	self.redirect.write(str)
+      self.redirect.write(str)
+
+    def sputtext(self, text):
+      self.emit(SIGNAL("Iputtext(QString)"), text)
 
     def puttext(self, text):
         cursor = self.textCursor()
@@ -92,7 +97,7 @@ class InterpreterView(QTextEdit, InteractiveInterpreter, Ui_Interpreter):
 
     def get_interpreter(self):
         """ Return the interpreter object """
-	return self
+        return self
 
     def moveCursor(self, operation, mode=QTextCursor.MoveAnchor):
         """
@@ -160,7 +165,7 @@ class InterpreterView(QTextEdit, InteractiveInterpreter, Ui_Interpreter):
             self.lines.append(str(self.line))
         except Exception,e:
             print e
-	source = '\n'.join(self.lines)
+        source = '\n'.join(self.lines)
         thread = threading.Thread(target=self.runsource_callback, args=(source, ))
         thread.start()
         #self.more = self.runsource(source)
@@ -225,7 +230,7 @@ class InterpreterView(QTextEdit, InteractiveInterpreter, Ui_Interpreter):
                 self.run()
                 
         elif key == Qt.Key_Tab:
-	    self.__insertText(text)
+          self.__insertText(text)
         elif key == Qt.Key_Left:
             if self.point : 
                 self.moveCursor(QTextCursor.Left)
@@ -374,4 +379,4 @@ class InterpreterActions(QObject):
     self.mainwindow = mainwindow
 
   def create(self):
-      self.mainwindow.addSingleDock("Interpreter", InterpreterView)	
+      self.mainwindow.addSingleDock("Interpreter", InterpreterView)
