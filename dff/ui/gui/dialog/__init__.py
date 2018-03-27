@@ -13,4 +13,4 @@
 #  Solal Jacob <sja@digital-forensic.org>
 
 
-__all__ = ["dialog"]
+__all__ = ["dialog","applymodule", "extractor", "property", "selectnodes", "uiapplymodule", "uiproperty", "uiselectnode" ]

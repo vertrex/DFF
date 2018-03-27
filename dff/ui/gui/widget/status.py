@@ -12,7 +12,7 @@
 # Author(s):
 #  Frederic Baguelin <fba@digital-forensic.org>
 
-from dff.api.gui.widget.linklabel import LinkLabel
+from dff.ui.gui.widget.linklabel import LinkLabel
 from dff.api.vfs.libvfs import ABSOLUTE_ATTR_NAME
 
 from PyQt4 import QtGui

@@ -21,7 +21,7 @@ from dff.api.events.libevents import EventHandler
 from dff.api.vfs.libvfs import VFS, ABSOLUTE_ATTR_NAME, VecNode, VLink
 from dff.api.types.libtypes import typeId
 
-from dff.api.gui.thumbnail import Thumbnailer
+from dff.ui.gui.thumbnail import Thumbnailer
 
 from functools import cmp_to_key
 import locale

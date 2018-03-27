@@ -18,13 +18,13 @@ from PyQt4.QtGui import *
 
 from dff.api.vfs.libvfs import VFS
 
-from dff.api.gui.view.node_list import NodeListView, TimeLineNodeListView
-from dff.api.gui.view.node_table import NodeTableView, TimeLineNodeTableView
-from dff.api.gui.model.node_list import NodeListModel, TimeLineNodeListModel
+from dff.ui.gui.view.node_list import NodeListView, TimeLineNodeListView
+from dff.ui.gui.view.node_table import NodeTableView, TimeLineNodeTableView
+from dff.ui.gui.model.node_list import NodeListModel, TimeLineNodeListModel
 
-from dff.api.gui.model.status import ViewStatusModel, NodeStatusModel, TimeLineNodeViewStatusModel
-from dff.api.gui.widget.status import StatusWidget, StatusBarWidget
-from dff.api.gui.widget.linklabel import LinkLabel
+from dff.ui.gui.model.status import ViewStatusModel, NodeStatusModel, TimeLineNodeViewStatusModel
+from dff.ui.gui.widget.status import StatusWidget, StatusBarWidget
+from dff.ui.gui.widget.linklabel import LinkLabel
 
 from dff.ui.gui.utils.menumanager import MenuManager
 from dff.ui.gui.resources.ui_filter_mode import Ui_filterMode

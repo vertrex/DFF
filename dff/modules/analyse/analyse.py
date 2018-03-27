@@ -22,7 +22,7 @@ from dff.api.module.script import Script
 from dff.api.filters.libfilters import Filter
 from dff.api.module.manager import ModuleProcessusManager
 
-from dff.api.gui.widget.nodelistwidgets import NodeListWidgets
+from dff.ui.gui.widget.nodelistwidgets import NodeListWidgets
 
 class Translator(QObject):
   def __init__(self):

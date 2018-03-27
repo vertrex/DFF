@@ -20,6 +20,7 @@ install_file(
   gui.py
   mainwindow.py
   translator.py
+  thumbnail.py
 )
 
 add_subdirectory(resources)
@@ -30,3 +31,9 @@ add_subdirectory(widget)
 add_subdirectory(dialog)
 add_subdirectory(csv)
 add_subdirectory(wizard)
+add_subdirectory(view)
+add_subdirectory(model)
+
+if (FFMPEG_FOUND)
+  add_subdirectory (video)
+endif (FFMPEG_FOUND)

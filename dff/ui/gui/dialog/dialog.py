@@ -23,8 +23,8 @@ from dff.api.loader import loader
 from dff.api.taskmanager.taskmanager import TaskManager 
 from dff.api.types.libtypes import typeId
 from dff.api.devices.devices import Devices
-from dff.api.gui.widget.devicesdialog import DevicesDialog
-from dff.api.gui.widget.layoutmanager import layoutManager  
+from dff.ui.gui.widget.devicesdialog import DevicesDialog
+from dff.ui.gui.widget.layoutmanager import layoutManager  
 
 from dff.ui.gui.dialog.preferences import Preferences
 from dff.ui.gui.resources.ui_about import Ui_About

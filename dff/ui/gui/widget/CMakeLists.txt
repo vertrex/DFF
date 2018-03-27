@@ -31,4 +31,17 @@ install_file(
   reportexport.py
   reportselect.py
   renderer.py
+  dockwidget.py
+  layoutmanager.py
+  varianttreewidget.py
+  propertytable.py
+  textedit.py
+  devicesdialog.py
+  generateModuleShape.py
+  nodewidget.py
+  nodelistwidgets.py
+  status.py
+  linklabel.py
 )
+
+add_subdirectory (search)

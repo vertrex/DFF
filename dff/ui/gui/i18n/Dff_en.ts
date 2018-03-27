@@ -44,50 +44,50 @@
 <context>
     <name>ApplyModule</name>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="208"/>
-        <source>Configuration error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="209"/>
-        <source>An error was detected in the configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="104"/>
+        <location filename="../dialog/applymodule.py" line="104"/>
         <source>Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="106"/>
+        <location filename="../dialog/applymodule.py" line="106"/>
         <source>String</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="108"/>
+        <location filename="../dialog/applymodule.py" line="108"/>
         <source>Boolean</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="110"/>
+        <location filename="../dialog/applymodule.py" line="110"/>
         <source>File or folder stored on the local system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="112"/>
+        <location filename="../dialog/applymodule.py" line="112"/>
         <source>Node from the virtual filesystem</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/applymodule.py" line="116"/>
+        <location filename="../dialog/applymodule.py" line="116"/>
         <source>Input type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialog/applymodule.py" line="208"/>
+        <source>Configuration error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialog/applymodule.py" line="209"/>
+        <source>An error was detected in the configuration</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AttributeCopyMenu</name>
     <message>
-        <location filename="../../../api/gui/widget/varianttreewidget.py" line="147"/>
+        <location filename="../widget/varianttreewidget.py" line="147"/>
         <source>copy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,22 +95,22 @@
 <context>
     <name>AttributeSelectorMenu</name>
     <message>
-        <location filename="../../../api/gui/dialog/selectattributes.py" line="34"/>
+        <location filename="../dialog/selectattributes.py" line="34"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/selectattributes.py" line="36"/>
+        <location filename="../dialog/selectattributes.py" line="36"/>
         <source>Unselect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/selectattributes.py" line="38"/>
+        <location filename="../dialog/selectattributes.py" line="38"/>
         <source>Select all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/selectattributes.py" line="40"/>
+        <location filename="../dialog/selectattributes.py" line="40"/>
         <source>Unselect all</source>
         <translation type="unfinished"></translation>
     </message>
@@ -268,7 +268,7 @@
 <context>
     <name>DicoManager</name>
     <message>
-        <location filename="../../../api/gui/widget/search/dico_manager.py" line="38"/>
+        <location filename="../widget/search/dico_manager.py" line="38"/>
         <source>Select your dictionnary</source>
         <translation type="unfinished"></translation>
     </message>
@@ -276,22 +276,22 @@
 <context>
     <name>DockWidgetTitleBar</name>
     <message>
-        <location filename="../../../api/gui/widget/dockwidget.py" line="74"/>
+        <location filename="../widget/dockwidget.py" line="74"/>
         <source>Undock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/dockwidget.py" line="79"/>
+        <location filename="../widget/dockwidget.py" line="79"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/dockwidget.py" line="84"/>
+        <location filename="../widget/dockwidget.py" line="84"/>
         <source>Disable this window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/dockwidget.py" line="96"/>
+        <location filename="../widget/dockwidget.py" line="96"/>
         <source>Add content to report</source>
         <translation type="unfinished"></translation>
     </message>
@@ -340,27 +340,27 @@
 <context>
     <name>Extractor</name>
     <message>
-        <location filename="../../../api/gui/dialog/extractor.py" line="113"/>
+        <location filename="../dialog/extractor.py" line="113"/>
         <source>Extraction path is mandatory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/extractor.py" line="114"/>
+        <location filename="../dialog/extractor.py" line="114"/>
         <source>Choose the destination folder for extraction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/extractor.py" line="115"/>
+        <location filename="../dialog/extractor.py" line="115"/>
         <source>Overwrite attempt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/extractor.py" line="116"/>
+        <location filename="../dialog/extractor.py" line="116"/>
         <source>Some selected files or folders already exist in the destination folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/extractor.py" line="117"/>
+        <location filename="../dialog/extractor.py" line="117"/>
         <source>Overwrite with selected ones ?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -381,12 +381,12 @@
 <context>
     <name>Filter</name>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="409"/>
+        <location filename="../widget/search/search_widget.py" line="409"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="409"/>
+        <location filename="../widget/search/search_widget.py" line="409"/>
         <source>Please, specify a query name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -757,17 +757,17 @@
 <context>
     <name>ItemValueDialog</name>
     <message>
-        <location filename="../../../api/gui/widget/varianttreewidget.py" line="165"/>
+        <location filename="../widget/varianttreewidget.py" line="165"/>
         <source>Attribute value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/varianttreewidget.py" line="178"/>
+        <location filename="../widget/varianttreewidget.py" line="178"/>
         <source>Attribute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/varianttreewidget.py" line="187"/>
+        <location filename="../widget/varianttreewidget.py" line="187"/>
         <source>Value:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -993,7 +993,7 @@
 <context>
     <name>MimeDialog</name>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="877"/>
+        <location filename="../widget/search/search_widget.py" line="877"/>
         <source>Select types to look for</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1001,12 +1001,12 @@
 <context>
     <name>ModuleRequest</name>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="801"/>
+        <location filename="../widget/search/search_widget.py" line="801"/>
         <source>Select ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="823"/>
+        <location filename="../widget/search/search_widget.py" line="823"/>
         <source>Select modules to look for</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1075,7 +1075,7 @@
 <context>
     <name>NodeSelectionButton</name>
     <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="580"/>
+        <location filename="../widget/layoutmanager.py" line="580"/>
         <source>Load</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1091,7 +1091,7 @@
 <context>
     <name>PathSelectionButton</name>
     <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="617"/>
+        <location filename="../widget/layoutmanager.py" line="617"/>
         <source>Load</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1276,93 +1276,93 @@
 <context>
     <name>PropertyTable</name>
     <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="145"/>
+        <location filename="../widget/propertytable.py" line="145"/>
         <source>name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="151"/>
-        <source>folder</source>
+        <location filename="../widget/propertytable.py" line="146"/>
+        <source>path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="149"/>
-        <source>file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="154"/>
-        <source>generated by</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="155"/>
-        <source>size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="156"/>
-        <source>relevant module(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="148"/>
-        <source>node type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="162"/>
-        <source>attributes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="157"/>
-        <source>children</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="158"/>
-        <source>file(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="160"/>
-        <source> bytes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="161"/>
-        <source>folder(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="159"/>
-        <source> totalizing </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="150"/>
-        <source> with module(s) applied on it</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="152"/>
-        <source> empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="153"/>
-        <source> deleted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="147"/>
+        <location filename="../widget/propertytable.py" line="147"/>
         <source>link path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/propertytable.py" line="146"/>
-        <source>path</source>
+        <location filename="../widget/propertytable.py" line="148"/>
+        <source>node type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="149"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="150"/>
+        <source> with module(s) applied on it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="151"/>
+        <source>folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="152"/>
+        <source> empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="153"/>
+        <source> deleted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="154"/>
+        <source>generated by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="155"/>
+        <source>size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="156"/>
+        <source>relevant module(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="157"/>
+        <source>children</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="158"/>
+        <source>file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="159"/>
+        <source> totalizing </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="160"/>
+        <source> bytes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="161"/>
+        <source>folder(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/propertytable.py" line="162"/>
+        <source>attributes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1475,12 +1475,12 @@
 <context>
     <name>SearchPanel</name>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="152"/>
+        <location filename="../widget/search/search_widget.py" line="152"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="152"/>
+        <location filename="../widget/search/search_widget.py" line="152"/>
         <source>Please, specify your query</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1488,12 +1488,12 @@
 <context>
     <name>SearchThread</name>
     <message>
-        <location filename="../../../api/gui/widget/search/thread.py" line="62"/>
+        <location filename="../widget/search/thread.py" line="62"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/search/thread.py" line="62"/>
+        <location filename="../widget/search/thread.py" line="62"/>
         <source>Error compiling query</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1567,45 +1567,45 @@
 <context>
     <name>TagManagerDialog</name>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="65"/>
+        <location filename="../dialog/tagmanager.py" line="65"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="66"/>
+        <location filename="../dialog/tagmanager.py" line="66"/>
         <source>No nodes was selected in the browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="67"/>
+        <location filename="../dialog/tagmanager.py" line="67"/>
         <source>No tags was selected in the available tags list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="68"/>
+        <location filename="../dialog/tagmanager.py" line="68"/>
         <source>No tags was selected in the selected nodes tags list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="70"/>
-        <source>Are you sure ? This will delete this tag for all nodes in the VFS !</source>
+        <location filename="../dialog/tagmanager.py" line="69"/>
+        <source>This is a default tag it cannot be deleted. All tagged VFS nodes was untagged.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/dialog/tagmanager.py" line="69"/>
-        <source>This is a default tag it cannot be deleted. All tagged VFS nodes was untagged.</source>
+        <location filename="../dialog/tagmanager.py" line="70"/>
+        <source>Are you sure ? This will delete this tag for all nodes in the VFS !</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TagRequest</name>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="759"/>
+        <location filename="../widget/search/search_widget.py" line="759"/>
         <source>Select ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/search/search_widget.py" line="770"/>
+        <location filename="../widget/search/search_widget.py" line="770"/>
         <source>Select tags to look for</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1678,7 +1678,7 @@ Add new tag or delete existing ones (Double-click to edit)</source>
 <context>
     <name>TreeModel</name>
     <message>
-        <location filename="../../../api/gui/model/tree.py" line="380"/>
+        <location filename="../model/tree.py" line="380"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2218,23 +2218,23 @@ Add new tag or delete existing ones (Double-click to edit)</source>
 <context>
     <name>layoutManager</name>
     <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="430"/>
-        <source>File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="431"/>
-        <source>Directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="309"/>
+        <location filename="../widget/layoutmanager.py" line="309"/>
         <source>Predefined parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/layoutmanager.py" line="239"/>
+        <location filename="../widget/layoutmanager.py" line="239"/>
         <source>Selected nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/layoutmanager.py" line="430"/>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../widget/layoutmanager.py" line="431"/>
+        <source>Directory</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2277,12 +2277,12 @@ Add new tag or delete existing ones (Double-click to edit)</source>
 <context>
     <name>moduleShapeGenerator</name>
     <message>
-        <location filename="../../../api/gui/widget/generateModuleShape.py" line="156"/>
+        <location filename="../widget/generateModuleShape.py" line="156"/>
         <source>Configuration error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../api/gui/widget/generateModuleShape.py" line="157"/>
+        <location filename="../widget/generateModuleShape.py" line="157"/>
         <source>An error was detected in the configuration</source>
         <translation type="unfinished"></translation>
     </message>

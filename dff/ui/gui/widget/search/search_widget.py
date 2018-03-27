@@ -25,9 +25,9 @@ from dff.api.vfs.libvfs import VFS, Node, VLink, TagsManager
 from dff.api.types.libtypes import Variant, typeId, ConfigManager
 from dff.api.filters.libfilters import Filter
 
-from dff.api.gui.widget.search.thread import SearchThread
-from dff.api.gui.widget.search.dico_manager import DicoDialog
-from dff.api.gui.widget.search.predefilters import DEFAULT_FILTERS
+from dff.ui.gui.widget.search.thread import SearchThread
+from dff.ui.gui.widget.search.dico_manager import DicoDialog
+from dff.ui.gui.widget.search.predefilters import DEFAULT_FILTERS
 
 from dff.ui.gui.widget.SelectMimeTypes import MimeTypesTree
 from dff.ui.gui.resources.ui_filter_add import Ui_filterAdd

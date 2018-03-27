@@ -24,18 +24,20 @@ TODO :
 - add destruct as git submodule (needed to compile in build/) : Done
   In fact remove destruct dependencies as it's not needed in this version (just for the agent)
 
-- merge api/gui & ui/gui : done
+- merge pro api/gui & ui/gui : done
   XXX scan -> report never finish so there is no total time (maybe because there is no webkit) but all module is in finish or failed state
 
+- use swig 3.12 rather than swig 2.11 : seem to work by default ?? : done ?
+
+
+- move api/gui in ui/gui as there was never a real gui api
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
 - Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)
 - Renable the report as QtWebView is available on debian in PyQt5
 
-
 - compile without -std=c++98
 - add : dff-extractor & dff-auto-report & unsuported module & other things from sides project
-- use swig 3.12 rather than swig 2.11 : seem to work by default ??
 - remove all deprecated call to dependencies 
 - Optionally port it to Python 3 (or for DFF 3 ;)
 - Fix all bug reported by differents tools

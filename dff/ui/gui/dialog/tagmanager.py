@@ -15,7 +15,7 @@ from PyQt4.QtCore import Qt, SIGNAL, QString
 from PyQt4.QtGui import QWidget, QDialog, QListWidgetItem, QColor, QMessageBox
 
 from dff.api.vfs.libvfs import VFS, TagsManager
-from dff.api.gui.dialog.tagedit import TagEditDialog
+from dff.ui.gui.dialog.tagedit import TagEditDialog
 from dff.ui.gui.resources.ui_tags import Ui_Tags 
 
 class TagItem(QListWidgetItem):

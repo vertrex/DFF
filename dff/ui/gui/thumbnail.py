@@ -22,7 +22,7 @@ from dff.api.types.libtypes import Variant, VMap
 from dff.api.vfs.libvfs import AttributesHandler, Node
 
 try:
-  from dff.api.gui.video import video
+  from dff.ui.gui.video import video
   VIDEO_API_EXISTS = True
 except ImportError as e:
   VIDEO_API_EXISTS = False

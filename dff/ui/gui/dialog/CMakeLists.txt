@@ -10,11 +10,15 @@
 # and IRC channels for your use.
 # 
 # Author(s):
-#  Frederic Baguelin <fba@digital-forensic.org>
-#  Christophe Malinge <cma@digital-forensic.org>
+#  Solal Jacob <sja@digital-forensic.org>
 
 install_file(
   __init__.py
   dialog.py
   preferences.py
+  applymodule.py
+  extractor.py
+  tagmanager.py
+  tagedit.py
+  selectattributes.py
 )

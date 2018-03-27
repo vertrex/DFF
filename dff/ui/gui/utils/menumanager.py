@@ -27,7 +27,7 @@ from dff.api.taskmanager.taskmanager import TaskManager
 from dff.api.taskmanager.processus import ProcessusManager
 from dff.api.report.manager import ReportManager
 
-from dff.api.gui.dialog.extractor import Extractor
+from dff.ui.gui.dialog.extractor import Extractor
 
 from dff.ui.gui.utils.utils import Utils
 from dff.ui.gui.utils.action import newAction, Action

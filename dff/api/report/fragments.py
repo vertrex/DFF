@@ -31,7 +31,7 @@ from dff.api.types.libtypes import typeId, Variant, RCVariant, VMap, VList, Date
 from dff.api.vfs.libvfs import VFS, ABSOLUTE_ATTR_NAME
 from dff.api.vfs.extract import Extract
 
-from dff.api.gui.thumbnail import Thumbnailer 
+from dff.ui.gui.thumbnail import Thumbnailer 
 
 class ReportPageFragment(EventHandler):
     EventWriteStart = 0x100

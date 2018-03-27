@@ -15,7 +15,7 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QLineEdit, QHBoxLayout, QWidget
 from PyQt4.QtCore import QString, SIGNAL, Qt, QSize
 
-from dff.api.gui.widget.search.search_widget import CustomFiltersTable
+from dff.ui.gui.widget.search.search_widget import CustomFiltersTable
 
 from dff.ui.gui.resources.ui_filter_bar import Ui_filterBar
 

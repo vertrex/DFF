@@ -21,7 +21,7 @@ from PyQt4.QtNetwork import QNetworkAccessManager, QNetworkReply, QNetworkReques
 
 from dff.api.vfs.vfs import vfs
 from dff.api.vfs.iodevice import IODevice
-from dff.api.gui.thumbnail import Thumbnailer
+from dff.ui.gui.thumbnail import Thumbnailer
 from dff.api.report.manager import ReportManager
 
 class NodeThumbnailRenderReply(QNetworkReply):

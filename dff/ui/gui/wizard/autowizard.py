@@ -18,7 +18,7 @@ from PyQt4.QtCore import QSize, SIGNAL
 
 from dff.api.loader.loader import loader
 from dff.api.taskmanager.taskmanager import ppsched
-from dff.api.gui.widget.devicesdialog import DevicesDialog
+from dff.ui.gui.widget.devicesdialog import DevicesDialog
 
 from dff.ui.gui.dialog.dialog import evidenceDialog, Dialog
 from dff.ui.gui.resources.ui_evidencedialog import Ui_evidenceDialog

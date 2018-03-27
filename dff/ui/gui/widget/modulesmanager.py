@@ -19,7 +19,7 @@ from PyQt4.QtCore import Qt, SIGNAL
 
 from dff.api.loader import loader 
 
-from dff.api.gui.widget.generateModuleShape import moduleShapeGenerator
+from dff.ui.gui.widget.generateModuleShape import moduleShapeGenerator
 
 from dff.ui.gui.utils.utils import Utils
 from dff.ui.gui.resources.ui_modulegeneratorwidget import Ui_moduleGeneratorWidget

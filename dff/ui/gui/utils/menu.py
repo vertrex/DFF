@@ -21,7 +21,7 @@ from dff.api.vfs.libvfs import VFS, VLink, Node, TagsManager
 from dff.api.types.libtypes import typeId, Variant, RCVariant
 from dff.api.events.libevents import event, EventHandler
 
-from dff.api.gui.dialog.tagmanager import TagManagerDialog
+from dff.ui.gui.dialog.tagmanager import TagManagerDialog
 
 from dff.ui.gui.utils.utils import Utils
 from dff.ui.gui.utils.action import Action

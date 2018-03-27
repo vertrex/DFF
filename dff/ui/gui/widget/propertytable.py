@@ -17,7 +17,7 @@ from PyQt4.QtGui import QTreeWidget, QTreeWidgetItem, QBrush, QColor, QLabel
 
 from dff.api.vfs.libvfs import VLink
 
-from dff.api.gui.widget.varianttreewidget import VariantTreeWidget
+from dff.ui.gui.widget.varianttreewidget import VariantTreeWidget
 
 class PropertyTable(VariantTreeWidget):
   def __init__(self, parent):

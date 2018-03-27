@@ -26,7 +26,7 @@ from dff.api.module.module import Module
 from dff.api.types.libtypes import typeId, Argument, Parameter
 #from dff.api.taskmanager.scheduler import sched
 
-from dff.api.gui.dialog.selectattributes import AttributeSelector
+from dff.ui.gui.dialog.selectattributes import AttributeSelector
 
 class ExportCSV(QWidget, Script): 
   def __init__(self):

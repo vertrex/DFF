@@ -24,7 +24,7 @@ from dff.api.module.module import Module
 from dff.api.module.script import Script
 from dff.api.types.libtypes import Argument, typeId
 
-from dff.api.gui.thumbnail import Thumbnailer
+from dff.ui.gui.thumbnail import Thumbnailer
 
 class CopyMenu(QMenu):
   def __init__(self, parent):

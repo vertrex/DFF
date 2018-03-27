@@ -18,7 +18,7 @@ from PyQt4.QtGui import QSplitter, QWidget, QVBoxLayout, QPushButton, QStackedWi
 #from PyQt4.QtWebKit import QWebView
 
 from dff.api.events.libevents import EventHandler
-from dff.api.gui.thumbnail import Thumbnailer
+from dff.ui.gui.thumbnail import Thumbnailer
 from dff.api.report.manager import ReportManager
 from dff.ui.gui.widget.reportexport import ReportExportDialog
 from dff.ui.gui.widget.renderer import UrlRenderer

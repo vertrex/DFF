@@ -27,16 +27,16 @@ from dff.api.events.libevents import event, EventHandler
 from dff.api.taskmanager.taskmanager import TaskManager
 from dff.api.taskmanager.scheduler import sched
 
-from dff.api.gui.widget.propertytable import PropertyTable
-from dff.api.gui.model.node_list import NodeListModel
-from dff.api.gui.model.tree import TreeModel
-from dff.api.gui.model.selection import SelectionManager
-from dff.api.gui.view.tree import NodeTreeView
-from dff.api.gui.widget.nodewidget import NodeWidget, TimeLineNodeWidget
-from dff.api.gui.widget.search.thread import SearchThread
-from dff.api.gui.widget.search.search_widget import SearchPanel
-from dff.api.gui.widget.search.filter import FilterBar
-from dff.api.gui.dialog.selectattributes import SelectAttributesWizard
+from dff.ui.gui.widget.propertytable import PropertyTable
+from dff.ui.gui.model.node_list import NodeListModel
+from dff.ui.gui.model.tree import TreeModel
+from dff.ui.gui.model.selection import SelectionManager
+from dff.ui.gui.view.tree import NodeTreeView
+from dff.ui.gui.widget.nodewidget import NodeWidget, TimeLineNodeWidget
+from dff.ui.gui.widget.search.thread import SearchThread
+from dff.ui.gui.widget.search.search_widget import SearchPanel
+from dff.ui.gui.widget.search.filter import FilterBar
+from dff.ui.gui.dialog.selectattributes import SelectAttributesWizard
 
 from dff.ui.gui.utils.menu import tagMenu, typeFilterMenu, BookmarkManager
 from dff.ui.gui.resources.ui_browser_toolbar import Ui_BrowserToolBar

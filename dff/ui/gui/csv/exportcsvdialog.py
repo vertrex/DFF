@@ -19,7 +19,7 @@ from PyQt4.QtGui import QDialog, QMessageBox,QVBoxLayout, QHBoxLayout, QDialogBu
 
 from dff.api.vfs.exportcsv import CSV
 
-from dff.api.gui.dialog.selectattributes import SelectAttributesWizard#AttributeSelector
+from dff.ui.gui.dialog.selectattributes import SelectAttributesWizard#AttributeSelector
 
 class ExportCSVDialog(QDialog):
   def __init__(self, parent, nodes, selectedAttributes): #current column 
