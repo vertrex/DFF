@@ -21,6 +21,7 @@ from dff.api.loader import loader
 from dff.api.taskmanager.processus import ProcessusManager
 from dff.api.taskmanager.scheduler import sched
 
+print "loading redirectio"
 class RedirectWrite(QThread):
    __parent = None
    def __init__(self, parent, out):
@@ -30,43 +31,43 @@ class RedirectWrite(QThread):
      self.processusManager = ProcessusManager()
 
    def run(self):
-      self.exec_()
+     self.exec_()
 
    def write(self, text):
-	frame = inspect.currentframe().f_back
-	if frame:
-          fname = frame.f_globals['__name__'] if frame.f_globals.has_key("__name__") else None
- 	  for (nparent, lframe, ismod) in self.lparent:
-	    if fname in lframe:
-	        nparent.emit(SIGNAL(nparent.sig), QString(text))
-		del frame
-	        return
-	  if fname in self.loader.modules:
-              try:
-		inst = frame.f_locals['self']
-		for proc in self.processusManager:
-		  if proc.inst == inst:
-		    if not "thread" in proc.exec_flags:
-		      for (nparent, lframe, ismod) in self.lparent:
-		        if ismod:
-	                  nparent.emit(SIGNAL(nparent.sig), text)
-		          del frame
-		          return
-		    else:
-		        proc.stream.put(text)
-			return  
-              except KeyError as e:
-                pass
-        if frame:
+    frame = inspect.currentframe().f_back
+    if frame:
+      fname = frame.f_globals['__name__'] if frame.f_globals.has_key("__name__") else None
+      for (nparent, lframe, ismod) in self.lparent:
+        if fname in lframe:
+          nparent.emit(SIGNAL(nparent.sig), QString(text))
           del frame
-        if self.ioOut != None and self.sout == 'out':
-            self.ioOut.emit(SIGNAL(self.ioOut.sigout), text)
-        elif self.ioOut != None and self.sout == 'err':
-            self.ioOut.emit(SIGNAL(self.ioOut.sigerr), text)
-        elif self.sout == 'err':
-          sys.__stderr__.write(text)
-        else :
-          sys.__stdout__.write(text)
+          return
+      if fname in self.loader.modules:
+        try:
+          inst = frame.f_locals['self']
+          for proc in self.processusManager:
+            if proc.inst == inst:
+              if not "thread" in proc.exec_flags:
+                for (nparent, lframe, ismod) in self.lparent:
+                  if ismod:
+                    nparent.emit(SIGNAL(nparent.sig), text)
+                    del frame
+                    return
+              else:
+                proc.stream.put(text)
+                return  
+        except KeyError as e:
+          pass
+      if frame:
+        del frame
+      if self.ioOut != None and self.sout == 'out':
+        self.ioOut.emit(SIGNAL(self.ioOut.sigout), text)
+      elif self.ioOut != None and self.sout == 'err':
+         self.ioOut.emit(SIGNAL(self.ioOut.sigerr), text)
+      elif self.sout == 'err':
+        sys.__stderr__.write(text)
+      else :
+        sys.__stdout__.write(text)
 
    def __getattr__(self, attr):
      return getattr(RedirectWrite.__parent, attr)    
@@ -82,8 +83,10 @@ class RedirectIO():
        self.processusManager = ProcessusManager()
        self.loader = loader.loader()
        if not self.debug:
-         sys.stdout = RedirectWrite(self, 'out')
-         sys.stderr = RedirectWrite(self, 'err')
+         self.redirectOut = RedirectWrite(self, 'out')
+         sys.stdout = self.redirectOut 
+         self.redirectErr = RedirectWrite(self, 'err')
+         sys.stderr = self.redirectErr
        self.write = sys.stdout.write      
  
      def addparent(self, nparent, lframe, ismod = False):
@@ -93,13 +96,16 @@ class RedirectIO():
    
    def __init__(self, IOout = None, debug = False):
      if RedirectIO.__instance is None:
-	RedirectIO.__instance = RedirectIO.__RedirectIO(IOout, debug)
+      RedirectIO.__instance = RedirectIO.__RedirectIO(IOout, debug)
+     else:
+       sys.stdout = self.redirectOut
+       sys.stderr = self.redirectErr
+
      if IOout:
-	RedirectIO.__instance.ioOut = IOout    
+      RedirectIO.__instance.ioOut = IOout    
  
    def __setattr__(self, attr, value):
-	setattr(self.__instance, attr, value)
+     setattr(self.__instance, attr, value)
   
    def __getattr__(self, attr):
-	return getattr(self.__instance, attr)
-
+     return getattr(self.__instance, attr)

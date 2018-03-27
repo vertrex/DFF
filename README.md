@@ -24,7 +24,9 @@ TODO :
 - add destruct as git submodule (needed to compile in build/) : Done
   In fact remove destruct dependencies as it's not needed in this version (just for the agent)
 
-- merge api/gui & ui/gui   
+- merge api/gui & ui/gui : done
+  XXX scan -> report never finish so there is no total time (maybe because there is no webkit) but all module is in finish or failed state
+
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
 - Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)
@@ -32,7 +34,8 @@ TODO :
 
 
 - compile without -std=c++98
-- use swig 3.12 rather than swig 2.11
+- add : dff-extractor & dff-auto-report & unsuported module & other things from sides project
+- use swig 3.12 rather than swig 2.11 : seem to work by default ??
 - remove all deprecated call to dependencies 
 - Optionally port it to Python 3 (or for DFF 3 ;)
 - Fix all bug reported by differents tools
