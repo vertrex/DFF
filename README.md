@@ -9,6 +9,8 @@ Once the main goal will be achieved, DFF 2 could replace DFF and new features co
 TODO :  
 ------
 
+======== done or partially done ======
+
 - add lacking CMakeList (needed to compile in build/ ex:export.csv) : Done
 
 - Push a dff version in a new git without submodules (they will maybe come back later) : Done
@@ -26,11 +28,11 @@ TODO :
 
 - merge pro api/gui & ui/gui : done
   XXX scan -> report never finish so there is no total time (maybe because there is no webkit) but all module is in finish or failed state
-
 - use swig 3.12 rather than swig 2.11 : seem to work by default ?? : done ?
+- move api/gui in ui/gui as there was never a real gui api : done
 
+======= todo ===========
 
-- move api/gui in ui/gui as there was never a real gui api
 - Remove dead code (ide etc...)
 - Remove unused Qt template generation
 - Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)
