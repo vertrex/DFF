@@ -31,7 +31,6 @@ from dff.ui.gui.widget.nodelistwidgets import NodeListWidgets
 from dff.ui.gui.dialog.applymodule import ApplyModule
 
 from dff.ui.conf import Conf
-from dff.ui.gui.ide.ide import Ide
 
 from dff.ui.gui.widget.taskmanager import Processus
 from dff.ui.gui.widget.modules import Modules

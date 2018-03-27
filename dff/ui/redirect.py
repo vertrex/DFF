@@ -15,13 +15,12 @@
 import sys, inspect, os
 
 from PyQt4.QtGui import QApplication, QTextEdit, QTextCursor , QPalette, QColor, QBrush, QHBoxLayout, QIcon
-from PyQt4.QtCore import Qt, QString, QThread, QSemaphore, SIGNAL, QObject
+from PyQt4.QtCore import Qt, QThread, QSemaphore, SIGNAL, QObject
 
 from dff.api.loader import loader
 from dff.api.taskmanager.processus import ProcessusManager
 from dff.api.taskmanager.scheduler import sched
 
-print "loading redirectio"
 class RedirectWrite(QThread):
    __parent = None
    def __init__(self, parent, out):
@@ -39,7 +38,7 @@ class RedirectWrite(QThread):
       fname = frame.f_globals['__name__'] if frame.f_globals.has_key("__name__") else None
       for (nparent, lframe, ismod) in self.lparent:
         if fname in lframe:
-          nparent.emit(SIGNAL(nparent.sig), QString(text))
+          nparent.emit(SIGNAL(nparent.sig), text)
           del frame
           return
       if fname in self.loader.modules:

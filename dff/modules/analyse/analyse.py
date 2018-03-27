@@ -13,7 +13,7 @@
 #  Solal Jacob <sja@digital-forensic.org>
 # 
 from PyQt4.Qt import QHeaderView
-from PyQt4.QtCore import SIGNAL, QString, QByteArray, Qt, QObject
+from PyQt4.QtCore import SIGNAL, QByteArray, Qt, QObject
 from PyQt4.QtGui import QWidget, QHBoxLayout, QTabWidget, QTreeWidget, QTreeWidgetItem, QLabel
 
 from dff.api.vfs.vfs import vfs

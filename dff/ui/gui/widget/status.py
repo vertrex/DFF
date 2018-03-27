@@ -17,7 +17,7 @@ from dff.api.vfs.libvfs import ABSOLUTE_ATTR_NAME
 
 from PyQt4 import QtGui
 from PyQt4.QtGui import QWidget, QSizePolicy, QLayout, QHBoxLayout, QSplitter, QLabel, QFrame
-from PyQt4.QtCore import Qt, SIGNAL, QString
+from PyQt4.QtCore import Qt, SIGNAL
 
 
 class StatusLabel(QLabel):

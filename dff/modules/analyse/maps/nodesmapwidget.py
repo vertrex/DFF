@@ -1,7 +1,7 @@
 from qgmap import QGoogleMap, InversedGeoCoder
 
 from PyQt4 import QtCore, QtGui
-from PyQt4.QtCore import QByteArray, QBuffer, QIODevice, QString, SIGNAL
+from PyQt4.QtCore import QByteArray, QBuffer, QIODevice, SIGNAL
 from PyQt4.QtGui import QPixmap, QWidget, QVBoxLayout, QSizePolicy, QApplication, QTreeWidget, QTreeWidgetItem, QSplitter, QMenu, QClipboard
 
 from dff.api.vfs.libvfs import VFS

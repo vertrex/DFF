@@ -25,7 +25,6 @@ install_file(
 
 add_subdirectory(resources)
 add_subdirectory(i18n)
-add_subdirectory(ide)
 add_subdirectory(utils)
 add_subdirectory(widget)
 add_subdirectory(dialog)

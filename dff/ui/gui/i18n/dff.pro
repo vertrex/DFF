@@ -37,8 +37,6 @@ FORMS           += ../../../ui/gui/resources/filter_only.ui
 FORMS           += ../../../ui/gui/resources/filter_operators.ui
 FORMS           += ../../../ui/gui/resources/filter_tagwidget.ui
 FORMS           += ../../../ui/gui/resources/filter_widget.ui
-FORMS           += ../../../ui/gui/resources/ide.ui
-FORMS           += ../../../ui/gui/resources/idewizard.ui
 FORMS           += ../../../ui/gui/resources/interpreter.ui
 FORMS           += ../../../ui/gui/resources/is_deleted.ui
 FORMS           += ../../../ui/gui/resources/is_file_or_folder.ui
@@ -78,8 +76,6 @@ SOURCES         += ../../../ui/gui/widget/search/dico_manager.py
 SOURCES         += ../../../ui/gui/widget/search/search_widget.py
 SOURCES         += ../../../ui/gui/widget/search/thread.py
 
-SOURCES         += ../../../ui/gui/ide/ide.py
-SOURCES         += ../../../ui/gui/ide/idewizard.py
 SOURCES         += ../../../ui/gui/mainwindow.py
 SOURCES         += ../../../ui/gui/dialog/preferences.py
 SOURCES         += ../../../ui/gui/dialog/dialog.py

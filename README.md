@@ -30,13 +30,15 @@ TODO :
   XXX scan -> report never finish so there is no total time (maybe because there is no webkit) but all module is in finish or failed state
 - use swig 3.12 rather than swig 2.11 : seem to work by default ?? : done ?
 - move api/gui in ui/gui as there was never a real gui api : done
+- remove ide 
 
 ======= todo ===========
 
-- Remove dead code (ide etc...)
-- Remove unused Qt template generation
+- Use Qt API v2 everywhere (change in PyQt4 so it will be ready for PyQt5)
 - Replace PyQt4 by PyQt5 (change Qt4 signal to Qt5 signal, use PyQt API V2 then use Qt5)
-- Renable the report as QtWebView is available on debian in PyQt5
+- Remove dead code (class never used anymore)
+- Remove unused Qt template generation
+- Re-enable the report as QtWebView is available on debian in PyQt5
 
 - compile without -std=c++98
 - add : dff-extractor & dff-auto-report & unsuported module & other things from sides project
