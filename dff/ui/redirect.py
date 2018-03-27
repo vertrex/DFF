@@ -97,7 +97,7 @@ class RedirectIO():
    def __init__(self, IOout = None, debug = False):
      if RedirectIO.__instance is None:
       RedirectIO.__instance = RedirectIO.__RedirectIO(IOout, debug)
-     else:
+     else if not self.debug:
        sys.stdout = self.redirectOut
        sys.stderr = self.redirectErr
 
