@@ -32,6 +32,8 @@ TODO :
 - move api/gui in ui/gui as there was never a real gui api : done
 - remove ide 
 
+- compile without -std=c++98 (seems to work without changes and needed for last ICU but change -Wall to -Wunused... to hide lot of warning, should clean that)
+
 ======= todo ===========
 
 - Use Qt API v2 everywhere (change in PyQt4 so it will be ready for PyQt5)
@@ -40,7 +42,6 @@ TODO :
 - Remove unused Qt template generation
 - Re-enable the report as QtWebView is available on debian in PyQt5
 
-- compile without -std=c++98
 - add : dff-extractor & dff-auto-report & unsuported module & other things from sides project
 - remove all deprecated call to dependencies 
 - Optionally port it to Python 3 (or for DFF 3 ;)

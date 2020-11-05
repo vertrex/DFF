@@ -705,7 +705,7 @@ Node*	FatTree::__allocNode(ctx* c, Node* parent)
   
   if (!c->lfnname.empty())
     {
-      UnicodeString	us(c->lfnname.data(), c->lfnname.size(), "UTF-16LE");
+      icu::UnicodeString	us(c->lfnname.data(), c->lfnname.size(), "UTF-16LE");
       std::string	utf8 = "";
       std::string ret = us.toUTF8String(utf8);
       name = std::string(utf8.data(), utf8.size());

@@ -186,7 +186,7 @@ std::string	HfspCatalogKey::name()
   if (((this->_buffer != NULL) && (this->_size >= namelen+8)))
     {
       utf8 = "";
-      UnicodeString us((char*)(this->_buffer+8), namelen, "UTF-16BE");
+      icu::UnicodeString us((char*)(this->_buffer+8), namelen, "UTF-16BE");
       //XXX ugly but necessary condition to match HFS Private Data which starts with
       // 4 utf-16 null char...
       // https://developer.apple.com/legacy/library/technotes/tn/tn1150.html#HardLinks

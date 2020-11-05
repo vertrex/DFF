@@ -48,7 +48,7 @@ VolumeName::VolumeName(MFTAttribute* mftAttribute) : MFTAttributeContent(mftAttr
 const std::string VolumeName::volumeName(void)
 {
   std::string	volumeName;
-  UnicodeString((char*)this->__volumeName, this->size(), "UTF16-LE").toUTF8String(volumeName);
+  icu::UnicodeString((char*)this->__volumeName, this->size(), "UTF16-LE").toUTF8String(volumeName);
 
   return (volumeName);
 }

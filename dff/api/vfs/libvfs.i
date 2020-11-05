@@ -869,7 +869,7 @@ namespace std
   %template(Listui64)		std::list<uint64_t>;
   %template(Vectui64)		std::vector<uint64_t>;
   %template(Vectui32)		std::vector<uint32_t>;
-  %template(MapTime)		std::map<std::string, DFF::DateTime*>;
+  %template(MapDateTime)		std::map<std::string, DFF::DateTime*>;
   %template(MapNameTypes)	std::map<std::string, uint8_t>;
   %template(FsoVect)		std::vector<DFF::fso*>;
   %template(TagVect)            std::vector<DFF::Tag* >;

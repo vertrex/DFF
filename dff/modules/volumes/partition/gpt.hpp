@@ -127,7 +127,7 @@ typedef struct
   uint64_t	size() {return  lastLba() - firstLba() + 1;}
   std::string	name()
   {
-    UnicodeString	us;
+    icu::UnicodeString	us;
     std::string		utf8;
     int			i;
     
@@ -137,7 +137,7 @@ typedef struct
 	i = 70;
 	while (i != 0 && ((uint16_t)(*(_name+i)) == 0))
 	  i-=2;
-	us = UnicodeString(_name, i+2, "UTF-16LE");
+	us = icu::UnicodeString(_name, i+2, "UTF-16LE");
 	us.toUTF8String(utf8);
       }
     return utf8;

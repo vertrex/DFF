@@ -573,79 +573,69 @@
 <context>
     <name>Ide</name>
     <message>
-        <location filename="../resources/ide.ui" line="30"/>
-        <source>IDE</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="46"/>
-        <source>IDE toolbar</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="../resources/ide.ui" line="67"/>
         <source>New empty file</source>
-        <translation>Nieuw leeg bestand</translation>
+        <translation type="obsolete">Nieuw leeg bestand</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="79"/>
         <source>Generate skeleton</source>
-        <translation>Genereer framewerk</translation>
+        <translation type="obsolete">Genereer framewerk</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="278"/>
         <source>Open file</source>
-        <translation>Open bestand</translation>
+        <translation type="obsolete">Open bestand</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="103"/>
         <source>Save</source>
-        <translation>Bewaar</translation>
+        <translation type="obsolete">Bewaar</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="115"/>
         <source>Save as</source>
-        <translation>Bewaren als</translation>
+        <translation type="obsolete">Bewaren als</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="127"/>
         <source>Load</source>
-        <translation>Laad</translation>
+        <translation type="obsolete">Laad</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="139"/>
         <source>Undo</source>
-        <translation>Stap terug</translation>
+        <translation type="obsolete">Stap terug</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="151"/>
         <source>Redo</source>
-        <translation>Stap vooruit</translation>
+        <translation type="obsolete">Stap vooruit</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="163"/>
         <source>Comment</source>
-        <translation>Commentaar</translation>
+        <translation type="obsolete">Commentaar</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="175"/>
         <source>Uncomment</source>
-        <translation>Verwijder commentaar</translation>
+        <translation type="obsolete">Verwijder commentaar</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="276"/>
         <source>Save document ?</source>
-        <translation>Bewaar document?</translation>
+        <translation type="obsolete">Bewaar document?</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="277"/>
         <source>No file found</source>
-        <translation>Geen bestand gevonden</translation>
+        <translation type="obsolete">Geen bestand gevonden</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="279"/>
         <source>Save file as</source>
-        <translation>Bewaar bestand als</translation>
+        <translation type="obsolete">Bewaar bestand als</translation>
     </message>
 </context>
 <context>
@@ -653,7 +643,7 @@
     <message>
         <location filename="../resources/idewizard.ui" line="30"/>
         <source>Integrated Development Environment Wizard</source>
-        <translation>Intergraal Ontwikkel Omgeving Wizard</translation>
+        <translation type="obsolete">Intergraal Ontwikkel Omgeving Wizard</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="38"/>
@@ -663,97 +653,87 @@
     <message>
         <location filename="../resources/idewizard.ui" line="41"/>
         <source>Fill all script information such as name, type and saving location.</source>
-        <translation>Vul in: alle script informatie, zoals naam, type en bestemmings lokatie.</translation>
+        <translation type="obsolete">Vul in: alle script informatie, zoals naam, type en bestemmings lokatie.</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="47"/>
         <source>Name:</source>
-        <translation>Naam:</translation>
+        <translation type="obsolete">Naam:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="57"/>
         <source>Category:</source>
-        <translation>Catagorie:</translation>
+        <translation type="obsolete">Catagorie:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="71"/>
         <source>Work location:</source>
-        <translation>Werk lokatie:</translation>
+        <translation type="obsolete">Werk lokatie:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="87"/>
         <source>Browse</source>
-        <translation>Surf naar</translation>
+        <translation type="obsolete">Surf naar</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="99"/>
         <source>Type:</source>
-        <translation>Type:</translation>
+        <translation type="obsolete">Type:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="127"/>
         <source>Script</source>
-        <translation>Script</translation>
+        <translation type="obsolete">Script</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="137"/>
         <source>Graphical</source>
-        <translation>Grafisch</translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="144"/>
-        <source>Driver</source>
-        <translation></translation>
+        <translation type="obsolete">Grafisch</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="168"/>
         <source>Description</source>
-        <translation>Omschrijving</translation>
+        <translation type="obsolete">Omschrijving</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="171"/>
         <source>Describe here the goal of the module</source>
-        <translation>Beschrijf het doel van module</translation>
+        <translation type="obsolete">Beschrijf het doel van module</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="177"/>
         <source>Module&apos;s description</source>
-        <translation>Module omschrijving</translation>
+        <translation type="obsolete">Module omschrijving</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="188"/>
         <source>Author informations</source>
-        <translation>Auteur informatie</translation>
+        <translation type="obsolete">Auteur informatie</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="191"/>
         <source>Fill all author&apos;s informations in order to complete header</source>
-        <translation>Vul alle header informatie van de auteur in</translation>
+        <translation type="obsolete">Vul alle header informatie van de auteur in</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="199"/>
         <source>Author&apos;s first name:</source>
-        <translation>Voornaam auteur:</translation>
+        <translation type="obsolete">Voornaam auteur:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="206"/>
         <source>Author&apos;s last name:</source>
-        <translation>Achternaam auteur:</translation>
+        <translation type="obsolete">Achternaam auteur:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="213"/>
         <source>Author&apos;s electronic mail:</source>
-        <translation>Email auteur:</translation>
+        <translation type="obsolete">Email auteur:</translation>
     </message>
     <message>
         <location filename="../ide/idewizard.py" line="58"/>
         <source>Location</source>
-        <translation>Lokatie</translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="38"/>
-        <source>General Information</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Lokatie</translation>
     </message>
 </context>
 <context>
@@ -931,22 +911,22 @@
         <translation type="obsolete">DFF documentatie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="618"/>
+        <location filename="../mainwindow.py" line="617"/>
         <source>Error while loading help</source>
         <translation>fout opgetreden bij het laden van het help bestand</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="619"/>
+        <location filename="../mainwindow.py" line="618"/>
         <source>&lt;br&gt;You can check on-line help at &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</source>
         <translation>&lt;br&gt;On-line help beschikbaar: &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="620"/>
+        <location filename="../mainwindow.py" line="619"/>
         <source>Not an help file.</source>
         <translation>Geen help bestand.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="621"/>
+        <location filename="../mainwindow.py" line="620"/>
         <source>Documentation path not found.</source>
         <translation>Documentatie bestand niet gevonden.</translation>
     </message>
@@ -986,7 +966,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="109"/>
+        <location filename="../mainwindow.py" line="108"/>
         <source>Wizard</source>
         <translation type="unfinished"></translation>
     </message>

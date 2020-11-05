@@ -173,7 +173,7 @@ std::string	HfsCatalogKey::name()
   if ((this->_buffer != NULL) && (this->_size >= namelen+7))
     {
       utf8 = "";
-      UnicodeString us((char*)(this->_buffer+7), namelen);
+      icu::UnicodeString us((char*)(this->_buffer+7), namelen);
       std::string ret = us.trim().toUTF8String(utf8);
     }
   return utf8;

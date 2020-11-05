@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 # DFF -- An Open Source Digital Forensics Framework
 # Copyright (C) 2009-2011 ArxSys
 # This program is free software, distributed under the terms of

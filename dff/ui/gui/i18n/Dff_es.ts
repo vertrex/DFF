@@ -701,77 +701,77 @@
     <message>
         <location filename="../resources/ide.ui" line="30"/>
         <source>IDE</source>
-        <translation>IDE</translation>
+        <translation type="obsolete">IDE</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="46"/>
         <source>IDE toolbar</source>
-        <translation>Barra de herramientas del IDE</translation>
+        <translation type="obsolete">Barra de herramientas del IDE</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="67"/>
         <source>New empty file</source>
-        <translation>Nuevo archivo vacío</translation>
+        <translation type="obsolete">Nuevo archivo vacío</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="79"/>
         <source>Generate skeleton</source>
-        <translation>Generar esqueleto</translation>
+        <translation type="obsolete">Generar esqueleto</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="278"/>
         <source>Open file</source>
-        <translation>Abrir archivo</translation>
+        <translation type="obsolete">Abrir archivo</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="103"/>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation type="obsolete">Guardar</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="115"/>
         <source>Save as</source>
-        <translation>Guardar como</translation>
+        <translation type="obsolete">Guardar como</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="127"/>
         <source>Load</source>
-        <translation>Cargar</translation>
+        <translation type="obsolete">Cargar</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="139"/>
         <source>Undo</source>
-        <translation>Deshacer</translation>
+        <translation type="obsolete">Deshacer</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="151"/>
         <source>Redo</source>
-        <translation>Rehacer</translation>
+        <translation type="obsolete">Rehacer</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="163"/>
         <source>Comment</source>
-        <translation>Comentar</translation>
+        <translation type="obsolete">Comentar</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="175"/>
         <source>Uncomment</source>
-        <translation>Descomentar</translation>
+        <translation type="obsolete">Descomentar</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="276"/>
         <source>Save document ?</source>
-        <translation>Guardar documento?</translation>
+        <translation type="obsolete">Guardar documento?</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="277"/>
         <source>No file found</source>
-        <translation>No se encontró archivo</translation>
+        <translation type="obsolete">No se encontró archivo</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="279"/>
         <source>Save file as</source>
-        <translation>Guardar archivo como</translation>
+        <translation type="obsolete">Guardar archivo como</translation>
     </message>
 </context>
 <context>
@@ -779,7 +779,7 @@
     <message>
         <location filename="../resources/idewizard.ui" line="30"/>
         <source>Integrated Development Environment Wizard</source>
-        <translation>Asistente del Entorno Integrado de Desarrollo</translation>
+        <translation type="obsolete">Asistente del Entorno Integrado de Desarrollo</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="38"/>
@@ -789,97 +789,92 @@
     <message>
         <location filename="../resources/idewizard.ui" line="41"/>
         <source>Fill all script information such as name, type and saving location.</source>
-        <translation>Complete toda la información de la secuencia de comandos como nombre, tipo y ubicación de salvado.</translation>
+        <translation type="obsolete">Complete toda la información de la secuencia de comandos como nombre, tipo y ubicación de salvado.</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="47"/>
         <source>Name:</source>
-        <translation>Nombre:</translation>
+        <translation type="obsolete">Nombre:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="57"/>
         <source>Category:</source>
-        <translation>Categoría:</translation>
+        <translation type="obsolete">Categoría:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="71"/>
         <source>Work location:</source>
-        <translation>Ubicación de trabajo:</translation>
+        <translation type="obsolete">Ubicación de trabajo:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="87"/>
         <source>Browse</source>
-        <translation>Navegar</translation>
+        <translation type="obsolete">Navegar</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="99"/>
         <source>Type:</source>
-        <translation>Tipo:</translation>
+        <translation type="obsolete">Tipo:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="127"/>
         <source>Script</source>
-        <translation>Secuencia de comandos</translation>
+        <translation type="obsolete">Secuencia de comandos</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="137"/>
         <source>Graphical</source>
-        <translation>Gráfico</translation>
+        <translation type="obsolete">Gráfico</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="144"/>
         <source>Driver</source>
-        <translation>Controlador</translation>
+        <translation type="obsolete">Controlador</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="168"/>
         <source>Description</source>
-        <translation>Descripción</translation>
+        <translation type="obsolete">Descripción</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="171"/>
         <source>Describe here the goal of the module</source>
-        <translation>Describa aquí el objetivo del módulo</translation>
+        <translation type="obsolete">Describa aquí el objetivo del módulo</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="177"/>
         <source>Module&apos;s description</source>
-        <translation>Descripción del módulo</translation>
+        <translation type="obsolete">Descripción del módulo</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="188"/>
         <source>Author informations</source>
-        <translation>Información del autor</translation>
+        <translation type="obsolete">Información del autor</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="191"/>
         <source>Fill all author&apos;s informations in order to complete header</source>
-        <translation>Llene toda la información del autor para completar el encabezado</translation>
+        <translation type="obsolete">Llene toda la información del autor para completar el encabezado</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="199"/>
         <source>Author&apos;s first name:</source>
-        <translation>Nombre del autor:</translation>
+        <translation type="obsolete">Nombre del autor:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="206"/>
         <source>Author&apos;s last name:</source>
-        <translation>Apellido del autor:</translation>
+        <translation type="obsolete">Apellido del autor:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="213"/>
         <source>Author&apos;s electronic mail:</source>
-        <translation>Correo electrónico del Autor:</translation>
+        <translation type="obsolete">Correo electrónico del Autor:</translation>
     </message>
     <message>
         <location filename="../ide/idewizard.py" line="58"/>
         <source>Location</source>
-        <translation>Ubicación</translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="38"/>
-        <source>General Information</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Ubicación</translation>
     </message>
 </context>
 <context>
@@ -1077,22 +1072,22 @@
         <translation type="obsolete">Documentación de DFF</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="618"/>
+        <location filename="../mainwindow.py" line="617"/>
         <source>Error while loading help</source>
         <translation>Error al cargar la ayuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="619"/>
+        <location filename="../mainwindow.py" line="618"/>
         <source>&lt;br&gt;You can check on-line help at &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</source>
         <translation>&lt;br&gt;Puede revisar la ayuda en línea en &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="620"/>
+        <location filename="../mainwindow.py" line="619"/>
         <source>Not an help file.</source>
         <translation>No es un archivo de ayuda.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="621"/>
+        <location filename="../mainwindow.py" line="620"/>
         <source>Documentation path not found.</source>
         <translation>No se encontró la ruta de la ayuda.</translation>
     </message>
@@ -1137,7 +1132,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="109"/>
+        <location filename="../mainwindow.py" line="108"/>
         <source>Wizard</source>
         <translation type="unfinished"></translation>
     </message>

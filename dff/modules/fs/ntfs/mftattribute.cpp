@@ -85,7 +85,7 @@ MFTAttribute::MFTAttribute(MFTEntryNode* mftEntryNode, uint64_t offset) : __offs
       this->destroy();
       throw std::string("MFT can't read attribute name");
     }
-    UnicodeString((char*)name, this->__mftAttribute.nameSize * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
+    icu::UnicodeString((char*)name, this->__mftAttribute.nameSize * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
     delete[] name;
   }
   delete vfile;

@@ -548,187 +548,6 @@
     </message>
 </context>
 <context>
-    <name>Ide</name>
-    <message>
-        <location filename="../resources/ide.ui" line="30"/>
-        <source>IDE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="46"/>
-        <source>IDE toolbar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="67"/>
-        <source>New empty file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="79"/>
-        <source>Generate skeleton</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ide/ide.py" line="278"/>
-        <source>Open file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="103"/>
-        <source>Save</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="115"/>
-        <source>Save as</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="127"/>
-        <source>Load</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="139"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="151"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="163"/>
-        <source>Comment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/ide.ui" line="175"/>
-        <source>Uncomment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ide/ide.py" line="276"/>
-        <source>Save document ?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ide/ide.py" line="277"/>
-        <source>No file found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ide/ide.py" line="279"/>
-        <source>Save file as</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>IdeWizard</name>
-    <message>
-        <location filename="../resources/idewizard.ui" line="30"/>
-        <source>Integrated Development Environment Wizard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="41"/>
-        <source>Fill all script information such as name, type and saving location.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="47"/>
-        <source>Name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="57"/>
-        <source>Category:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="71"/>
-        <source>Work location:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="87"/>
-        <source>Browse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="99"/>
-        <source>Type:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="127"/>
-        <source>Script</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="137"/>
-        <source>Graphical</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="144"/>
-        <source>Driver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="168"/>
-        <source>Description</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="171"/>
-        <source>Describe here the goal of the module</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="177"/>
-        <source>Module&apos;s description</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="188"/>
-        <source>Author informations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="191"/>
-        <source>Fill all author&apos;s informations in order to complete header</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="199"/>
-        <source>Author&apos;s first name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="206"/>
-        <source>Author&apos;s last name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="213"/>
-        <source>Author&apos;s electronic mail:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ide/idewizard.py" line="58"/>
-        <source>Location</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="38"/>
-        <source>General Information</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Interpreter</name>
     <message>
         <location filename="../resources/interpreter.ui" line="100"/>
@@ -855,22 +674,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="618"/>
+        <location filename="../mainwindow.py" line="617"/>
         <source>Error while loading help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="619"/>
+        <location filename="../mainwindow.py" line="618"/>
         <source>&lt;br&gt;You can check on-line help at &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="620"/>
+        <location filename="../mainwindow.py" line="619"/>
         <source>Not an help file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="621"/>
+        <location filename="../mainwindow.py" line="620"/>
         <source>Documentation path not found.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -910,7 +729,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="109"/>
+        <location filename="../mainwindow.py" line="108"/>
         <source>Wizard</source>
         <translation type="unfinished"></translation>
     </message>

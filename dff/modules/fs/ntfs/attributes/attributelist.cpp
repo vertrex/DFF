@@ -41,7 +41,7 @@ AttributeListItems::AttributeListItems(VFile* vfile)
   {
     uint16_t* name = new uint16_t[this->__attributeList.nameSize];
     offset += vfile->read((void*)name, this->__attributeList.nameSize * sizeof(uint16_t));
-    UnicodeString((char*)name, __attributeList.nameSize * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
+    icu::UnicodeString((char*)name, __attributeList.nameSize * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
     delete[] name;
   }
 

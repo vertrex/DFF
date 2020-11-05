@@ -59,7 +59,7 @@ ReparsePoint::ReparsePoint(MFTAttribute* mftAttribute) : MFTAttributeContent(mft
     delete vfile;
     throw std::string("$REPARSE_POINT can't read target name.");
   }
-  UnicodeString((char*)target, this->targetSize(), "UTF16-LE").toUTF8String(this->__target);
+  icu::UnicodeString((char*)target, this->targetSize(), "UTF16-LE").toUTF8String(this->__target);
   delete[] target;
 
   offset = this->printOffset() + sizeof(ReparsePoint_s);
@@ -75,7 +75,7 @@ ReparsePoint::ReparsePoint(MFTAttribute* mftAttribute) : MFTAttributeContent(mft
     delete vfile;
     throw std::string("$REPARSE_POINT can't read print name.");
   }
-  UnicodeString((char*)print, this->printSize(), "UTF16-LE").toUTF8String(this->__print);
+  icu::UnicodeString((char*)print, this->printSize(), "UTF16-LE").toUTF8String(this->__print);
   delete[] print;
 
   delete vfile;

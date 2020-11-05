@@ -580,77 +580,77 @@
     <message>
         <location filename="../resources/ide.ui" line="30"/>
         <source>IDE</source>
-        <translation>IDE</translation>
+        <translation type="obsolete">IDE</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="46"/>
         <source>IDE toolbar</source>
-        <translation>IDE工具栏</translation>
+        <translation type="obsolete">IDE工具栏</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="67"/>
         <source>New empty file</source>
-        <translation>新的空文件</translation>
+        <translation type="obsolete">新的空文件</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="79"/>
         <source>Generate skeleton</source>
-        <translation>生成提纲</translation>
+        <translation type="obsolete">生成提纲</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="278"/>
         <source>Open file</source>
-        <translation>打开文件</translation>
+        <translation type="obsolete">打开文件</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="103"/>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation type="obsolete">保存</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="115"/>
         <source>Save as</source>
-        <translation>保存为</translation>
+        <translation type="obsolete">保存为</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="127"/>
         <source>Load</source>
-        <translation>加载</translation>
+        <translation type="obsolete">加载</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="139"/>
         <source>Undo</source>
-        <translation>撤销</translation>
+        <translation type="obsolete">撤销</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="151"/>
         <source>Redo</source>
-        <translation>重做</translation>
+        <translation type="obsolete">重做</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="163"/>
         <source>Comment</source>
-        <translation>注释</translation>
+        <translation type="obsolete">注释</translation>
     </message>
     <message>
         <location filename="../resources/ide.ui" line="175"/>
         <source>Uncomment</source>
-        <translation>取消注释</translation>
+        <translation type="obsolete">取消注释</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="276"/>
         <source>Save document ?</source>
-        <translation>保存文档 ？</translation>
+        <translation type="obsolete">保存文档 ？</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="277"/>
         <source>No file found</source>
-        <translation>没有找到文件</translation>
+        <translation type="obsolete">没有找到文件</translation>
     </message>
     <message>
         <location filename="../ide/ide.py" line="279"/>
         <source>Save file as</source>
-        <translation>文件保存为</translation>
+        <translation type="obsolete">文件保存为</translation>
     </message>
 </context>
 <context>
@@ -658,7 +658,7 @@
     <message>
         <location filename="../resources/idewizard.ui" line="30"/>
         <source>Integrated Development Environment Wizard</source>
-        <translation>集成开发环境向导</translation>
+        <translation type="obsolete">集成开发环境向导</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="38"/>
@@ -668,97 +668,92 @@
     <message>
         <location filename="../resources/idewizard.ui" line="41"/>
         <source>Fill all script information such as name, type and saving location.</source>
-        <translation>填写所有的脚本信息，例如名称、类型和保存的位置.</translation>
+        <translation type="obsolete">填写所有的脚本信息，例如名称、类型和保存的位置.</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="47"/>
         <source>Name:</source>
-        <translation>名称：</translation>
+        <translation type="obsolete">名称：</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="57"/>
         <source>Category:</source>
-        <translation>分类：</translation>
+        <translation type="obsolete">分类：</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="71"/>
         <source>Work location:</source>
-        <translation>工作的位置：</translation>
+        <translation type="obsolete">工作的位置：</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="87"/>
         <source>Browse</source>
-        <translation>浏览</translation>
+        <translation type="obsolete">浏览</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="99"/>
         <source>Type:</source>
-        <translation>类型：</translation>
+        <translation type="obsolete">类型：</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="127"/>
         <source>Script</source>
-        <translation>脚本</translation>
+        <translation type="obsolete">脚本</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="137"/>
         <source>Graphical</source>
-        <translation>图形</translation>
+        <translation type="obsolete">图形</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="144"/>
         <source>Driver</source>
-        <translation>驱动器</translation>
+        <translation type="obsolete">驱动器</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="168"/>
         <source>Description</source>
-        <translation>描述</translation>
+        <translation type="obsolete">描述</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="171"/>
         <source>Describe here the goal of the module</source>
-        <translation>这里描述模块的目标</translation>
+        <translation type="obsolete">这里描述模块的目标</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="177"/>
         <source>Module&apos;s description</source>
-        <translation>模块 描述</translation>
+        <translation type="obsolete">模块 描述</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="188"/>
         <source>Author informations</source>
-        <translation>编写者信息</translation>
+        <translation type="obsolete">编写者信息</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="191"/>
         <source>Fill all author&apos;s informations in order to complete header</source>
-        <translation>填写所有的编写者信息 以便完成头部内容</translation>
+        <translation type="obsolete">填写所有的编写者信息 以便完成头部内容</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="199"/>
         <source>Author&apos;s first name:</source>
-        <translation>编写者 名:</translation>
+        <translation type="obsolete">编写者 名:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="206"/>
         <source>Author&apos;s last name:</source>
-        <translation>编写者 姓:</translation>
+        <translation type="obsolete">编写者 姓:</translation>
     </message>
     <message>
         <location filename="../resources/idewizard.ui" line="213"/>
         <source>Author&apos;s electronic mail:</source>
-        <translation>编写者 电子邮件:</translation>
+        <translation type="obsolete">编写者 电子邮件:</translation>
     </message>
     <message>
         <location filename="../ide/idewizard.py" line="58"/>
         <source>Location</source>
-        <translation>位置</translation>
-    </message>
-    <message>
-        <location filename="../resources/idewizard.ui" line="38"/>
-        <source>General Information</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">位置</translation>
     </message>
 </context>
 <context>
@@ -956,22 +951,22 @@
         <translation type="obsolete">DFF文档</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="618"/>
+        <location filename="../mainwindow.py" line="617"/>
         <source>Error while loading help</source>
         <translation>加载帮助时的错误</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="619"/>
+        <location filename="../mainwindow.py" line="618"/>
         <source>&lt;br&gt;You can check on-line help at &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</source>
         <translation>&lt;br&gt;你可以查阅在线帮助 &lt;a href=&quot;http://wiki.digital-forensic.org/&quot;&gt;http://wiki.digital-forensic.org&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="620"/>
+        <location filename="../mainwindow.py" line="619"/>
         <source>Not an help file.</source>
         <translation>不是一个帮助文件.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="621"/>
+        <location filename="../mainwindow.py" line="620"/>
         <source>Documentation path not found.</source>
         <translation>文档路径没有找到.</translation>
     </message>
@@ -1011,7 +1006,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.py" line="109"/>
+        <location filename="../mainwindow.py" line="108"/>
         <source>Wizard</source>
         <translation type="unfinished"></translation>
     </message>

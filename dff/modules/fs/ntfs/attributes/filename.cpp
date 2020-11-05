@@ -58,7 +58,7 @@ FileName::FileName(MFTAttribute* mftAttribute) : MFTAttributeContent(mftAttribut
     delete vfile;
     throw std::string("$FILE_NAME can't read name.");
   }
-  UnicodeString((char*)name, this->nameLength() * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
+  icu::UnicodeString((char*)name, this->nameLength() * sizeof(uint16_t), "UTF16-LE").toUTF8String(this->__name);
   delete[] name;
   delete vfile;
 }
