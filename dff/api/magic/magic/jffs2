@@ -1,0 +1,5 @@
+# JFFS2 file system
+0	leshort	0x1984		Linux old jffs2 filesystem data little endian
+0	beshort	0x1984		Linux old jffs2 filesystem data big endian
+0	leshort	0x1985		Linux jffs2 filesystem data little endian
+0	beshort	0x1985		Linux jffs2 filesystem data big endian

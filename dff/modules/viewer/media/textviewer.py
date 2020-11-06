@@ -281,7 +281,14 @@ class CAT(QSplitter, Script):
           codecType = self.node.dataType().split("/")[1]
         except: 
           codecType = "UTF-8"
+
         self.initShape(codecType)
+        f = self.node.open()
+        b = f.read(64) #fix for file with only 0xffff block that are detected as text by magic
+        if b == 64*"\xff":
+           f.close()
+           self.text.setText("Can't render file")
+           raise "Error can't display file"
         if self.node.size() > 30*(1024**2):
             if self.preview:
                 self.renderButton.show()

@@ -1,0 +1,38 @@
+# Squashfs
+0	name	squashfs
+>28	beshort	x	version %d.
+>30	beshort	x	\b%d,
+>20	beshort 0	uncompressed,
+>20	beshort 1	zlib
+>20	beshort 2	lzma
+>20	beshort 3	lzo
+>20	beshort 4	xz
+>20	beshort 5	lz4
+>20	beshort 6	zstd
+>20	beshort >0	compressed,
+>28	beshort <3
+>>8	belong	x	%d bytes,
+>28	beshort >2
+>>28	beshort <4
+>>>63	bequad x	%lld bytes,
+>>28	beshort >3
+>>>40	bequad x	%lld bytes,
+#>>67	belong	x	%d bytes,
+>4	belong	x	%d inodes,
+>28	beshort <2
+>>32	beshort	x	blocksize: %d bytes,
+>28	beshort >1
+>>28	beshort <4
+>>>51	belong	x	blocksize: %d bytes,
+>>28	beshort >3
+>>>12	belong	x	blocksize: %d bytes,
+>28	beshort <4
+>>39	bedate	x	created: %s
+>28	beshort >3
+>>8	bedate	x	created: %s
+
+0	string	sqsh	Squashfs filesystem, big endian,
+>0	use	squashfs
+
+0	string	hsqs	Squashfs filesystem, little endian,
+>0	use	\^squashfs
