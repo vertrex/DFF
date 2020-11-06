@@ -64,7 +64,9 @@ void  NodeObjectFile::fileMapping(DFF::FileMapping* fm)
   for (; tag != tags.end(); tag++)
   {
     Tag newTag(*tag);
-    chunks.insert(std::pair<uint32_t, Tag>(tag->chunk_id,newTag));
+    if (tag->page_status == 0xff) //if not wecould have old version of the tag as we put in the map only the old version
+
+      chunks.insert(std::pair<uint32_t, Tag>(tag->chunk_id,newTag));
   }
 
   uint32_t number_of_block = (this->size() / 512) + 1;
@@ -78,7 +80,7 @@ void  NodeObjectFile::fileMapping(DFF::FileMapping* fm)
     }
     else
     {
-      //std::cout << "error i " << i << " tag.size " << tag.size  << " offset " << tag.offset << std::endl;
+      std::cout << "error i " << i << " tag.size " << tag.size  << " offset " << tag.offset << std::endl;
       //printf("error on tag");
     }
   }
@@ -89,4 +91,12 @@ void  NodeObjectFile::fileMapping(DFF::FileMapping* fm)
  */
 NodeObjectDirectory::NodeObjectDirectory(DFF::fso* fsobj, ObjectHeader& objectHeader, uint32_t objectId) : NodeObject(fsobj, 0, objectHeader, objectId) 
 {
+}
+
+/*
+ *  NodeObjectHardlink
+ */
+NodeObjectHardlink::NodeObjectHardlink(DFF::fso* fsobj, ObjectHeader& objectHeader, uint32_t objectId) : NodeObject(fsobj, 0, objectHeader, objectId) 
+{
+  std::cout << "equiv id " << bytes_swap32(objectHeader.equiv_id) << std::endl;
 }

@@ -31,7 +31,12 @@ class Tags
 {
 public:
   Tags();
- 
+
+  uint32_t number_of_tags;
+  uint32_t number_of_ok_tags;
+  uint32_t number_of_bad_tags;
+
+  std::vector<Tag>                         tags; 
   std::map<uint32_t, std::vector<Tag> > objects;
   std::map<uint32_t, NodeObject* >        nodes; //list of node and list of int32 is ok ? 
 

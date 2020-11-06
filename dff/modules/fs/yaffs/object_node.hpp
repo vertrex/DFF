@@ -104,4 +104,10 @@ public:
   NodeObjectDirectory(DFF::fso* fsobj,  ObjectHeader& objectHeader, uint32_t objectId);
 };
 
+class NodeObjectHardlink : public NodeObject
+{
+public:
+  NodeObjectHardlink(DFF::fso* fsobj,  ObjectHeader& objectHeader, uint32_t objectId);
+};
+
 #endif

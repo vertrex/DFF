@@ -34,12 +34,7 @@ Tag::Tag(uint8_t* spare, uint64_t offset) : offset(offset)
   this->chunk_id =  (spare[0] << 12) + (spare[1] <<4) + (spare[2] >> 4);
   this->serial_number = (spare[2] & 0xf) >> 2;
   
-  uint8_t bits = spare[11] >> 6;
-  if (bits == 0x01)
-    bits = 0x10;
-  else if (bits == 0x10) 
-    bits = 0x1;
-  this->object_id = (spare[6] << 10) + (spare[7] << 2) + bits;
+  this->object_id = (spare[6] << 10) + (spare[7] << 2) + (spare[11] >> 6);
 
   this->size = (((spare[2] & 0xf) & 0x3) << 8) + spare[3]; //don't use msb ? as block size == 512?
 }
@@ -54,28 +49,60 @@ void  Tag::display(void)
  */
 Tags::Tags()
 {
+  this->number_of_tags = 0;
+  this->number_of_ok_tags = 0;
+  this->number_of_bad_tags =0;
 }
 
 void Tags::addTag(uint8_t* spare, uint64_t offset)
 {
   Tag tag = Tag(spare, offset);
+  this->number_of_tags +=1;
   if (tag.object_id != 0x3ffff)
   {
+    //check if object_id al
+    this->number_of_ok_tags +=1;
     this->objects[tag.object_id].push_back(tag);
+  }
+  else
+  {
+    this->number_of_bad_tags += 1;
   }
 }
 
-void Tags::createNode(YAFFS* yaffsFSO, DFF::Node* parent, std::vector<Tag> tags)
+void  Tags::createNodes(YAFFS* yaffsFSO, DFF::Node* root)
 {
+  std::map<uint32_t, std::vector<Tag> >::iterator object = this->objects.begin();
 
+  std::cout << "number of tags " << this->number_of_tags << std::endl;
+  std::cout << "number of ok tag " << this->number_of_ok_tags << std::endl;
+  std::cout << "number of bad tag " << this->number_of_bad_tags << std::endl;
+
+  for (; object != this->objects.end(); ++object)
+  {
+    createNode(yaffsFSO, root, object->second);
+  }
+}
+
+void  Tags::createNode(YAFFS* yaffsFSO, DFF::Node* parent, std::vector<Tag> tags)
+{
+  uint32_t multi_zero = 0;
   DFF::Node*  dump_node = yaffsFSO->parent(); 
   DFF::VFile* dump_file = dump_node->open();
 
   std::vector<Tag>::iterator tag = tags.begin();
   for (; tag != tags.end(); ++tag)
   {
-    if (tag->chunk_id == 0) //check for node without 0 ? check if block / chunk page status etc ??? XXX
+    //XXX must create only node for 0xff cluster (block 0 & other blocks !!!!)
+    //then maybe create deleted version (add deleted flag or deleted in the name)
+    //here as we put in map[uid] = node we create all the node but link only one the latest
+    //when we call create tree ....
+    //we can have different version but we can't keep it them here 
+    //or must add an options for that ! 
+
+    if (tag->chunk_id == 0 && tag->page_status == 0xff) //check for node without 0 ? check if block / chunk page status etc ??? XXX
     {
+      multi_zero += 1;
       ObjectHeader object_header;
 
       dump_file->seek(tag->offset);
@@ -83,7 +110,7 @@ void Tags::createNode(YAFFS* yaffsFSO, DFF::Node* parent, std::vector<Tag> tags)
      
       NodeObject* object_node = NULL;
       uint32_t object_type = bytes_swap32(object_header.type);
-
+    
       if (object_type == YAFFS_OBJECT_TYPE_FILE)
       { 
         object_node = new NodeObjectFile(yaffsFSO, object_header, tags, tag->object_id);//+tags list 
@@ -98,7 +125,7 @@ void Tags::createNode(YAFFS* yaffsFSO, DFF::Node* parent, std::vector<Tag> tags)
       }
       else if (object_type == YAFFS_OBJECT_TYPE_HARDLINK)
       {
-        object_node = new NodeObjectDirectory(yaffsFSO, object_header, tag->object_id);
+        object_node = new NodeObjectHardlink(yaffsFSO, object_header, tag->object_id);
       }
       else if (object_type == YAFFS_OBJECT_TYPE_SYMLINK)
       {
@@ -113,23 +140,16 @@ void Tags::createNode(YAFFS* yaffsFSO, DFF::Node* parent, std::vector<Tag> tags)
 
       if (object_node)
       {
-        this->nodes[tag->object_id] = object_node;     
+        this->nodes[tag->object_id] = object_node;    //here if we have two zero block we only keep the last pushed node, has we check for 0xff this should not happened but we can recovered delete data by not checking 0xff 
+      //must created a special kind of deleted node set the status deleted and does the filemaping maybe also on block without 0xff  
       }
-
+          //std::cout << "FOUND Multi 0 " << multi_zero << " " << object_node->name() << " " << tag->object_id << " status " << tag->page_status << " block status " << tag->block_status <<  std::endl;
     }
+
   }
+
 
   delete dump_file;
-}
-
-void  Tags::createNodes(YAFFS* yaffsFSO, DFF::Node* root)
-{
-  std::map<uint32_t, std::vector<Tag> >::iterator object = this->objects.begin();
-
-  for (; object != this->objects.end(); ++object)
-  {
-    createNode(yaffsFSO, root, object->second);
-  }
 }
 
 void  Tags::createTree(YAFFS* yaffsFSO)

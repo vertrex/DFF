@@ -145,7 +145,7 @@ void    YAFFS::readTags()
   DFF::VFile* dump = this->__parent->open();
    
   uint64_t size = this->__parent->size();
-  uint32_t number_of_blocks = this->__parent->size() / (512 + 16);
+  uint32_t number_of_blocks = (this->__parent->size() / (512 + 16));
 
   //std::cout << "Found " << number_of_blocks << std::endl;//add to YAFFS metadata
 
