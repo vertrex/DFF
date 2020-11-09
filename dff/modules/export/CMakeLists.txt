@@ -18,4 +18,5 @@ endif(HAVE_FUSE)
 
 install_file(
   extract.py
+  exportcsv.py
 )
