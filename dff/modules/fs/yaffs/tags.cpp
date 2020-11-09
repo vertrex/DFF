@@ -74,9 +74,9 @@ void  Tags::createNodes(YAFFS* yaffsFSO, DFF::Node* root)
 {
   std::map<uint32_t, std::vector<Tag> >::iterator object = this->objects.begin();
 
-  std::cout << "number of tags " << this->number_of_tags << std::endl;
-  std::cout << "number of ok tag " << this->number_of_ok_tags << std::endl;
-  std::cout << "number of bad tag " << this->number_of_bad_tags << std::endl;
+  //std::cout << "number of tags " << this->number_of_tags << std::endl;
+  //std::cout << "number of ok tag " << this->number_of_ok_tags << std::endl;
+  //std::cout << "number of bad tag " << this->number_of_bad_tags << std::endl;
 
   for (; object != this->objects.end(); ++object)
   {
