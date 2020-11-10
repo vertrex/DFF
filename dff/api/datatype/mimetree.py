@@ -23,7 +23,8 @@ class MimeTree():
         if hasattr(sys, "frozen"):
             self.mgc = os.path.abspath(os.path.join(os.path.dirname(sys.executable), "resources/magic.mgc"))
         else:
-            self.mgc = os.path.join(sys.path[0], "dff/api/magic/magic.mgc")
+            self.mgc = os.path.join(os.path.dirname(__file__) + "/../magic/magic.mgc")
+            # self.mgc = os.path.join(sys.path[0], "dff/api/magic/magic.mgc")
         try:
             self.mgcfile = open(self.mgc, 'rb')
         except:
