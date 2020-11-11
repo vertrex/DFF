@@ -21,7 +21,7 @@ else(LIBVSHADOW_FOUND AND LIBBFIO_FOUND)
   message(STATUS "VSHADOW or BFIO library not found. Vshadow module will not be built.")
 endif(LIBVSHADOW_FOUND AND LIBBFIO_FOUND)
 
-add_subdirectory(qcow)
+#add_subdirectory(qcow)
 
 install_file(
   __init__.py
