@@ -21,7 +21,7 @@ RUN cd /src && git clone git://digital-forensic.org/dff-2.git
 
 RUN cd /src/libbfio && ./synclibs.sh && ./autogen.sh && ./configure && make install -j `nproc`
 RUN cd /src/libewf && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
-RUN cd /src/libvshadow && ./synclibs.sh && ./autogen.sh && ./configure --prefix=/usr --with-libbfio=/usr/local/lib && make install -j `nproc`
+RUN cd /src/libvshadow && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
 RUN cd /src/libqcow && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
 RUN cd /src/libbde && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
 RUN cd /src/libpff && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
@@ -29,12 +29,11 @@ RUN cd /src/reglookup/releases/1.0.1 && scons install && cd /
 
 RUN cd /src/dff-2 && mkdir build && cd build && cmake .. && make -j `nproc` && make install 
 
-
 FROM ubuntu:16.04 AS runtime
 RUN set -ex;         \
     apt-get update -y;  \
     apt-get install -y \
-    apt-utils build-essential cmake libafflib0v5  libicu55 libtre5 python-qt4 python-dbus python-pil python-apsw volatility clamav libtalloc2 libfuse2 libavformat-ffmpeg56 libavdevice-ffmpeg56 libavcodec-ffmpeg56
+    libafflib0v5  libicu55 libtre5 python-qt4 python-dbus python-pil python-apsw libfuse2 libavformat-ffmpeg56 libavdevice-ffmpeg56 libavcodec-ffmpeg56 libarchive13 volatility clamav libtalloc2
 
 COPY --from=builder /usr/local/lib /usr/local/lib
 COPY --from=builder /usr/local/share /usr/local/share
@@ -44,6 +43,8 @@ COPY --from=builder /usr/lib/python2.7/dist-packages/dff/ /usr/lib/python2.7/dis
 COPY --from=builder /usr/local/lib/dff /usr/local/lib/dff
 COPY --from=builder /usr/local/bin/dff /usr/local/bin/dff
 COPY --from=builder /usr/local/bin/dff-gui /usr/local/bin/dff-gui
+
+RUN ldconfig
 
 RUN echo "#!/bin/bash\nQT_X11_NO_MITSHM=1 dff-gui" > /usr/sbin/launch-dff && chmod +x /usr/sbin/launch-dff 
 
