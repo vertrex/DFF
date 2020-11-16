@@ -5,8 +5,9 @@ LABEL Description="build DFF on ubuntu 16.04"
 # Dependencies of the Qt offline installer
 RUN apt update \
 	&& apt upgrade -y \
-	&& apt install -y \
-	build-essential cmake libafflib0v5  libafflib-dev libicu55 libicu-dev libtre5 libtre-dev pyqt4-dev-tools python-qt4 swig libpython-dev git qt4-dev-tools python-dbus python-pil python-apsw volatility clamav subversion scons libtalloc-dev automake autopoint libtool bison flex libfuse-dev libarchive-dev libavcodec-ffmpeg56 libavdevice-dev libavcodec-dev libavcodec-extra libavformat-dev libavutil-dev 
+	&& apt-get install -y \
+	build-essential cmake libafflib0v5  libafflib-dev libicu55 libicu-dev libtre5 libtre-dev pyqt4-dev-tools python-qt4 swig libpython-dev git qt4-dev-tools python-dbus python-pil python-apsw volatility clamav subversion scons libtalloc-dev automake autopoint libtool bison flex libfuse-dev libarchive-dev libavdevice-dev libavcodec-dev libavcodec-extra libavformat-dev libavutil-dev \
+  && apt-get install -y libavcodec-ffmpeg56 
 
 RUN mkdir src
 RUN cd /src && git clone https://github.com/libyal/libbfio.git 
@@ -29,6 +30,7 @@ RUN cd /src/reglookup/releases/1.0.1 && scons install && cd /
 
 RUN cd /src/dff-2 && mkdir build && cd build && cmake .. && make -j `nproc` && make install 
 RUN echo "#!/bin/bash\nQT_X11_NO_MITSHM=1 dff-gui" > /usr/sbin/launch-dff && chmod +x /usr/sbin/launch-dff 
-#rm -rf ~/src ? et creat other docker ?
+
+#RUN rm -rf /src
 #ENTRYPOINT ["/bin/bash"]
 ENTRYPOINT ["/usr/sbin/launch-dff"]
