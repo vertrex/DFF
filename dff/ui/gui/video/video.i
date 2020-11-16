@@ -98,7 +98,7 @@ from PyQt4.QtGui import QImage
 
 %refobject DFF::RCObj "$this->addref();"
 %unrefobject DFF::RCObj "$this->delref();"
-%import "../../exceptions/libexceptions.i"
+%import "../../../api/exceptions/libexceptions.i"
 
 %include "export.hpp"
 %include "rc.hpp"

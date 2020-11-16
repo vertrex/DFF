@@ -248,7 +248,7 @@ int ewf::vread(int fd, void *buff, unsigned int size)
   int res = 0;
   mutex_lock(&this->__io_mutex);
   libewf_error_t* error = NULL;
-  res = libewf_handle_read_random(this->ewf_ghandle, buff, size, fi->offset, &error);
+  res = libewf_handle_read_buffer_at_offset(this->ewf_ghandle, buff, size, fi->offset, &error);
   if (res > 0)
     fi->offset += res;
   mutex_unlock(&this->__io_mutex);
