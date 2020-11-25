@@ -2,7 +2,6 @@ FROM ubuntu:16.04 AS builder
 
 LABEL Description="build DFF on ubuntu 16.04"
 
-
 RUN apt update \
 	&& apt upgrade -y \
 	&& apt-get install -y \
@@ -35,14 +34,14 @@ RUN set -ex;         \
     apt-get install -y \
     libafflib0v5  libicu55 libtre5 python-qt4 python-dbus python-pil python-apsw libfuse2 libavformat-ffmpeg56 libavdevice-ffmpeg56 libavcodec-ffmpeg56 libarchive13 volatility clamav libtalloc2
 
+COPY --from=builder /usr/local/bin/dff /usr/local/bin/dff
+COPY --from=builder /usr/local/bin/dff-gui /usr/local/bin/dff-gui
 COPY --from=builder /usr/local/lib /usr/local/lib
 COPY --from=builder /usr/local/share /usr/local/share
 COPY --from=builder /usr/lib/python2.7/dist-packages/dff.py /usr/lib/python2.7/dist-packages/dff.py
 COPY --from=builder /usr/lib/python2.7/dist-packages/dff-gui.py /usr/lib/python2.7/dist-packages/dff-gui.py
 COPY --from=builder /usr/lib/python2.7/dist-packages/dff/ /usr/lib/python2.7/dist-packages/dff/
 COPY --from=builder /usr/local/lib/dff /usr/local/lib/dff
-COPY --from=builder /usr/local/bin/dff /usr/local/bin/dff
-COPY --from=builder /usr/local/bin/dff-gui /usr/local/bin/dff-gui
 
 RUN ldconfig
 
@@ -50,4 +49,3 @@ RUN echo "#!/bin/bash\nQT_X11_NO_MITSHM=1 dff-gui" > /usr/sbin/launch-dff && chm
 
 #ENTRYPOINT ["/bin/bash"]
 ENTRYPOINT ["/usr/sbin/launch-dff"]
-

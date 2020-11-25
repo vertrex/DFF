@@ -64,7 +64,7 @@ void  NodeObjectFile::fileMapping(DFF::FileMapping* fm)
   for (; tag != tags.end(); tag++)
   {
     Tag newTag(*tag);
-    if (tag->page_status == 0xff) //if not wecould have old version of the tag as we put in the map only the old version
+    if (tag->page_status == 0xff || this->isDeleted()) 
 
       chunks.insert(std::pair<uint32_t, Tag>(tag->chunk_id,newTag));
   }
@@ -80,8 +80,8 @@ void  NodeObjectFile::fileMapping(DFF::FileMapping* fm)
     }
     else
     {
-      std::cout << "error i " << i << " tag.size " << tag.size  << " offset " << tag.offset << std::endl;
-      //printf("error on tag");
+      std::cout << "YAFFS Error on : " << this->absolute() << " Tag " << i << " not found for offset " << 512 * (i-1) << std::endl;
+      fm->push((i-1) * 512, 512); //fill with null block on error
     }
   }
 }
@@ -98,5 +98,5 @@ NodeObjectDirectory::NodeObjectDirectory(DFF::fso* fsobj, ObjectHeader& objectHe
  */
 NodeObjectHardlink::NodeObjectHardlink(DFF::fso* fsobj, ObjectHeader& objectHeader, uint32_t objectId) : NodeObject(fsobj, 0, objectHeader, objectId) 
 {
-  std::cout << "equiv id " << bytes_swap32(objectHeader.equiv_id) << std::endl;
+  //std::cout << "equiv id " << bytes_swap32(objectHeader.equiv_id) << std::endl;
 }

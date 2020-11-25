@@ -6,7 +6,7 @@
 
 namespace DFF
 {
-class Node;
+  class Node;
 }
 
 class YAFFS;
@@ -30,15 +30,16 @@ public:
 class Tags
 {
 public:
+  uint32_t                                      number_of_tags;
+  uint32_t                                      number_of_ok_tags;
+  uint32_t                                      number_of_bad_tags;
+
+  std::vector<Tag>                              tags; 
+  std::map<uint32_t, std::vector<Tag> >         objects;
+  std::map<uint32_t, NodeObject* >              nodes;
+  std::map<uint32_t, std::vector<NodeObject*> > deleted_nodes;
+
   Tags();
-
-  uint32_t number_of_tags;
-  uint32_t number_of_ok_tags;
-  uint32_t number_of_bad_tags;
-
-  std::vector<Tag>                         tags; 
-  std::map<uint32_t, std::vector<Tag> > objects;
-  std::map<uint32_t, NodeObject* >        nodes; //list of node and list of int32 is ok ? 
 
   void addTag(uint8_t* spare, uint64_t offset);
   void display(void);
@@ -47,6 +48,7 @@ public:
   void createNodes(YAFFS* fsobj, DFF::Node* root);
   
   void createTree(YAFFS* fsobj);
+  void addNodeToTree(YAFFS* fsobj, NodeObject* node);
 };
 
 #endif

@@ -21,7 +21,6 @@ private:
   DFF::Node*    __orphaned;
 
   Tags          __tags;
-  //Vector<Tag>;
 
   void          readTags();
   void          createNodes();

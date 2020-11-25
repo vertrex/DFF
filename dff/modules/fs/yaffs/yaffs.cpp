@@ -162,7 +162,7 @@ void    YAFFS::readTags()
     dump->read(buff1, 256);
     dump->read(spare, 16);
 
-    //if calc_checksum optiosn
+    //if calc_checksum options add options to calc check sum XXX
     /*yaffs_ecc_calc((const unsigned char*)&buff0, calc_ecc0);
     if (calc_ecc0[0] != spare[9] || calc_ecc0[1] != spare[8] || calc_ecc0[2] != spare[10])
     {
