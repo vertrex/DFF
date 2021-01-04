@@ -26,6 +26,10 @@ if os.name == "posix":
     from dff.api.devices.dbushaldev import DBusHalDevices
     import dbus
     DevicesLib = DBusHalDevices
+    try:
+      DevicesLib()
+    except:
+      DevicesLib = list
 else:
   try :
     from dff.api.devices.libdevices import WMIDevices
@@ -38,14 +42,10 @@ else:
 class Devices():
   def __init__(self):
     if DevicesLib:
-      try:
         self.__instance = DevicesLib()
-      except:
-        self.__instance = list 
 
   def __getattr__(self, attr):
-      if self.__instance:
-        return getattr(self.__instance, attr)
+     return getattr(self.__instance, attr)
 
 
 class Logical():
