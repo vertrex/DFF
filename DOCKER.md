@@ -2,12 +2,12 @@
 get the docker image from the docker repository :
 -------------------------------------------------
 
-docker pull solaljacob/dff2
+docker pull solaljacob/dff
 
 build dff inside docker :
 -------------------------
 
-docker build --force-rm -t dff2:latest .
+docker build --force-rm -t dff:latest .
 
 load a prebuilt DFF docker image :
 ----------------------------------
