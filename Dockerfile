@@ -16,7 +16,7 @@ RUN cd /src && git clone https://github.com/libyal/libvshadow.git
 RUN cd /src && git clone https://github.com/libyal/libqcow.git 
 RUN cd /src && git clone https://github.com/libyal/libbde.git
 RUN cd /src && svn co https://code.blindspotsecurity.com/dav/reglookup/ 
-RUN cd /src && git clone git://digital-forensic.org/dff-2.git 
+RUN cd /src && git clone https://github.com/vertrex/DFF.git dff 
 
 RUN cd /src/libbfio && ./synclibs.sh && ./autogen.sh && ./configure && make install -j `nproc`
 RUN cd /src/libewf && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
@@ -26,7 +26,7 @@ RUN cd /src/libbde && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfi
 RUN cd /src/libpff && ./synclibs.sh && ./autogen.sh && ./configure --with-libbfio=/usr/local/lib && make install -j `nproc`
 RUN cd /src/reglookup/releases/1.0.1 && scons install && cd / 
 
-RUN cd /src/dff-2 && mkdir build && cd build && cmake .. && make -j `nproc` && make install 
+RUN cd /src/dff && mkdir build && cd build && cmake .. && make -j `nproc` && make install 
 
 FROM ubuntu:16.04 AS runtime
 RUN set -ex;         \

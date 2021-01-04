@@ -2,7 +2,7 @@
 get the docker image from the docker repository :
 -------------------------------------------------
 
-docker pull solaljacob/dff
+docker pull solaljacob/dff:latest
 
 build dff inside docker :
 -------------------------
