@@ -17,6 +17,6 @@ bzcat dff-docker-images.tar.bz2 | docker load
 run dff from docker  :
 ----------------------
 
-docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v ~/dump:/root/dump -it dff:latest
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v ~/dump:/root/dump -it solaljacob/dff:latest --name dff
 
 (This will share your /home/user/dump directory inside docker /root/dump directory)
