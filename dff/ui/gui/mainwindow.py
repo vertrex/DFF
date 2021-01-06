@@ -49,7 +49,12 @@ from dff.ui.gui.widget.help import Help
 
 from dff.ui.gui.widget.postprocessstate import PostProcessStateWidget
 from dff.ui.gui.wizard.autowizard import AutoWizard
-#from dff.ui.gui.widget.reporteditor import ReportEditor #XXX Report
+try:
+  from dff.ui.gui.widget.reporteditor import ReportEditor 
+  REPORT_EDITOR = True
+except Exception as e:
+  print("Can't load report editor : " + str(e))
+  REPORT_EDITOR = False
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self,  app, debug = False):
@@ -88,30 +93,33 @@ class MainWindow(QMainWindow, Ui_MainWindow):
       self.actionWizard.setIcon(icon)
       self.actionWizard.setObjectName(QString.fromUtf8("actionWizard"))
 
-      #self.actionReport = QAction(self) XXX Report
-      #icon = QIcon()
-      #icon.addPixmap(QPixmap(QString.fromUtf8(":report")), QIcon.Normal, QIcon.Off)
-      #self.actionReport.setIcon(icon)
-      #self.actionReport.setObjectName(QString.fromUtf8("actionReport"))
+      if REPORT_EDITOR:
+        self.actionReport = QAction(self)
+        icon = QIcon()
+        icon.addPixmap(QPixmap(QString.fromUtf8(":report")), QIcon.Normal, QIcon.Off)
+        self.actionReport.setIcon(icon)
+        self.actionReport.setObjectName(QString.fromUtf8("actionReport"))
 
       Ui_MainWindow.setupUi(self, MainWindow)  
       self.menuFile.insertAction(self.actionOpen_evidence, self.actionWizard)
-     
-      #self.menuReport = QMenu(self.menubar) XXX Report
-      #self.menuReport.setObjectName(QString.fromUtf8("menuReport"))
-      #self.menuReport.addAction(self.actionReport)
-      #self.menubar.insertAction(self.menuIDE.menuAction(), self.menuReport.menuAction())
+    
+      if REPORT_EDITOR:
+        self.menuReport = QMenu(self.menubar)
+        self.menuReport.setObjectName(QString.fromUtf8("menuReport"))
+        self.menuReport.addAction(self.actionReport)
+        self.menubar.insertAction(self.menuIDE.menuAction(), self.menuReport.menuAction())
       self.retranslateUi(MainWindow)
 
     def retranslateUi(self, MainWindow):
       Ui_MainWindow.retranslateUi(self, MainWindow)
       self.actionWizard.setText(QApplication.translate("MainWindow", "Wizard", None, QApplication.UnicodeUTF8))
-      #self.actionReport.setText(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
-      #self.actionReport.setToolTip(QApplication.translate("MainWindow", "Open the report editor", None, QApplication.UnicodeUTF8))
-      #try:
-        #self.menuReport.setTitle(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
-      #except AttributeError:
-        #pass
+      if REPORT_EDITOR:
+        self.actionReport.setText(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
+        self.actionReport.setToolTip(QApplication.translate("MainWindow", "Open the report editor", None, QApplication.UnicodeUTF8))
+        try:
+          self.menuReport.setTitle(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
+        except AttributeError:
+          pass
 
     def init(self):
         self.initConnection()
@@ -154,8 +162,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.connect(self.actionHelp, SIGNAL("triggered()"), self.addHelpWidget)
         self.connect(self.actionAbout, SIGNAL("triggered()"), self.dialog.about)       
         self.connect(self.actionWizard, SIGNAL('triggered()'), self.autoWizard)
-        #self.connect(self.actionReport, SIGNAL("triggered()"), self.addReportEdit) XXX Report
-        #self.connect(self, SIGNAL("addReportEdit()"), self.addReportEdit) XXX Report
+        if REPORT_EDITOR:
+          self.connect(self.actionReport, SIGNAL("triggered()"), self.addReportEdit)
+          self.connect(self, SIGNAL("addReportEdit()"), self.addReportEdit)
 
     def initToolbarList(self):
         self.toolbarList = [
@@ -172,8 +181,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 #                            self.actionFullscreen_mode,
 #                            self.actionBrowse_modules,
                             ]
-        self.toolbarList.insert(0, self.actionWizard)   
-        #self.toolbarList.insert(len(self.toolbarList) - 1, self.actionReport) XXX Report
+        self.toolbarList.insert(0, self.actionWizard)  
+        if REPORT_EDITOR:
+          self.toolbarList.insert(len(self.toolbarList) - 1, self.actionReport)
 
 #############  DOCKWIDGETS FUNCTIONS ###############
     def createDockWidget(self, widget, widgetName):
@@ -287,8 +297,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
         self.refreshSecondWidgets()
         self.refreshTabifiedDockWidgets()
-        #self.addReportEdit() XXX Report
-        #self.dockWidget['Report'].setVisible(False) XXX Report
+        if REPORT_EDITOR:
+          self.addReportEdit()
+          self.dockWidget['Report'].setVisible(False)
 
     def autoWizard(self):
         autoWiz = AutoWizard(self)

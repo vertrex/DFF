@@ -15,7 +15,7 @@ from distutils import sysconfig
 
 from PyQt4.QtCore import Qt, SIGNAL, SLOT, pyqtSlot, QString, QUrl
 from PyQt4.QtGui import QSplitter, QWidget, QVBoxLayout, QPushButton, QStackedWidget, QTextEdit, QTreeWidget, QMenu, QIcon, QAbstractItemView, QTreeWidgetItem, QDialog, QLineEdit, QApplication, QCursor, QInputDialog, QMessageBox, QIcon, QGroupBox, QComboBox
-#from PyQt4.QtWebKit import QWebView
+from PyQt4.QtWebKit import QWebView
 
 from dff.api.events.libevents import EventHandler
 from dff.ui.gui.thumbnail import Thumbnailer
