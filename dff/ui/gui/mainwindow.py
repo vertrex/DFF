@@ -93,6 +93,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
       self.actionWizard.setIcon(icon)
       self.actionWizard.setObjectName(QString.fromUtf8("actionWizard"))
 
+      Ui_MainWindow.setupUi(self, MainWindow)  
+      self.menuFile.insertAction(self.actionOpen_evidence, self.actionWizard)
+      self.retranslateUi(MainWindow)
+    
       if REPORT_EDITOR:
         self.actionReport = QAction(self)
         icon = QIcon()
@@ -100,27 +104,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actionReport.setIcon(icon)
         self.actionReport.setObjectName(QString.fromUtf8("actionReport"))
 
-      Ui_MainWindow.setupUi(self, MainWindow)  
-      self.menuFile.insertAction(self.actionOpen_evidence, self.actionWizard)
-    
-      if REPORT_EDITOR:
         self.menuReport = QMenu(self.menubar)
         self.menuReport.setObjectName(QString.fromUtf8("menuReport"))
         self.menuReport.addAction(self.actionReport)
-        self.menubar.insertAction(self.menuIDE.menuAction(), self.menuReport.menuAction())
-      self.retranslateUi(MainWindow)
-
-    def retranslateUi(self, MainWindow):
-      Ui_MainWindow.retranslateUi(self, MainWindow)
-      self.actionWizard.setText(QApplication.translate("MainWindow", "Wizard", None, QApplication.UnicodeUTF8))
-      if REPORT_EDITOR:
-        self.actionReport.setText(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
+	self.actionReport.setText(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
         self.actionReport.setToolTip(QApplication.translate("MainWindow", "Open the report editor", None, QApplication.UnicodeUTF8))
         try:
           self.menuReport.setTitle(QApplication.translate("MainWindow", "Report", None, QApplication.UnicodeUTF8))
         except AttributeError:
           pass
 
+
+    def retranslateUi(self, MainWindow):
+      Ui_MainWindow.retranslateUi(self, MainWindow)
+      self.actionWizard.setText(QApplication.translate("MainWindow", "Wizard", None, QApplication.UnicodeUTF8))
+        
     def init(self):
         self.initConnection()
         # Set up toolbar
@@ -269,9 +267,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def addInterpreter(self):
        self.addSingleDock("Interpreter", Interpreter)
 
-#    def addIde(self):
-#       self.addSingleDock("IDE", Ide, master=True)
- 
     def initDockWidgets(self):
         """Init Dock in application and init DockWidgets"""
         widgetPos = [ ( Qt.TopLeftCorner, Qt.LeftDockWidgetArea, QTabWidget.North),
